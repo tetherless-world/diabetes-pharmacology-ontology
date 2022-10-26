@@ -1,5 +1,5 @@
-@prefix pto: <http://purl.org/twc/PTO/ont/> .
-@prefix pto-kb: <http://purl.org/twc/PTO/kb/> .
+@prefix dpo: <http://purl.org/twc/DPO/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
 
 @prefix heals: <http://purl.org/twc/HEALS/ont/> .
 @prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
@@ -43,7 +43,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-pto-kb:HannahVisit1BMI rdf:type ncit:C138901 ;
+dpo-kb:HannahVisit1BMI rdf:type ncit:C138901 ;
           rdfs:label "BMI"^^xsd:string ;
           sio:hasValue "36.9"^^xsd:decimal ; # obese
           sio:hasUnit [ rdf:type uo:0000086 ; rdfs:label "kilogram per square meter"^^xsd:string ] ;
@@ -53,7 +53,7 @@ pto-kb:HannahVisit1BMI rdf:type ncit:C138901 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit1BGL rdf:type loinc:2339-0 ;
+dpo-kb:HannahVisit1BGL rdf:type loinc:2339-0 ;
           rdfs:label "Blood Glucose Level"^^xsd:string ;
           sio:hasValue "213"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -63,7 +63,7 @@ pto-kb:HannahVisit1BGL rdf:type loinc:2339-0 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
           
-pto-kb:HannahVisit1HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:HannahVisit1HbA1c rdf:type loinc:59261-8 ;
           rdfs:label "HbA1c - Estimated Average Glucose"^^xsd:string ;
           sio:hasValue "177"^^xsd:decimal ;
           rdfs:comment "7.8%"^^xsd:string ;
@@ -74,7 +74,7 @@ pto-kb:HannahVisit1HbA1c rdf:type loinc:59261-8 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit1FBGL rdf:type loinc:1558-6 ;
+dpo-kb:HannahVisit1FBGL rdf:type loinc:1558-6 ;
           rdfs:label "Fasting Blood Glucose Level"^^xsd:string ;
           sio:hasValue "137"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -84,7 +84,7 @@ pto-kb:HannahVisit1FBGL rdf:type loinc:1558-6 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit1PGL rdf:type loinc:1518-0 ;
+dpo-kb:HannahVisit1PGL rdf:type loinc:1518-0 ;
           rdfs:label "Postprandial Glucose Level"^^xsd:string ;
           sio:hasValue "187"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -94,7 +94,7 @@ pto-kb:HannahVisit1PGL rdf:type loinc:1518-0 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit1Triglycerides rdf:type loinc:12228-3 ;
+dpo-kb:HannahVisit1Triglycerides rdf:type loinc:12228-3 ;
           rdfs:label "Triglycerides"^^xsd:string ;
           sio:hasValue "178"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -104,7 +104,7 @@ pto-kb:HannahVisit1Triglycerides rdf:type loinc:12228-3 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit1LDL rdf:type loinc:2089-1 ;
+dpo-kb:HannahVisit1LDL rdf:type loinc:2089-1 ;
           rdfs:label "LDL"^^xsd:string ;
           sio:hasValue "131"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -114,7 +114,7 @@ pto-kb:HannahVisit1LDL rdf:type loinc:2089-1 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit1HDL rdf:type loinc:2085-9 ;
+dpo-kb:HannahVisit1HDL rdf:type loinc:2085-9 ;
           rdfs:label "HDL"^^xsd:string ;
           sio:hasValue "21"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -124,7 +124,7 @@ pto-kb:HannahVisit1HDL rdf:type loinc:2085-9 ;
                 sio:hasValue "1"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit2HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:HannahVisit2HbA1c rdf:type loinc:59261-8 ;
           rdfs:label "HbA1c - Estimated Average Glucose"^^xsd:string ;
           sio:hasValue "174"^^xsd:decimal ;
           rdfs:comment "7.7%"^^xsd:string ;
@@ -135,7 +135,7 @@ pto-kb:HannahVisit2HbA1c rdf:type loinc:59261-8 ;
                 sio:hasValue "90"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit2FBGL rdf:type loinc:1558-6 ;
+dpo-kb:HannahVisit2FBGL rdf:type loinc:1558-6 ;
           rdfs:label "Fasting Blood Glucose Level"^^xsd:string ;
           sio:hasValue "172"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -145,7 +145,7 @@ pto-kb:HannahVisit2FBGL rdf:type loinc:1558-6 ;
                 sio:hasValue "90"^^xsd:integer
           ] .
 
-pto-kb:HannahVisit2PGL  rdf:type loinc:1518-0 ;
+dpo-kb:HannahVisit2PGL  rdf:type loinc:1518-0 ;
           rdfs:label "Postprandial Glucose Level"^^xsd:string ;
           sio:hasValue "201.5"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -156,8 +156,8 @@ pto-kb:HannahVisit2PGL  rdf:type loinc:1518-0 ;
           ] .
 
 
-pto-kb:Hannah rdf:type sio:Patient ;
-  pto:hasDiagnosis [ rdf:type pto:Diabetes ] ;
+dpo-kb:Hannah rdf:type sio:Patient ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
@@ -208,11 +208,11 @@ pto-kb:Hannah rdf:type sio:Patient ;
           sio:hasValue "Female" ] ,
         [ rdf:type sio:Disease ;
           sio:hasValue "Diabetes"^^xsd:string ] ,
-        [ rdf:type pto:Fatigue ] ,
-        [ rdf:type pto:Polyphagia ] ,
-        [ rdf:type pto:FamilyHistoryOfCAD ] ,
-        [ rdf:type pto:FamilyHistoryOfDiabetes ] ,
-        [ rdf:type pto:PersonalHistoryOfGestationalDiabetes ] ,
+        [ rdf:type dpo:Fatigue ] ,
+        [ rdf:type dpo:Polyphagia ] ,
+        [ rdf:type dpo:FamilyHistoryOfCAD ] ,
+        [ rdf:type dpo:FamilyHistoryOfDiabetes ] ,
+        [ rdf:type dpo:PersonalHistoryOfGestationalDiabetes ] ,
         [ rdf:type sio:Age ;
           rdfs:label "Age"^^xsd:string ;
           sio:hasValue "38"^^xsd:integer ;
@@ -242,17 +242,17 @@ pto-kb:Hannah rdf:type sio:Patient ;
                 sio:hasValue "1"^^xsd:integer
           ]
         ] ,
-        pto-kb:HannahVisit1BMI ,
-        pto-kb:HannahVisit1BGL ,
-        pto-kb:HannahVisit1HbA1c ,
-        pto-kb:HannahVisit1FBGL ,
-        pto-kb:HannahVisit1PGL ,
-        pto-kb:HannahVisit1Triglycerides ,
-        pto-kb:HannahVisit1LDL ,
-        pto-kb:HannahVisit1HDL ,
-        pto-kb:HannahVisit2HbA1c ,
-        pto-kb:HannahVisit2FBGL ,
-        pto-kb:HannahVisit2PGL ;
+        dpo-kb:HannahVisit1BMI ,
+        dpo-kb:HannahVisit1BGL ,
+        dpo-kb:HannahVisit1HbA1c ,
+        dpo-kb:HannahVisit1FBGL ,
+        dpo-kb:HannahVisit1PGL ,
+        dpo-kb:HannahVisit1Triglycerides ,
+        dpo-kb:HannahVisit1LDL ,
+        dpo-kb:HannahVisit1HDL ,
+        dpo-kb:HannahVisit2HbA1c ,
+        dpo-kb:HannahVisit2FBGL ,
+        dpo-kb:HannahVisit2PGL ;
         sio:hasRole [
             rdf:type sio:000715
         ];
@@ -322,17 +322,17 @@ pto-kb:Hannah rdf:type sio:Patient ;
 
 
 
-pto-kb:insurance-Hannah a fhir:Coverage;
+dpo-kb:insurance-Hannah a fhir:Coverage;
     fhir:nodeRole fhir:treeRoot;
     fhir:Coverage.identifier [ fhir:value "Blue Cross NC" ] ;
-    fhir:Coverage.subscriber [ fhir:link pto-kb:Hannah ] ;
-    fhir:Coverage.beneficiary [ fhir:link pto-kb:Hannah ] .
+    fhir:Coverage.subscriber [ fhir:link dpo-kb:Hannah ] ;
+    fhir:Coverage.beneficiary [ fhir:link dpo-kb:Hannah ] .
 
-pto-kb:questionnaire-Hannah a fhir:Questionnaire;
+dpo-kb:questionnaire-Hannah a fhir:Questionnaire;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:Questionnaire.subject [
-       fhir:link pto-kb:Hannah;
+       fhir:link dpo-kb:Hannah;
        fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Hannah" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];
@@ -378,11 +378,11 @@ pto-kb:questionnaire-Hannah a fhir:Questionnaire;
        ]
     ] .
 
-  pto-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
+  dpo-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:QuestionnaireResponse.subject [
-       fhir:link pto-kb:Hannah;
+       fhir:link dpo-kb:Hannah;
        fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Hannah" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];

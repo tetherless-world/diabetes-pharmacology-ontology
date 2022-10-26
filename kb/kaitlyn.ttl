@@ -1,5 +1,5 @@
-@prefix pto: <http://purl.org/twc/PTO/ont/> .
-@prefix pto-kb: <http://purl.org/twc/PTO/kb/> .
+@prefix dpo: <http://purl.org/twc/DPO/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
 
 @prefix heals: <http://purl.org/twc/HEALS/ont/> .
 @prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
@@ -42,7 +42,7 @@
 @prefix hasco: <http://hadatac.org/ont/hasco/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-pto-kb:KaitlynVisit1BMI 
+dpo-kb:KaitlynVisit1BMI 
     rdf:type ncit:C138901 ;
     rdfs:label "Kaitlyn Visit 1 BMI "^^xsd:string ;
     sio:hasValue "35.3"^^xsd:decimal ; # obese
@@ -54,7 +54,7 @@ pto-kb:KaitlynVisit1BMI
     ] .
 
 
-pto-kb:KaitlynVisit1Height rdf:type sio:Height ;
+dpo-kb:KaitlynVisit1Height rdf:type sio:Height ;
     rdfs:label "Kaitlyn Visit 1 Height"^^xsd:string ;
     sio:hasValue "64"^^xsd:integer ;
     sio:hasUnit [ rdf:type uo:0010011 ; rdfs:label "inch"^^xsd:string ] ;
@@ -64,7 +64,7 @@ pto-kb:KaitlynVisit1Height rdf:type sio:Height ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1Weight rdf:type sio:Weight ;
+dpo-kb:KaitlynVisit1Weight rdf:type sio:Weight ;
     rdfs:label "Kaitlyn Visit 1 Weight"^^xsd:string ;
     sio:hasValue "205"^^xsd:integer ;
     sio:hasUnit [ rdf:type uo:0010034 ; rdfs:label "pound"^^xsd:string ] ;
@@ -74,7 +74,7 @@ pto-kb:KaitlynVisit1Weight rdf:type sio:Weight ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1BGL rdf:type loinc:2339-0 ;
+dpo-kb:KaitlynVisit1BGL rdf:type loinc:2339-0 ;
     rdfs:label "Kaitlyn Visit 1 Blood Glucose Level"^^xsd:string ;
     sio:hasValue "198"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -84,7 +84,7 @@ pto-kb:KaitlynVisit1BGL rdf:type loinc:2339-0 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1PGL rdf:type loinc:1518-0 ;
+dpo-kb:KaitlynVisit1PGL rdf:type loinc:1518-0 ;
     rdfs:label "Kaitlyn Visit 1 Postprandial Glucose Level"^^xsd:string ;
     sio:hasValue "160"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -94,7 +94,7 @@ pto-kb:KaitlynVisit1PGL rdf:type loinc:1518-0 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:KaitlynVisit1HbA1c rdf:type loinc:59261-8 ;
     rdfs:label "Kaitlyn Visit 1 HbA1c - Estimated Average Glucose"^^xsd:string ;
     sio:hasValue "183"^^xsd:decimal ;
     rdfs:comment "8%"^^xsd:string ;
@@ -105,7 +105,7 @@ pto-kb:KaitlynVisit1HbA1c rdf:type loinc:59261-8 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1FBGL rdf:type loinc:1558-6 ;
+dpo-kb:KaitlynVisit1FBGL rdf:type loinc:1558-6 ;
     rdfs:label "Kaitlyn Visit 1 Fasting Blood Glucose Level"^^xsd:string ;
     sio:hasValue "195"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -115,7 +115,7 @@ pto-kb:KaitlynVisit1FBGL rdf:type loinc:1558-6 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1Triglycerides rdf:type loinc:12228-3 ;
+dpo-kb:KaitlynVisit1Triglycerides rdf:type loinc:12228-3 ;
     rdfs:label "Kaitlyn Visit 1 Triglycerides"^^xsd:string ;
     sio:hasValue "167"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -125,7 +125,7 @@ pto-kb:KaitlynVisit1Triglycerides rdf:type loinc:12228-3 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1LDL rdf:type loinc:2089-1 ;
+dpo-kb:KaitlynVisit1LDL rdf:type loinc:2089-1 ;
     rdfs:label "Kaitlyn Visit 1 LDL"^^xsd:string ;
     sio:hasValue "123"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -135,7 +135,7 @@ pto-kb:KaitlynVisit1LDL rdf:type loinc:2089-1 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit1HDL rdf:type loinc:2085-9 ;
+dpo-kb:KaitlynVisit1HDL rdf:type loinc:2085-9 ;
     rdfs:label "Kaitlyn Visit 1 HDL"^^xsd:string ;
     sio:hasValue "29"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -145,7 +145,7 @@ pto-kb:KaitlynVisit1HDL rdf:type loinc:2085-9 ;
           sio:hasValue "1"^^xsd:integer 
     ] .
 
-pto-kb:KaitlynVisit2PGL rdf:type loinc:1518-0 ;
+dpo-kb:KaitlynVisit2PGL rdf:type loinc:1518-0 ;
     rdfs:label "Kaitlyn Visit 2 Postprandial Glucose Level"^^xsd:string ;
     sio:hasValue "160"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -155,7 +155,7 @@ pto-kb:KaitlynVisit2PGL rdf:type loinc:1518-0 ;
           sio:hasValue "90"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit2HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:KaitlynVisit2HbA1c rdf:type loinc:59261-8 ;
     rdfs:label "Kaitlyn Visit 2 HbA1c - Estimated Average Glucose"^^xsd:string ;
     sio:hasValue "200"^^xsd:decimal ;
     rdfs:comment "8.6%"^^xsd:string ;
@@ -166,7 +166,7 @@ pto-kb:KaitlynVisit2HbA1c rdf:type loinc:59261-8 ;
           sio:hasValue "90"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit2FBGL rdf:type loinc:1558-6 ;
+dpo-kb:KaitlynVisit2FBGL rdf:type loinc:1558-6 ;
     rdfs:label "Kaitlyn Visit 2 Fasting Blood Glucose Level"^^xsd:string ;
     sio:hasValue "205"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -176,7 +176,7 @@ pto-kb:KaitlynVisit2FBGL rdf:type loinc:1558-6 ;
           sio:hasValue "90"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit3PGL rdf:type loinc:1518-0 ;
+dpo-kb:KaitlynVisit3PGL rdf:type loinc:1518-0 ;
     rdfs:label "Kaitlyn Visit 3 Postprandial Glucose Level"^^xsd:string ;
     sio:hasValue "205"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -186,7 +186,7 @@ pto-kb:KaitlynVisit3PGL rdf:type loinc:1518-0 ;
           sio:hasValue "455"^^xsd:integer
     ].
 
-pto-kb:KaitlynVisit3HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:KaitlynVisit3HbA1c rdf:type loinc:59261-8 ;
     rdfs:label "Kaitlyn Visit 3 HbA1c - Estimated Average Glucose"^^xsd:string ;
     sio:hasValue "206"^^xsd:decimal ;
     rdfs:comment "8.8%"^^xsd:string ;
@@ -197,7 +197,7 @@ pto-kb:KaitlynVisit3HbA1c rdf:type loinc:59261-8 ;
           sio:hasValue "455"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit3FBGL rdf:type loinc:1558-6 ;
+dpo-kb:KaitlynVisit3FBGL rdf:type loinc:1558-6 ;
     rdfs:label "Kaitlyn Visit 3 Fasting Blood Glucose Level"^^xsd:string ;
     sio:hasValue "157.5"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -207,7 +207,7 @@ pto-kb:KaitlynVisit3FBGL rdf:type loinc:1558-6 ;
           sio:hasValue "455"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit4PGL rdf:type loinc:1518-0 ;
+dpo-kb:KaitlynVisit4PGL rdf:type loinc:1518-0 ;
     rdfs:label "Kaitlyn Visit 4 Postprandial Glucose Level"^^xsd:string ;
     sio:hasValue "180"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -217,7 +217,7 @@ pto-kb:KaitlynVisit4PGL rdf:type loinc:1518-0 ;
           sio:hasValue "545"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit4HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:KaitlynVisit4HbA1c rdf:type loinc:59261-8 ;
     rdfs:label "Kaitlyn Visit 4 HbA1c - Estimated Average Glucose"^^xsd:string ;
     sio:hasValue "186"^^xsd:decimal ;
     rdfs:comment "8.1%"^^xsd:string ;
@@ -228,7 +228,7 @@ pto-kb:KaitlynVisit4HbA1c rdf:type loinc:59261-8 ;
           sio:hasValue "545"^^xsd:integer
     ] .
 
-pto-kb:KaitlynVisit4FBGL rdf:type loinc:1558-6 ;
+dpo-kb:KaitlynVisit4FBGL rdf:type loinc:1558-6 ;
     rdfs:label "Kaitlyn Visit 4 Fasting Blood Glucose Level"^^xsd:string ;
     sio:hasValue "110"^^xsd:decimal ;
     sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -239,9 +239,9 @@ pto-kb:KaitlynVisit4FBGL rdf:type loinc:1558-6 ;
     ] .
 
 
-pto-kb:Kaitlyn rdf:type sio:Patient ;
+dpo-kb:Kaitlyn rdf:type sio:Patient ;
   rdfs:label "Kaitlyn" ;
-  pto:hasDiagnosis [ rdf:type pto:Diabetes ] ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
@@ -279,13 +279,13 @@ pto-kb:Kaitlyn rdf:type sio:Patient ;
         [ rdf:type sio:Birthing ;
           sio:existsAt [ sio:hasValue "1950-08-18" ] ] ;
     sio:hasAttribute
-        [ rdf:type pto:Fatigue ] ,
-        [ rdf:type pto:Polyuria ] ,
-        [ rdf:type pto:Polyphagia ] ,
-        [ rdf:type pto:Polydipsia ] ,
-        [ rdf:type pto:FamilyHistoryOfDiabetes ] ,
-        [ rdf:type pto:PersonalHistoryOfGestationalDiabetes ] ,
-        [ rdf:type pto:Arthritis ] ,
+        [ rdf:type dpo:Fatigue ] ,
+        [ rdf:type dpo:Polyuria ] ,
+        [ rdf:type dpo:Polyphagia ] ,
+        [ rdf:type dpo:Polydipsia ] ,
+        [ rdf:type dpo:FamilyHistoryOfDiabetes ] ,
+        [ rdf:type dpo:PersonalHistoryOfGestationalDiabetes ] ,
+        [ rdf:type dpo:Arthritis ] ,
         [ rdf:type sio:Age ;
           rdfs:label "Age"^^xsd:string ;
           sio:hasValue "71"^^xsd:integer ;
@@ -306,25 +306,25 @@ pto-kb:Kaitlyn rdf:type sio:Patient ;
           sio:hasValue "Female" ] ,
         [ rdf:type sio:Disease ;
           sio:hasValue "Diabetes"^^xsd:string ] ,
-        pto-kb:KaitlynVisit1BMI ,
-        pto-kb:KaitlynVisit1Height ,
-        pto-kb:KaitlynVisit1Weight ,
-        pto-kb:KaitlynVisit1BGL ,
-        pto-kb:KaitlynVisit1PGL ,
-        pto-kb:KaitlynVisit1HbA1c ,
-        pto-kb:KaitlynVisit1FBGL ,
-        pto-kb:KaitlynVisit1Triglycerides ,
-        pto-kb:KaitlynVisit1LDL ,
-        pto-kb:KaitlynVisit1HDL , 
-        pto-kb:KaitlynVisit2PGL ,
-        pto-kb:KaitlynVisit2HbA1c ,
-        pto-kb:KaitlynVisit2FBGL ,
-        pto-kb:KaitlynVisit3PGL ,
-        pto-kb:KaitlynVisit3HbA1c ,
-        pto-kb:KaitlynVisit3FBGL ,
-        pto-kb:KaitlynVisit4PGL ,
-        pto-kb:KaitlynVisit4HbA1c ,
-        pto-kb:KaitlynVisit4FBGL ;
+        dpo-kb:KaitlynVisit1BMI ,
+        dpo-kb:KaitlynVisit1Height ,
+        dpo-kb:KaitlynVisit1Weight ,
+        dpo-kb:KaitlynVisit1BGL ,
+        dpo-kb:KaitlynVisit1PGL ,
+        dpo-kb:KaitlynVisit1HbA1c ,
+        dpo-kb:KaitlynVisit1FBGL ,
+        dpo-kb:KaitlynVisit1Triglycerides ,
+        dpo-kb:KaitlynVisit1LDL ,
+        dpo-kb:KaitlynVisit1HDL , 
+        dpo-kb:KaitlynVisit2PGL ,
+        dpo-kb:KaitlynVisit2HbA1c ,
+        dpo-kb:KaitlynVisit2FBGL ,
+        dpo-kb:KaitlynVisit3PGL ,
+        dpo-kb:KaitlynVisit3HbA1c ,
+        dpo-kb:KaitlynVisit3FBGL ,
+        dpo-kb:KaitlynVisit4PGL ,
+        dpo-kb:KaitlynVisit4HbA1c ,
+        dpo-kb:KaitlynVisit4FBGL ;
         sio:hasRole [
             rdf:type sio:000715
         ];
@@ -380,17 +380,17 @@ pto-kb:Kaitlyn rdf:type sio:Patient ;
         sio:hasAttribute heals-kb:reasoning-line-P000000 .
 
 
-pto-kb:insurance-Kaitlyn a fhir:Coverage;
+dpo-kb:insurance-Kaitlyn a fhir:Coverage;
     fhir:nodeRole fhir:treeRoot;
     fhir:Coverage.identifier [ fhir:value "Blue Cross NC" ] ;
-    fhir:Coverage.subscriber [ fhir:link pto-kb:Kaitlyn ] ;
-    fhir:Coverage.beneficiary [ fhir:link pto-kb:Kaitlyn ] .
+    fhir:Coverage.subscriber [ fhir:link dpo-kb:Kaitlyn ] ;
+    fhir:Coverage.beneficiary [ fhir:link dpo-kb:Kaitlyn ] .
 
-pto-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
+dpo-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:Questionnaire.subject [
-       fhir:link pto-kb:Kaitlyn;
+       fhir:link dpo-kb:Kaitlyn;
        fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Kaitlyn" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];
@@ -436,11 +436,11 @@ pto-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
        ]
     ] .
 
-  pto-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
+  dpo-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:QuestionnaireResponse.subject [
-       fhir:link pto-kb:Kaitlyn;
+       fhir:link dpo-kb:Kaitlyn;
        fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Kaitlyn" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];

@@ -1,5 +1,5 @@
-@prefix pto: <http://purl.org/twc/PTO/ont/> .
-@prefix pto-kb: <http://purl.org/twc/PTO/kb/> .
+@prefix dpo: <http://purl.org/twc/DPO/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
 
 @prefix heals: <http://purl.org/twc/HEALS/ont/> .
 @prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
@@ -43,7 +43,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-pto-kb:BethanyVisit1BMI rdf:type ncit:C138901 ;
+dpo-kb:BethanyVisit1BMI rdf:type ncit:C138901 ;
           rdfs:label "BMI"^^xsd:string ;
           sio:hasValue "32.2"^^xsd:decimal ; # obese
           sio:hasUnit [ rdf:type uo:0000086 ; rdfs:label "kilogram per square meter"^^xsd:string ] ;
@@ -52,7 +52,7 @@ pto-kb:BethanyVisit1BMI rdf:type ncit:C138901 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit1BGL rdf:type loinc:2339-0 ;
+dpo-kb:BethanyVisit1BGL rdf:type loinc:2339-0 ;
           rdfs:label "Blood Glucose Level"^^xsd:string ;
           sio:hasValue "207"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -61,7 +61,7 @@ pto-kb:BethanyVisit1BGL rdf:type loinc:2339-0 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit1HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:BethanyVisit1HbA1c rdf:type loinc:59261-8 ;
           rdfs:label "HbA1c - Estimated Average Glucose"^^xsd:string ;
           sio:hasValue "177"^^xsd:decimal ;
           rdfs:comment "7.8%"^^xsd:string ;
@@ -71,7 +71,7 @@ pto-kb:BethanyVisit1HbA1c rdf:type loinc:59261-8 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit1FBGL rdf:type loinc:1558-6 ;
+dpo-kb:BethanyVisit1FBGL rdf:type loinc:1558-6 ;
           rdfs:label "Fasting Blood Glucose Level"^^xsd:string ;
           sio:hasValue "147"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -80,7 +80,7 @@ pto-kb:BethanyVisit1FBGL rdf:type loinc:1558-6 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit1Triglycerides rdf:type loinc:12228-3 ;
+dpo-kb:BethanyVisit1Triglycerides rdf:type loinc:12228-3 ;
           rdfs:label "Triglycerides"^^xsd:string ;
           sio:hasValue "167"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -89,7 +89,7 @@ pto-kb:BethanyVisit1Triglycerides rdf:type loinc:12228-3 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit1LDL rdf:type loinc:2089-1 ;
+dpo-kb:BethanyVisit1LDL rdf:type loinc:2089-1 ;
           rdfs:label "LDL"^^xsd:string ;
           sio:hasValue "199"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -98,7 +98,7 @@ pto-kb:BethanyVisit1LDL rdf:type loinc:2089-1 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit1HDL rdf:type loinc:2085-9 ;
+dpo-kb:BethanyVisit1HDL rdf:type loinc:2085-9 ;
           rdfs:label "HDL"^^xsd:string ;
           sio:hasValue "32"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -107,7 +107,7 @@ pto-kb:BethanyVisit1HDL rdf:type loinc:2085-9 ;
                 rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
                 sio:hasValue "1"^^xsd:integer
           ] .
-pto-kb:BethanyVisit2HbA1c rdf:type loinc:59261-8 ;
+dpo-kb:BethanyVisit2HbA1c rdf:type loinc:59261-8 ;
           rdfs:label "HbA1c - Estimated Average Glucose"^^xsd:string ;
           sio:hasValue "171"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -116,7 +116,7 @@ pto-kb:BethanyVisit2HbA1c rdf:type loinc:59261-8 ;
                 rdfs:label "Visit 2 - 04/01/2020"^^xsd:string ;
                 sio:hasValue "90"^^xsd:integer
           ] .
-pto-kb:BethanyVisit2FBGL rdf:type loinc:1558-6 ;
+dpo-kb:BethanyVisit2FBGL rdf:type loinc:1558-6 ;
           rdfs:label "Fasting Blood Glucose Level"^^xsd:string ;
           sio:hasValue "165"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -125,7 +125,7 @@ pto-kb:BethanyVisit2FBGL rdf:type loinc:1558-6 ;
                 rdfs:label "Visit 2 - 04/01/2020"^^xsd:string ;
                 sio:hasValue "90"^^xsd:integer
           ] .
-pto-kb:BethanyVisit2PGL rdf:type loinc:1518-0 ;
+dpo-kb:BethanyVisit2PGL rdf:type loinc:1518-0 ;
           rdfs:label "Postprandial Glucose Level"^^xsd:string ;
           sio:hasValue "180"^^xsd:decimal ;
           sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
@@ -137,8 +137,8 @@ pto-kb:BethanyVisit2PGL rdf:type loinc:1518-0 ;
 
 
 # --> after intial visit, referred to a diabetes education program treated for dyslipidemia (based on high LDL and triglycerides, and polyuria and fatigue). 
-pto-kb:Bethany rdf:type sio:Patient ;
-  pto:hasDiagnosis [ rdf:type pto:Diabetes ] ;
+dpo-kb:Bethany rdf:type sio:Patient ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
@@ -189,12 +189,12 @@ pto-kb:Bethany rdf:type sio:Patient ;
           sio:hasValue "Female" ] ,
         [ rdf:type sio:Disease ;
           sio:hasValue "Diabetes"^^xsd:string ] ,
-        [ rdf:type pto:UrinaryTractInfection ] ,
-        [ rdf:type pto:Fatigue ] ,
-        [ rdf:type pto:Polyuria ] ,
-        [ rdf:type pto:FrequentUrination ] ,
-        [ rdf:type pto:FamilyHistoryOfDiabetes ] ,
-        [ rdf:type pto:SedentaryLifestyle ] ,
+        [ rdf:type dpo:UrinaryTractInfection ] ,
+        [ rdf:type dpo:Fatigue ] ,
+        [ rdf:type dpo:Polyuria ] ,
+        [ rdf:type dpo:FrequentUrination ] ,
+        [ rdf:type dpo:FamilyHistoryOfDiabetes ] ,
+        [ rdf:type dpo:SedentaryLifestyle ] ,
         [ rdf:type sio:Age ;
           rdfs:label "Age"^^xsd:string ;
           sio:hasValue "64"^^xsd:integer ;
@@ -224,16 +224,16 @@ pto-kb:Bethany rdf:type sio:Patient ;
                 sio:hasValue "1"^^xsd:integer
           ]
         ] ,
-        pto-kb:BethanyVisit1BMI ,
-        pto-kb:BethanyVisit1BGL ,
-        pto-kb:BethanyVisit1HbA1c ,
-        pto-kb:BethanyVisit1FBGL ,
-        pto-kb:BethanyVisit1Triglycerides ,
-        pto-kb:BethanyVisit1LDL ,
-        pto-kb:BethanyVisit1HDL ,
-        pto-kb:BethanyVisit2HbA1c ,
-        pto-kb:BethanyVisit2FBGL ,
-        pto-kb:BethanyVisit2PGL ;
+        dpo-kb:BethanyVisit1BMI ,
+        dpo-kb:BethanyVisit1BGL ,
+        dpo-kb:BethanyVisit1HbA1c ,
+        dpo-kb:BethanyVisit1FBGL ,
+        dpo-kb:BethanyVisit1Triglycerides ,
+        dpo-kb:BethanyVisit1LDL ,
+        dpo-kb:BethanyVisit1HDL ,
+        dpo-kb:BethanyVisit2HbA1c ,
+        dpo-kb:BethanyVisit2FBGL ,
+        dpo-kb:BethanyVisit2PGL ;
         sio:hasRole [
             rdf:type sio:000715
         ];
@@ -302,17 +302,17 @@ pto-kb:Bethany rdf:type sio:Patient ;
         sio:000008 heals-kb:reasoning-line-P000000 .
 
 
-pto-kb:insurance-Bethany a fhir:Coverage;
+dpo-kb:insurance-Bethany a fhir:Coverage;
     fhir:nodeRole fhir:treeRoot;
     fhir:Coverage.identifier [ fhir:value "Blue Cross NC" ] ;
-    fhir:Coverage.subscriber [ fhir:link pto-kb:Bethany ] ;
-    fhir:Coverage.beneficiary [ fhir:link pto-kb:Bethany ] .
+    fhir:Coverage.subscriber [ fhir:link dpo-kb:Bethany ] ;
+    fhir:Coverage.beneficiary [ fhir:link dpo-kb:Bethany ] .
 
-pto-kb:questionnaire-Bethany a fhir:Questionnaire;
+dpo-kb:questionnaire-Bethany a fhir:Questionnaire;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:Questionnaire.subject [
-       fhir:link pto-kb:Bethany;
+       fhir:link dpo-kb:Bethany;
        fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Bethany" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];
@@ -358,11 +358,11 @@ pto-kb:questionnaire-Bethany a fhir:Questionnaire;
        ]
     ] .
 
-  pto-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
+  dpo-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:QuestionnaireResponse.subject [
-       fhir:link pto-kb:Bethany;
+       fhir:link dpo-kb:Bethany;
        fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Bethany" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];
