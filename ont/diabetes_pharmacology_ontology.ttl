@@ -1194,27 +1194,3 @@ dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     rdfs:label "Glimepiride"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
-
-
-dpo:DiabetesAssociatedSymptom rdf:type owl:Class ;
-    rdfs:label "Diabetes Associated Symptom" ;
-    owl:equivalentClass 
-        [ rdf:type owl:Class ;
-            owl:unionOf (
-                dpo:Polydipsia
-                dpo:Polyphagia
-                dpo:Obese
-                dpo:DiabetesFastingBloodGlucoseLevel
-                dpo:DiabetesTwoHourBloodGlucoseLevel
-                dpo:DiabetesHbA1CLevel
-                dpo:Polyuria
-                dpo:Dysuria
-                dpo:UrinaryTractInfection
-                dpo:FrequentUrination
-                dpo:BlurredVision
-                dpo:Fatigue
-                dpo:FamilyHistoryOfDiabetes
-                dpo:PersonalHistoryOfGestationalDiabetes
-            )
-        ] ;
-    rdfs:subClassOf dpo:Symptom .

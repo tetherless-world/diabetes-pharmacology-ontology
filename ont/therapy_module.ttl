@@ -1,0 +1,662 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> . 
+@prefix dpo: <http://purl.org/twc/DPO/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+
+@prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
+@prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_>.
+@prefix scto: <https://bioportal.bioontology.org/ontologies/SCTO#SCTO_>.
+@prefix dto: <https://bioportal.bioontology.org/ontologies/SCTO#DTO:>.
+@prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
+@prefix rxnorm: <http://purl.bioontology.org/ontology/RXNORM/>.
+
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sct: <http://snomed.info/sct/>.
+
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
+@prefix symp: <http://purl.obolibrary.org/obo/SYMP_> .
+@prefix hp: <http://purl.obolibrary.org/obo/HP_> .
+@prefix sio: <http://semanticscience.org/resource/> .
+
+dpo:TherapyFactor rdf:type owl:Class ;
+    rdfs:label "Therapy Factor"^^xsd:string ;
+    rdfs:subClassOf sio:Attribute .
+
+dpo:Therapy rdf:type owl:Class ;
+    rdfs:label "Therapy" ;
+    owl:disjointWith sio:Attribute .
+
+sio:Attribute rdf:type owl:Class ;
+    rdfs:label "attribute"^^xsd:string .
+    
+sio:hasAttribute rdf:type owl:ObjectProperty ;
+    rdfs:label "has attribute" .
+
+dpo:DiabetesAssociatedFavorableTherapyFactor rdf:type owl:Class ;
+    rdfs:label "Diabetes Associated Favorable Therapy Factor" ;
+    owl:equivalentClass 
+        [ rdf:type owl:Class ;
+            owl:unionOf (
+              dpo:HighEfficacy
+              dpo:LowCost
+              dpo:WeightLossPotential
+              dpo:NoKnownHypoglycemiaRisk
+              dpo:PotentialASCVDBenefit
+              dpo:PotentialHeartFailureBenefit
+              dpo:PotentialDKDBenefit
+            )
+        ] ;
+    rdfs:subClassOf dpo:TherapyFactor .
+
+dpo:FavorableDiabetesTherapy rdf:type owl:Class  ;
+    owl:equivalentClass [
+    rdf:type owl:Class ;
+      owl:intersectionOf (
+       dpo:AntihyperglycemicTreatment
+        [ rdf:type owl:Restriction ;
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:DiabetesAssociatedFavorableTherapyFactor ] 
+     )
+    ] ;
+    rdfs:subClassOf dpo:Therapy ;
+    rdfs:label "Diabetes Therapy" .
+
+dpo:LowEfficacyDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:LowEfficacy
+            ] 
+        )
+    ];
+    rdfs:label "Low Efficacy Diabetes Therapy" .
+
+dpo:IntermediateEfficacyDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:IntermediateEfficacy
+            ] 
+        )
+    ];
+    rdfs:label "Intermediate Efficacy Diabetes Therapy" .
+
+dpo:HighEfficacyDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:HighEfficacy
+            ] 
+        )
+    ];
+    rdfs:label "High Efficacy Diabetes Therapy" .
+
+dpo:WeightLossDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:WeightLossPotential
+            ] 
+        )
+    ];
+    rdfs:label "Weight Loss Potential Diabetes Therapy" .
+
+dpo:WeightGainDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:WeightGainPotential
+            ] 
+        )
+    ];
+    rdfs:label "Weight Gain Potential Diabetes Therapy" .
+
+dpo:WeightNeutralDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:NeutralWeightChange
+            ] 
+        )
+    ];
+    rdfs:label "Weight Neutral Diabetes Therapy" .
+
+dpo:NoKnownHypoglycemiaRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:NoKnownHypoglycemiaRisk
+            ] 
+        )
+    ];
+    rdfs:label "No Known Hypoglycemia Risk Diabetes Therapy" .
+
+dpo:KnownHypoglycemiaRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:KnownHypoglycemiaRisk
+            ] 
+        )
+    ];
+    rdfs:label "Known Hypoglycemia Risk Diabetes Therapy" .
+
+dpo:PotentialASCVDBenefitDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:PotentialASCVDBenefit
+            ] 
+        )
+    ];
+    rdfs:label "Potential ASCVD Benefit Diabetes Therapy" .
+
+dpo:IncreasedASCVDRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:IncreasedASCVDRisk
+            ] 
+        )
+    ];
+    rdfs:label "Increased ASCVD Risk Diabetes Therapy" .
+
+dpo:NeutralASCVDRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:NeutralASCVDRisk
+            ] 
+        )
+    ];
+    rdfs:label "Neutral ASCVD Risk Diabetes Therapy" .
+
+dpo:PotentialHeartFailureBenefitDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:PotentialHeartFailureBenefit
+            ] 
+        )
+    ];
+    rdfs:label "Potential Heart Failure Benefit Diabetes Therapy" .
+
+dpo:IncreasedHeartFailureRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:IncreasedHeartFailureRisk
+            ] 
+        )
+    ];
+    rdfs:label "Increased Heart Failure Risk Diabetes Therapy" .
+
+dpo:NeutralHeartFailureRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:NeutralHeartFailureRisk
+            ] 
+        )
+    ];
+    rdfs:label "Neutral Heart Failure Risk Diabetes Therapy" .
+
+dpo:LowCostDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:LowCost
+            ] 
+        )
+    ];
+    rdfs:label "Low Cost Diabetes Therapy" .
+
+dpo:HighCostDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:HighCost
+            ] 
+        )
+    ];
+    rdfs:label "High Cost Diabetes Therapy" .
+
+dpo:PotentialDKDBenefitDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:PotentialDKDBenefit
+            ] 
+        )
+    ];
+    rdfs:label "Potential DKD Benefit Diabetes Therapy" .
+
+dpo:IncreasedDKDRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:IncreasedDKDRisk
+            ] 
+        )
+    ];
+    rdfs:label "Increased DKD Risk Diabetes Therapy" .
+
+dpo:NeutralDKDRiskDiabetesTherapy rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            dpo:AntihyperglycemicTreatment 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:NeutralDKDRisk
+            ] 
+        )
+    ];
+    rdfs:label "Neutral DKD Risk Diabetes Therapy" .
+
+dpo:Biguanide rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
+    owl:equivalentClass chebi:3095 , ncit:C98234 ;
+    rdfs:label "Biguanide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. [Definition Source: NCI]"^^xsd:string .
+
+dpo:Metformin rdfs:subClassOf dpo:Biguanide ;
+    owl:equivalentClass omit:0009750 , chebi:6801 , loinc:55548-2, ncit:C61612 ;
+    rdfs:label "Metformin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighEfficacy ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralWeightChange ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NoKnownHypoglycemiaRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralHeartFailureRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:LowCost ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
+
+dpo:Sulfonylurea rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
+    owl:equivalentClass chebi:76983 , ncit:C97936 ;
+    rdfs:label "Sulfonylurea"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighEfficacy ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:WeightGainPotential ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:KnownHypoglycemiaRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralASCVDRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralHeartFailureRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:LowCost ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
+
+dpo:Glyburide rdfs:subClassOf dpo:Sulfonylurea ;
+    owl:equivalentClass chebi:5441 , ncit:C29076 ;
+    rdfs:label "Glyburide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]"^^xsd:string .
+
+dpo:Glipizide rdfs:subClassOf dpo:Sulfonylurea ;
+    owl:equivalentClass chebi:5384 , ncit:C29074 ;
+    rdfs:label "Glipizide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]"^^xsd:string .
+
+dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
+    owl:equivalentClass chebi:5383 , ncit:C29073 ;
+    rdfs:label "Glimepiride"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
+
+
+dpo:Thiazolidinedione rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
+    owl:equivalentClass chebi:50990 , ncit:C98241 ;
+    rdfs:label "Thiazolidinedione"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighEfficacy ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:WeightGainPotential ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NoKnownHypoglycemiaRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:IncreasedHeartFailureRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:LowCost ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
+
+dpo:Pioglitazone rdfs:subClassOf dpo:Thiazolidinedione ;
+    owl:equivalentClass chebi:8228 , ncit:C71633 ;
+    rdfs:label "Pioglitazone"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] .
+
+dpo:Rosiglitazone rdfs:subClassOf dpo:Thiazolidinedione ;
+    owl:equivalentClass chebi:50122 , ncit:C62076 ;
+    rdfs:label "Rosiglitazone"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. [Definition Source: NCI]"^^xsd:string .
+
+
+dpo:DPP4Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
+    owl:equivalentClass chebi:68612 , ncit:C98086 ;
+    rdfs:label "DPP-4 Inhibitor"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:IntermediateEfficacy ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralWeightChange ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NoKnownHypoglycemiaRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralASCVDRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighCost ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
+
+dpo:Sitagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
+    owl:equivalentClass chebi:40237 , ncit:C73838 ;
+    rdfs:label "Sitagliptin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]"^^xsd:string .
+
+dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
+    owl:equivalentClass chebi:71272 , ncit:C75983 ;
+    rdfs:label "Saxagliptin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:IncreasedHeartFailureRisk ] ] .
+
+dpo:Alogliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
+    owl:equivalentClass chebi:72323 , ncit:C76906 ;
+    rdfs:label "Alogliptin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]"^^xsd:string .
+
+dpo:Linagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
+    owl:equivalentClass chebi: , ncit:C83887 ;
+    rdfs:label "Linagliptin"^^xsd:string ;
+    rdfs:comment "68610"^^xsd:string ;
+    skos:definition "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]"^^xsd:string .
+
+
+dpo:GLP1RA rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
+    owl:equivalentClass chebi:71196 , ncit:C98085 ;
+    rdfs:label "GLP-1 RA" ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighEfficacy ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:WeightLossPotential ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NoKnownHypoglycemiaRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralHeartFailureRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighCost ] ] .
+
+dpo:Dulaglutide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass ncit:C169923 ;
+    rdfs:label "Dulaglutide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+dpo:Liraglutide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:71193 , ncit:C82239 ;
+    rdfs:label "Liraglutide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+dpo:Semaglutide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:167574 , ncit:C152328 ;
+    rdfs:label "Semaglutide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A polypeptide that contains a linear sequence of 31 amino acids joined together by peptide linkages. It is an agonist of glucagon-like peptide-1 receptors (GLP-1 AR) and used for the treatment of type 2 diabetes. [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+dpo:Lixisenatide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:85662 , ncit:C166988 ;
+    rdfs:label "Lixisenatide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A forty-four membered polypeptide consisting of L-His, Gly, L-Glu, Gly, L-Thr, L-Phe, L-Thr, L-Ser, L-Asp, L-Leu, L-Ser, L-Lys, L-Gln, L-Met, L-Glu, L-Glu, L-Glu, L-Ala, L-Val, L-Arg, L-Leu, L-Phe, L-Ile, L-Glu, L-Trp, L-Leu, L-Lys, L-Asn, Gly, Gly, LPro, L-Ser, L-Ser, Gly, L-Ala, L-Pro, L-Pro, L-Ser, L-Lys, L-Lys, L-Lys, L-Lys, L-Lys, and L-Lys-NH2 residues joined in sequence. Used as an adjunct to diet and exercise for the treatment of adults with type II diabetes. [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralASCVDRisk ] ] .
+
+dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:64073 , ncit:C65611 ;
+    rdfs:label "Exenatide"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralASCVDRisk ] ] .
+
+
+dpo:SGLT2Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
+    owl:equivalentClass chebi:73273, ncit:C98083 ;
+    rdfs:label "SGLT2 Inhibitor"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:IntermediateEfficacy ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:WeightLossPotential ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NoKnownHypoglycemiaRisk ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:HighCost ] ] .
+
+dpo:Empagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:82720 , ncit:C158136 ;
+    rdfs:label "Empagliflozin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+dpo:Canagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:73274 , ncit:C91018 ;
+    rdfs:label "Canagliflozin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+dpo:Dapagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:85078 , ncit:C78126 ;
+    rdfs:label "Dapagliflozin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. [Definition Source: NCI]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+dpo:Ertugliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:188719 , ncit:C166925 ;
+    rdfs:label "Ertugliflozin"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Ertugliflozin is in a class of medications called sodium-glucose co-transporter 2 (SGLT2) inhibitors. It lowers blood sugar by causing the kidneys to get rid of more glucose in the urine. Ertugliflozin is not used to treat type 1 diabetes (condition in which the body does not produce insulin and, therefore, cannot control the amount of sugar in the blood) or diabetic ketoacidosis (a serious condition that may develop if high blood sugar is not treated). [Definition Source: https://medlineplus.gov/druginfo/meds/a618011.html]"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] .
+
+

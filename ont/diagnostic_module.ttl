@@ -1,0 +1,549 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> . 
+@prefix dpo: <http://purl.org/twc/DPO/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+
+@prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
+@prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_>.
+@prefix scto: <https://bioportal.bioontology.org/ontologies/SCTO#SCTO_>.
+@prefix dto: <https://bioportal.bioontology.org/ontologies/SCTO#DTO:>.
+@prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
+@prefix rxnorm: <http://purl.bioontology.org/ontology/RXNORM/>.
+
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sct: <http://snomed.info/sct/>.
+
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
+@prefix symp: <http://purl.obolibrary.org/obo/SYMP_> .
+@prefix hp: <http://purl.obolibrary.org/obo/HP_> .
+@prefix sio: <http://semanticscience.org/resource/> .
+
+fhir:Patient rdf:type owl:Class ;
+    rdfs:label "patient" ;
+    owl:disjointWith sio:Attribute .
+
+sio:Attribute rdf:type owl:Class ;
+    rdfs:label "attribute"^^xsd:string .
+    
+sio:hasAttribute rdf:type owl:ObjectProperty ;
+    rdfs:label "has attribute" .
+
+dpo:Symptom rdf:type owl:Class ;
+    rdfs:label "Symptom" ;
+    rdfs:subClassOf sio:Attribute .
+
+dpo:DiabetesAssociatedSymptom rdf:type owl:Class ;
+    rdfs:label "Diabetes Associated Symptom" ;
+    owl:equivalentClass 
+        [ rdf:type owl:Class ;
+            owl:unionOf (
+                dpo:Polydipsia
+                dpo:Polyphagia
+                dpo:Obese
+                dpo:DiabetesFastingBloodGlucoseLevel
+                dpo:DiabetesTwoHourBloodGlucoseLevel
+                dpo:DiabetesHbA1CLevel
+                dpo:Polyuria
+                dpo:Dysuria
+                dpo:UrinaryTractInfection
+                dpo:FrequentUrination
+                dpo:BlurredVision
+                dpo:Fatigue
+                dpo:FamilyHistoryOfDiabetes
+                dpo:PersonalHistoryOfGestationalDiabetes
+            )
+        ] ;
+    rdfs:subClassOf dpo:Symptom .
+
+dpo:SymptomaticPatient rdf:type owl:Class ;
+    owl:intersectionOf (   
+        fhir:Patient 
+        [ rdf:type owl:Restriction ; 
+          owl:onProperty sio:hasAttribute ;
+          owl:someValuesFrom dpo:Symptom
+        ] 
+    );
+    rdfs:label "Symptomatic Patient" .
+
+dpo:DiabetesAssociatedSymptomPatient rdf:type owl:Class  ;
+    owl:equivalentClass [
+    rdf:type owl:Class ;
+      owl:intersectionOf (
+       fhir:Patient 
+        [ rdf:type owl:Restriction ;
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:DiabetesAssociatedSymptom ] 
+     )
+    ] ;
+    rdfs:subClassOf dpo:SymptomaticPatient ;
+    rdfs:label "clinically relevant weight gain patient" .
+
+dpo:DiabetesHbA1CLevelPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:DiabetesHbA1CLevel
+            ] 
+        )
+    ];
+    rdfs:label "Diabetes HbA1C Level Patient" .
+
+dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Prediabetes HbA1C Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Diabetes HbA1C Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:UrinarySystemSymptomPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:UrinarySystemSymptom
+            ] 
+        )
+    ];
+    rdfs:label "Urinary System Symptom Patient" .
+
+dpo:PolydipsiaPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:Polydipsia
+            ] 
+        )
+    ];
+    rdfs:label "Polydipsia Patient" .
+
+dpo:PolyphagiaPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:Polyphagia
+            ] 
+        )
+    ];
+    rdfs:label "Polyphagia Patient" .
+
+dpo:ObesePatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:Obese
+            ] 
+        )
+    ];
+    rdfs:label "Obese Patient" .
+
+dpo:DiabetesFastingBloodGlucoseLevelPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:DiabetesFastingBloodGlucoseLevel
+            ] 
+        )
+    ];
+    rdfs:label "Diabetes Fasting Blood Glucose Level Patient" .
+
+
+dpo:DiabetesTwoHourBloodGlucoseLevelPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:DiabetesTwoHourBloodGlucoseLevel
+            ] 
+        )
+    ];
+    rdfs:label "Diabetes Two Hour Blood Glucose Level Patient" .
+
+dpo:BlurredVisionPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:BlurredVision
+            ] 
+        )
+    ];
+    rdfs:label "Blurred Vision Patient" .
+
+
+dpo:FatiguedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:Fatigue
+            ] 
+        )
+    ];
+    rdfs:label "Fatigued Patient" .
+
+
+dpo:FamilyHistoryOfDiabetesPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:FamilyHistoryOfDiabetes
+            ] 
+        )
+    ];
+    rdfs:label "Family History of Diabetes Patient" .
+
+
+dpo:PersonalHistoryOfGestationalDiabetesPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:PersonalHistoryOfGestationalDiabetes
+            ] 
+        )
+    ];
+    rdfs:label "Personal History of Gestational Diabetes Patient" .
+
+
+
+dpo:UrinarySystemSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000486 ;
+    rdfs:label "Urinary System Symptom"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A symptom involving the urinary system."^^xsd:string .
+
+dpo:Polyuria rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+    owl:equivalentClass symp:0000565 ;
+    rdfs:label "Polyuria"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]"^^xsd:string .
+
+dpo:Dysuria rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+    owl:equivalentClass symp:0000485 ;
+    rdfs:label "Dysuria"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]"^^xsd:string .
+
+dpo:UrinaryTractInfection rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+    owl:equivalentClass ncit:C50791 , omit:0015388 ;
+    rdfs:label "Urinary Tract Infection (UTI)"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]"^^xsd:string .
+
+dpo:FrequentUrination rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+    owl:equivalentClass symp:0000563 , hp:0100515;
+    rdfs:label "Frequent Urination"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Increased frequency of urination. [Definition Source: HP:0100515]"^^xsd:string .
+
+dpo:FoulUrine rdf:type owl:Class ;
+    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Foul Urine"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+dpo:NutritionMetabolismAndDevelopmentSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000473 ;
+    rdfs:label "Nutrition Metabolism and Development Symptom"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A symptom involving the nutrition, metabolism, and/or development system."^^xsd:string .
+
+dpo:Polydipsia rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
+    owl:equivalentClass symp:0000560 ;
+    rdfs:label "Polydipsia"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]"^^xsd:string .
+
+dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
+    owl:equivalentClass symp:0000524 ;
+    rdfs:label "Polyphagia"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
+
+dpo:MeasurementFinding rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:PharmacotherapyFactor ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Measurement Finding"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:Underweight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Underweight"^^xsd:string ;
+    rdfs:comment "BMI<18.5"^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:NormalWeight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Normal Weight"^^xsd:string ;
+    rdfs:comment "18.5<BMI<24.9"^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:Overweight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Overweight"^^xsd:string ;
+    rdfs:comment "25<BMI<29.9"^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:Obese rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    owl:equivalentClass symp:0020018 , ncit:C3283;
+    rdfs:label "Obese"^^xsd:string ;
+    rdfs:comment "30<BMI"^^xsd:string ;
+    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string .
+
+dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:OptimalLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Optimal LDL Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:NearOptimalLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Near Optimal LDL Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Borderline High LDL Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:HighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "High LDL Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:VeryHighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Very High LDL Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:NormalTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Normal Triglyceride Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Borderline High Triglyceride Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:HighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "High Triglyceride Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:label "Very High Triglyceride Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:VisionSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000320 ;
+    rdfs:label "Vision Symptom"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A symptom involving visual impairment."^^xsd:string .
+
+dpo:BlurredVision rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:VisionSymptom ;
+    owl:equivalentClass symp:0000012 ;
+    rdfs:label "Blurred Vision"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]"^^xsd:string .
+
+dpo:NeurologicalAndPhysiologicalSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000410 ;
+    rdfs:label "Neurological and Physiological Symptom"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:Fatigue rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:NeurologicalAndPhysiologicalSymptom ;
+    owl:equivalentClass symp:0019177 ;
+    rdfs:label "Fatigue"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]"^^xsd:string .
+
+dpo:MusculoskeletalSystemSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000891 ;
+    rdfs:label "Musculoskeletal System Symptom"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A symptom involving the musculoskeletal system."^^xsd:string .
+
+dpo:Arthritis rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
+    owl:equivalentClass symp:0019169 ;
+    rdfs:label "Arthritis"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]"^^xsd:string .
+
+dpo:PeripheralNeuropathy rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
+    owl:equivalentClass symp:0000352 ;
+    rdfs:label "Peripheral Neuropathy"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:FetalMacrosomia rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PharmacotherapyFactor ;
+    owl:equivalentClass omit:0006531 , ncit:C113486 , hp:0001520 ;
+    rdfs:label "Fetal Macrosomia"^^xsd:string ;
+    rdfs:comment "gave birth to a child weighing more than 9 lbs"^^xsd:string ;
+    skos:definition "A fetus exceeding 4500 grams. [Definition Source: NCI][attribution: NICHD]"^^xsd:string ;
+    skos:defintion "The term large for gestational age applies to babies whose birth weight lies above the 90th percentile for that gestational age. [Definition Source: HP:0001520]"^^xsd:string .
+
+dpo:Hyperlipidemia rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PharmacotherapyFactor ;
+    owl:equivalentClass ncit:C34707 ;
+    rdfs:label "Hyperlipidemia"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Elevated levels of lipids in the blood. [Definition Source: NCI]"^^xsd:string .
+
+dpo:Hypertension rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PharmacotherapyFactor ;
+    owl:equivalentClass ncit:C3117 ;
+    rdfs:label "Hypertension"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "Blood pressure that is abnormally high. [Definition Source: NCI]"^^xsd:string .
+
+dpo:History rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PharmacotherapyFactor ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "History"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:FamilyHistory rdf:type owl:Class ;
+    rdfs:subClassOf dpo:History ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Family History"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:PersonalHistory rdf:type owl:Class ;
+    rdfs:subClassOf dpo:History ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Personal History"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:FamilyHistoryOfCAD rdf:type owl:Class ;
+    rdfs:subClassOf dpo:FamilyHistory ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Family History of Coronary Artery Disease"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:FamilyHistoryOfDiabetes rdf:type owl:Class ;
+    rdfs:subClassOf dpo:FamilyHistory ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Family History of Diabetes"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:PersonalHistoryOfGestationalDiabetes rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PersonalHistory ;
+#    owl:equivalentClass symp: ;
+    rdfs:label "Personal History of Gestational Diabetes"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+
+dpo-kb:diabetesAssociatedSymptom rdf:type dpo:DiabetesAssociatedSymptom .
+
+dpo-kb:urinarySystemSymptom rdf:type dpo:UrinarySystemSymptom .
+
+dpo-kb:polyuria rdf:type dpo:Polyuria.
+
+dpo-kb:dysuria rdf:type dpo:Dysuria .
+
+dpo-kb:urinaryTractInfection rdf:type dpo:UrinaryTractInfection.
+
+dpo-kb:foulUrine rdf:type dpo:FoulUrine.
+
+dpo-kb:frequentUrination rdf:type dpo:FrequentUrination .
