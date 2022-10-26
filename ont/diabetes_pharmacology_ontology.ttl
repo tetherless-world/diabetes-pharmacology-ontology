@@ -26,7 +26,6 @@
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-
 <http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl>
     rdf:type owl:Ontology ;
     dct:title "Diabetes Pharmacology Ontology"^^xsd:string ;
@@ -37,8 +36,6 @@
     dct:description "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies."^^xsd:string ;
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionIRI <http://purl.org/ontology/heals/dpo/0.1> .
-
-
 ncit:C138901 rdf:type owl:Class ;
     rdfs:label "Body Mass Index Finding"^^xsd:string .
 
@@ -64,28 +61,6 @@ dpo:Symptom rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]"^^xsd:string .
 
-dpo:DiabetesAssociatedSymptom rdf:type owl:Class ;
-    rdfs:label "Diabetes Associated Symptom" ;
-    owl:equivalentClass 
-        [ rdf:type owl:Class ;
-            owl:unionOf (
-                dpo:Polydipsia
-                dpo:Polyphagia
-                dpo:Obese
-                dpo:DiabetesFastingBloodGlucoseLevel
-                dpo:DiabetesTwoHourBloodGlucoseLevel
-                dpo:DiabetesHbA1CLevel
-                dpo:Polyuria
-                dpo:Dysuria
-                dpo:UrinaryTractInfection
-                dpo:FrequentUrination
-                dpo:BlurredVision
-                dpo:Fatigue
-                dpo:FamilyHistoryOfDiabetes
-                dpo:PersonalHistoryOfGestationalDiabetes
-            )
-        ] ;
-    rdfs:subClassOf dpo:Symptom .
 
 dpo:therapyFactorPreference rdf:type owl:ObjectProperty ;
     rdfs:label "therapy factor preference"^^xsd:string ;
@@ -102,13 +77,6 @@ dpo:therapyFactorIndifference rdf:type owl:ObjectProperty ;
 dpo:pharmacotherapyFactor rdf:type owl:ObjectProperty ;
     rdfs:label "risk factor"^^xsd:string ;
     rdfs:range dpo:PharmacotherapyFactor .
-
-# :patient dpo:pharmacotherapyFactor [ rdf:type dpo:AtheroscleroticCardiovascularDiseaseRisk ] .
-# :patient dpo:pharmacotherapyFactor [ rdf:type dpo:HeartFailureRisk ] .
-# :patient dpo:pharmacotherapyFactor [ rdf:type dpo:DiabeticKidneyDiseaseProgression ] .
-# :patient dpo:pharmacotherapyFactor [ rdf:type dpo:HypoglycemiaRisk ] .
-# :patient dpo:pharmacotherapyFactor [ rdf:type dpo:WeightChangePotential ] .
-# :patient dpo:pharmacotherapyFactor [ rdf:type dpo:Cost ] .
 
 dpo:hasDiagnosis rdf:type owl:ObjectProperty ;
     rdfs:subClassOf sio:hasAttribute ;
@@ -138,7 +106,6 @@ dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
 
 dpo:MeasurementFinding rdf:type owl:Class ; 
     rdfs:subClassOf dpo:DiagnosticFactor ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Measurement Finding"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -150,7 +117,6 @@ dpo:Underweight rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:UnderweightBMIRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Underweight"^^xsd:string ;
     rdfs:comment "BMI<18.5"^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -167,7 +133,6 @@ dpo:NormalWeight rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:NormalWeightBMIRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Normal Weight"^^xsd:string ;
     rdfs:comment "18.5<BMI<24.9"^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -185,7 +150,6 @@ dpo:Overweight rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:OverweightBMIRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Overweight"^^xsd:string ;
     rdfs:comment "25<BMI<29.9"^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -220,7 +184,6 @@ dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:PrediabetesFastingBloodGlucoseRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -233,7 +196,6 @@ dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:DiabetesFastingBloodGlucoseRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -257,7 +219,6 @@ dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:PrediabetesTwoHourBloodGlucoseRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -269,7 +230,6 @@ dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:DiabetesTwoHourBloodGlucoseRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -292,7 +252,6 @@ dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:PrediabetesHbA1CRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Prediabetes HbA1C Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -304,7 +263,6 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:DiabetesHbA1CRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Diabetes HbA1C Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -327,7 +285,6 @@ dpo:OptimalLDLLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:OptimalLDLRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Optimal LDL Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -344,7 +301,6 @@ dpo:NearOptimalLDLLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:NearOptimalLDLRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Near Optimal LDL Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -362,7 +318,6 @@ dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:BorderlineHighLDLRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Borderline High LDL Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -380,7 +335,6 @@ dpo:HighLDLLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:HighLDLRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "High LDL Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -398,7 +352,6 @@ dpo:VeryHighLDLLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:VeryHighLDLRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Very High LDL Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -415,7 +368,6 @@ dpo:NormalTriglycerideLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:NormalTriglycerideRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Normal Triglyceride Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -432,7 +384,6 @@ dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:BorderlineHighTriglycerideRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Borderline High Triglyceride Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -450,7 +401,6 @@ dpo:HighTriglycerideLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:HighTriglycerideRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "High Triglyceride Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -468,7 +418,6 @@ dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:VeryHighTriglycerideRange ] ) ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Very High Triglyceride Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -515,7 +464,6 @@ dpo:FrequentUrination rdf:type owl:Class ; # diabetes symptom
 
 dpo:FoulUrine rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Foul Urine"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -593,63 +541,54 @@ dpo:Hypertension rdf:type owl:Class ;
 
 dpo:History rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
-#    owl:equivalentClass symp: ;
     rdfs:label "History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:FamilyHistory rdf:type owl:Class ;
     rdfs:subClassOf dpo:History ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Family History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:PersonalHistory rdf:type owl:Class ;
     rdfs:subClassOf dpo:History ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Personal History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:FamilyHistoryOfCAD rdf:type owl:Class ;
     rdfs:subClassOf dpo:FamilyHistory ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Family History of Coronary Artery Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:FamilyHistoryOfDiabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:FamilyHistory ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Family History of Diabetes"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:PersonalHistoryOfGestationalDiabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:PersonalHistory ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Personal History of Gestational Diabetes"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:PersonalHistoryOfFebrileStates rdf:type owl:Class ;
     rdfs:subClassOf dpo:PersonalHistory ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Personal History of Febrile States"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:BilateralLowerExtremityBurningSensation rdf:type owl:Class ;
     rdfs:subClassOf dpo:NervousSystemSymptom ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Occasional Burning Sensation in Bilateral Lower Extremities"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:Disease rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -663,21 +602,18 @@ dpo:CoronaryArteryDisease rdf:type owl:Class ;
 
 dpo:Diabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Diabetes"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:RenalDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Renal Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Disease associated with kidneys, typically chronic kidney disease."^^xsd:string .
 
 dpo:CardiovascularDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Cardiovascular Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -740,7 +676,6 @@ dpo:Occupation rdf:type owl:Class ;
 
 dpo:SedentaryOccupation rdf:type owl:Class ;
     rdfs:subClassOf dpo:Occupation ;
-#    owl:equivalentClass symp: ;
     rdfs:label "Sedentary Occupation"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -1260,3 +1195,26 @@ dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
 
+
+dpo:DiabetesAssociatedSymptom rdf:type owl:Class ;
+    rdfs:label "Diabetes Associated Symptom" ;
+    owl:equivalentClass 
+        [ rdf:type owl:Class ;
+            owl:unionOf (
+                dpo:Polydipsia
+                dpo:Polyphagia
+                dpo:Obese
+                dpo:DiabetesFastingBloodGlucoseLevel
+                dpo:DiabetesTwoHourBloodGlucoseLevel
+                dpo:DiabetesHbA1CLevel
+                dpo:Polyuria
+                dpo:Dysuria
+                dpo:UrinaryTractInfection
+                dpo:FrequentUrination
+                dpo:BlurredVision
+                dpo:Fatigue
+                dpo:FamilyHistoryOfDiabetes
+                dpo:PersonalHistoryOfGestationalDiabetes
+            )
+        ] ;
+    rdfs:subClassOf dpo:Symptom .

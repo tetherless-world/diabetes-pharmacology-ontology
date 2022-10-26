@@ -1,0 +1,1133 @@
+@prefix heals: <http://purl.org/twc/HEALS/ont/> .
+@prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
+
+@prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
+@prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_>.
+@prefix scto: <https://bioportal.bioontology.org/ontologies/SCTO#SCTO_>.
+@prefix dto: <https://bioportal.bioontology.org/ontologies/SCTO#DTO:>.
+@prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
+@prefix rxnorm: <http://purl.bioontology.org/ontology/RXNORM/>.
+
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sct: <http://snomed.info/sct/>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+heals-kb:P000000 a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000"];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Vasquez" ];
+     fhir:HumanName.given [
+       fhir:value "Maria";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [
+    fhir:value "1982-08-18"^^xsd:date;
+    fhir:Element.extension [
+      fhir:index 0;
+      fhir:Extension.valueDateTime [ fhir:value "1982-08-18T17:11:00+01:00"^^xsd:dateTime ]
+    ]
+  ];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.line [
+       fhir:value "825 Shari Court";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Durham" ];
+     fhir:Address.state [ fhir:value "NC" ];
+     fhir:Address.postalCode [ fhir:value "27704" ];
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "1974-12-25"^^xsd:date ]
+     ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "M" ];
+       fhir:Coding.display [ fhir:value "Married" ]
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "3475963164" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ].
+
+  heals-kb:insurance-example a fhir:Coverage;
+    fhir:nodeRole fhir:treeRoot;
+    fhir:Coverage.identifier [ fhir:value "Blue Cross NC" ] ;
+    fhir:Coverage.subscriber [ fhir:link heals-kb:P000000; ];
+    fhir:Coverage.beneficiary [ fhir:link heals-kb:P000000; ]. 
+    
+  heals-kb:questionnaire-000001 a fhir:Questionnaire;
+    fhir:nodeRole fhir:treeRoot;
+    fhir:Resource.id [ fhir:value "0001"];
+    fhir:Questionnaire.subject [
+       fhir:link heals-kb:P000000;
+       fhir:Reference.reference [ fhir:value "http://purl.org/twc/HEALS/kb/P000000" ];
+       fhir:Reference.type [ fhir:value "Patient" ]
+    ];
+    fhir:Questionnaire.item [
+       fhir:index 0;
+       fhir:Questionnaire.item.linkId [ fhir:value "substanceUse" ];
+       fhir:Questionnaire.item.text [ fhir:value "Substance Use - Tobacco, Alcohol, Drugs" ];
+       fhir:Questionnaire.item.item [
+         fhir:index 0;
+         fhir:Questionnaire.item.linkId [ fhir:value "tobacco" ];
+         fhir:Questionnaire.item.text [ fhir:value "Tobacco" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ]
+       ],
+       [
+         fhir:index 1;
+         fhir:Questionnaire.item.linkId [ fhir:value "alcohol" ];
+         fhir:Questionnaire.item.text [ fhir:value "Alcohol" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ]
+       ],
+       [
+         fhir:index 2;
+         fhir:Questionnaire.item.linkId [ fhir:value "drugs" ];
+         fhir:Questionnaire.item.text [ fhir:value "Drugs" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ]
+       ],
+       [
+         fhir:index 3;
+         fhir:Questionnaire.item.linkId [ fhir:value "employment" ];
+         fhir:Questionnaire.item.text [ fhir:value "Employment" ];
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ],
+       [
+         fhir:index 4;
+         fhir:Questionnaire.item.linkId [ fhir:value "education" ];
+         fhir:Questionnaire.item.text [ fhir:value "Education" ];
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ],
+       [
+         fhir:index 5;
+         fhir:Questionnaire.item.linkId [ fhir:value "religion" ];
+         fhir:Questionnaire.item.text [ fhir:value "Religion" ];
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ]
+    ] .
+
+  heals-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
+    fhir:nodeRole fhir:treeRoot;
+    fhir:Resource.id [ fhir:value "0001"];
+    fhir:QuestionnaireResponse.subject [
+       fhir:link heals-kb:P000000;
+       fhir:Reference.reference [ fhir:value "http://purl.org/twc/HEALS/kb/P000000" ];
+       fhir:Reference.type [ fhir:value "Patient" ]
+    ];
+    fhir:DomainResource.contained [
+       a fhir:Patient;
+       fhir:index 0;
+       fhir:Resource.id [ fhir:value "P000000" ];
+    ];
+    fhir:QuestionnaireResponse.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "substanceUse" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Substance Use - Tobacco, Alcohol, Drugs" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "tobacco" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Tobacco" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+         ]
+       ],
+       [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "alcohol" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Alcohol" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ]
+       ],
+       [
+         fhir:index 2;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "drugs" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Drugs" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+         ]
+       ],
+       [
+         fhir:index 3;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "employment" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Employment" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Employed - TA" ]
+         ]
+       ],
+       [
+         fhir:index 4;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "education" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Education" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Completed HS" ]
+         ]
+       ],
+       [
+         fhir:index 5;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "religion" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Religion" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Catholic" ]
+         ]
+       ]
+    ] .
+
+# vvvvvvvvvvvvvvvvv Parents vvvvvvvvvvvvvvvvv
+heals-kb:family-history-000001 a fhir:FamilyMemberHistory;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "father"];
+  fhir:FamilyMemberHistory.patient [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ];
+     fhir:Reference.display [ fhir:value "Maria Vasquez" ]
+  ];
+  fhir:FamilyMemberHistory.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "FTH" ];
+       fhir:Coding.display [ fhir:value "father" ]
+     ]
+  ];
+  fhir:FamilyMemberHistory.sex [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
+       fhir:Coding.code [ fhir:value "male" ];
+       fhir:Coding.display [ fhir:value "Male" ]
+     ]
+  ];
+  fhir:FamilyMemberHistory.condition [
+     fhir:index 0;
+     fhir:FamilyMemberHistory.condition.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:315619001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "315619001" ];
+         fhir:Coding.display [ fhir:value "Myocardial Infarction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Heart Attack" ]
+     ];
+     fhir:FamilyMemberHistory.condition.contributedToDeath [ fhir:value "true"^^xsd:boolean ];
+     fhir:FamilyMemberHistory.condition.onsetAge [
+       fhir:Quantity.value [ fhir:value "74"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "yr" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "a" ]
+     ];
+  ] .
+
+heals-kb:family-history-000002 a fhir:FamilyMemberHistory;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mother"];
+  fhir:FamilyMemberHistory.patient [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ];
+     fhir:Reference.display [ fhir:value "Maria Vasquez" ]
+  ];
+  fhir:FamilyMemberHistory.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "MTH" ];
+       fhir:Coding.display [ fhir:value "mother" ]
+     ]
+  ];
+  fhir:FamilyMemberHistory.sex [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
+       fhir:Coding.code [ fhir:value "female" ];
+       fhir:Coding.display [ fhir:value "Female" ]
+     ]
+  ];
+  fhir:FamilyMemberHistory.condition [
+     fhir:index 0;
+     fhir:FamilyMemberHistory.condition.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:315619001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "315619001" ];
+         fhir:Coding.display [ fhir:value "Myocardial Infarction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Heart Attack" ]
+     ];
+     fhir:FamilyMemberHistory.condition.contributedToDeath [ fhir:value "true"^^xsd:boolean ];
+     fhir:FamilyMemberHistory.condition.onsetAge [
+       fhir:Quantity.value [ fhir:value "68"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "yr" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "a" ]
+     ];
+  ] .
+# ^^^^^^^^^^^^^^^^^ Parents ^^^^^^^^^^^^^^^^^
+
+# vvvvvvvvvvvvvvvvv Visits vvvvvvvvvvvvvvvvv
+
+heals-kb:P000000-visit-1 a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-visit-1"];
+  fhir:Encounter.status [ fhir:value "finished"]; # can also be in-progress
+  fhir:Encounter.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2019-04-07T16:00:00+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-04-07T16:30:00+10:00"^^xsd:dateTime ]
+  ].
+
+heals-kb:P000000-visit-2 a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-visit-2"];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2019-05-17T16:00:00+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-05-17T16:30:00+10:00"^^xsd:dateTime ]
+  ].
+
+heals-kb:P000000-visit-3 a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-visit-3"];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2019-07-05T16:00:00+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-07-05T16:30:00+10:00"^^xsd:dateTime ]
+  ].
+
+heals-kb:P000000-visit-4 a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-visit-4"];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2019-08-04T16:00:00+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-08-04T16:30:00+10:00"^^xsd:dateTime ]
+  ].
+
+heals-kb:P000000-visit-5 a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-visit-5"];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2019-09-06T16:00:00+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-09-06T16:30:00+10:00"^^xsd:dateTime ]
+  ].
+
+heals-kb:P000000-visit-6 a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-visit-6"];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2019-11-18T16:00:00+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-11-18T16:30:00+10:00"^^xsd:dateTime ]
+  ].
+
+# ^^^^^^^^^^^^^^^^^ Visits ^^^^^^^^^^^^^^^^^
+
+# vvvvvvvvvvvvvvvvv Allergies vvvvvvvvvvvvvvvvv
+heals-kb:allergies-P000000 a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "allergies-P000000"];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "working"];
+  fhir:List.title [ fhir:value "Current Allergy List"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:52472-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "52472-8" ];
+       fhir:Coding.display [ fhir:value "Allergies and Adverse Drug Reactions" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Current Allergy List" ]
+  ];
+  fhir:List.source [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:List.orderedBy [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/list-order" ];
+       fhir:Coding.code [ fhir:value "entry-date" ]
+     ]
+  ];
+  fhir:List.entry [
+     fhir:index 0;
+     fhir:List.entry.item [
+       fhir:link loinc:LP14319-5;
+       fhir:Reference.reference [ fhir:value "Penicillin" ]
+     ]
+  ].
+
+loinc:LP14319-5 a fhir:AllergyIntolerance.
+# ^^^^^^^^^^^^^^^^^ Allergies ^^^^^^^^^^^^^^^^^
+
+# vvvvvvvvvvvvvvvvv Conditions vvvvvvvvvvvvvvvvv
+# icdo:0000480 a fhir:Condition;
+heals-kb:condition-000000 a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "condition-000000"];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+       fhir:Coding.code [ fhir:value "problem-list-item" ];
+       fhir:Coding.display [ fhir:value "Problem List Item" ]
+     ]
+  ];
+  fhir:Condition.code [
+    fhir:CodeableConcept.coding [
+      fhir:index 0;
+      a icdo:0000480;
+      fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/icdo.owl#ICDO_" ];
+      fhir:Coding.code [ fhir:value "0000480" ];
+      fhir:Coding.display [ fhir:value "Obesity" ]
+    ];
+    fhir:CodeableConcept.text [ fhir:value "Obesity" ]
+  ];
+  fhir:Condition.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ].
+
+heals-kb:condition-000001 a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "0000480"];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+       fhir:Coding.code [ fhir:value "problem-list-item" ];
+       fhir:Coding.display [ fhir:value "Problem List Item" ]
+     ]
+  ];
+  fhir:Condition.code [
+    fhir:CodeableConcept.coding [
+      fhir:index 0;
+      a icdo:0000485;
+      fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/icdo.owl#ICDO_" ];
+      fhir:Coding.code [ fhir:value "0000485" ];
+      fhir:Coding.display [ fhir:value "Type 2 Diabetes" ]
+    ];
+    fhir:CodeableConcept.text [ fhir:value "Type 2 Diabetes" ]
+  ];
+  fhir:Condition.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ].
+# ^^^^^^^^^^^^^^^^^ Conditions ^^^^^^^^^^^^^^^^^
+
+
+# vvvvvvvvvvvvvvvvvvvv Procedures vvvvvvvvvvvvvvvvvvv
+heals-kb:procedure-000000 a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "procedure-000000"];
+  fhir:Procedure.status [ fhir:value "completed"];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:80146002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "80146002" ];
+       fhir:Coding.display [ fhir:value "Appendectomy (Procedure)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Appendectomy" ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Procedure.performedDateTime [ fhir:value "1990-04-05"^^xsd:date];
+  fhir:Procedure.recorder [
+     fhir:link <http://hl7.org/fhir/Practitioner/example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ];
+     fhir:Reference.display [ fhir:value "Dr Cecil Surgeon" ]
+  ];
+  fhir:Procedure.asserter [
+     fhir:link <http://hl7.org/fhir/Practitioner/example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ];
+     fhir:Reference.display [ fhir:value "Dr Cecil Surgeon" ]
+  ];
+  fhir:Procedure.performer [
+     fhir:index 0;
+     fhir:Procedure.performer.actor [
+       fhir:link <http://hl7.org/fhir/Practitioner/example>;
+       fhir:Reference.reference [ fhir:value "Practitioner/example" ];
+       fhir:Reference.display [ fhir:value "Dr Cecil Surgeon" ]
+     ]
+  ];
+  fhir:Procedure.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.text [ fhir:value "Generalized abdominal pain 24 hours. Localized in RIF with rebound and guarding" ]
+  ];
+  fhir:Procedure.followUp [
+     fhir:index 0;
+     fhir:CodeableConcept.text [ fhir:value "ROS 5 days  - 2013-04-10" ]
+  ];
+  fhir:Procedure.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Routine Appendectomy. Appendix was inflamed and in retro-caecal position" ]
+  ] .
+
+heals-kb:procedure-000001 a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "heals-kb:procedure-000001"];
+  fhir:Procedure.status [ fhir:value "completed"];
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:386637004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "386637004" ];
+       fhir:Coding.display [ fhir:value "Obstetric procedure (procedure)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "OB" ]
+  ];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:22633006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "22633006" ];
+       fhir:Coding.display [ fhir:value "Vaginal delivery, medical personnel present (procedure)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Vaginal delivery" ]
+  ];
+  fhir:Procedure.subject [
+    fhir:link heals-kb:P000000;
+    fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Procedure.performedDateTime [ fhir:value "1994-06-02"^^xsd:date];
+  fhir:Procedure.performer [
+     fhir:index 0;
+     fhir:Procedure.performer.actor [
+       fhir:Reference.display [ fhir:value "Martha Midwife, RNP" ]
+     ]
+  ];
+  fhir:Procedure.location [
+     fhir:Reference.display [ fhir:value "Women’s Hospital" ]
+  ];
+  fhir:Procedure.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.text [ fhir:value "term pregnancy, active labor" ]
+  ];
+  fhir:Procedure.outcome [
+     fhir:CodeableConcept.text [ fhir:value "delivery of healthy male infant" ]
+  ] .
+# ^^^^^^^^^^^^^^^^^^^ Procedures ^^^^^^^^^^^^^^^^^^^^^
+
+# vvvvvvvvvvvvvvvvvvvv Observations vvvvvvvvvvvvvvvvvvvv
+heals-kb:P000000-weight-1 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-weight-1"];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-1;
+     fhir:Reference.reference [ fhir:value "P000000-visit-1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-04-07"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "225"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lbs" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ] .
+
+heals-kb:P000000-weight-2 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-weight-2"];
+
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-2;
+     fhir:Reference.reference [ fhir:value "P000000-visit-2" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-05-17"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "226"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lbs" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ] .
+
+heals-kb:P000000-weight-3 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-weight-3"];
+
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-3;
+     fhir:Reference.reference [ fhir:value "P000000-visit-3" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-07-05"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "230"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lbs" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ] .
+
+heals-kb:P000000-weight-4 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-weight-4"];
+
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-4;
+     fhir:Reference.reference [ fhir:value "P000000-visit-4" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-08-04"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "235"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lbs" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ] .
+
+heals-kb:P000000-weight-5 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-weight-5"];
+
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-5;
+     fhir:Reference.reference [ fhir:value "P000000-visit-5" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-09-06"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "226"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lbs" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ] .
+
+heals-kb:P000000-weight-6 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-weight-6"];
+
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-6;
+     fhir:Reference.reference [ fhir:value "P000000-visit-6" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-11-18"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "228"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lbs" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ] .
+
+
+
+heals-kb:P000000-bmi-1 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-bmi-1"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ];
+       fhir:Coding.display [ fhir:value "Body mass index (BMI) [Ratio]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "BMI" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-1;
+     fhir:Reference.reference [ fhir:value "P000000-visit-1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-04-07"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "43.9"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+
+heals-kb:P000000-bmi-2 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-bmi-2"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ];
+       fhir:Coding.display [ fhir:value "Body mass index (BMI) [Ratio]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "BMI" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-2;
+     fhir:Reference.reference [ fhir:value "P000000-visit-2" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-05-17"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "44.1"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+
+heals-kb:P000000-bmi-3 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-bmi-3"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ];
+       fhir:Coding.display [ fhir:value "Body mass index (BMI) [Ratio]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "BMI" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-3;
+     fhir:Reference.reference [ fhir:value "P000000-visit-3" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-07-05"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "44.9"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+
+heals-kb:P000000-bmi-4 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-bmi-4"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ];
+       fhir:Coding.display [ fhir:value "Body mass index (BMI) [Ratio]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "BMI" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-4;
+     fhir:Reference.reference [ fhir:value "P000000-visit-4" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-08-04"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "45.9"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+
+heals-kb:P000000-bmi-5 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-bmi-5"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ];
+       fhir:Coding.display [ fhir:value "Body mass index (BMI) [Ratio]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "BMI" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-5;
+     fhir:Reference.reference [ fhir:value "P000000-visit-5" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-09-06"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "44.1"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+
+heals-kb:P000000-bmi-6 a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P000000-bmi-6"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ];
+       fhir:Coding.display [ fhir:value "Body mass index (BMI) [Ratio]" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "BMI" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link heals-kb:P000000-visit-6;
+     fhir:Reference.reference [ fhir:value "P000000-visit-6" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-11-18"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "44.5"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+# ^^^^^^^^^^^^^^^^^^^ Observations ^^^^^^^^^^^^^^^^^^^^^
+
+# vvvvvvvvvvvvvvvvvvvv Medications vvvvvvvvvvvvvvvvvvvv
+heals-kb:medication-P000000-1 a fhir:MedicationDispense;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medication-P000000-1"];
+  fhir:MedicationDispense.status [ fhir:value "completed"];
+  fhir:MedicationDispense.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://purl.bioontology.org/ontology/LNC/" ];
+       fhir:Coding.code [ fhir:value "73286-7" ];
+       fhir:Coding.display [ fhir:value "metFORMIN induced platelet Ab.IgM:PrThr:Pt:Ser/Plas:Ord:Flow cytometry" ]
+     ]
+  ];
+  fhir:MedicationDispense.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ];
+     fhir:Reference.display [ fhir:value "Maria Vasquez" ]
+  ];
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "90"^^xsd:decimal ];
+     fhir:Quantity.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm" ];
+     fhir:Quantity.code [ fhir:value "TAB" ]
+  ];
+  fhir:MedicationDispense.daysSupply [
+     fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Day" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "d" ]
+  ];
+  fhir:MedicationDispense.whenPrepared [ fhir:value "2019-07-15T10:20:00Z"^^xsd:dateTime];
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2019-07-15T16:20:00Z"^^xsd:dateTime];
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "Take 3 tablets (200mg) once daily" ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/dose-rate-type" ];
+           fhir:Coding.code [ fhir:value "calculated" ];
+           fhir:Coding.display [ fhir:value "Calculated" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "200"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ] .
+
+heals-kb:medication-P000000-2 a fhir:MedicationDispense;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medication-P000000-2"];
+  fhir:MedicationDispense.status [ fhir:value "completed"];
+  fhir:MedicationDispense.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://purl.bioontology.org/ontology/LNC/" ];
+       fhir:Coding.code [ fhir:value "27025-6" ];
+       fhir:Coding.display [ fhir:value "glipiZIDE:MCnc:Pt:Urine:Qn" ]
+     ]
+  ];
+  fhir:MedicationDispense.subject [
+     fhir:link heals-kb:P000000;
+     fhir:Reference.reference [ fhir:value "P000000" ];
+     fhir:Reference.display [ fhir:value "Maria Vasquez" ]
+  ];
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "90"^^xsd:decimal ];
+     fhir:Quantity.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm" ];
+     fhir:Quantity.code [ fhir:value "TAB" ]
+  ];
+  fhir:MedicationDispense.daysSupply [
+     fhir:Quantity.value [ fhir:value "90"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Day" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "d" ]
+  ];
+  fhir:MedicationDispense.whenPrepared [ fhir:value "2019-08-28T10:20:00Z"^^xsd:dateTime];
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2019-08-28T16:20:00Z"^^xsd:dateTime];
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "Take 3 tablets (180mg) once daily" ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/dose-rate-type" ];
+           fhir:Coding.code [ fhir:value "calculated" ];
+           fhir:Coding.display [ fhir:value "Calculated" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "180"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ] .
+# ^^^^^^^^^^^^^^^^^^^ Medications ^^^^^^^^^^^^^^^^^^^^^
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .

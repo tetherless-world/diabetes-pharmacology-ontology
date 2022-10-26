@@ -1,0 +1,632 @@
+@prefix pto: <http://purl.org/twc/PTO/ont/> .
+@prefix pto-kb: <http://purl.org/twc/PTO/kb/> .
+
+@prefix heals: <http://purl.org/twc/HEALS/ont/> .
+@prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
+
+@prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
+@prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_>.
+@prefix scto: <https://bioportal.bioontology.org/ontologies/SCTO#SCTO_>.
+@prefix dto: <https://bioportal.bioontology.org/ontologies/SCTO#DTO:>.
+@prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
+@prefix rxnorm: <http://purl.bioontology.org/ontology/RXNORM/>.
+
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sct: <http://snomed.info/sct/> .
+@prefix efo: <http://www.ebi.ac.uk/efo/EFO_> .
+
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
+@prefix sio: <http://semanticscience.org/resource/> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix hhear: <http://purl.org/twc/HHEAR_> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix dron: <http://purl.obolibrary.org/obo/DRON_> .
+@prefix doid: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_>.
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix hp: <http://purl.obolibrary.org/obo/HP_>.
+@prefix hasco: <http://hadatac.org/ont/hasco/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+pto-kb:HannahVisit1BMI rdf:type ncit:C138901 ;
+          rdfs:label "BMI"^^xsd:string ;
+          sio:hasValue "36.9"^^xsd:decimal ; # obese
+          sio:hasUnit [ rdf:type uo:0000086 ; rdfs:label "kilogram per square meter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit1BGL rdf:type loinc:2339-0 ;
+          rdfs:label "Blood Glucose Level"^^xsd:string ;
+          sio:hasValue "213"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+          
+pto-kb:HannahVisit1HbA1c rdf:type loinc:59261-8 ;
+          rdfs:label "HbA1c - Estimated Average Glucose"^^xsd:string ;
+          sio:hasValue "177"^^xsd:decimal ;
+          rdfs:comment "7.8%"^^xsd:string ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit1FBGL rdf:type loinc:1558-6 ;
+          rdfs:label "Fasting Blood Glucose Level"^^xsd:string ;
+          sio:hasValue "137"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit1PGL rdf:type loinc:1518-0 ;
+          rdfs:label "Postprandial Glucose Level"^^xsd:string ;
+          sio:hasValue "187"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit1Triglycerides rdf:type loinc:12228-3 ;
+          rdfs:label "Triglycerides"^^xsd:string ;
+          sio:hasValue "178"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit1LDL rdf:type loinc:2089-1 ;
+          rdfs:label "LDL"^^xsd:string ;
+          sio:hasValue "131"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit1HDL rdf:type loinc:2085-9 ;
+          rdfs:label "HDL"^^xsd:string ;
+          sio:hasValue "21"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit2HbA1c rdf:type loinc:59261-8 ;
+          rdfs:label "HbA1c - Estimated Average Glucose"^^xsd:string ;
+          sio:hasValue "174"^^xsd:decimal ;
+          rdfs:comment "7.7%"^^xsd:string ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 2 - 04/01/2020"^^xsd:string ;
+                sio:hasValue "90"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit2FBGL rdf:type loinc:1558-6 ;
+          rdfs:label "Fasting Blood Glucose Level"^^xsd:string ;
+          sio:hasValue "172"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 2 - 04/01/2020"^^xsd:string ;
+                sio:hasValue "90"^^xsd:integer
+          ] .
+
+pto-kb:HannahVisit2PGL  rdf:type loinc:1518-0 ;
+          rdfs:label "Postprandial Glucose Level"^^xsd:string ;
+          sio:hasValue "201.5"^^xsd:decimal ;
+          sio:hasUnit [ rdf:type efo:0004374 ; rdfs:label "milligram per deciliter"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 2 - 04/01/2020"^^xsd:string ;
+                sio:hasValue "90"^^xsd:integer
+          ] .
+
+
+pto-kb:Hannah rdf:type sio:Patient ;
+  pto:hasDiagnosis [ rdf:type pto:Diabetes ] ;
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.line [
+       fhir:value "825 Shari Court";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Durham" ];
+     fhir:Address.state [ fhir:value "NC" ];
+     # fhir:Address.district [ fhir:value "..." ];
+     fhir:Address.postalCode [ fhir:value "27704" ];
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "1974-12-25"^^xsd:date ]
+     ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       # fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:Coding.code [ fhir:value "M" ];
+       fhir:Coding.display [ fhir:value "Married" ]
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "3475963164" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+    rdfs:label "Hannah" ;
+    sio:isResultOf
+        [ rdf:type sio:Birthing ;
+          sio:existsAt [ sio:hasValue "1950-08-18" ] ] ;
+    rdfs:label "Hannah" ;
+    sio:hasAttribute
+        [ rdf:type sio:FirstName ;
+          rdfs:label "First Name" ;
+          sio:hasValue "Hannah" ] ,
+        [ rdf:type sio:LastName ;
+          rdfs:label "Last Name" ;
+          sio:hasValue "Hangu" ] ,
+        [ rdf:type sio:BiologicalSex ;
+          rdfs:label "Gender" ;
+          sio:hasValue "Female" ] ,
+        [ rdf:type sio:Disease ;
+          sio:hasValue "Diabetes"^^xsd:string ] ,
+        [ rdf:type pto:Fatigue ] ,
+        [ rdf:type pto:Polyphagia ] ,
+        [ rdf:type pto:FamilyHistoryOfCAD ] ,
+        [ rdf:type pto:FamilyHistoryOfDiabetes ] ,
+        [ rdf:type pto:PersonalHistoryOfGestationalDiabetes ] ,
+        [ rdf:type sio:Age ;
+          rdfs:label "Age"^^xsd:string ;
+          sio:hasValue "38"^^xsd:integer ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ]
+        ] ,
+        [ rdf:type sio:Height ;
+          rdfs:label "Height"^^xsd:string ;
+          sio:hasValue "67"^^xsd:integer ;
+          sio:hasUnit [ rdf:type uo:0010011 ; rdfs:label "inch"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ]
+        ] ,
+        [ rdf:type sio:Weight ;
+          rdfs:label "Weight"^^xsd:string ;
+          sio:hasValue "235"^^xsd:integer ;
+          sio:hasUnit [ rdf:type uo:0010034 ; rdfs:label "pound"^^xsd:string ] ;
+          sio:existsAt [
+                rdf:type sio:Visit ;
+                rdfs:label "Visit 1 - 01/01/2020"^^xsd:string ;
+                sio:hasValue "1"^^xsd:integer
+          ]
+        ] ,
+        pto-kb:HannahVisit1BMI ,
+        pto-kb:HannahVisit1BGL ,
+        pto-kb:HannahVisit1HbA1c ,
+        pto-kb:HannahVisit1FBGL ,
+        pto-kb:HannahVisit1PGL ,
+        pto-kb:HannahVisit1Triglycerides ,
+        pto-kb:HannahVisit1LDL ,
+        pto-kb:HannahVisit1HDL ,
+        pto-kb:HannahVisit2HbA1c ,
+        pto-kb:HannahVisit2FBGL ,
+        pto-kb:HannahVisit2PGL ;
+        sio:hasRole [
+            rdf:type sio:000715
+        ];
+        sio:isParticipantIn heals:DiabetesDiagnosis ;
+        sio:000008 [
+            rdf:type sio:010299; # disease
+            sio:000300 "Diabetes"^^xsd:string
+            #sio:000300 icdo:0000465 # diabetes
+        ];
+        sio:000008 [
+            rdf:type sio:001013; # age
+            sio:000300 "38"^^xsd:integer
+        ];
+        sio:000008 [
+            rdf:type sio:010029; # biological sex
+            sio:000300 "F"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type hhear:00224; # dob
+            sio:000300 "1982-08-18"^^xsd:date
+        ];
+        sio:000008 [
+            rdf:type sio:000172; # address
+            sio:000300 "825 Shari Court Durham, NC 27704"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type hhear:00232; # insurance
+            sio:000300 "Blue Cross NC"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type hhear:00238; # marital
+            sio:000300 "Married"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type ncit:C25172; # employment
+            sio:000300 "Employed - TA"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type ncit:C16529; # education
+            sio:000300 "Completed HS"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type hhear:00207; # religion
+            sio:000300 "Catholic"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type hhear:00215; # tobacco
+            sio:000300 "false"^^xsd:boolean
+        ];
+        sio:000008 [
+            rdf:type loinc:MTHU047472; #hhear:00172; # alcohol
+            sio:000300 "false"^^xsd:boolean
+        ];
+        sio:000008 [
+            rdf:type loinc:MTHU047471; #sio:010038; # drugs
+            sio:000300 "false"^^xsd:boolean
+        ];
+        sio:000008 [
+            rdf:type hhear:00501; # father
+            sio:000300 "Dead - MI"^^xsd:string
+        ];
+        sio:000008 [
+            rdf:type hhear:00502; # mother
+            sio:000300 "Dead - CVA"^^xsd:string
+        ];
+        sio:000008 heals-kb:reasoning-line-P000000 .
+
+
+
+pto-kb:insurance-Hannah a fhir:Coverage;
+    fhir:nodeRole fhir:treeRoot;
+    fhir:Coverage.identifier [ fhir:value "Blue Cross NC" ] ;
+    fhir:Coverage.subscriber [ fhir:link pto-kb:Hannah ] ;
+    fhir:Coverage.beneficiary [ fhir:link pto-kb:Hannah ] .
+
+pto-kb:questionnaire-Hannah a fhir:Questionnaire;
+    fhir:nodeRole fhir:treeRoot;
+    fhir:Resource.id [ fhir:value "0001"];
+    fhir:Questionnaire.subject [
+       fhir:link pto-kb:Hannah;
+       fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Hannah" ];
+       fhir:Reference.type [ fhir:value "Patient" ]
+    ];
+    fhir:Questionnaire.item [
+       fhir:index 0;
+       fhir:Questionnaire.item.linkId [ fhir:value "substanceUse" ];
+       fhir:Questionnaire.item.text [ fhir:value "Substance Use - Tobacco, Alcohol, Drugs" ];
+       fhir:Questionnaire.item.item [
+         fhir:index 0;
+         fhir:Questionnaire.item.linkId [ fhir:value "tobacco" ];
+         fhir:Questionnaire.item.text [ fhir:value "Tobacco" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ]
+       ],
+       [
+         fhir:index 1;
+         fhir:Questionnaire.item.linkId [ fhir:value "alcohol" ];
+         fhir:Questionnaire.item.text [ fhir:value "Alcohol" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ]
+       ],
+       [
+         fhir:index 2;
+         fhir:Questionnaire.item.linkId [ fhir:value "drugs" ];
+         fhir:Questionnaire.item.text [ fhir:value "Drugs" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ]
+       ],
+       [
+         fhir:index 3;
+         fhir:Questionnaire.item.linkId [ fhir:value "employment" ];
+         fhir:Questionnaire.item.text [ fhir:value "Employment" ];
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ],
+       [
+         fhir:index 4;
+         fhir:Questionnaire.item.linkId [ fhir:value "education" ];
+         fhir:Questionnaire.item.text [ fhir:value "Education" ];
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ],
+       [
+         fhir:index 5;
+         fhir:Questionnaire.item.linkId [ fhir:value "religion" ];
+         fhir:Questionnaire.item.text [ fhir:value "Religion" ];
+         fhir:Questionnaire.item.type [ fhir:value "string" ]
+       ]
+    ] .
+
+  pto-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
+    fhir:nodeRole fhir:treeRoot;
+    fhir:Resource.id [ fhir:value "0001"];
+    fhir:QuestionnaireResponse.subject [
+       fhir:link pto-kb:Hannah;
+       fhir:Reference.reference [ fhir:value "http://purl.org/twc/PTO/kb/Hannah" ];
+       fhir:Reference.type [ fhir:value "Patient" ]
+    ];
+    fhir:DomainResource.contained [
+       a fhir:Patient;
+       fhir:index 0;
+       fhir:Resource.id [ fhir:value "Hannah" ];
+    ];
+    fhir:QuestionnaireResponse.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "substanceUse" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Substance Use - Tobacco, Alcohol, Drugs" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "tobacco" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Tobacco" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+         ]
+       ],
+       [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "alcohol" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Alcohol" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ]
+       ],
+       [
+         fhir:index 2;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "drugs" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Drugs" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+         ]
+       ],
+       [
+         fhir:index 3;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "employment" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Employment" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Employed - TA" ]
+         ]
+       ],
+       [
+         fhir:index 4;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "education" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Education" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Completed HS" ]
+         ]
+       ],
+       [
+         fhir:index 5;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "religion" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Religion" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Catholic" ]
+         ]
+       ]
+    ] .
+
+
+    heals-kb:metformin-ir rdf:type ncit:C459 ;
+        sio:000221 [
+            rdf:type uo:0000022; #milligram
+            sio:000300 "mg"
+        ];
+        sio:000008 [
+            rdf:type sio:001113; # minimal value
+            sio:000300 "50"^^xsd:integer
+        ];
+        sio:000008 [
+            rdf:type sio:001114; # maximal value
+            sio:000300 "250"^^xsd:integer
+        ];
+        rdfs:label "Metformin IR" .
+
+    heals-kb:metformin-xr rdf:type ncit:C459 ;
+        sio:000221 [
+          rdf:type uo:0000022; #milligram
+          sio:000300 "mg"
+        ];
+        sio:000008 [
+            rdf:type sio:001113; # minimal value
+            sio:000300 "100"^^xsd:integer
+        ];
+        sio:000008 [
+            rdf:type sio:001114; # maximal value
+            sio:000300 "5000"^^xsd:integer
+        ];
+        rdfs:label "Metformin XR" .
+
+    heals-kb:glipizide-xl rdf:type ncit:C459 ;
+        sio:000221 [
+          rdf:type uo:0000022; #milligram
+          sio:000300 "mg"
+        ];
+        sio:000008 [
+            rdf:type sio:001113; # minimal value
+            sio:000300 "30"^^xsd:integer
+        ];
+        sio:000008 [
+            rdf:type sio:001114; # maximal value
+            sio:000300 "80"^^xsd:integer
+        ];
+        rdfs:label "Glipizide XL" .
+
+    heals-kb:reasoning-factor-1 rdf:type ncit:C25506;
+        rdfs:label "A1C > 6.5" ;
+        heals:hasTruthValue "true"^^xsd:boolean ;
+        heals:ignore "false"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-2 rdf:type ncit:C25506;
+        rdfs:label "No current pharmacotherapy" ;
+        heals:hasTruthValue "true"^^xsd:boolean ;
+        heals:ignore "true"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-3 rdf:type ncit:C25506;
+        rdfs:label "Metformin Intolerance" ;
+        heals:hasTruthValue "false"^^xsd:boolean ;
+        heals:ignore "false"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-4 rdf:type ncit:C25506;
+        rdfs:label "Cost not an issue" ;
+        heals:hasTruthValue "true"^^xsd:boolean ;
+        heals:ignore "true"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-5 rdf:type ncit:C25506;
+        rdfs:label "Weight loss goal" ;
+        heals:hasTruthValue "false"^^xsd:boolean ;
+        heals:ignore "false"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-6 rdf:type ncit:C25506;
+        rdfs:label "No established ASCVD" ;
+        heals:hasTruthValue "false"^^xsd:boolean ;
+        heals:ignore "false"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-7 rdf:type ncit:C25506;
+        rdfs:label "No ASCVD risk indicators " ;
+        heals:hasTruthValue "false"^^xsd:boolean ;
+        heals:ignore "false"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-8 rdf:type ncit:C25506;
+        rdfs:label "8" ;
+        heals:hasTruthValue "true"^^xsd:boolean ;
+        heals:ignore "true"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-9 rdf:type heals:ExtraReasoningFactor ;
+        rdfs:label "9" ;
+        heals:hasTruthValue "true"^^xsd:boolean ;
+        heals:ignore "true"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-10 rdf:type heals:ExtraReasoningFactor ;
+        rdfs:label "10" ;
+        heals:hasTruthValue "false"^^xsd:boolean ;
+        heals:ignore "true"^^xsd:boolean .
+
+    heals-kb:reasoning-factor-11 rdf:type heals:ExtraReasoningFactor ;
+        rdfs:label "11" ;
+        heals:hasTruthValue "false"^^xsd:boolean ;
+        heals:ignore "true"^^xsd:boolean .
+
+    heals-kb:conclusion-1 rdf:type sio:000262 ;
+        rdfs:label "SGLT2 Inhibitor" ;
+        heals:hasTruthValue "true"^^xsd:boolean;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-1 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-2 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-3 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-4 ;
+        heals:suggestedDrug rxnorm:1992672 ; # ertugliflozin
+        heals:suggestedDrug rxnorm:1488564 ; # dapagliflozin
+        heals:suggestedDrug rxnorm:1545653 ; # empagliflozin
+        heals:suggestedDrug rxnorm:1373458 . # canagliflozin
+
+    heals-kb:conclusion-2 rdf:type sio:000262 ;
+        rdfs:label "GLP-1 Receptor Agonist" ;
+        heals:hasTruthValue "true"^^xsd:boolean;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-5 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-6 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-7 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-8 ;
+        heals:suggestedDrug rxnorm:1991302; # semaglutide
+        heals:suggestedDrug rxnorm:475968; # liraglutide
+        heals:suggestedDrug rxnorm:1551291; # dulaglutide
+        heals:suggestedDrug rxnorm:60548 . # exenatide
+
+    heals-kb:conclusion-3 rdf:type sio:000262 ;
+        rdfs:label "SGLT2 Inhibitor" ;
+        heals:hasTruthValue "false"^^xsd:boolean;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-1 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-2 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-3 ;
+        heals:suggestedDrug rxnorm:1440051; # lixisenatide
+        heals:suggestedDrug rxnorm:1368001; # alogliptin
+        heals:suggestedDrug rxnorm:857974; # saxagliptin
+        heals:suggestedDrug rxnorm:1164670; # linagliptin
+        heals:suggestedDrug rxnorm:593411. # sitagliptin
+
+    heals-kb:conclusion-4 rdf:type heals:ExtraConclusion ;
+        rdfs:label "Extra Example 1" ;
+        heals:hasTruthValue "false"^^xsd:boolean;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-5 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-9 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-10 ;
+        heals:suggestedDrug rxnorm:1992672 ; # ertugliflozin
+        heals:suggestedDrug rxnorm:1488564 ; # dapagliflozin
+        heals:suggestedDrug rxnorm:1545653 ; # empagliflozin
+        heals:suggestedDrug rxnorm:1373458 . # canagliflozin
+
+    heals-kb:conclusion-5 rdf:type heals:ExtraConclusion ;
+        rdfs:label "Extra Example 2" ;
+        heals:hasTruthValue "false"^^xsd:boolean;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-11 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-3 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-6 ;
+        heals:suggestedDrug rxnorm:1991302; # semaglutide
+        heals:suggestedDrug rxnorm:475968; # liraglutide
+        heals:suggestedDrug rxnorm:1551291; # dulaglutide
+        heals:suggestedDrug rxnorm:60548 . # exenatide
+
+    heals-kb:conclusion-6 rdf:type heals:ExtraConclusion ;
+        rdfs:label "Extra Example 3" ;
+        heals:hasTruthValue "false"^^xsd:boolean;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-4 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-8 ;
+        heals:reasoningLineFactor heals-kb:reasoning-factor-2 ;
+        heals:suggestedDrug rxnorm:1440051; # lixisenatide
+        heals:suggestedDrug rxnorm:1368001; # alogliptin
+        heals:suggestedDrug rxnorm:857974; # saxagliptin
+        heals:suggestedDrug rxnorm:1164670; # linagliptin
+        heals:suggestedDrug rxnorm:593411. # sitagliptin
+
+    heals-kb:reasoning-line-P000000 rdf:type heals:ReasoningLine ;
+        heals:reasoningConclusion heals-kb:conclusion-1 ;
+        heals:reasoningConclusion heals-kb:conclusion-2 ;
+        heals:reasoningConclusion heals-kb:conclusion-3 ;
+        heals:reasoningConclusion heals-kb:conclusion-4 ;
+        heals:reasoningConclusion heals-kb:conclusion-5 ;
+        heals:reasoningConclusion heals-kb:conclusion-6 .
+
