@@ -1,30 +1,18 @@
 @prefix dpo: <http://purl.org/twc/DPO/ont/> .
 @prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
-
-@prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
-@prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
-@prefix bfo: <http://purl.obolibrary.org/obo/BFO_>.
-@prefix scto: <https://bioportal.bioontology.org/ontologies/SCTO#SCTO_>.
-@prefix dto: <https://bioportal.bioontology.org/ontologies/SCTO#DTO:>.
-@prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
-@prefix rxnorm: <http://purl.bioontology.org/ontology/RXNORM/>.
-
-@prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sct: <http://snomed.info/sct/>.
-
 @prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
 @prefix symp: <http://purl.obolibrary.org/obo/SYMP_> .
 @prefix hp: <http://purl.obolibrary.org/obo/HP_> .
 @prefix sio: <http://semanticscience.org/resource/> .
-
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl>
     rdf:type owl:Ontology ;
