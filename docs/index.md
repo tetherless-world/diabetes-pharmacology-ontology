@@ -6,6 +6,36 @@ layout: default
 
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
+# Table of Contents
+- [Overview](#overview)
+- [Namespaces](#namespaces)
+        * [DPO Namespaces](#dpo-namespaces)
+- [Diabetes Pharmacology Ontology](#diabetes-pharmacology-ontology)
+  * [Pharmacotherapy Factor](#pharmacotherapy-factor)
+    + [Efficacy](#efficacy)
+    + [Weight Change Potential](#weight-change-potential)
+    + [Hypoglycemia Risk](#hypoglycemia-risk)
+    + [Cardiovascular Effect](#cardiovascular-effect)
+    + [Cost](#cost)
+    + [Renal Effect](#renal-effect)
+  * [Diagnostic Factor](#diagnostic-factor)
+    + [Symptom](#symptom)
+    + [Disease](#disease)
+    + [Behavior and Occupation](#behavior-and-occupation)
+    + [History](#history)
+  * [Therapy](#therapy)
+    + [Biguanide](#biguanide)
+      - [Metformin](#metformin)
+    + [SGLT2 Inhibitor](#sglt2-inhibitor)
+    + [GLP1 RA](#glp1-ra)
+    + [DPP4 Inhibitor](#dpp4-inhibitor)
+    + [Thiazolidinedione](#thiazolidinedione)
+    + [Sulfonylurea](#sulfonylurea)
+  * [Measurement Finding](#measurement-finding)
+    + [Weight Related Finding](#weight-related-finding)
+    + [Blood Glucose Related Finding](#blood-glucose-related-finding)
+    + [Cholesterol Related Finding](#cholesterol-related-finding)
+    + [Triglyceride Related Finding](#triglyceride-related-finding)
 
 # Namespaces
 
