@@ -9,7 +9,6 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
 # Table of Contents
 - [Overview](#overview)
 - [Namespaces](#namespaces)
-        * [DPO Namespaces](#dpo-namespaces)
 - [Diabetes Pharmacology Ontology](#diabetes-pharmacology-ontology)
   * [Pharmacotherapy Factor](#pharmacotherapy-factor)
     + [Efficacy](#efficacy)
