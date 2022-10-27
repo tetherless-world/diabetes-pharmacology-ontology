@@ -53,7 +53,11 @@ Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor*
 
 The Pharmacotherapy Factors included in this ontology are based on those included in Chapter 9 of the ADA guidelines. The subclasses of **dpo:PharmacotherapyFactor** include the top level pharmacotherapy factors **dpo:Efficacy**, **dpo:WeightChangePotential**, **dpo:HypoglycemiaRisk**, **dpo:CardiovascularEffect**, **dpo:Cost**, and **dpo:RenalEffect**.
 
+
+![pto:PharmacotherapyFactor](./assets/images/PharmacotherapyFactor.png)
+
 Potential categorizations of these top level pharmacotherapy factors are encoded as subclasses of each respective pharmacotherapy factor. The recommendation of a therapy may be based on whether or not a patient has an attribute that is of type one of the subclasses of the top level pharmacotherapy factors.
+
 
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
