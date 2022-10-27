@@ -42,17 +42,28 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
 # Diabetes Pharmacology Ontology
 
 The root branch of DPO is **dpo:Factor**. A factor is defined as follows:
-> A circumstance influencing the treatment or diagnosis of disease.
+> A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements.
 
 Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **spo:MeasurementFinding**.
 
 ## Pharmacotherapy Factor
+> A circumstance influencing the treatment of a disease through the use of drugs.
+
+The Pharmacotherapy Factors included in this ontology are based on those included in Chapter 9 of the ADA guidelines. The subclasses of **dpo:PharmacotherapyFactor** include the top level pharmacotherapy factors **dpo:Efficacy**, **dpo:WeightChangePotential**, **dpo:HypoglycemiaRisk**, **dpo:CardiovascularEffect**, **dpo:Cost**, and **dpo:RenalEffect**.
+
+Potential categorizations of these top level pharmacotherapy factors are encoded as subclasses of each respective pharmacotherapy factor. The recommendation of a therapy may be based on whether or not a patient has an attribute that is of type one of the subclasses of the top level pharmacotherapy factors.
 
 ## Diagnostic Factor
+> A circumstance influencing the dianosis of a disease.
+
 
 ## Therapy
+> An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
+
 
 ## Measurement Finding
+> A finding surmised from recorded measurements.
+
 
 
 ### Header 3

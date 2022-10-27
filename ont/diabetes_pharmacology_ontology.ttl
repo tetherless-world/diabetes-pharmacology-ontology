@@ -30,7 +30,7 @@ ncit:C138901 rdf:type owl:Class ;
 dpo:Factor rdf:type owl:Class ;
     rdfs:label "Factor" ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the treatment or diagnosis of disease."^^xsd:string .
+    skos:definition "A factor is a circumstance influencing the treatment or diagnosis of disease, therapeutic agents that may be administered to produce an effect, ."^^xsd:string .
     
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
@@ -51,18 +51,18 @@ dpo:Therapy rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]"^^xsd:string .
 
+dpo:MeasurementFinding rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Factor ;
+    rdfs:label "Measurement Finding"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A finding surmised from recorded measurements."^^xsd:string .
+
 dpo:Symptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass symp:0000462 ;
     rdfs:label "Symptom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]"^^xsd:string .
-
-dpo:MeasurementFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Factor ;
-    rdfs:label "Measurement Finding"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
 
 dpo:therapyFactorPreference rdf:type owl:ObjectProperty ;
     rdfs:label "therapy factor preference"^^xsd:string ;
