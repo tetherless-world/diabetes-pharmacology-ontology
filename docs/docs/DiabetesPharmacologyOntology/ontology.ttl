@@ -1,0 +1,2232 @@
+@prefix : <http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl#> .
+
+<http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl> rdf:type owl:Ontology ;
+                                                                     owl:versionIRI <http://purl.org/ontology/heals/dpo/0.1> ;
+                                                                     <http://purl.org/dc/terms/contributor> "Daniel Gruen" ,
+                                                                                                            "Deborah L. McGuinness" ,
+                                                                                                            "Jamie McCusker" ,
+                                                                                                            "Oshani Seneviratne" ;
+                                                                     <http://purl.org/dc/terms/created> "2022-6-08T18:00:00"^^xsd:dateTime ;
+                                                                     <http://purl.org/dc/terms/creator> "Sabbir M. Rashid" ;
+                                                                     <http://purl.org/dc/terms/description> "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies." ;
+                                                                     <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> ;
+                                                                     <http://purl.org/dc/terms/modified> "2022-10-25T18:00:00"^^xsd:dateTime ;
+                                                                     <http://purl.org/dc/terms/title> "Diabetes Pharmacology Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxInclusive
+xsd:maxInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#defintion
+<http://www.w3.org/2004/02/skos/core#defintion> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://purl.org/twc/DPO/ont/BorderlineHighLDLRange
+<http://purl.org/twc/DPO/ont/BorderlineHighLDLRange> rdf:type rdfs:Datatype ;
+                                                     rdfs:label "Borderline High LDL Range" ;
+                                                     xsd:maxInclusive 159 ;
+                                                     xsd:minInclusive 130 .
+
+
+###  http://purl.org/twc/DPO/ont/BorderlineHighTriglycerideRange
+<http://purl.org/twc/DPO/ont/BorderlineHighTriglycerideRange> rdf:type rdfs:Datatype ;
+                                                              rdfs:label "Borderline High Triglyceride Range" ;
+                                                              xsd:maxInclusive 199 ;
+                                                              xsd:minInclusive 150 .
+
+
+###  http://purl.org/twc/DPO/ont/DiabetesFastingBloodGlucoseRange
+<http://purl.org/twc/DPO/ont/DiabetesFastingBloodGlucoseRange> rdf:type rdfs:Datatype ;
+                                                               rdfs:label "Diabetes Fasting Blood Glucose Range" ;
+                                                               xsd:minInclusive 126 .
+
+
+###  http://purl.org/twc/DPO/ont/DiabetesHbA1CRange
+<http://purl.org/twc/DPO/ont/DiabetesHbA1CRange> rdf:type rdfs:Datatype ;
+                                                 rdfs:label "Prediabetes HbA1C Range" ;
+                                                 xsd:minInclusive 141 .
+
+
+###  http://purl.org/twc/DPO/ont/DiabetesTwoHourBloodGlucoseRange
+<http://purl.org/twc/DPO/ont/DiabetesTwoHourBloodGlucoseRange> rdf:type rdfs:Datatype ;
+                                                               rdfs:label "Diabetes Two Hour Blood Glucose Range" ;
+                                                               xsd:minInclusive 200 .
+
+
+###  http://purl.org/twc/DPO/ont/HighLDLRange
+<http://purl.org/twc/DPO/ont/HighLDLRange> rdf:type rdfs:Datatype ;
+                                           rdfs:label "High LDL Range" ;
+                                           xsd:maxInclusive 189 ;
+                                           xsd:minInclusive 160 .
+
+
+###  http://purl.org/twc/DPO/ont/HighTriglycerideRange
+<http://purl.org/twc/DPO/ont/HighTriglycerideRange> rdf:type rdfs:Datatype ;
+                                                    rdfs:label "High Triglyceride Range" ;
+                                                    xsd:maxInclusive 499 ;
+                                                    xsd:minInclusive 200 .
+
+
+###  http://purl.org/twc/DPO/ont/NearOptimalLDLRange
+<http://purl.org/twc/DPO/ont/NearOptimalLDLRange> rdf:type rdfs:Datatype ;
+                                                  rdfs:label "Near Optimal LDL Range" ;
+                                                  xsd:maxInclusive 129 ;
+                                                  xsd:minInclusive 100 .
+
+
+###  http://purl.org/twc/DPO/ont/NormalTriglycerideRange
+<http://purl.org/twc/DPO/ont/NormalTriglycerideRange> rdf:type rdfs:Datatype ;
+                                                      rdfs:label "Normal Triglyceride Range" ;
+                                                      xsd:maxInclusive 149 .
+
+
+###  http://purl.org/twc/DPO/ont/NormalWeightBMIRange
+<http://purl.org/twc/DPO/ont/NormalWeightBMIRange> rdf:type rdfs:Datatype ;
+                                                   rdfs:label "Normal Weight BMI Range" ;
+                                                   xsd:maxInclusive 24.9 ;
+                                                   xsd:minInclusive 18.5 .
+
+
+###  http://purl.org/twc/DPO/ont/ObeseBMIRange
+<http://purl.org/twc/DPO/ont/ObeseBMIRange> rdf:type rdfs:Datatype ;
+                                            rdfs:label "Obese BMI Range" ;
+                                            xsd:minInclusive 30 .
+
+
+###  http://purl.org/twc/DPO/ont/OptimalLDLRange
+<http://purl.org/twc/DPO/ont/OptimalLDLRange> rdf:type rdfs:Datatype ;
+                                              rdfs:label "Optimal LDL Range" ;
+                                              xsd:maxInclusive 100 .
+
+
+###  http://purl.org/twc/DPO/ont/OverweightBMIRange
+<http://purl.org/twc/DPO/ont/OverweightBMIRange> rdf:type rdfs:Datatype ;
+                                                 rdfs:label "Overweight BMI Range" ;
+                                                 xsd:maxInclusive 29.9 ;
+                                                 xsd:minInclusive 25 .
+
+
+###  http://purl.org/twc/DPO/ont/PrediabetesFastingBloodGlucoseRange
+<http://purl.org/twc/DPO/ont/PrediabetesFastingBloodGlucoseRange> rdf:type rdfs:Datatype ;
+                                                                  rdfs:label "Prediabetes Fasting Blood Glucose Range" ;
+                                                                  xsd:maxInclusive 125 ;
+                                                                  xsd:minInclusive 100 .
+
+
+###  http://purl.org/twc/DPO/ont/PrediabetesHbA1CRange
+<http://purl.org/twc/DPO/ont/PrediabetesHbA1CRange> rdf:type rdfs:Datatype ;
+                                                    rdfs:label "Prediabetes HbA1C Range" ;
+                                                    xsd:maxInclusive 138 ;
+                                                    xsd:minInclusive 117 .
+
+
+###  http://purl.org/twc/DPO/ont/PrediabetesTwoHourBloodGlucoseRange
+<http://purl.org/twc/DPO/ont/PrediabetesTwoHourBloodGlucoseRange> rdf:type rdfs:Datatype ;
+                                                                  rdfs:label "Prediabetes Two Hour Blood Glucose Range" ;
+                                                                  xsd:maxInclusive 199 ;
+                                                                  xsd:minInclusive 140 .
+
+
+###  http://purl.org/twc/DPO/ont/UnderweightBMIRange
+<http://purl.org/twc/DPO/ont/UnderweightBMIRange> rdf:type rdfs:Datatype ;
+                                                  rdfs:label "Underweight BMI Range" ;
+                                                  xsd:maxInclusive 18.5 .
+
+
+###  http://purl.org/twc/DPO/ont/VeryHighLDLRange
+<http://purl.org/twc/DPO/ont/VeryHighLDLRange> rdf:type rdfs:Datatype ;
+                                               rdfs:label "Very High LDL Range" ;
+                                               xsd:minInclusive 190 .
+
+
+###  http://purl.org/twc/DPO/ont/VeryHighTriglycerideRange
+<http://purl.org/twc/DPO/ont/VeryHighTriglycerideRange> rdf:type rdfs:Datatype ;
+                                                        rdfs:label "Very High Triglyceride Range" ;
+                                                        xsd:minInclusive 500 .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/twc/DPO/ont/hasDiagnosis
+<http://purl.org/twc/DPO/ont/hasDiagnosis> rdf:type owl:ObjectProperty ;
+                                           rdfs:range <http://purl.org/twc/DPO/ont/Disease> .
+
+
+###  http://purl.org/twc/DPO/ont/pharmacotherapyFactor
+<http://purl.org/twc/DPO/ont/pharmacotherapyFactor> rdf:type owl:ObjectProperty ;
+                                                    rdfs:range <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                                    rdfs:label "risk factor" .
+
+
+###  http://purl.org/twc/DPO/ont/therapyFactorAversion
+<http://purl.org/twc/DPO/ont/therapyFactorAversion> rdf:type owl:ObjectProperty ;
+                                                    rdfs:range <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                                    rdfs:label "therapy factor aversion" .
+
+
+###  http://purl.org/twc/DPO/ont/therapyFactorIndifference
+<http://purl.org/twc/DPO/ont/therapyFactorIndifference> rdf:type owl:ObjectProperty ;
+                                                        rdfs:range <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                                        rdfs:label "therapy factor indifference" .
+
+
+###  http://purl.org/twc/DPO/ont/therapyFactorPreference
+<http://purl.org/twc/DPO/ont/therapyFactorPreference> rdf:type owl:ObjectProperty ;
+                                                      rdfs:range <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                                      rdfs:label "therapy factor preference" .
+
+
+###  http://semanticscience.org/resource/hasAttribute
+<http://semanticscience.org/resource/hasAttribute> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://semanticscience.org/resource/hasValue
+<http://semanticscience.org/resource/hasValue> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.bioontology.org/ontology/LNC/12228-3
+<http://purl.bioontology.org/ontology/LNC/12228-3> rdf:type owl:Class ;
+                                                   rdfs:label "Triglyceride [Mass/volume] in Body fluid" .
+
+
+###  http://purl.bioontology.org/ontology/LNC/1518-0
+<http://purl.bioontology.org/ontology/LNC/1518-0> rdf:type owl:Class ;
+                                                  rdfs:label "Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO" .
+
+
+###  http://purl.bioontology.org/ontology/LNC/1558-6
+<http://purl.bioontology.org/ontology/LNC/1558-6> rdf:type owl:Class ;
+                                                  rdfs:label "Fasting glucose [Mass/volume] in Serum or Plasma" .
+
+
+###  http://purl.bioontology.org/ontology/LNC/2089-1
+<http://purl.bioontology.org/ontology/LNC/2089-1> rdf:type owl:Class ;
+                                                  rdfs:label "Cholesterol in LDL [Mass/volume] in Serum or Plasma" .
+
+
+###  http://purl.bioontology.org/ontology/LNC/55548-2
+<http://purl.bioontology.org/ontology/LNC/55548-2> rdf:type owl:Class ;
+                                                   owl:equivalentClass <http://purl.org/twc/DPO/ont/Metformin> .
+
+
+###  http://purl.bioontology.org/ontology/LNC/59261-8
+<http://purl.bioontology.org/ontology/LNC/59261-8> rdf:type owl:Class ;
+                                                   rdfs:label "Hemoglobin A1c/Hemoglobin.total in Blood by IFCC protocol" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_
+<http://purl.obolibrary.org/obo/CHEBI_> rdf:type owl:Class ;
+                                        owl:equivalentClass <http://purl.org/twc/DPO/ont/Linagliptin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_167574
+<http://purl.obolibrary.org/obo/CHEBI_167574> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Semaglutide> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_188719
+<http://purl.obolibrary.org/obo/CHEBI_188719> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Ertugliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_3095
+<http://purl.obolibrary.org/obo/CHEBI_3095> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Biguanide> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_40237
+<http://purl.obolibrary.org/obo/CHEBI_40237> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Sitagliptin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50122
+<http://purl.obolibrary.org/obo/CHEBI_50122> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Rosiglitazone> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50990
+<http://purl.obolibrary.org/obo/CHEBI_50990> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Thiazolidinedione> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_5383
+<http://purl.obolibrary.org/obo/CHEBI_5383> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Glimepiride> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_5384
+<http://purl.obolibrary.org/obo/CHEBI_5384> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Glipizide> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_5441
+<http://purl.obolibrary.org/obo/CHEBI_5441> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Glyburide> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_64073
+<http://purl.obolibrary.org/obo/CHEBI_64073> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Exenatide> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_6801
+<http://purl.obolibrary.org/obo/CHEBI_6801> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Metformin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_68612
+<http://purl.obolibrary.org/obo/CHEBI_68612> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/DPP4Inhibitor> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_71193
+<http://purl.obolibrary.org/obo/CHEBI_71193> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Liraglutide> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_71196
+<http://purl.obolibrary.org/obo/CHEBI_71196> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/GLP1RA> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_71272
+<http://purl.obolibrary.org/obo/CHEBI_71272> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Saxagliptin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_72323
+<http://purl.obolibrary.org/obo/CHEBI_72323> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Alogliptin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_73273
+<http://purl.obolibrary.org/obo/CHEBI_73273> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/SGLT2Inhibitor> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_73274
+<http://purl.obolibrary.org/obo/CHEBI_73274> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Canagliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_76983
+<http://purl.obolibrary.org/obo/CHEBI_76983> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Sulfonylurea> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_8228
+<http://purl.obolibrary.org/obo/CHEBI_8228> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Pioglitazone> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_82720
+<http://purl.obolibrary.org/obo/CHEBI_82720> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Empagliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_85078
+<http://purl.obolibrary.org/obo/CHEBI_85078> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Dapagliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_85662
+<http://purl.obolibrary.org/obo/CHEBI_85662> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Lixisenatide> .
+
+
+###  http://purl.obolibrary.org/obo/HP_0001520
+<http://purl.obolibrary.org/obo/HP_0001520> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/FetalMacrosomia> .
+
+
+###  http://purl.obolibrary.org/obo/HP_0100515
+<http://purl.obolibrary.org/obo/HP_0100515> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/FrequentUrination> .
+
+
+###  http://purl.obolibrary.org/obo/HP_0100749
+<http://purl.obolibrary.org/obo/HP_0100749> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/ChestPain> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C113486
+<http://purl.obolibrary.org/obo/NCIT_C113486> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/FetalMacrosomia> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C138901
+<http://purl.obolibrary.org/obo/NCIT_C138901> rdf:type owl:Class ;
+                                              rdfs:label "Body Mass Index Finding" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C152328
+<http://purl.obolibrary.org/obo/NCIT_C152328> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Semaglutide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C158136
+<http://purl.obolibrary.org/obo/NCIT_C158136> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Empagliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C166925
+<http://purl.obolibrary.org/obo/NCIT_C166925> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Ertugliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C166988
+<http://purl.obolibrary.org/obo/NCIT_C166988> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Lixisenatide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C169923
+<http://purl.obolibrary.org/obo/NCIT_C169923> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Dulaglutide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C26732
+<http://purl.obolibrary.org/obo/NCIT_C26732> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/CoronaryArteryDisease> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C29073
+<http://purl.obolibrary.org/obo/NCIT_C29073> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Glimepiride> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C29074
+<http://purl.obolibrary.org/obo/NCIT_C29074> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Glipizide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C29076
+<http://purl.obolibrary.org/obo/NCIT_C29076> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Glyburide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C3117
+<http://purl.obolibrary.org/obo/NCIT_C3117> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Hypertension> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C3283
+<http://purl.obolibrary.org/obo/NCIT_C3283> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/Obese> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C3390
+<http://purl.obolibrary.org/obo/NCIT_C3390> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/CerebralVascularAccident> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34707
+<http://purl.obolibrary.org/obo/NCIT_C34707> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Hyperlipidemia> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C38665
+<http://purl.obolibrary.org/obo/NCIT_C38665> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/ChestPain> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C49236
+<http://purl.obolibrary.org/obo/NCIT_C49236> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Therapy> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C50791
+<http://purl.obolibrary.org/obo/NCIT_C50791> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/UrinaryTractInfection> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C61612
+<http://purl.obolibrary.org/obo/NCIT_C61612> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Metformin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C62076
+<http://purl.obolibrary.org/obo/NCIT_C62076> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Rosiglitazone> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C65611
+<http://purl.obolibrary.org/obo/NCIT_C65611> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Exenatide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C69088
+<http://purl.obolibrary.org/obo/NCIT_C69088> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Cost> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C71633
+<http://purl.obolibrary.org/obo/NCIT_C71633> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Pioglitazone> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C73838
+<http://purl.obolibrary.org/obo/NCIT_C73838> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Sitagliptin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75983
+<http://purl.obolibrary.org/obo/NCIT_C75983> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Saxagliptin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C76906
+<http://purl.obolibrary.org/obo/NCIT_C76906> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Alogliptin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C78126
+<http://purl.obolibrary.org/obo/NCIT_C78126> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Dapagliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C82239
+<http://purl.obolibrary.org/obo/NCIT_C82239> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Liraglutide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C83887
+<http://purl.obolibrary.org/obo/NCIT_C83887> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Linagliptin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C86589
+<http://purl.obolibrary.org/obo/NCIT_C86589> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/SedentaryLifestyle> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C88183
+<http://purl.obolibrary.org/obo/NCIT_C88183> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Efficacy> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C91018
+<http://purl.obolibrary.org/obo/NCIT_C91018> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Canagliflozin> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C9232
+<http://purl.obolibrary.org/obo/NCIT_C9232> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://purl.org/twc/DPO/ont/WeightChangePotential> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C97936
+<http://purl.obolibrary.org/obo/NCIT_C97936> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Sulfonylurea> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C98083
+<http://purl.obolibrary.org/obo/NCIT_C98083> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/SGLT2Inhibitor> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C98085
+<http://purl.obolibrary.org/obo/NCIT_C98085> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/GLP1RA> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C98086
+<http://purl.obolibrary.org/obo/NCIT_C98086> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/DPP4Inhibitor> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C98234
+<http://purl.obolibrary.org/obo/NCIT_C98234> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Biguanide> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C98241
+<http://purl.obolibrary.org/obo/NCIT_C98241> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.org/twc/DPO/ont/Thiazolidinedione> .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0003194
+<http://purl.obolibrary.org/obo/OMIT_0003194> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/WeightChangePotential> .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0006531
+<http://purl.obolibrary.org/obo/OMIT_0006531> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/FetalMacrosomia> .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0009750
+<http://purl.obolibrary.org/obo/OMIT_0009750> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Metformin> .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0015388
+<http://purl.obolibrary.org/obo/OMIT_0015388> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/UrinaryTractInfection> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000012
+<http://purl.obolibrary.org/obo/SYMP_0000012> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/BlurredVision> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000099
+<http://purl.obolibrary.org/obo/SYMP_0000099> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Pain> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000320
+<http://purl.obolibrary.org/obo/SYMP_0000320> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/VisionSymptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000352
+<http://purl.obolibrary.org/obo/SYMP_0000352> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/PeripheralNeuropathy> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000410
+<http://purl.obolibrary.org/obo/SYMP_0000410> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/NeurologicalAndPhysiologicalSymptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000462
+<http://purl.obolibrary.org/obo/SYMP_0000462> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Symptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000473
+<http://purl.obolibrary.org/obo/SYMP_0000473> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/NutritionMetabolismAndDevelopmentSymptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000480
+<http://purl.obolibrary.org/obo/SYMP_0000480> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/NervousSystemSymptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000485
+<http://purl.obolibrary.org/obo/SYMP_0000485> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Dysuria> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000486
+<http://purl.obolibrary.org/obo/SYMP_0000486> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/UrinarySystemSymptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000524
+<http://purl.obolibrary.org/obo/SYMP_0000524> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Polyphagia> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000560
+<http://purl.obolibrary.org/obo/SYMP_0000560> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Polydipsia> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000563
+<http://purl.obolibrary.org/obo/SYMP_0000563> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/FrequentUrination> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000565
+<http://purl.obolibrary.org/obo/SYMP_0000565> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Polyuria> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000576
+<http://purl.obolibrary.org/obo/SYMP_0000576> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/ChestPain> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000734
+<http://purl.obolibrary.org/obo/SYMP_0000734> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/CerebralVascularAccident> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000891
+<http://purl.obolibrary.org/obo/SYMP_0000891> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/MusculoskeletalSystemSymptom> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0019169
+<http://purl.obolibrary.org/obo/SYMP_0019169> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Arthritis> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0019177
+<http://purl.obolibrary.org/obo/SYMP_0019177> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Fatigue> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0020018
+<http://purl.obolibrary.org/obo/SYMP_0020018> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://purl.org/twc/DPO/ont/Obese> .
+
+
+###  http://purl.org/twc/DPO/ont/AlcoholUse
+<http://purl.org/twc/DPO/ont/AlcoholUse> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/Behavior> ;
+                                         rdfs:comment "" ;
+                                         rdfs:label "Alcohol Use" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Alogliptin
+<http://purl.org/twc/DPO/ont/Alogliptin> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/DPP4Inhibitor> ;
+                                         rdfs:comment "" ;
+                                         rdfs:label "Alogliptin" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]" ,
+                                                                                          "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment
+<http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/Therapy> ;
+                                                         rdfs:comment "" ;
+                                                         rdfs:label "Antihyperglycemic Treatment" ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "Treatment designed to lower blood sugar levels." .
+
+
+###  http://purl.org/twc/DPO/ont/Arthritis
+<http://purl.org/twc/DPO/ont/Arthritis> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/MusculoskeletalSystemSymptom> ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Arthritis" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]" .
+
+
+###  http://purl.org/twc/DPO/ont/AtheroscleroticCardiovascularDiseaseRisk
+<http://purl.org/twc/DPO/ont/AtheroscleroticCardiovascularDiseaseRisk> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/CardiovascularEffect> ;
+                                                                       rdfs:comment "" ;
+                                                                       rdfs:label "Atherosclerotic Cardiovascular Disease Risk" ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Risk of cardiovascular disease resulting from atherosclerosis." .
+
+
+###  http://purl.org/twc/DPO/ont/Behavior
+<http://purl.org/twc/DPO/ont/Behavior> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "Behavior" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Biguanide
+<http://purl.org/twc/DPO/ont/Biguanide> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Biguanide" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/BilateralLowerExtremityBurningSensation
+<http://purl.org/twc/DPO/ont/BilateralLowerExtremityBurningSensation> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/NervousSystemSymptom> ;
+                                                                      rdfs:comment "" ;
+                                                                      rdfs:label "Occasional Burning Sensation in Bilateral Lower Extremities" ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding
+<http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/MeasurementFinding> ;
+                                                         rdfs:comment "" ;
+                                                         rdfs:label "Blood Glucose Related Finding" ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/BlurredVision
+<http://purl.org/twc/DPO/ont/BlurredVision> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/VisionSymptom> ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Blurred Vision" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]" .
+
+
+###  http://purl.org/twc/DPO/ont/BorderlineHighLDLLevel
+<http://purl.org/twc/DPO/ont/BorderlineHighLDLLevel> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/2089-1>
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                  owl:allValuesFrom <http://purl.org/twc/DPO/ont/BorderlineHighLDLRange>
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ] ;
+                                                     rdfs:subClassOf <http://purl.org/twc/DPO/ont/CholesterolRelatedFinding> ;
+                                                     rdfs:comment "" ;
+                                                     rdfs:label "Borderline High LDL Level" ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/BorderlineHighTriglycerideLevel
+<http://purl.org/twc/DPO/ont/BorderlineHighTriglycerideLevel> rdf:type owl:Class ;
+                                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/12228-3>
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                           owl:allValuesFrom <http://purl.org/twc/DPO/ont/BorderlineHighTriglycerideRange>
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ] ;
+                                                              rdfs:subClassOf <http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding> ;
+                                                              rdfs:comment "" ;
+                                                              rdfs:label "Borderline High Triglyceride Level" ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Canagliflozin
+<http://purl.org/twc/DPO/ont/Canagliflozin> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/SGLT2Inhibitor> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid10
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid12
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid14
+                                                            ] ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Canagliflozin" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. [Definition Source: NCI]" .
+
+_:genid10 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+_:genid12 rdf:type <http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit> .
+
+_:genid14 rdf:type <http://purl.org/twc/DPO/ont/PotentialDKDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/CardiovascularDisease
+<http://purl.org/twc/DPO/ont/CardiovascularDisease> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/Disease> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Cardiovascular Disease" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/CardiovascularEffect
+<http://purl.org/twc/DPO/ont/CardiovascularEffect> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                                   rdfs:comment "" ;
+                                                   rdfs:label "Cardiovascular Effect" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A pharmacotherapy factor related to the heart or blood vessels." .
+
+
+###  http://purl.org/twc/DPO/ont/CerebralVascularAccident
+<http://purl.org/twc/DPO/ont/CerebralVascularAccident> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/NervousSystemSymptom> ;
+                                                       rdfs:comment "A stroke." ;
+                                                       rdfs:label "Cerebral Vascular Accident" ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]" ,
+                                                                                                        "Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke ][Definition Source: SYMP:0000734]" .
+
+
+###  http://purl.org/twc/DPO/ont/ChestPain
+<http://purl.org/twc/DPO/ont/ChestPain> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/Pain> ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Chest Pain" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the chest. [Definition Source: HP:0100749]" .
+
+
+###  http://purl.org/twc/DPO/ont/CholesterolRelatedFinding
+<http://purl.org/twc/DPO/ont/CholesterolRelatedFinding> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/MeasurementFinding> ;
+                                                        rdfs:comment "" ;
+                                                        rdfs:label "Cholesterol Related Finding" ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/CoronaryArteryDisease
+<http://purl.org/twc/DPO/ont/CoronaryArteryDisease> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/Disease> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Coronary Artery Disease" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Cost
+<http://purl.org/twc/DPO/ont/Cost> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                   rdfs:comment "" ;
+                                   rdfs:label "Cost" ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/DPP4Inhibitor
+<http://purl.org/twc/DPO/ont/DPP4Inhibitor> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid16
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid18
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid20
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid22
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid24
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid26
+                                                            ] ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "DPP-4 Inhibitor" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]" ,
+                                                                                             "Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]" .
+
+_:genid16 rdf:type <http://purl.org/twc/DPO/ont/IntermediateEfficacy> .
+
+_:genid18 rdf:type <http://purl.org/twc/DPO/ont/NeutralWeightChange> .
+
+_:genid20 rdf:type <http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk> .
+
+_:genid22 rdf:type <http://purl.org/twc/DPO/ont/NeutralASCVDRisk> .
+
+_:genid24 rdf:type <http://purl.org/twc/DPO/ont/HighCost> .
+
+_:genid26 rdf:type <http://purl.org/twc/DPO/ont/NeutralDKDRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/Dapagliflozin
+<http://purl.org/twc/DPO/ont/Dapagliflozin> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/SGLT2Inhibitor> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid28
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid30
+                                                            ] ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Dapagliflozin" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. [Definition Source: NCI]" .
+
+_:genid28 rdf:type <http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit> .
+
+_:genid30 rdf:type <http://purl.org/twc/DPO/ont/PotentialDKDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Diabetes
+<http://purl.org/twc/DPO/ont/Diabetes> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/Disease> ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "Diabetes" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/DiabetesFastingBloodGlucoseLevel
+<http://purl.org/twc/DPO/ont/DiabetesFastingBloodGlucoseLevel> rdf:type owl:Class ;
+                                                               owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/1558-6>
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                            owl:allValuesFrom <http://purl.org/twc/DPO/ont/DiabetesFastingBloodGlucoseRange>
+                                                                                                          ]
+                                                                                                        ) ;
+                                                                                     rdf:type owl:Class
+                                                                                   ] ;
+                                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> ;
+                                                               rdfs:comment "" ;
+                                                               rdfs:label "Diabetes Fasting Blood Glucose Level" ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel
+<http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/59261-8>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                              owl:allValuesFrom <http://purl.org/twc/DPO/ont/DiabetesHbA1CRange>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> ;
+                                                 rdfs:comment "" ;
+                                                 rdfs:label "Diabetes HbA1C Level" ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/DiabetesTwoHourBloodGlucoseLevel
+<http://purl.org/twc/DPO/ont/DiabetesTwoHourBloodGlucoseLevel> rdf:type owl:Class ;
+                                                               owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/1518-0>
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                            owl:allValuesFrom <http://purl.org/twc/DPO/ont/DiabetesTwoHourBloodGlucoseRange>
+                                                                                                          ]
+                                                                                                        ) ;
+                                                                                     rdf:type owl:Class
+                                                                                   ] ;
+                                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> ;
+                                                               rdfs:comment "" ;
+                                                               rdfs:label "Diabetes Two Hour Blood Glucose Level" ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/DiabeticKidneyDiseaseProgression
+<http://purl.org/twc/DPO/ont/DiabeticKidneyDiseaseProgression> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/RenalEffect> ;
+                                                               rdfs:comment "" ;
+                                                               rdfs:label "Diabetic Kidney Disease Progression" ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "The progression of diabetic kidney disease." .
+
+
+###  http://purl.org/twc/DPO/ont/DiagnosticFactor
+<http://purl.org/twc/DPO/ont/DiagnosticFactor> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/Factor> ;
+                                               rdfs:comment "" ;
+                                               rdfs:label "Diagnostic Factor" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A circumstance influencing the dianosis of a disease." .
+
+
+###  http://purl.org/twc/DPO/ont/Disease
+<http://purl.org/twc/DPO/ont/Disease> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "Disease" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Dulaglutide
+<http://purl.org/twc/DPO/ont/Dulaglutide> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/GLP1RA> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid44
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid46
+                                                          ] ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Dulaglutide" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]" .
+
+_:genid44 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+_:genid46 rdf:type <http://purl.org/twc/DPO/ont/PotentialDKDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Dysuria
+<http://purl.org/twc/DPO/ont/Dysuria> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/UrinarySystemSymptom> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "Dysuria" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]" .
+
+
+###  http://purl.org/twc/DPO/ont/Efficacy
+<http://purl.org/twc/DPO/ont/Efficacy> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "Efficacy" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The capacity to bring about a desired effect. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Empagliflozin
+<http://purl.org/twc/DPO/ont/Empagliflozin> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/SGLT2Inhibitor> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid48
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid50
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid52
+                                                            ] ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Empagliflozin" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]" .
+
+_:genid48 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+_:genid50 rdf:type <http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit> .
+
+_:genid52 rdf:type <http://purl.org/twc/DPO/ont/PotentialDKDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Ertugliflozin
+<http://purl.org/twc/DPO/ont/Ertugliflozin> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/SGLT2Inhibitor> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:hasValue _:genid54
+                                                            ] ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Ertugliflozin" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "Ertugliflozin is in a class of medications called sodium-glucose co-transporter 2 (SGLT2) inhibitors. It lowers blood sugar by causing the kidneys to get rid of more glucose in the urine. Ertugliflozin is not used to treat type 1 diabetes (condition in which the body does not produce insulin and, therefore, cannot control the amount of sugar in the blood) or diabetic ketoacidosis (a serious condition that may develop if high blood sugar is not treated). [Definition Source: https://medlineplus.gov/druginfo/meds/a618011.html]" .
+
+_:genid54 rdf:type <http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Exenatide
+<http://purl.org/twc/DPO/ont/Exenatide> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/GLP1RA> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid56
+                                                        ] ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Exenatide" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]" ,
+                                                                                         "A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]" .
+
+_:genid56 rdf:type <http://purl.org/twc/DPO/ont/NeutralASCVDRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/Factor
+<http://purl.org/twc/DPO/ont/Factor> rdf:type owl:Class ;
+                                     rdfs:comment "" ;
+                                     rdfs:label "Factor" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements." .
+
+
+###  http://purl.org/twc/DPO/ont/FamilyHistory
+<http://purl.org/twc/DPO/ont/FamilyHistory> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/History> ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Family History" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/FamilyHistoryOfCAD
+<http://purl.org/twc/DPO/ont/FamilyHistoryOfCAD> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/twc/DPO/ont/FamilyHistory> ;
+                                                 rdfs:comment "" ;
+                                                 rdfs:label "Family History of Coronary Artery Disease" ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/FamilyHistoryOfDiabetes
+<http://purl.org/twc/DPO/ont/FamilyHistoryOfDiabetes> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/FamilyHistory> ;
+                                                      rdfs:comment "" ;
+                                                      rdfs:label "Family History of Diabetes" ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Fatigue
+<http://purl.org/twc/DPO/ont/Fatigue> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/NeurologicalAndPhysiologicalSymptom> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "Fatigue" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]" .
+
+
+###  http://purl.org/twc/DPO/ont/FetalMacrosomia
+<http://purl.org/twc/DPO/ont/FetalMacrosomia> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                              rdfs:comment "gave birth to a child weighing more than 9 lbs" ;
+                                              rdfs:label "Fetal Macrosomia" ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "A fetus exceeding 4500 grams. [Definition Source: NCI][attribution: NICHD]" ;
+                                              <http://www.w3.org/2004/02/skos/core#defintion> "The term large for gestational age applies to babies whose birth weight lies above the 90th percentile for that gestational age. [Definition Source: HP:0001520]" .
+
+
+###  http://purl.org/twc/DPO/ont/FoulUrine
+<http://purl.org/twc/DPO/ont/FoulUrine> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/UrinarySystemSymptom> ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Foul Urine" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/FrequentUrination
+<http://purl.org/twc/DPO/ont/FrequentUrination> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/twc/DPO/ont/UrinarySystemSymptom> ;
+                                                rdfs:comment "" ;
+                                                rdfs:label "Frequent Urination" ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "Increased frequency of urination. [Definition Source: HP:0100515]" .
+
+
+###  http://purl.org/twc/DPO/ont/GLP1RA
+<http://purl.org/twc/DPO/ont/GLP1RA> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                       owl:hasValue _:genid58
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                       owl:hasValue _:genid60
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                       owl:hasValue _:genid62
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                       owl:hasValue _:genid64
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                       owl:hasValue _:genid66
+                                                     ] ;
+                                     rdfs:comment "" ;
+                                     rdfs:label "GLP-1 RA" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]" ,
+                                                                                      "Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]" .
+
+_:genid58 rdf:type <http://purl.org/twc/DPO/ont/HighEfficacy> .
+
+_:genid60 rdf:type <http://purl.org/twc/DPO/ont/WeightLossPotential> .
+
+_:genid62 rdf:type <http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk> .
+
+_:genid64 rdf:type <http://purl.org/twc/DPO/ont/NeutralHeartFailureRisk> .
+
+_:genid66 rdf:type <http://purl.org/twc/DPO/ont/HighCost> .
+
+
+###  http://purl.org/twc/DPO/ont/Glimepiride
+<http://purl.org/twc/DPO/ont/Glimepiride> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/Sulfonylurea> ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Glimepiride" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Glipizide
+<http://purl.org/twc/DPO/ont/Glipizide> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/Sulfonylurea> ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Glipizide" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]" ,
+                                                                                         "An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Glyburide
+<http://purl.org/twc/DPO/ont/Glyburide> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/Sulfonylurea> ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Glyburide" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]" ,
+                                                                                         "An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]" .
+
+
+###  http://purl.org/twc/DPO/ont/HeartFailureRisk
+<http://purl.org/twc/DPO/ont/HeartFailureRisk> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/CardiovascularEffect> ;
+                                               rdfs:comment "" ;
+                                               rdfs:label "Heart Failure Risk" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Risk of heart failure." .
+
+
+###  http://purl.org/twc/DPO/ont/HighCost
+<http://purl.org/twc/DPO/ont/HighCost> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/Cost> ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "High Cost" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Relatively expensive." .
+
+
+###  http://purl.org/twc/DPO/ont/HighEfficacy
+<http://purl.org/twc/DPO/ont/HighEfficacy> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/Efficacy> ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "High Efficacy" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "A high capacity to bring about a desired effect." .
+
+
+###  http://purl.org/twc/DPO/ont/HighLDLLevel
+<http://purl.org/twc/DPO/ont/HighLDLLevel> rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/2089-1>
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                        owl:allValuesFrom <http://purl.org/twc/DPO/ont/HighLDLRange>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/CholesterolRelatedFinding> ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "High LDL Level" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/HighTriglycerideLevel
+<http://purl.org/twc/DPO/ont/HighTriglycerideLevel> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/12228-3>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                 owl:allValuesFrom <http://purl.org/twc/DPO/ont/HighTriglycerideRange>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "High Triglyceride Level" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/History
+<http://purl.org/twc/DPO/ont/History> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "History" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Hyperlipidemia
+<http://purl.org/twc/DPO/ont/Hyperlipidemia> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                             rdfs:comment "" ;
+                                             rdfs:label "Hyperlipidemia" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "Elevated levels of lipids in the blood. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Hypertension
+<http://purl.org/twc/DPO/ont/Hypertension> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "Hypertension" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Blood pressure that is abnormally high. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/HypoglycemiaRisk
+<http://purl.org/twc/DPO/ont/HypoglycemiaRisk> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                               rdfs:comment "" ;
+                                               rdfs:label "Hypoglycemia Risk" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The possiblility of lowering blood sugar below the normal range." .
+
+
+###  http://purl.org/twc/DPO/ont/IncreasedASCVDRisk
+<http://purl.org/twc/DPO/ont/IncreasedASCVDRisk> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/twc/DPO/ont/AtheroscleroticCardiovascularDiseaseRisk> ;
+                                                 rdfs:comment "" ;
+                                                 rdfs:label "Increased ASCVD Risk" ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "Potential to increase the risk of cardiovascular disease resulting from atherosclerosis." .
+
+
+###  http://purl.org/twc/DPO/ont/IncreasedDKDRisk
+<http://purl.org/twc/DPO/ont/IncreasedDKDRisk> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiabeticKidneyDiseaseProgression> ;
+                                               rdfs:comment "" ;
+                                               rdfs:label "Increased Diabetic Kidney Disease Risk" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Potential to increase the risk or progression of diabetic kidney disease." .
+
+
+###  http://purl.org/twc/DPO/ont/IncreasedHeartFailureRisk
+<http://purl.org/twc/DPO/ont/IncreasedHeartFailureRisk> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/HeartFailureRisk> ;
+                                                        rdfs:comment "" ;
+                                                        rdfs:label "Increased Heart Failure Risk" ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "Potential to increase the risk of heart failure." .
+
+
+###  http://purl.org/twc/DPO/ont/IntermediateEfficacy
+<http://purl.org/twc/DPO/ont/IntermediateEfficacy> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/Efficacy> ;
+                                                   rdfs:comment "" ;
+                                                   rdfs:label "Intermediate Efficacy" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An intermediate capacity to bring about a desired effect." .
+
+
+###  http://purl.org/twc/DPO/ont/KnownHypoglycemiaRisk
+<http://purl.org/twc/DPO/ont/KnownHypoglycemiaRisk> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/HypoglycemiaRisk> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Known Hypoglycemia Risk" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A known association with the lowering of blood sugar below the normal range." .
+
+
+###  http://purl.org/twc/DPO/ont/Linagliptin
+<http://purl.org/twc/DPO/ont/Linagliptin> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/DPP4Inhibitor> ;
+                                          rdfs:comment "68610" ;
+                                          rdfs:label "Linagliptin" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]" ,
+                                                                                           "A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Liraglutide
+<http://purl.org/twc/DPO/ont/Liraglutide> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/GLP1RA> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid76
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid78
+                                                          ] ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Liraglutide" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. [Definition Source: NCI]" .
+
+_:genid76 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+_:genid78 rdf:type <http://purl.org/twc/DPO/ont/PotentialDKDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Lixisenatide
+<http://purl.org/twc/DPO/ont/Lixisenatide> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/GLP1RA> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid80
+                                                           ] ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "Lixisenatide" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "A forty-four membered polypeptide consisting of L-His, Gly, L-Glu, Gly, L-Thr, L-Phe, L-Thr, L-Ser, L-Asp, L-Leu, L-Ser, L-Lys, L-Gln, L-Met, L-Glu, L-Glu, L-Glu, L-Ala, L-Val, L-Arg, L-Leu, L-Phe, L-Ile, L-Glu, L-Trp, L-Leu, L-Lys, L-Asn, Gly, Gly, LPro, L-Ser, L-Ser, Gly, L-Ala, L-Pro, L-Pro, L-Ser, L-Lys, L-Lys, L-Lys, L-Lys, L-Lys, and L-Lys-NH2 residues joined in sequence. Used as an adjunct to diet and exercise for the treatment of adults with type II diabetes. [Definition Source: CHEBI]" .
+
+_:genid80 rdf:type <http://purl.org/twc/DPO/ont/NeutralASCVDRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/LowCost
+<http://purl.org/twc/DPO/ont/LowCost> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/Cost> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "Low Cost" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Relatively inexpensive." .
+
+
+###  http://purl.org/twc/DPO/ont/LowEfficacy
+<http://purl.org/twc/DPO/ont/LowEfficacy> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/Efficacy> ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Low Efficacy" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A low capacity to bring about a desired effect." .
+
+
+###  http://purl.org/twc/DPO/ont/MeasurementFinding
+<http://purl.org/twc/DPO/ont/MeasurementFinding> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/twc/DPO/ont/Factor> ;
+                                                 rdfs:comment "" ;
+                                                 rdfs:label "Measurement Finding" ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "A finding surmised from recorded measurements." .
+
+
+###  http://purl.org/twc/DPO/ont/Metformin
+<http://purl.org/twc/DPO/ont/Metformin> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/Biguanide> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid82
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid84
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid86
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid88
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid90
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid92
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                          owl:hasValue _:genid94
+                                                        ] ;
+                                        rdfs:comment "" ;
+                                        rdfs:label "Metformin" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. [Definition Source: NCI]" .
+
+_:genid82 rdf:type <http://purl.org/twc/DPO/ont/HighEfficacy> .
+
+_:genid84 rdf:type <http://purl.org/twc/DPO/ont/NeutralWeightChange> .
+
+_:genid86 rdf:type <http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk> .
+
+_:genid88 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+_:genid90 rdf:type <http://purl.org/twc/DPO/ont/NeutralHeartFailureRisk> .
+
+_:genid92 rdf:type <http://purl.org/twc/DPO/ont/LowCost> .
+
+_:genid94 rdf:type <http://purl.org/twc/DPO/ont/NeutralDKDRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/MusculoskeletalSystemSymptom
+<http://purl.org/twc/DPO/ont/MusculoskeletalSystemSymptom> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/Symptom> ;
+                                                           rdfs:comment "" ;
+                                                           rdfs:label "Musculoskeletal System Symptom" ;
+                                                           <http://www.w3.org/2004/02/skos/core#definition> "A symptom involving the musculoskeletal system." .
+
+
+###  http://purl.org/twc/DPO/ont/NearOptimalLDLLevel
+<http://purl.org/twc/DPO/ont/NearOptimalLDLLevel> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/2089-1>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                               owl:allValuesFrom <http://purl.org/twc/DPO/ont/NearOptimalLDLRange>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/CholesterolRelatedFinding> ;
+                                                  rdfs:comment "" ;
+                                                  rdfs:label "Near Optimal LDL Level" ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/NervousSystemSymptom
+<http://purl.org/twc/DPO/ont/NervousSystemSymptom> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/Symptom> ;
+                                                   rdfs:comment "" ;
+                                                   rdfs:label "Nervous System Symptom" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/NeurologicalAndPhysiologicalSymptom
+<http://purl.org/twc/DPO/ont/NeurologicalAndPhysiologicalSymptom> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/Symptom> ;
+                                                                  rdfs:comment "" ;
+                                                                  rdfs:label "Neurological and Physiological Symptom" ;
+                                                                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/NeutralASCVDRisk
+<http://purl.org/twc/DPO/ont/NeutralASCVDRisk> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/AtheroscleroticCardiovascularDiseaseRisk> ;
+                                               rdfs:comment "" ;
+                                               rdfs:label "Neutral ASCVD Risk" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis." .
+
+
+###  http://purl.org/twc/DPO/ont/NeutralDKDRisk
+<http://purl.org/twc/DPO/ont/NeutralDKDRisk> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiabeticKidneyDiseaseProgression> ;
+                                             rdfs:comment "" ;
+                                             rdfs:label "Neutral Diabetic Kidney Disease Risk" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease." .
+
+
+###  http://purl.org/twc/DPO/ont/NeutralHeartFailureRisk
+<http://purl.org/twc/DPO/ont/NeutralHeartFailureRisk> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/HeartFailureRisk> ;
+                                                      rdfs:comment "" ;
+                                                      rdfs:label "Neutral Heart Failure Risk" ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "Minimal effect on reducing or increasing the risk of heart failure." .
+
+
+###  http://purl.org/twc/DPO/ont/NeutralWeightChange
+<http://purl.org/twc/DPO/ont/NeutralWeightChange> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightChangePotential> ;
+                                                  rdfs:comment "" ;
+                                                  rdfs:label "Neutral Weight Change" ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "The lack of an effect on the capacity for an increase or decrease in the weight of an individual." .
+
+
+###  http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk
+<http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/HypoglycemiaRisk> ;
+                                                      rdfs:comment "" ;
+                                                      rdfs:label "No Known Hypoglycemia Risk" ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "No known association with the lowering of blood sugar below the normal range." .
+
+
+###  http://purl.org/twc/DPO/ont/NormalTriglycerideLevel
+<http://purl.org/twc/DPO/ont/NormalTriglycerideLevel> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/12228-3>
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                   owl:allValuesFrom <http://purl.org/twc/DPO/ont/NormalTriglycerideRange>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding> ;
+                                                      rdfs:comment "" ;
+                                                      rdfs:label "Normal Triglyceride Level" ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/NormalWeight
+<http://purl.org/twc/DPO/ont/NormalWeight> rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCIT_C138901>
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                        owl:allValuesFrom <http://purl.org/twc/DPO/ont/NormalWeightBMIRange>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightRelatedFinding> ;
+                                           rdfs:comment "18.5<BMI<24.9" ;
+                                           rdfs:label "Normal Weight" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/NutritionMetabolismAndDevelopmentSymptom
+<http://purl.org/twc/DPO/ont/NutritionMetabolismAndDevelopmentSymptom> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/Symptom> ;
+                                                                       rdfs:comment "" ;
+                                                                       rdfs:label "Nutrition Metabolism and Development Symptom" ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "A symptom involving the nutrition, metabolism, and/or development system." .
+
+
+###  http://purl.org/twc/DPO/ont/Obese
+<http://purl.org/twc/DPO/ont/Obese> rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCIT_C138901>
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                 owl:allValuesFrom <http://purl.org/twc/DPO/ont/ObeseBMIRange>
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightRelatedFinding> ;
+                                    rdfs:comment "30<BMI" ;
+                                    rdfs:label "Obese" ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Occupation
+<http://purl.org/twc/DPO/ont/Occupation> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                         rdfs:comment "" ;
+                                         rdfs:label "Occupation" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/OptimalLDLLevel
+<http://purl.org/twc/DPO/ont/OptimalLDLLevel> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/2089-1>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                           owl:allValuesFrom <http://purl.org/twc/DPO/ont/OptimalLDLRange>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <http://purl.org/twc/DPO/ont/CholesterolRelatedFinding> ;
+                                              rdfs:comment "" ;
+                                              rdfs:label "Optimal LDL Level" ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Overweight
+<http://purl.org/twc/DPO/ont/Overweight> rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCIT_C138901>
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                      owl:allValuesFrom <http://purl.org/twc/DPO/ont/OverweightBMIRange>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightRelatedFinding> ;
+                                         rdfs:comment "25<BMI<29.9" ;
+                                         rdfs:label "Overweight" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Pain
+<http://purl.org/twc/DPO/ont/Pain> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/NervousSystemSymptom> ;
+                                   rdfs:comment "" ;
+                                   rdfs:label "Pain" ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body. [ url:http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp ][Definition Source: SYMP:0000576]" .
+
+
+###  http://purl.org/twc/DPO/ont/PeripheralNeuropathy
+<http://purl.org/twc/DPO/ont/PeripheralNeuropathy> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/MusculoskeletalSystemSymptom> ;
+                                                   rdfs:comment "" ;
+                                                   rdfs:label "Peripheral Neuropathy" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/PersonalHistory
+<http://purl.org/twc/DPO/ont/PersonalHistory> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/twc/DPO/ont/History> ;
+                                              rdfs:comment "" ;
+                                              rdfs:label "Personal History" ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/PersonalHistoryOfFebrileStates
+<http://purl.org/twc/DPO/ont/PersonalHistoryOfFebrileStates> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://purl.org/twc/DPO/ont/PersonalHistory> ;
+                                                             rdfs:comment "" ;
+                                                             rdfs:label "Personal History of Febrile States" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/PersonalHistoryOfGestationalDiabetes
+<http://purl.org/twc/DPO/ont/PersonalHistoryOfGestationalDiabetes> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/PersonalHistory> ;
+                                                                   rdfs:comment "" ;
+                                                                   rdfs:label "Personal History of Gestational Diabetes" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/PharmacotherapyFactor
+<http://purl.org/twc/DPO/ont/PharmacotherapyFactor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/Factor> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Pharmacotherapy Factor" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A circumstance influencing the treatment of a disease through the use of drugs." .
+
+
+###  http://purl.org/twc/DPO/ont/Pioglitazone
+<http://purl.org/twc/DPO/ont/Pioglitazone> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/Thiazolidinedione> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid120
+                                                           ] ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "Pioglitazone" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]" ,
+                                                                                            "An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]" .
+
+_:genid120 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Polydipsia
+<http://purl.org/twc/DPO/ont/Polydipsia> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/NutritionMetabolismAndDevelopmentSymptom> ;
+                                         rdfs:comment "" ;
+                                         rdfs:label "Polydipsia" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]" .
+
+
+###  http://purl.org/twc/DPO/ont/Polyphagia
+<http://purl.org/twc/DPO/ont/Polyphagia> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/NutritionMetabolismAndDevelopmentSymptom> ;
+                                         rdfs:comment "" ;
+                                         rdfs:label "Polyphagia" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]" .
+
+
+###  http://purl.org/twc/DPO/ont/Polyuria
+<http://purl.org/twc/DPO/ont/Polyuria> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/UrinarySystemSymptom> ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "Polyuria" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]" .
+
+
+###  http://purl.org/twc/DPO/ont/PotentialASCVDBenefit
+<http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/AtheroscleroticCardiovascularDiseaseRisk> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Potential ASCVD Benefit" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis." .
+
+
+###  http://purl.org/twc/DPO/ont/PotentialDKDBenefit
+<http://purl.org/twc/DPO/ont/PotentialDKDBenefit> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiabeticKidneyDiseaseProgression> ;
+                                                  rdfs:comment "" ;
+                                                  rdfs:label "Potential Diabetic Kidney Disease Benefit" ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "Potential to decrease the risk or progression of diabetic kidney disease." .
+
+
+###  http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit
+<http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/HeartFailureRisk> ;
+                                                           rdfs:comment "" ;
+                                                           rdfs:label "Potential Heart Failure Benefit" ;
+                                                           <http://www.w3.org/2004/02/skos/core#definition> "Potential to decrease the risk of heart failure." .
+
+
+###  http://purl.org/twc/DPO/ont/PrediabetesFastingBloodGlucoseLevel
+<http://purl.org/twc/DPO/ont/PrediabetesFastingBloodGlucoseLevel> rdf:type owl:Class ;
+                                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/1558-6>
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                               owl:allValuesFrom <http://purl.org/twc/DPO/ont/PrediabetesFastingBloodGlucoseRange>
+                                                                                                             ]
+                                                                                                           ) ;
+                                                                                        rdf:type owl:Class
+                                                                                      ] ;
+                                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> ;
+                                                                  rdfs:comment "" ;
+                                                                  rdfs:label "Prediabetes Fasting Blood Glucose Level" ;
+                                                                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/PrediabetesHbA1CLevel
+<http://purl.org/twc/DPO/ont/PrediabetesHbA1CLevel> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/59261-8>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                 owl:allValuesFrom <http://purl.org/twc/DPO/ont/PrediabetesHbA1CRange>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Prediabetes HbA1C Level" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/PrediabetesTwoHourBloodGlucoseLevel
+<http://purl.org/twc/DPO/ont/PrediabetesTwoHourBloodGlucoseLevel> rdf:type owl:Class ;
+                                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/1518-0>
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                               owl:allValuesFrom <http://purl.org/twc/DPO/ont/PrediabetesTwoHourBloodGlucoseRange>
+                                                                                                             ]
+                                                                                                           ) ;
+                                                                                        rdf:type owl:Class
+                                                                                      ] ;
+                                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding> ;
+                                                                  rdfs:comment "" ;
+                                                                  rdfs:label "Prediabetes Two Hour Blood Glucose Level" ;
+                                                                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/RenalDisease
+<http://purl.org/twc/DPO/ont/RenalDisease> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/Disease> ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "Renal Disease" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Disease associated with kidneys, typically chronic kidney disease." .
+
+
+###  http://purl.org/twc/DPO/ont/RenalDosingConsideration
+<http://purl.org/twc/DPO/ont/RenalDosingConsideration> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/twc/DPO/ont/RenalEffect> ;
+                                                       rdfs:comment "" ;
+                                                       rdfs:label "Renal Dosing Consideration" ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "Drug dosage considerations related to the effect on the kidneys." .
+
+
+###  http://purl.org/twc/DPO/ont/RenalEffect
+<http://purl.org/twc/DPO/ont/RenalEffect> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Renal Effect" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A pharmacotherapy factor related to the kidneys." .
+
+
+###  http://purl.org/twc/DPO/ont/Rosiglitazone
+<http://purl.org/twc/DPO/ont/Rosiglitazone> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/Thiazolidinedione> ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Rosiglitazone" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/SGLT2Inhibitor
+<http://purl.org/twc/DPO/ont/SGLT2Inhibitor> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:hasValue _:genid134
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:hasValue _:genid136
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:hasValue _:genid138
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:hasValue _:genid140
+                                                             ] ;
+                                             rdfs:comment "" ;
+                                             rdfs:label "SGLT2 Inhibitor" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]" .
+
+_:genid134 rdf:type <http://purl.org/twc/DPO/ont/IntermediateEfficacy> .
+
+_:genid136 rdf:type <http://purl.org/twc/DPO/ont/WeightLossPotential> .
+
+_:genid138 rdf:type <http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk> .
+
+_:genid140 rdf:type <http://purl.org/twc/DPO/ont/HighCost> .
+
+
+###  http://purl.org/twc/DPO/ont/Saxagliptin
+<http://purl.org/twc/DPO/ont/Saxagliptin> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/DPP4Inhibitor> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid142
+                                                          ] ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Saxagliptin" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]" ,
+                                                                                           "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]" .
+
+_:genid142 rdf:type <http://purl.org/twc/DPO/ont/IncreasedHeartFailureRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/SedentaryLifestyle
+<http://purl.org/twc/DPO/ont/SedentaryLifestyle> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/twc/DPO/ont/Behavior> ;
+                                                 rdfs:comment "" ;
+                                                 rdfs:label "Sedentary Lifestyle" ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/SedentaryOccupation
+<http://purl.org/twc/DPO/ont/SedentaryOccupation> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/Occupation> ;
+                                                  rdfs:comment "" ;
+                                                  rdfs:label "Sedentary Occupation" ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Semaglutide
+<http://purl.org/twc/DPO/ont/Semaglutide> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/GLP1RA> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid144
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                            owl:hasValue _:genid146
+                                                          ] ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Semaglutide" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A polypeptide that contains a linear sequence of 31 amino acids joined together by peptide linkages. It is an agonist of glucagon-like peptide-1 receptors (GLP-1 AR) and used for the treatment of type 2 diabetes. [Definition Source: CHEBI]" .
+
+_:genid144 rdf:type <http://purl.org/twc/DPO/ont/PotentialASCVDBenefit> .
+
+_:genid146 rdf:type <http://purl.org/twc/DPO/ont/PotentialDKDBenefit> .
+
+
+###  http://purl.org/twc/DPO/ont/Sitagliptin
+<http://purl.org/twc/DPO/ont/Sitagliptin> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/DPP4Inhibitor> ;
+                                          rdfs:comment "" ;
+                                          rdfs:label "Sitagliptin" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Sulfonylurea
+<http://purl.org/twc/DPO/ont/Sulfonylurea> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid148
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid150
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid152
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid154
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid156
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid158
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                             owl:hasValue _:genid160
+                                                           ] ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "Sulfonylurea" ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). [Definition Source: NCI]" .
+
+_:genid148 rdf:type <http://purl.org/twc/DPO/ont/HighEfficacy> .
+
+_:genid150 rdf:type <http://purl.org/twc/DPO/ont/WeightGainPotential> .
+
+_:genid152 rdf:type <http://purl.org/twc/DPO/ont/KnownHypoglycemiaRisk> .
+
+_:genid154 rdf:type <http://purl.org/twc/DPO/ont/NeutralASCVDRisk> .
+
+_:genid156 rdf:type <http://purl.org/twc/DPO/ont/NeutralHeartFailureRisk> .
+
+_:genid158 rdf:type <http://purl.org/twc/DPO/ont/LowCost> .
+
+_:genid160 rdf:type <http://purl.org/twc/DPO/ont/NeutralDKDRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/Symptom
+<http://purl.org/twc/DPO/ont/Symptom> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/DiagnosticFactor> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "Symptom" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]" .
+
+
+###  http://purl.org/twc/DPO/ont/Therapy
+<http://purl.org/twc/DPO/ont/Therapy> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/twc/DPO/ont/Factor> ;
+                                      rdfs:comment "" ;
+                                      rdfs:label "Therapy" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/Thiazolidinedione
+<http://purl.org/twc/DPO/ont/Thiazolidinedione> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment> ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                  owl:hasValue _:genid162
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                  owl:hasValue _:genid164
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                  owl:hasValue _:genid166
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                  owl:hasValue _:genid168
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                  owl:hasValue _:genid170
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                  owl:hasValue _:genid172
+                                                                ] ;
+                                                rdfs:comment "" ;
+                                                rdfs:label "Thiazolidinedione" ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]" .
+
+_:genid162 rdf:type <http://purl.org/twc/DPO/ont/HighEfficacy> .
+
+_:genid164 rdf:type <http://purl.org/twc/DPO/ont/WeightGainPotential> .
+
+_:genid166 rdf:type <http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk> .
+
+_:genid168 rdf:type <http://purl.org/twc/DPO/ont/IncreasedHeartFailureRisk> .
+
+_:genid170 rdf:type <http://purl.org/twc/DPO/ont/LowCost> .
+
+_:genid172 rdf:type <http://purl.org/twc/DPO/ont/NeutralDKDRisk> .
+
+
+###  http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding
+<http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/twc/DPO/ont/MeasurementFinding> ;
+                                                         rdfs:comment "" ;
+                                                         rdfs:label "Triglyceride Related Finding" ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/Underweight
+<http://purl.org/twc/DPO/ont/Underweight> rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCIT_C138901>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                       owl:allValuesFrom <http://purl.org/twc/DPO/ont/UnderweightBMIRange>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
+                                          rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightRelatedFinding> ;
+                                          rdfs:comment "BMI<18.5" ;
+                                          rdfs:label "Underweight" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/UrinarySystemSymptom
+<http://purl.org/twc/DPO/ont/UrinarySystemSymptom> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/Symptom> ;
+                                                   rdfs:comment "" ;
+                                                   rdfs:label "Urinary System Symptom" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A symptom involving the urinary system." .
+
+
+###  http://purl.org/twc/DPO/ont/UrinaryTractInfection
+<http://purl.org/twc/DPO/ont/UrinaryTractInfection> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/UrinarySystemSymptom> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Urinary Tract Infection (UTI)" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]" .
+
+
+###  http://purl.org/twc/DPO/ont/VeryHighLDLLevel
+<http://purl.org/twc/DPO/ont/VeryHighLDLLevel> rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/2089-1>
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                            owl:allValuesFrom <http://purl.org/twc/DPO/ont/VeryHighLDLRange>
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf <http://purl.org/twc/DPO/ont/CholesterolRelatedFinding> ;
+                                               rdfs:comment "" ;
+                                               rdfs:label "Very High LDL Level" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/VeryHighTriglycerideLevel
+<http://purl.org/twc/DPO/ont/VeryHighTriglycerideLevel> rdf:type owl:Class ;
+                                                        owl:equivalentClass [ owl:intersectionOf ( <http://purl.bioontology.org/ontology/LNC/12228-3>
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://semanticscience.org/resource/hasValue> ;
+                                                                                                     owl:allValuesFrom <http://purl.org/twc/DPO/ont/VeryHighTriglycerideRange>
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ] ;
+                                                        rdfs:subClassOf <http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding> ;
+                                                        rdfs:comment "" ;
+                                                        rdfs:label "Very High Triglyceride Level" ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/VisionSymptom
+<http://purl.org/twc/DPO/ont/VisionSymptom> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/twc/DPO/ont/Symptom> ;
+                                            rdfs:comment "" ;
+                                            rdfs:label "Vision Symptom" ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "A symptom involving visual impairment." .
+
+
+###  http://purl.org/twc/DPO/ont/WeightChangePotential
+<http://purl.org/twc/DPO/ont/WeightChangePotential> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/twc/DPO/ont/PharmacotherapyFactor> ;
+                                                    rdfs:comment "" ;
+                                                    rdfs:label "Weight Change Potential" ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "The capacity for an increase or decrease in the weight of an individual." .
+
+
+###  http://purl.org/twc/DPO/ont/WeightGainPotential
+<http://purl.org/twc/DPO/ont/WeightGainPotential> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightChangePotential> ;
+                                                  rdfs:comment "" ;
+                                                  rdfs:label "Weight Gain Potential" ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "The capacity for an increase in the weight of an individual." .
+
+
+###  http://purl.org/twc/DPO/ont/WeightLossPotential
+<http://purl.org/twc/DPO/ont/WeightLossPotential> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/twc/DPO/ont/WeightChangePotential> ;
+                                                  rdfs:comment "" ;
+                                                  rdfs:label "Weight Loss Potential" ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "The capacity for a decrease in the weight of an individual." .
+
+
+###  http://purl.org/twc/DPO/ont/WeightRelatedFinding
+<http://purl.org/twc/DPO/ont/WeightRelatedFinding> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/twc/DPO/ont/MeasurementFinding> ;
+                                                   rdfs:comment "" ;
+                                                   rdfs:label "Weight Related Finding" ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://purl.org/twc/DPO/ont/hasDiagnosis
+<http://purl.org/twc/DPO/ont/hasDiagnosis> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://semanticscience.org/resource/hasAttribute> .
+
+
+###  http://semanticscience.org/resource/hasAttribute
+<http://semanticscience.org/resource/hasAttribute> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/twc/DPO/ont/hasDiagnosis> rdfs:label "has diagnosis" .
+
+
+<http://semanticscience.org/resource/hasAttribute> rdfs:label "has attribute" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

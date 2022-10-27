@@ -1,0 +1,5431 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.obolibrary.org/obo", "http://purl.bioontology.org/ontology/LNC", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/twc/DPO/ont", "http://www.w3.org/2001/XMLSchema", "http://semanticscience.org/resource" ],
+    "title" : {
+      "undefined" : "Diabetes Pharmacology Ontology"
+    },
+    "iri" : "http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl",
+    "author" : [ "Sabbir M. Rashid" ],
+    "description" : {
+      "undefined" : "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://www.apache.org/licenses/LICENSE-2.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Sabbir M. Rashid",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Jamie McCusker",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Deborah L. McGuinness",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Oshani Seneviratne",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Daniel Gruen",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-6-08T18:00:00",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2022-10-25T18:00:00",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Diabetes Pharmacology Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "14",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "30",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "35",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "55",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "56",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "57",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "60",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "67",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "21",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "98",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "87",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "119",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "120",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "121",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "123",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "127",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "124",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "135",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "139",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "142",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "147",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "148",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "155",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "156",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "157",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "158",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "159",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "162",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "164",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "165",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "171",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "172",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "105",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "81",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "173",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "128",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "177",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "178",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "129",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "179",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "126",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "181",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "186",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "187",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "188",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "89",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "200",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "100",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "112",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "145",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "203",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "143",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "211",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "213",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "214",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "216",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "154",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "193",
+    "type" : "owl:Class"
+  }, {
+    "id" : "222",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "195",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "153",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "231",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "109",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "235",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "238",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "233",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "240",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "243",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "85",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "249",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "250",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "42",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "26",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "150",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "232",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "183",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "229",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "268",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "144",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "78",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "197",
+    "type" : "owl:Class"
+  }, {
+    "id" : "221",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "4",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "184",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "7",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "199",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "39",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "276",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "71",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "287",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "218",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "300",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "191",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "210",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "255",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "303",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "152",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "230",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "29",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "284",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "259",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "228",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "219",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "327",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "328",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "245",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "163",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "72",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "271",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "74",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "342",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "285",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "336",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "204",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "269",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "22",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "76",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "180",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "27",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "185",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "277",
+    "type" : "owl:Class"
+  }, {
+    "id" : "349",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "283",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "252",
+    "type" : "owl:equivalentClass"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/twc/DPO/ont/ChestPain",
+    "equivalent" : [ "7", "8", "9" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the chest. [Definition Source: HP:0100749]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChestPain",
+      "undefined" : "Chest Pain"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/VeryHighTriglycerideLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VeryHighTriglycerideLevel",
+      "undefined" : "Very High Triglyceride Level"
+    },
+    "intersection" : [ "16" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C65611",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C65611"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiabetesHbA1CLevel",
+      "undefined" : "Diabetes HbA1C Level"
+    },
+    "intersection" : [ "32" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NormalTriglycerideLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NormalTriglycerideLevel",
+      "undefined" : "Normal Triglyceride Level"
+    },
+    "intersection" : [ "16" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "33",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C78126",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C78126"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/SGLT2Inhibitor",
+    "equivalent" : [ "41", "42" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SGLT2Inhibitor",
+      "undefined" : "SGLT2 Inhibitor"
+    },
+    "subClasses" : [ "37", "38", "39", "40" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Occupation",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Occupation",
+      "undefined" : "Occupation"
+    },
+    "subClasses" : [ "45" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NearOptimalLDLLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NearOptimalLDLLevel",
+      "undefined" : "Near Optimal LDL Level"
+    },
+    "intersection" : [ "48" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C9232",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C9232"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/IncreasedASCVDRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Potential to increase the risk of cardiovascular disease resulting from atherosclerosis.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncreasedASCVDRisk",
+      "undefined" : "Increased ASCVD Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/OptimalLDLLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OptimalLDLLevel",
+      "undefined" : "Optimal LDL Level"
+    },
+    "intersection" : [ "48" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "52",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000410",
+    "equivalent" : [ "54" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000410"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C88183",
+    "equivalent" : [ "4" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C88183"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000099",
+    "equivalent" : [ "6" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000099"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000891",
+    "equivalent" : [ "29" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000891"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PrediabetesFastingBloodGlucoseLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrediabetesFastingBloodGlucoseLevel",
+      "undefined" : "Prediabetes Fasting Blood Glucose Level"
+    },
+    "intersection" : [ "61" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "60",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_188719",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_188719"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0020018",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0020018"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/AtheroscleroticCardiovascularDiseaseRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Risk of cardiovascular disease resulting from atherosclerosis.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AtheroscleroticCardiovascularDiseaseRisk",
+      "undefined" : "Atherosclerotic Cardiovascular Disease Risk"
+    },
+    "subClasses" : [ "68", "50", "69" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_8228",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_8228"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/BlurredVision",
+    "equivalent" : [ "85" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BlurredVision",
+      "undefined" : "Blurred Vision"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Disease",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Disease",
+      "undefined" : "Disease"
+    },
+    "subClasses" : [ "91", "92", "93", "94" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "90",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/RenalEffect",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A pharmacotherapy factor related to the kidneys.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RenalEffect",
+      "undefined" : "Renal Effect"
+    },
+    "subClasses" : [ "95", "96" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/KnownHypoglycemiaRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A known association with the lowering of blood sugar below the normal range.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "KnownHypoglycemiaRisk",
+      "undefined" : "Known Hypoglycemia Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_68612",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_68612"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Pioglitazone",
+    "equivalent" : [ "82", "100" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Pioglitazone",
+      "undefined" : "Pioglitazone"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "98",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/RenalDisease",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Disease associated with kidneys, typically chronic kidney disease.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RenalDisease",
+      "undefined" : "Renal Disease"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "94",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/CoronaryArteryDisease",
+    "equivalent" : [ "105" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoronaryArteryDisease",
+      "undefined" : "Coronary Artery Disease"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "93",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Obese",
+    "equivalent" : [ "67", "107" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Obese",
+      "undefined" : "Obese"
+    },
+    "intersection" : [ "106" ],
+    "comment" : {
+      "undefined" : "30<BMI"
+    },
+    "attributes" : [ "intersection", "external", "equivalent" ],
+    "id" : "87",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PeripheralNeuropathy",
+    "equivalent" : [ "112" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PeripheralNeuropathy",
+      "undefined" : "Peripheral Neuropathy"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "111",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/HeartFailureRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Risk of heart failure.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeartFailureRisk",
+      "undefined" : "Heart Failure Risk"
+    },
+    "subClasses" : [ "114", "115", "116" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "113",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C98085",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C98085"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/59261-8",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "59261-8",
+      "undefined" : "Hemoglobin A1c/Hemoglobin.total in Blood by IFCC protocol"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Ertugliflozin",
+    "equivalent" : [ "64", "118" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Ertugliflozin is in a class of medications called sodium-glucose co-transporter 2 (SGLT2) inhibitors. It lowers blood sugar by causing the kidneys to get rid of more glucose in the urine. Ertugliflozin is not used to treat type 1 diabetes (condition in which the body does not produce insulin and, therefore, cannot control the amount of sugar in the blood) or diabetic ketoacidosis (a serious condition that may develop if high blood sugar is not treated). [Definition Source: https://medlineplus.gov/druginfo/meds/a618011.html]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Ertugliflozin",
+      "undefined" : "Ertugliflozin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "40",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C98086",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C98086"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/HighLDLLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighLDLLevel",
+      "undefined" : "High LDL Level"
+    },
+    "intersection" : [ "48" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "120",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C98083",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C98083"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0019177",
+    "equivalent" : [ "122" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0019177"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Biguanide",
+    "equivalent" : [ "125", "126" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Biguanide",
+      "undefined" : "Biguanide"
+    },
+    "subClasses" : [ "124" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "123",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C69088",
+    "equivalent" : [ "1" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C69088"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Metformin",
+    "equivalent" : [ "128", "129", "130", "131" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Metformin",
+      "undefined" : "Metformin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "124",
+    "superClasses" : [ "123" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/FamilyHistoryOfDiabetes",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FamilyHistoryOfDiabetes",
+      "undefined" : "Family History of Diabetes"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "132",
+    "superClasses" : [ "133" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3390",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C3390"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_85662",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_85662"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/History",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "History",
+      "undefined" : "History"
+    },
+    "subClasses" : [ "137", "133" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "136",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C138901",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C138901",
+      "undefined" : "Body Mass Index Finding"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_82720",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_82720"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/BilateralLowerExtremityBurningSensation",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BilateralLowerExtremityBurningSensation",
+      "undefined" : "Occasional Burning Sensation in Bilateral Lower Extremities"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "140",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_50990",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_50990"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NutritionMetabolismAndDevelopmentSymptom",
+    "equivalent" : [ "145" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A symptom involving the nutrition, metabolism, and/or development system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NutritionMetabolismAndDevelopmentSymptom",
+      "undefined" : "Nutrition Metabolism and Development Symptom"
+    },
+    "subClasses" : [ "143", "144" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "142",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/FamilyHistory",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FamilyHistory",
+      "undefined" : "Family History"
+    },
+    "subClasses" : [ "132", "146" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "133",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/55548-2",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "55548-2"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_71272",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_71272"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/UrinarySystemSymptom",
+    "equivalent" : [ "154" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A symptom involving the urinary system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UrinarySystemSymptom",
+      "undefined" : "Urinary System Symptom"
+    },
+    "subClasses" : [ "149", "150", "151", "152", "153" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "148",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0019169",
+    "equivalent" : [ "66" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0019169"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_167574",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_167574"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000565",
+    "equivalent" : [ "152" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000565"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C166988",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C166988"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000563",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000563"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/AlcoholUse",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AlcoholUse",
+      "undefined" : "Alcohol Use"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "160",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3283",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C3283"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Hypertension",
+    "equivalent" : [ "163" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Blood pressure that is abnormally high. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hypertension",
+      "undefined" : "Hypertension"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "162",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000320",
+    "equivalent" : [ "22" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000320"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000560",
+    "equivalent" : [ "143" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000560"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/1518-0",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "1518-0",
+      "undefined" : "Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO"
+    },
+    "attributes" : [ "external" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/hasDiagnosis",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "hasDiagnosis",
+      "undefined" : "has diagnosis"
+    },
+    "attributes" : [ "external" ],
+    "id" : "168",
+    "superClasses" : [ "169" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C83887",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C83887"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PotentialHeartFailureBenefit",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Potential to decrease the risk of heart failure.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PotentialHeartFailureBenefit",
+      "undefined" : "Potential Heart Failure Benefit"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "116",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C61612",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C61612"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_5383",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_5383"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_5384",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_5384"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C26732",
+    "equivalent" : [ "93" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C26732"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Underweight",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Underweight",
+      "undefined" : "Underweight"
+    },
+    "intersection" : [ "106" ],
+    "comment" : {
+      "undefined" : "BMI<18.5"
+    },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "81",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000576",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000576"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C73838",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C73838"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NoKnownHypoglycemiaRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "No known association with the lowering of blood sugar below the normal range.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NoKnownHypoglycemiaRisk",
+      "undefined" : "No Known Hypoglycemia Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/LowEfficacy",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A low capacity to bring about a desired effect.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LowEfficacy",
+      "undefined" : "Low Efficacy"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "174",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Cost",
+    "equivalent" : [ "127" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Cost",
+      "undefined" : "Cost"
+    },
+    "subClasses" : [ "175", "176" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/OMIT_0009750",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OMIT_0009750"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C91018",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C91018"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_76983",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_76983"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_6801",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_6801"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C86589",
+    "equivalent" : [ "180" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C86589"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_3095",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_3095"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/DPP4Inhibitor",
+    "equivalent" : [ "97", "119" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DPP4Inhibitor",
+      "undefined" : "DPP-4 Inhibitor"
+    },
+    "subClasses" : [ "182", "183", "184", "185" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "181",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/VeryHighLDLLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VeryHighLDLLevel",
+      "undefined" : "Very High LDL Level"
+    },
+    "intersection" : [ "48" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "186",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C113486",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C113486"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PrediabetesHbA1CLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrediabetesHbA1CLevel",
+      "undefined" : "Prediabetes HbA1C Level"
+    },
+    "intersection" : [ "32" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "188",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/TriglycerideRelatedFinding",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TriglycerideRelatedFinding",
+      "undefined" : "Triglyceride Related Finding"
+    },
+    "subClasses" : [ "190", "14", "33", "191" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/CardiovascularEffect",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A pharmacotherapy factor related to the heart or blood vessels.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CardiovascularEffect",
+      "undefined" : "Cardiovascular Effect"
+    },
+    "subClasses" : [ "51", "113" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000462",
+    "equivalent" : [ "27" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000462"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/DiagnosticFactor",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A circumstance influencing the dianosis of a disease.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiagnosticFactor",
+      "undefined" : "Diagnostic Factor"
+    },
+    "subClasses" : [ "194", "136", "90", "195", "43", "162", "27", "161" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "193" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/HighTriglycerideLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighTriglycerideLevel",
+      "undefined" : "High Triglyceride Level"
+    },
+    "intersection" : [ "16" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "190",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/WeightChangePotential",
+    "equivalent" : [ "199", "49" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The capacity for an increase or decrease in the weight of an individual.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightChangePotential",
+      "undefined" : "Weight Change Potential"
+    },
+    "subClasses" : [ "196", "197", "198" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "89",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PotentialDKDBenefit",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Potential to decrease the risk or progression of diabetic kidney disease.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PotentialDKDBenefit",
+      "undefined" : "Potential Diabetic Kidney Disease Benefit"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "200",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_40237",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_40237"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/IncreasedHeartFailureRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Potential to increase the risk of heart failure.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncreasedHeartFailureRisk",
+      "undefined" : "Increased Heart Failure Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Dulaglutide",
+    "equivalent" : [ "203" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dulaglutide",
+      "undefined" : "Dulaglutide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "202",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/CholesterolRelatedFinding",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CholesterolRelatedFinding",
+      "undefined" : "Cholesterol Related Finding"
+    },
+    "subClasses" : [ "204", "46", "120", "52", "186" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/FoulUrine",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FoulUrine",
+      "undefined" : "Foul Urine"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "151",
+    "superClasses" : [ "148" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NeurologicalAndPhysiologicalSymptom",
+    "equivalent" : [ "53" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NeurologicalAndPhysiologicalSymptom",
+      "undefined" : "Neurological and Physiological Symptom"
+    },
+    "subClasses" : [ "122" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "54",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C71633",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C71633"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000352",
+    "equivalent" : [ "111" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000352"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000473",
+    "equivalent" : [ "142" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000473"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C169923",
+    "equivalent" : [ "202" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C169923"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Polydipsia",
+    "equivalent" : [ "165" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Polydipsia",
+      "undefined" : "Polydipsia"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "143",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C158136",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C158136"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/DiabetesFastingBloodGlucoseLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiabetesFastingBloodGlucoseLevel",
+      "undefined" : "Diabetes Fasting Blood Glucose Level"
+    },
+    "intersection" : [ "61" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "213",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_71196",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_71196"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Behavior",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Behavior",
+      "undefined" : "Behavior"
+    },
+    "subClasses" : [ "180", "160" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "161",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_71193",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_71193"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000480",
+    "equivalent" : [ "26" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000480"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/SedentaryOccupation",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SedentaryOccupation",
+      "undefined" : "Sedentary Occupation"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NeutralHeartFailureRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Minimal effect on reducing or increasing the risk of heart failure.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NeutralHeartFailureRisk",
+      "undefined" : "Neutral Heart Failure Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Exenatide",
+    "equivalent" : [ "17", "218" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Exenatide",
+      "undefined" : "Exenatide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "217",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000486",
+    "equivalent" : [ "148" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000486"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PersonalHistory",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonalHistory",
+      "undefined" : "Personal History"
+    },
+    "subClasses" : [ "219", "220" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "137",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Factor",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Factor",
+      "undefined" : "Factor"
+    },
+    "subClasses" : [ "44", "2", "221", "189" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000485",
+    "equivalent" : [ "149" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000485"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/1558-6",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "1558-6",
+      "undefined" : "Fasting glucose [Mass/volume] in Serum or Plasma"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/FetalMacrosomia",
+    "equivalent" : [ "228", "229", "187" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "defintion" : [ {
+        "identifier" : "defintion",
+        "language" : "undefined",
+        "value" : "The term large for gestational age applies to babies whose birth weight lies above the 90th percentile for that gestational age. [Definition Source: HP:0001520]",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A fetus exceeding 4500 grams. [Definition Source: NCI][attribution: NICHD]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FetalMacrosomia",
+      "undefined" : "Fetal Macrosomia"
+    },
+    "comment" : {
+      "undefined" : "gave birth to a child weighing more than 9 lbs"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "195",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/FrequentUrination",
+    "equivalent" : [ "230", "159" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Increased frequency of urination. [Definition Source: HP:0100515]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FrequentUrination",
+      "undefined" : "Frequent Urination"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "153",
+    "superClasses" : [ "148" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C82239",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C82239"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Rosiglitazone",
+    "equivalent" : [ "232", "233" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Rosiglitazone",
+      "undefined" : "Rosiglitazone"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "109",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C34707",
+    "equivalent" : [ "194" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C34707"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C76906",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C76906"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "238"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C62076",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C62076"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/OMIT_0015388",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OMIT_0015388"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/HighCost",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Relatively expensive.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighCost",
+      "undefined" : "High Cost"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "176",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/AntihyperglycemicTreatment",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Treatment designed to lower blood sugar levels.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AntihyperglycemicTreatment",
+      "undefined" : "Antihyperglycemic Treatment"
+    },
+    "subClasses" : [ "104", "99", "35", "181", "72", "123" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "221" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/DiabetesTwoHourBloodGlucoseLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiabetesTwoHourBloodGlucoseLevel",
+      "undefined" : "Diabetes Two Hour Blood Glucose Level"
+    },
+    "intersection" : [ "166" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "243",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Semaglutide",
+    "equivalent" : [ "156", "245" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A polypeptide that contains a linear sequence of 31 amino acids joined together by peptide linkages. It is an agonist of glucagon-like peptide-1 receptors (GLP-1 AR) and used for the treatment of type 2 diabetes. [Definition Source: CHEBI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Semaglutide",
+      "undefined" : "Semaglutide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "103",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000012",
+    "equivalent" : [ "21" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000012"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/WeightGainPotential",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The capacity for an increase in the weight of an individual.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightGainPotential",
+      "undefined" : "Weight Gain Potential"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "196",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PotentialASCVDBenefit",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PotentialASCVDBenefit",
+      "undefined" : "Potential ASCVD Benefit"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/WeightLossPotential",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The capacity for a decrease in the weight of an individual.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightLossPotential",
+      "undefined" : "Weight Loss Potential"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "198",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Liraglutide",
+    "equivalent" : [ "231", "215" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Liraglutide",
+      "undefined" : "Liraglutide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "249",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_73274",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_73274"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_73273",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_73273"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NervousSystemSymptom",
+    "equivalent" : [ "216" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NervousSystemSymptom",
+      "undefined" : "Nervous System Symptom"
+    },
+    "subClasses" : [ "140", "252", "6" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/UrinaryTractInfection",
+    "equivalent" : [ "255", "240" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UrinaryTractInfection",
+      "undefined" : "Urinary Tract Infection (UTI)"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "150",
+    "superClasses" : [ "148" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/BloodGlucoseRelatedFinding",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BloodGlucoseRelatedFinding",
+      "undefined" : "Blood Glucose Related Finding"
+    },
+    "subClasses" : [ "259", "213", "188", "243", "30", "60" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NormalWeight",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NormalWeight",
+      "undefined" : "Normal Weight"
+    },
+    "intersection" : [ "106" ],
+    "comment" : {
+      "undefined" : "18.5<BMI<24.9"
+    },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "84",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Fatigue",
+    "equivalent" : [ "121" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Fatigue",
+      "undefined" : "Fatigue"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "122",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_50122",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_50122"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Linagliptin",
+    "equivalent" : [ "139", "170" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Linagliptin",
+      "undefined" : "Linagliptin"
+    },
+    "comment" : {
+      "undefined" : "68610"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "183",
+    "superClasses" : [ "181" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/HP_0001520",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HP_0001520"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/MeasurementFinding",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A finding surmised from recorded measurements.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurementFinding",
+      "undefined" : "Measurement Finding"
+    },
+    "subClasses" : [ "47", "31", "15", "79" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "189",
+    "superClasses" : [ "193" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C98241",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C98241"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Polyphagia",
+    "equivalent" : [ "269" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Polyphagia",
+      "undefined" : "Polyphagia"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "144",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Overweight",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Overweight",
+      "undefined" : "Overweight"
+    },
+    "intersection" : [ "106" ],
+    "comment" : {
+      "undefined" : "25<BMI<29.9"
+    },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "78",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C98234",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C98234"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/RenalDosingConsideration",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Drug dosage considerations related to the effect on the kidneys.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RenalDosingConsideration",
+      "undefined" : "Renal Dosing Consideration"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Dysuria",
+    "equivalent" : [ "222" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dysuria",
+      "undefined" : "Dysuria"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "149",
+    "superClasses" : [ "148" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NeutralWeightChange",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The lack of an effect on the capacity for an increase or decrease in the weight of an individual.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NeutralWeightChange",
+      "undefined" : "Neutral Weight Change"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "197",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Therapy",
+    "equivalent" : [ "271" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Therapy",
+      "undefined" : "Therapy"
+    },
+    "subClasses" : [ "36" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "221",
+    "superClasses" : [ "193" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Efficacy",
+    "equivalent" : [ "55" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The capacity to bring about a desired effect. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Efficacy",
+      "undefined" : "Efficacy"
+    },
+    "subClasses" : [ "276", "277", "174" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Sitagliptin",
+    "equivalent" : [ "201", "173" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sitagliptin",
+      "undefined" : "Sitagliptin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "184",
+    "superClasses" : [ "181" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C38665",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C38665"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/OMIT_0003194",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OMIT_0003194"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Dapagliflozin",
+    "equivalent" : [ "34", "283" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dapagliflozin",
+      "undefined" : "Dapagliflozin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "39",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/12228-3",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "12228-3",
+      "undefined" : "Triglyceride [Mass/volume] in Body fluid"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/HighEfficacy",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A high capacity to bring about a desired effect.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighEfficacy",
+      "undefined" : "High Efficacy"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "276",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Saxagliptin",
+    "equivalent" : [ "284", "147" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Saxagliptin",
+      "undefined" : "Saxagliptin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "182",
+    "superClasses" : [ "181" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Glipizide",
+    "equivalent" : [ "285", "172" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Glipizide",
+      "undefined" : "Glipizide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "71",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PersonalHistoryOfGestationalDiabetes",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonalHistoryOfGestationalDiabetes",
+      "undefined" : "Personal History of Gestational Diabetes"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "220",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C97936",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C97936"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "287"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_64073",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_64073"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000734",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000734"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "300"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/BorderlineHighTriglycerideLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BorderlineHighTriglycerideLevel",
+      "undefined" : "Borderline High Triglyceride Level"
+    },
+    "intersection" : [ "16" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "191",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/IncreasedDKDRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Potential to increase the risk or progression of diabetic kidney disease.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncreasedDKDRisk",
+      "undefined" : "Increased Diabetic Kidney Disease Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "210",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Pain",
+    "equivalent" : [ "56" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body. [ url:http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp ][Definition Source: SYMP:0000576]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Pain",
+      "undefined" : "Pain"
+    },
+    "subClasses" : [ "5" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "6",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Diabetes",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Diabetes",
+      "undefined" : "Diabetes"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Canagliflozin",
+    "equivalent" : [ "177", "250" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Canagliflozin",
+      "undefined" : "Canagliflozin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "37",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NeutralDKDRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NeutralDKDRisk",
+      "undefined" : "Neutral Diabetic Kidney Disease Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "208",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/HP_0100749",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HP_0100749"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C50791",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C50791"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Lixisenatide",
+    "equivalent" : [ "158", "135" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A forty-four membered polypeptide consisting of L-His, Gly, L-Glu, Gly, L-Thr, L-Phe, L-Thr, L-Ser, L-Asp, L-Leu, L-Ser, L-Lys, L-Gln, L-Met, L-Glu, L-Glu, L-Glu, L-Ala, L-Val, L-Arg, L-Leu, L-Phe, L-Ile, L-Glu, L-Trp, L-Leu, L-Lys, L-Asn, Gly, Gly, LPro, L-Ser, L-Ser, Gly, L-Ala, L-Pro, L-Pro, L-Ser, L-Lys, L-Lys, L-Lys, L-Lys, L-Lys, and L-Lys-NH2 residues joined in sequence. Used as an adjunct to diet and exercise for the treatment of adults with type II diabetes. [Definition Source: CHEBI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Lixisenatide",
+      "undefined" : "Lixisenatide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "303",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/LNC/2089-1",
+    "baseIri" : "http://purl.bioontology.org/ontology/LNC",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "2089-1",
+      "undefined" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/GLP1RA",
+    "equivalent" : [ "117", "214" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GLP1RA",
+      "undefined" : "GLP-1 RA"
+    },
+    "subClasses" : [ "202", "217", "303", "249", "103" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "104",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/CardiovascularDisease",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CardiovascularDisease",
+      "undefined" : "Cardiovascular Disease"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Thiazolidinedione",
+    "equivalent" : [ "141", "268" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Thiazolidinedione",
+      "undefined" : "Thiazolidinedione"
+    },
+    "subClasses" : [ "98", "109" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "99",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Polyuria",
+    "equivalent" : [ "157" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Polyuria",
+      "undefined" : "Polyuria"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "152",
+    "superClasses" : [ "148" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/HP_0100515",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HP_0100515"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/MusculoskeletalSystemSymptom",
+    "equivalent" : [ "57" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A symptom involving the musculoskeletal system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MusculoskeletalSystemSymptom",
+      "undefined" : "Musculoskeletal System Symptom"
+    },
+    "subClasses" : [ "111", "66" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "29",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C75983",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C75983"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "284"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/NeutralASCVDRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NeutralASCVDRisk",
+      "undefined" : "Neutral ASCVD Risk"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C166925",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C166925"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/FamilyHistoryOfCAD",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FamilyHistoryOfCAD",
+      "undefined" : "Family History of Coronary Artery Disease"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "146",
+    "superClasses" : [ "133" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Hyperlipidemia",
+    "equivalent" : [ "235" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Elevated levels of lipids in the blood. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hyperlipidemia",
+      "undefined" : "Hyperlipidemia"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "194",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PrediabetesTwoHourBloodGlucoseLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrediabetesTwoHourBloodGlucoseLevel",
+      "undefined" : "Prediabetes Two Hour Blood Glucose Level"
+    },
+    "intersection" : [ "166" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "259",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/OMIT_0006531",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OMIT_0006531"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PersonalHistoryOfFebrileStates",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonalHistoryOfFebrileStates",
+      "undefined" : "Personal History of Febrile States"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "219",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Empagliflozin",
+    "equivalent" : [ "211", "138" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Empagliflozin",
+      "undefined" : "Empagliflozin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "38",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_5441",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_5441"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "327"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "328",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C152328",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C152328"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C3117",
+    "equivalent" : [ "162" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C3117"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Sulfonylurea",
+    "equivalent" : [ "178", "287" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sulfonylurea",
+      "undefined" : "Sulfonylurea"
+    },
+    "subClasses" : [ "71", "74", "76" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "72",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/WeightRelatedFinding",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightRelatedFinding",
+      "undefined" : "Weight Related Finding"
+    },
+    "subClasses" : [ "78", "81", "84", "87" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C49236",
+    "equivalent" : [ "221" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C49236"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "271"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/LowCost",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Relatively inexpensive.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LowCost",
+      "undefined" : "Low Cost"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "175",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/PharmacotherapyFactor",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A circumstance influencing the treatment of a disease through the use of drugs.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PharmacotherapyFactor",
+      "undefined" : "Pharmacotherapy Factor"
+    },
+    "subClasses" : [ "89", "59", "63", "1", "4", "11" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "193" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "251",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Glyburide",
+    "equivalent" : [ "336", "327" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Glyburide",
+      "undefined" : "Glyburide"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "74",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/HypoglycemiaRisk",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The possiblility of lowering blood sugar below the normal range.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HypoglycemiaRisk",
+      "undefined" : "Hypoglycemia Risk"
+    },
+    "subClasses" : [ "13", "19" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Arthritis",
+    "equivalent" : [ "155" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Arthritis",
+      "undefined" : "Arthritis"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "66",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C29073",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C29073"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "342"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C29074",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C29074"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "285"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/NCIT_C29076",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NCIT_C29076"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "336"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/BorderlineHighLDLLevel",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BorderlineHighLDLLevel",
+      "undefined" : "Borderline High LDL Level"
+    },
+    "intersection" : [ "48" ],
+    "comment" : { },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "204",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/SYMP_0000524",
+    "equivalent" : [ "144" ],
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SYMP_0000524"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "269"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/VisionSymptom",
+    "equivalent" : [ "164" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A symptom involving visual impairment.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VisionSymptom",
+      "undefined" : "Vision Symptom"
+    },
+    "subClasses" : [ "21" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "22",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Glimepiride",
+    "equivalent" : [ "342", "171" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Glimepiride",
+      "undefined" : "Glimepiride"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "76",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/SedentaryLifestyle",
+    "equivalent" : [ "179" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SedentaryLifestyle",
+      "undefined" : "Sedentary Lifestyle"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "180",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Symptom",
+    "equivalent" : [ "192" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Symptom",
+      "undefined" : "Symptom"
+    },
+    "subClasses" : [ "26", "29", "22", "54", "142", "148" ],
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "27",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/Alogliptin",
+    "equivalent" : [ "349", "238" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Alogliptin",
+      "undefined" : "Alogliptin"
+    },
+    "comment" : { },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "185",
+    "superClasses" : [ "181" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/DiabeticKidneyDiseaseProgression",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The progression of diabetic kidney disease.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiabeticKidneyDiseaseProgression",
+      "undefined" : "Diabetic Kidney Disease Progression"
+    },
+    "subClasses" : [ "208", "210", "200" ],
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "96",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/IntermediateEfficacy",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An intermediate capacity to bring about a desired effect.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IntermediateEfficacy",
+      "undefined" : "Intermediate Efficacy"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "277",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_72323",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_72323"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "349"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHEBI_85078",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHEBI_85078"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "283"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/CerebralVascularAccident",
+    "equivalent" : [ "300", "134" ],
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke ][Definition Source: SYMP:0000734]",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CerebralVascularAccident",
+      "undefined" : "Cerebral Vascular Accident"
+    },
+    "comment" : {
+      "undefined" : "A stroke."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "252",
+    "superClasses" : [ "26" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "289",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "306",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "307",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "308",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "309",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "310",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "311",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "312",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "313",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "314",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "315",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "317",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "318",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "319",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "320",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "322",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "329",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "330",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "331",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "333",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "352",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "11",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/therapyFactorAversion",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "therapyFactorAversion",
+      "undefined" : "therapy factor aversion"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "27",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "2",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "2",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "29",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "72",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "72",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "72",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "79",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "79",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "79",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "79",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "2",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "99",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "104",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "99",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "29",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/therapyFactorIndifference",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "therapyFactorIndifference",
+      "undefined" : "therapy factor indifference"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/pharmacotherapyFactor",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "pharmacotherapyFactor",
+      "undefined" : "risk factor"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "27",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "96",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "96",
+    "domain" : "210",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "96",
+    "domain" : "200",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "27",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "27",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "27",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://purl.org/twc/DPO/ont/therapyFactorPreference",
+    "baseIri" : "http://purl.org/twc/DPO/ont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "therapyFactorPreference",
+      "undefined" : "therapy factor preference"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "148",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "148",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  }, {
+    "range" : "148",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "133",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "range" : "142",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "148",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "133",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "136",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "range" : "123",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "142",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "range" : "136",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://semanticscience.org/resource/hasAttribute",
+    "baseIri" : "http://semanticscience.org/resource",
+    "range" : "251",
+    "label" : {
+      "IRI-based" : "hasAttribute",
+      "undefined" : "has attribute"
+    },
+    "domain" : "251",
+    "attributes" : [ "external", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "113",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "113",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "113",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "90",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "90",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "63",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "63",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "51",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "90",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "90",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
+  }, {
+    "range" : "44",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "range" : "89",
+    "domain" : "196",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "44",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
+  }, {
+    "range" : "44",
+    "domain" : "195",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "44",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "44",
+    "domain" : "162",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
+  }, {
+    "range" : "59",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "59",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "44",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "44",
+    "domain" : "194",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "range" : "15",
+    "domain" : "191",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "281"
+  }, {
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "181",
+    "domain" : "184",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "range" : "181",
+    "domain" : "183",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "289"
+  }, {
+    "range" : "15",
+    "domain" : "190",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "181",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "1",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "292"
+  }, {
+    "range" : "148",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "181",
+    "domain" : "182",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "294"
+  }, {
+    "range" : "1",
+    "domain" : "176",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
+  }, {
+    "range" : "36",
+    "domain" : "181",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "297"
+  }, {
+    "range" : "36",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "36",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "36",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "36",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "193",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "193",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "range" : "137",
+    "domain" : "220",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "193",
+    "domain" : "221",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "range" : "193",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "308"
+  }, {
+    "range" : "161",
+    "domain" : "180",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
+  }, {
+    "range" : "54",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "137",
+    "domain" : "219",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "161",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "range" : "47",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "313"
+  }, {
+    "range" : "47",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "314"
+  }, {
+    "range" : "47",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "315"
+  }, {
+    "range" : "89",
+    "domain" : "198",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "316"
+  }, {
+    "range" : "89",
+    "domain" : "197",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "317"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "318"
+  }, {
+    "range" : "47",
+    "domain" : "204",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "319"
+  }, {
+    "range" : "104",
+    "domain" : "217",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "320"
+  }, {
+    "range" : "104",
+    "domain" : "202",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "321"
+  }, {
+    "range" : "104",
+    "domain" : "249",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "322"
+  }, {
+    "range" : "104",
+    "domain" : "303",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "323"
+  }, {
+    "range" : "4",
+    "domain" : "277",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "324"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "325"
+  }, {
+    "range" : "4",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "326"
+  }, {
+    "range" : "35",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "329"
+  }, {
+    "range" : "35",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "330"
+  }, {
+    "range" : "35",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "331"
+  }, {
+    "range" : "35",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "332"
+  }, {
+    "range" : "43",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "333"
+  }, {
+    "range" : "51",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "334"
+  }, {
+    "range" : "51",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "335"
+  }, {
+    "range" : "189",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
+  }, {
+    "range" : "189",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "4",
+    "domain" : "276",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "range" : "221",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "31",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "189",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "189",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "31",
+    "domain" : "243",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "iri" : "http://semanticscience.org/resource/hasValue",
+    "baseIri" : "http://semanticscience.org/resource",
+    "range" : "328",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "251",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "347"
+  }, {
+    "range" : "31",
+    "domain" : "188",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "31",
+    "domain" : "213",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "26",
+    "domain" : "252",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "range" : "26",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
+  }, {
+    "range" : "31",
+    "domain" : "259",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "353"
+  }, {
+    "range" : "26",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  } ]
+}
