@@ -18,7 +18,7 @@
     rdf:type owl:Ontology ;
     dct:title "Diabetes Pharmacology Ontology"^^xsd:string ;
     dct:creator "Sabbir M. Rashid"^^xsd:string ;
-    dct:contributor "Deborah L. McGuinness"^^xsd:string , "Jamie McCusker"^^xsd:string , "Oshani Seneviratne", "Daniel Gruen"^^xsd:string ;
+    dct:contributor "Deborah L. McGuinness"^^xsd:string , "Jamie McCusker"^^xsd:string , "Oshani Seneviratne"^^xsd:string, "Daniel Gruen"^^xsd:string ;
     dct:created "2022-6-08T18:00:00"^^xsd:dateTime ;
     dct:modified "2022-10-25T18:00:00"^^xsd:dateTime ;
     dct:description "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies."^^xsd:string ;
@@ -27,20 +27,29 @@
 ncit:C138901 rdf:type owl:Class ;
     rdfs:label "Body Mass Index Finding"^^xsd:string .
 
-loinc:1558-6 rdf:type owl:Class ;
-    rdfs:label "Fasting glucose [Mass/volume] in Serum or Plasma"^^xsd:string .
+dpo:Factor rdf:type owl:Class ;
+    rdfs:label "Factor" ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A circumstance influencing the treatment or diagnosis of disease."^^xsd:string .
+    
+dpo:PharmacotherapyFactor rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Factor ;
+    rdfs:label "Pharmacotherapy Factor" ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A circumstance influencing the treatment of disease through the use of drugs."^^xsd:string .
+    
+dpo:DiagnosticFactor rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Factor ;
+    rdfs:label "Diagnostic Factor" ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A circumstance influencing the dianosis of disease."^^xsd:string .
 
-loinc:1518-0 rdf:type owl:Class ;
-    rdfs:label "Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO"^^xsd:string .
-
-loinc:59261-8 rdf:type owl:Class ;
-    rdfs:label "Hemoglobin A1c/Hemoglobin.total in Blood by IFCC protocol"^^xsd:string .
-
-loinc:2089-1 rdf:type owl:Class ;
-    rdfs:label "Cholesterol in LDL [Mass/volume] in Serum or Plasma"^^xsd:string .
-
-loinc:12228-3 rdf:type owl:Class ;
-    rdfs:label "Triglyceride [Mass/volume] in Body fluid"^^xsd:string .
+dpo:Therapy rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Factor ;
+    owl:equivalentClass ncit:C49236 ;
+    rdfs:label "Therapy"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Symptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
@@ -49,6 +58,11 @@ dpo:Symptom rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]"^^xsd:string .
 
+dpo:MeasurementFinding rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Factor ;
+    rdfs:label "Measurement Finding"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:therapyFactorPreference rdf:type owl:ObjectProperty ;
     rdfs:label "therapy factor preference"^^xsd:string ;
@@ -91,12 +105,6 @@ dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
     rdfs:label "Polyphagia"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
-
-dpo:MeasurementFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:DiagnosticFactor ;
-    rdfs:label "Measurement Finding"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
 
 dpo:Underweight rdf:type owl:Class ; 
     rdfs:subClassOf dpo:MeasurementFinding ;
@@ -668,29 +676,6 @@ dpo:SedentaryOccupation rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:Factor rdf:type owl:Class ;
-    rdfs:label "Factor" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the treatment or daignosis of disease."^^xsd:string .
-    
-dpo:PharmacotherapyFactor rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Factor ;
-    rdfs:label "Pharmacotherapy Factor" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the treatment of disease through the use of drugs."^^xsd:string .
-    
-dpo:DiagnosticFactor rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Factor ;
-    rdfs:label "Diagnostic Factor" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the dianosis of disease."^^xsd:string .
-
-dpo:Therapy rdf:type owl:Class ;
-    owl:equivalentClass ncit:C49236 ;
-    rdfs:label "Therapy"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]"^^xsd:string .
-
 dpo:AntihyperglycemicTreatment rdfs:subClassOf dpo:Therapy ;
     rdfs:label "Antihyperglycemic Treatment"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -1182,3 +1167,21 @@ dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     rdfs:label "Glimepiride"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
+
+loinc:1558-6 rdf:type owl:Class ;
+    rdfs:label "Fasting glucose [Mass/volume] in Serum or Plasma"^^xsd:string .
+
+loinc:1518-0 rdf:type owl:Class ;
+    rdfs:label "Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO"^^xsd:string .
+
+loinc:59261-8 rdf:type owl:Class ;
+    rdfs:label "Hemoglobin A1c/Hemoglobin.total in Blood by IFCC protocol"^^xsd:string .
+
+loinc:2089-1 rdf:type owl:Class ;
+    rdfs:label "Cholesterol in LDL [Mass/volume] in Serum or Plasma"^^xsd:string .
+
+loinc:12228-3 rdf:type owl:Class ;
+    rdfs:label "Triglyceride [Mass/volume] in Body fluid"^^xsd:string .
+
+sio:hasAttribute rdf:type owl:ObjectProperty ;
+    rdfs:label "has attribute"^^xsd:string .

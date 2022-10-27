@@ -15,6 +15,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 The namespaces used in DPO are listed below.
 
 ##### DPO Namespaces
+
 | namespace | URI |
 |:-------------|:------------------|
 | dpo | [http://purl.org/twc/DPO/ont/](http://purl.org/twc/DPO/ont/) |
@@ -36,13 +37,23 @@ The namespaces used in DPO are listed below.
 
 # Overview
 
-The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning.
+The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
 # Diabetes Pharmacology Ontology
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+The root branch of DPO is **dpo:Factor**. A factor is defined as follows:
+> A circumstance influencing the treatment or diagnosis of disease.
+
+Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **spo:MeasurementFinding**.
+
+## Pharmacotherapy Factor
+
+## Diagnostic Factor
+
+## Therapy
+
+## Measurement Finding
+
 
 ### Header 3
 
