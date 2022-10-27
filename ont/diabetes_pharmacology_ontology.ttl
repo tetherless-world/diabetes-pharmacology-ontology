@@ -30,19 +30,19 @@ ncit:C138901 rdf:type owl:Class ;
 dpo:Factor rdf:type owl:Class ;
     rdfs:label "Factor" ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A factor is a circumstance influencing the treatment or diagnosis of disease, therapeutic agents that may be administered to produce an effect, ."^^xsd:string .
+    skos:definition "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string .
     
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
     rdfs:label "Pharmacotherapy Factor" ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the treatment of disease through the use of drugs."^^xsd:string .
+    skos:definition "A circumstance influencing the treatment of a disease through the use of drugs."^^xsd:string .
     
 dpo:DiagnosticFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
     rdfs:label "Diagnostic Factor" ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the dianosis of disease."^^xsd:string .
+    skos:definition "A circumstance influencing the dianosis of a disease."^^xsd:string .
 
 dpo:Therapy rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
