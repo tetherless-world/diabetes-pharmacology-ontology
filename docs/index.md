@@ -2,13 +2,10 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Overview
 
-[Link to another page](./another-page.html).
+The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 # Namespaces
 
@@ -35,10 +32,6 @@ The namespaces used in DPO are listed below.
 | sio | [http://semanticscience.org/resource/](http://semanticscience.org/resource/) |
 
 
-# Overview
-
-The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
-
 # Diabetes Pharmacology Ontology
 
 The root branch of DPO is **dpo:Factor**. A factor is defined as follows:
@@ -62,15 +55,21 @@ Potential categorizations of these top level pharmacotherapy factors are encoded
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
 
+Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies. Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Hyperlipidemia**, **dpo:Hypertension**, **dpo:FetalMacrosomia**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
 
 ## Therapy
 > An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
 
+**dpo:Therapy** contains the subclass **dpo:AntihyperglycemicTreatment** which in turn contains the subclasses **dpo:Biguanide**, **dpo:SGLT2Inhibitor**, **dpo:GLP1RA**, **dpo:DPP4Inhibitor**, **dpo:Thiazolidinedione**, and **dpo:Sulfonylurea**.
+
+The therapies included within this ontology are based on the therapies included in Table 9.2 of the ADA guidelines.
 
 ## Measurement Finding
 > A finding surmised from recorded measurements.
 
+The measurement finding branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:MeasurementFinding** include **dpo:WeightRelatedFinding**, **dpo:BloodGlucoseRelatedFinding**, **dpo:CholesterolRelatedFinding**, and **dpo:TriglycerideRelatedFinding**.
 
+The measurement finding categorizations included in the ontology were based on measurement values found in the diabetes related NetCE case studies.
 
 ### Header 3
 
