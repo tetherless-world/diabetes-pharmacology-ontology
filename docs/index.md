@@ -50,10 +50,31 @@ The Pharmacotherapy Factors included in this ontology are based on those include
 
 Potential categorizations of these top level pharmacotherapy factors are encoded as subclasses of each respective pharmacotherapy factor. The recommendation of a therapy may be based on whether or not a patient has an attribute that is of type one of the subclasses of the top level pharmacotherapy factors.
 
+### Efficacy
+
+### Weight Change Potential
+
+### Hypoglycemia Risk
+
+### Cardiovascular Effect
+
+### Cost
+
+### Renal Effect
+
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
 
 Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies. Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Hyperlipidemia**, **dpo:Hypertension**, **dpo:FetalMacrosomia**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
+
+### Symptom
+> A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]
+
+### Disease
+
+### Behavior and Occupation
+
+### History
 
 ## Therapy
 > An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
@@ -240,4 +261,15 @@ The measurement finding branch contains categorizations that can be made based o
 
 ![pto:MeasurementFinding](./assets/images/MeasurementFinding.png)
 
-The measurement finding categorizations included in the ontology were based on measurement values found in the diabetes related NetCE case studies.
+The measurement finding categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
+
+### Weight Related Finding
+
+
+### Blood Glucose Related Finding
+
+
+### Cholesterol Related Finding
+
+
+### Triglyceride Related Finding
