@@ -44,7 +44,9 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
 The root branch of DPO is **dpo:Factor**. A factor is defined as follows:
 > A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements.
 
-Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **spo:MeasurementFinding**.
+Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:MeasurementFinding**.
+
+![pto:Factor](./assets/images/Factor.png)
 
 ## Pharmacotherapy Factor
 > A circumstance influencing the treatment of a disease through the use of drugs.
