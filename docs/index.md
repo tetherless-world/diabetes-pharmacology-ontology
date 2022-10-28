@@ -1,5 +1,6 @@
 ---
 layout: default
+sidebar: toc_sidebar
 ---
 
 # Overview
@@ -302,3 +303,5 @@ The measurement finding categorizations included in the ontology are based on me
 
 
 ### Triglyceride Related Finding
+
+# Personal Health Knowledge Graph
