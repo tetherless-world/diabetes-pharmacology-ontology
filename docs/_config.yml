@@ -3,3 +3,6 @@ description: DPO is used to represent diabetes patients to perform clinical reas
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+
+sidebars:
+- toc_sidebar
