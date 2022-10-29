@@ -1,6 +1,5 @@
 ---
 layout: default
-sidebar: toc_sidebar
 ---
 
 # Overview
@@ -9,6 +8,7 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
 
 # Table of Contents
 - [Overview](#overview)
+- [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
 - [Diabetes Pharmacology Ontology](#diabetes-pharmacology-ontology)
   * [Pharmacotherapy Factor](#pharmacotherapy-factor)
@@ -33,9 +33,29 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
     + [Sulfonylurea](#sulfonylurea)
   * [Measurement Finding](#measurement-finding)
     + [Weight Related Finding](#weight-related-finding)
+      - [Underweight](#underweight)
+      - [Normal Weight](#normal-weight)
+      - [Overweight](#overweight)
+      - [Obese](#obese)
     + [Blood Glucose Related Finding](#blood-glucose-related-finding)
+      - [Prediabetes Fasting Blood Glucose Level](#prediabetes-fasting-blood-glucose-level)
+      - [Diabetes Fasting Blood Glucose Level](#diabetes-fasting-blood-glucose-level)
+      - [Prediabetes Two Hour Blood Glucose Level](#prediabetes-two-hour-blood-glucose-level)
+      - [Diabetes Two Hour Blood Glucose Level](#diabetes-two-hour-blood-glucose-level)
+      - [Prediabetes HbA1C Level](#prediabetes-hba1c-level)
+      - [Diabetes HbA1C Level](#diabetes-hba1c-level)
     + [Cholesterol Related Finding](#cholesterol-related-finding)
+      - [Optimal LDL Level](#optimal-ldl-level)
+      - [Near Optimal LDL Level](#near-optimal-ldl-level)
+      - [Borderline High LDL Range](#borderline-high-ldl-range)
+      - [High LDL Level](#high-ldl-level)
+      - [Very High LDL Level](#very-high-ldl-level)
     + [Triglyceride Related Finding](#triglyceride-related-finding)
+      - [Normal Triglyceride Level](#normal-triglyceride-level)
+      - [Borderline High Triglyceride Level](#borderline-high-triglyceride-level)
+      - [High Triglyceride Level](#high-triglyceride-level)
+      - [Very High Triglyceride Level](#very-high-triglyceride-level)
+- [Personal Health Knowledge Graph](#personal-health-knowledge-graph)
 
 # Namespaces
 
@@ -389,14 +409,292 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
 
 Subclasses of **dpo:BloodGlucoseRelatedFinding** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel** and **dpo:DiabetesHbA1CLevel**.
 
+#### Prediabetes Fasting Blood Glucose Level
+
+```
+dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:1558-6 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:PrediabetesFastingBloodGlucoseRange ] ) ;
+    rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string .
+
+dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes Fasting Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "100"^^xsd:decimal ;
+    owl:maxInclusive "125"^^xsd:decimal .
+```
+
+#### Diabetes Fasting Blood Glucose Level
+
+```
+dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:1558-6 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:DiabetesFastingBloodGlucoseRange ] ) ;
+    rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string .
+
+dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Diabetes Fasting Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "126"^^xsd:decimal .
+```
+
+#### Prediabetes Two Hour Blood Glucose Level
+
+```
+dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:1518-0 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:PrediabetesTwoHourBloodGlucoseRange ] ) ;
+    rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string .
+
+dpo:PrediabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes Two Hour Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "140"^^xsd:decimal ;
+    owl:maxInclusive "199"^^xsd:decimal .
+```
+
+#### Diabetes Two Hour Blood Glucose Level
+
+```
+dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:1518-0 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:DiabetesTwoHourBloodGlucoseRange ] ) ;
+    rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string .
+
+dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Diabetes Two Hour Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "200"^^xsd:decimal .
+```
+
+#### Prediabetes HbA1C Level
+
+```
+dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:59261-8 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:PrediabetesHbA1CRange ] ) ;
+    rdfs:label "Prediabetes HbA1C Level"^^xsd:string .
+
+dpo:PrediabetesHbA1CRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes HbA1C Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "117"^^xsd:decimal ;
+    owl:maxInclusive "138"^^xsd:decimal .
+
+```
+
+#### Diabetes HbA1C Level
+
+```
+dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:59261-8
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:DiabetesHbA1CRange ] ) ;
+    rdfs:label "Diabetes HbA1C Level"^^xsd:string .
+
+dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes HbA1C Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "141"^^xsd:decimal .
+```
+
 ### Cholesterol Related Finding
 
 Subclasses of **dpo:CholesterolRelatedFinding** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
 
+#### Optimal LDL Level
+
+```
+dpo:OptimalLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:OptimalLDLRange ] ) ;
+    rdfs:label "Optimal LDL Level"^^xsd:string .
+
+dpo:OptimalLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Optimal LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:maxInclusive "100"^^xsd:decimal .
+```
+
+#### Near Optimal LDL Level
+
+```
+dpo:NearOptimalLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:NearOptimalLDLRange ] ) ;
+    rdfs:label "Near Optimal LDL Level"^^xsd:string .
+
+dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Near Optimal LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "100"^^xsd:decimal ;
+    owl:maxInclusive "129"^^xsd:decimal .
+```
+
+#### Borderline High LDL Range
+
+```
+dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:BorderlineHighLDLRange ] ) ;
+    rdfs:label "Borderline High LDL Level"^^xsd:string .
+
+dpo:BorderlineHighLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Borderline High LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "130"^^xsd:decimal ;
+    owl:maxInclusive "159"^^xsd:decimal .
+```
+
+#### High LDL Level
+
+```
+dpo:HighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:HighLDLRange ] ) ;
+    rdfs:label "High LDL Level"^^xsd:string .
+
+dpo:HighLDLRange rdf:type owl:DataRange ;
+    rdfs:label "High LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "160"^^xsd:decimal ;
+    owl:maxInclusive "189"^^xsd:decimal .
+```
+
+#### Very High LDL Level
+
+```
+dpo:VeryHighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:VeryHighLDLRange ] ) ;
+    rdfs:label "Very High LDL Level"^^xsd:string .
+
+dpo:VeryHighLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Very High LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "190"^^xsd:decimal .
+```
 
 ### Triglyceride Related Finding
 
 Subclasses of **dpo:TriglycerideRelatedFinding** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel** and **dpo:VeryHighTriglycerideLevel**.
 
+
+#### Normal Triglyceride Level
+
+```
+dpo:NormalTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:NormalTriglycerideRange ] ) ;
+    rdfs:label "Normal Triglyceride Level"^^xsd:string .
+
+dpo:NormalTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "Normal Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:maxInclusive "149"^^xsd:decimal .
+```
+
+#### Borderline High Triglyceride Level
+
+```
+dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:BorderlineHighTriglycerideRange ] ) ;
+    rdfs:label "Borderline High Triglyceride Level"^^xsd:string .
+
+dpo:BorderlineHighTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "Borderline High Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "150"^^xsd:decimal ;
+    owl:maxInclusive "199"^^xsd:decimal .
+```
+
+#### High Triglyceride Level
+
+```
+dpo:HighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:HighTriglycerideRange ] ) ;
+    rdfs:label "High Triglyceride Level"^^xsd:string .
+
+dpo:HighTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "High Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "200"^^xsd:decimal ;
+    owl:maxInclusive "499"^^xsd:decimal .
+```
+
+#### Very High Triglyceride Level
+
+```
+dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:VeryHighTriglycerideRange ] ) ;
+    rdfs:label "Very High Triglyceride Level"^^xsd:string .
+
+dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "Very High Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "500"^^xsd:decimal .
+```
 
 # Personal Health Knowledge Graph
