@@ -11,6 +11,7 @@
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
 @prefix symp: <http://purl.obolibrary.org/obo/SYMP_> .
+@prefix ebi: <http://www.ebi.ac.uk/efo/EFO_> .
 @prefix hp: <http://purl.obolibrary.org/obo/HP_> .
 @prefix sio: <http://semanticscience.org/resource/> .
 
@@ -132,6 +133,7 @@ dpo:TriglycerideRelatedFinding rdf:type owl:Class ;
 
 dpo:Underweight rdf:type owl:Class ; 
     rdfs:subClassOf dpo:WeightRelatedFinding ;
+    owl:equivalentClass efo:0005936 ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -139,7 +141,7 @@ dpo:Underweight rdf:type owl:Class ;
                 owl:allValuesFrom dpo:UnderweightBMIRange ] ) ;
     rdfs:label "Underweight"^^xsd:string ;
     rdfs:comment "BMI<18.5"^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]"^^xsd:string .
 
 dpo:UnderweightBMIRange rdf:type owl:DataRange ;
     rdfs:label "Underweight BMI Range" ;
@@ -165,6 +167,7 @@ dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
 
 dpo:Overweight rdf:type owl:Class ; 
     rdfs:subClassOf dpo:WeightRelatedFinding ;
+    owl:equivalentClass efo:0005935 ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -172,7 +175,7 @@ dpo:Overweight rdf:type owl:Class ;
                 owl:allValuesFrom dpo:OverweightBMIRange ] ) ;
     rdfs:label "Overweight"^^xsd:string ;
     rdfs:comment "25<BMI<29.9"^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]"^^xsd:string .
 
 dpo:OverweightBMIRange rdf:type owl:DataRange ;
     rdfs:label "Overweight BMI Range" ;
@@ -187,10 +190,11 @@ dpo:Obese rdf:type owl:Class ; # diabetes symptom
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
-    owl:equivalentClass symp:0020018 , ncit:C3283;
+    owl:equivalentClass symp:0020018 , ncit:C3283 , ebi:0007041;
     rdfs:label "Obese"^^xsd:string ;
     rdfs:comment "30<BMI"^^xsd:string ;
-    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string .
+    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]" .
 
 dpo:ObeseBMIRange rdf:type owl:DataRange ;
     rdfs:label "Obese BMI Range" ;

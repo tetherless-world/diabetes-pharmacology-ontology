@@ -43,7 +43,7 @@ The namespaces used in DPO are listed below.
 
 ##### DPO Namespaces
 
-| namespace | URI |
+| Prefix | URI |
 |:-------------|:------------------|
 | dpo | [http://purl.org/twc/DPO/ont/](http://purl.org/twc/DPO/ont/) |
 | dpo-kb | [http://purl.org/twc/DPO/kb/](http://purl.org/twc/DPO/kb/) |
@@ -56,6 +56,7 @@ The namespaces used in DPO are listed below.
 | ncit | [http://purl.obolibrary.org/obo/NCIT_](http://purl.obolibrary.org/obo/NCIT_) |
 | loinc | [http://purl.bioontology.org/ontology/LNC/](http://purl.bioontology.org/ontology/LNC/) |
 | chebi | [http://purl.obolibrary.org/obo/CHEBI_](http://purl.obolibrary.org/obo/CHEBI_) |
+| ebi | [http://www.ebi.ac.uk/efo/EFO_>](http://www.ebi.ac.uk/efo/EFO_>) |
 | omit | [http://purl.obolibrary.org/obo/OMIT_](http://purl.obolibrary.org/obo/OMIT_) |
 | symp | [http://purl.obolibrary.org/obo/SYMP_](http://purl.obolibrary.org/obo/SYMP_) |
 | hp | [http://purl.obolibrary.org/obo/HP_](http://purl.obolibrary.org/obo/HP_) |
@@ -295,13 +296,107 @@ The measurement finding categorizations included in the ontology are based on me
 
 ### Weight Related Finding
 
+Subclasses of **dpo:WeightRelatedFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight** and **dpo:Obese**.
+
+The categorization of the weight related findings and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
+
+#### Underweight
+> The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]
+
+```
+dpo:Underweight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:UnderweightBMIRange ] ) ;
+    rdfs:label "Underweight"^^xsd:string ;
+    rdfs:comment "BMI<18.5"^^xsd:string .
+
+dpo:UnderweightBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Underweight BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:maxInclusive "18.5"^^xsd:decimal .
+```
+
+#### Normal Weight
+
+```
+dpo:NormalWeight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:NormalWeightBMIRange ] ) ;
+    rdfs:label "Normal Weight"^^xsd:string ;
+    rdfs:comment "18.5<BMI<24.9"^^xsd:string .
+
+dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Normal Weight BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "18.5"^^xsd:decimal ;
+    owl:maxInclusive "24.9"^^xsd:decimal .
+```
+
+
+#### Overweight
+> The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]
+
+```
+dpo:Overweight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:OverweightBMIRange ] ) ;
+    rdfs:label "Overweight"^^xsd:string ;
+    rdfs:comment "25<BMI<29.9"^^xsd:string .
+
+dpo:OverweightBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Overweight BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "25"^^xsd:decimal ;
+    owl:maxInclusive "29.9"^^xsd:decimal .
+```
+
+
+#### Obese
+> Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]
+> The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
+
+```
+dpo:Obese rdf:type owl:Class ; # diabetes symptom
+    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
+    owl:equivalentClass symp:0020018 , ncit:C3283;
+    rdfs:label "Obese"^^xsd:string ;
+    rdfs:comment "30<BMI"^^xsd:string .
+
+dpo:ObeseBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Obese BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "30"^^xsd:decimal .
+```
 
 ### Blood Glucose Related Finding
 
+Subclasses of **dpo:BloodGlucoseRelatedFinding** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel** and **dpo:DiabetesHbA1CLevel**.
 
 ### Cholesterol Related Finding
 
+Subclasses of **dpo:CholesterolRelatedFinding** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
+
 
 ### Triglyceride Related Finding
+
+Subclasses of **dpo:TriglycerideRelatedFinding** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel** and **dpo:VeryHighTriglycerideLevel**.
+
 
 # Personal Health Knowledge Graph
