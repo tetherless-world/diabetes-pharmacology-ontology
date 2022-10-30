@@ -165,6 +165,8 @@ Diagnostic Factors included within the ontology are based on diabetes related Ne
 
 **dpo:Therapy** contains the subclass **dpo:AntihyperglycemicTreatment** which in turn contains the subclasses **dpo:Biguanide**, **dpo:SGLT2Inhibitor**, **dpo:GLP1RA**, **dpo:DPP4Inhibitor**, **dpo:Thiazolidinedione**, and **dpo:Sulfonylurea**.
 
+![pto:Therapy](./assets/images/Therapy.png)
+
 The therapies included within this ontology are based on the therapies included in Table 9.2 of the ADA guidelines.
 
 ### Biguanide
