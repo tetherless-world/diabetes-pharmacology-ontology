@@ -7,6 +7,7 @@ layout: default
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
 # Table of Contents
+  * [layout: default](#layout--default)
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
@@ -16,8 +17,11 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
     + [Weight Change Potential](#weight-change-potential)
     + [Hypoglycemia Risk](#hypoglycemia-risk)
     + [Cardiovascular Effect](#cardiovascular-effect)
+      - [Atherosclerotic Cardiovascular Disease Risk](#atherosclerotic-cardiovascular-disease-risk)
+      - [Heart Failure Risk](#heart-failure-risk)
     + [Cost](#cost)
     + [Renal Effect](#renal-effect)
+      - [Diabetic Kidney Disease Progression](#diabetic-kidney-disease-progression)
   * [Diagnostic Factor](#diagnostic-factor)
     + [Symptom](#symptom)
     + [Disease](#disease)
@@ -27,8 +31,8 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
     + [Biguanide](#biguanide)
       - [Metformin](#metformin)
     + [SGLT2 Inhibitor](#sglt2-inhibitor)
-    + [GLP1 RA](#glp1-ra)
-    + [DPP4 Inhibitor](#dpp4-inhibitor)
+    + [GLP-1 RA](#glp-1-ra)
+    + [DPP-4 Inhibitor](#dpp-4-inhibitor)
     + [Thiazolidinedione](#thiazolidinedione)
     + [Sulfonylurea](#sulfonylurea)
   * [Measurement Finding](#measurement-finding)
@@ -47,7 +51,7 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
     + [Cholesterol Related Finding](#cholesterol-related-finding)
       - [Optimal LDL Level](#optimal-ldl-level)
       - [Near Optimal LDL Level](#near-optimal-ldl-level)
-      - [Borderline High LDL Range](#borderline-high-ldl-range)
+      - [Borderline High LDL Level](#borderline-high-ldl-level)
       - [High LDL Level](#high-ldl-level)
       - [Very High LDL Level](#very-high-ldl-level)
     + [Triglyceride Related Finding](#triglyceride-related-finding)
@@ -355,6 +359,8 @@ The measurement finding categorizations included in the ontology are based on me
 
 Subclasses of **dpo:WeightRelatedFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight** and **dpo:Obese**.
 
+![pto:WeightRelatedFinding](./assets/images/WeightRelatedFinding.png)
+
 The categorization of the weight related findings and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
 
 #### Underweight
@@ -445,6 +451,8 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
 ### Blood Glucose Related Finding
 
 Subclasses of **dpo:BloodGlucoseRelatedFinding** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel** and **dpo:DiabetesHbA1CLevel**.
+
+![pto:BloodGlucoseRelatedFinding](./assets/images/BloodGlucoseRelatedFinding.png)
 
 #### Prediabetes Fasting Blood Glucose Level
 
@@ -562,6 +570,8 @@ dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
 
 Subclasses of **dpo:CholesterolRelatedFinding** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
 
+![pto:CholesterolRelatedFinding](./assets/images/CholesterolRelatedFinding.png)
+
 #### Optimal LDL Level
 
 ```
@@ -599,7 +609,7 @@ dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
     owl:maxInclusive "129"^^xsd:decimal .
 ```
 
-#### Borderline High LDL Range
+#### Borderline High LDL Level
 
 ```
 dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
@@ -659,6 +669,7 @@ dpo:VeryHighLDLRange rdf:type owl:DataRange ;
 
 Subclasses of **dpo:TriglycerideRelatedFinding** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel** and **dpo:VeryHighTriglycerideLevel**.
 
+![pto:TriglycerideRelatedFinding](./assets/images/TriglycerideRelatedFinding.png)
 
 #### Normal Triglyceride Level
 
