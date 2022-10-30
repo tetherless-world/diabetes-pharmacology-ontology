@@ -102,16 +102,49 @@ The Pharmacotherapy Factors included in this ontology are based on those include
 Potential categorizations of these top level pharmacotherapy factors are encoded as subclasses of each respective pharmacotherapy factor. The recommendation of a therapy may be based on whether or not a patient has an attribute that is of type one of the subclasses of the top level pharmacotherapy factors.
 
 ### Efficacy
+> The capacity to bring about a desired effect. [Definition Source: NCI]
+
+Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateEfficacy**, and **dpo:LowEfficacy**.
 
 ### Weight Change Potential
+> The capacity for an increase or decrease in the weight of an individual.
+
+Subclasses of **dpo:WeightChangePotential** include **dpo:WeightLossPotential**, **dpo:WeightGainPotential**, and **dpo:NeutralWeightChange**.
 
 ### Hypoglycemia Risk
+> The possiblility of lowering blood sugar below the normal range.
+
+Subclasses of **dpo:HypoglycemiaRisk** include **dpo:NoKnownHypoglycemiaRisk** and **dpo:KnownHypoglycemiaRisk**.
 
 ### Cardiovascular Effect
+> A pharmacotherapy factor related to the heart or blood vessels.
+
+**dpo:CardiovascularEffect** contains two main subclasses, **dpo:AtheroscleroticCardiovascularDiseaseRisk** and **dpo:HeartFailureRisk**.
+
+#### Atherosclerotic Cardiovascular Disease Risk
+> Risk of cardiovascular disease resulting from atherosclerosis.
+
+Subclasses of **dpo:AtheroscleroticCardiovascularDiseaseRisk** include **dpo:PotentialASCVDBenefit**, **dpo:IncreasedASCVDRisk**, and **dpo:NeutralASCVDRisk**.
+
+#### Heart Failure Risk
+> Risk of heart failure.
+
+Subclasses of **dpo:HeartFailureRisk** include **dpo:PotentialHeartFailureBenefit**, **dpo:IncreasedHeartFailureRisk**, and **dpo:NeutralHeartFailureRisk**.
 
 ### Cost
+> The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]
+
+Subclasses of **dpo:Cost** include **dpo:LowCost** and **dpo:HighCost**.
 
 ### Renal Effect
+> A pharmacotherapy factor related to the kidneys.
+
+Subclasses of **dpo:RenalEffect** include **dpo:DiabeticKidneyDiseaseProgression** and **dpo:RenalDosingConsideration**.
+
+#### Diabetic Kidney Disease Progression
+> The progression of diabetic kidney disease.
+
+Subclasses of **dpo:DiabeticKidneyDiseaseProgression** include **dpo:PotentialDKDBenefit**, **dpo:IncreasedDKDRisk**, and **dpo:NeutralDKDRisk**.
 
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
