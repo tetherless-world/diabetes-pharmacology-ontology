@@ -153,16 +153,37 @@ Subclasses of **dpo:DiabeticKidneyDiseaseProgression** include **dpo:PotentialDK
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
 
-Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies. Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Hyperlipidemia**, **dpo:Hypertension**, **dpo:FetalMacrosomia**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
+Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Hyperlipidemia**, **dpo:Hypertension**, **dpo:FetalMacrosomia**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
+
+![pto:DiagnosticFactor](./assets/images/DiagnosticFactor.png)
+
+Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies.
 
 ### Symptom
 > A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]
 
+Symptoms included in the ontology are based on the symtoms of the example patients in the NetCE diabetes related case studies.
+
+The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAndDevelopmentSymptom**, **dpo:UrinarySystemSymptom**, **dpo:VisionSymptom**, **dpo:NeurologicalAndPhysiologicalSymptom**, **dpo:MusculoskeletalSystemSymptom**, and **dpo:NervousSystemSymptom**.
+
+The symtpoms included in the ontology are linked to terms in the Symptoms Ontology using _owl:equivalentClass_.
+
 ### Disease
+> Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]
+
+Diseases included in the ontology are those related to the diagnosis or treatment of diabetes based on the considerations of Chapter 9 of the ADA guidelines.
+
+Subclasses of **dpo:Disease** include **dpo:Diabetes**, **dpo:CoronaryArteryDisease**, **dpo:RenalDisease**, and **dpo:CardiovascularDisease**.
 
 ### Behavior and Occupation
 
+Subclasses of **dpo:Behavior** include **dpo:SedentaryLifestyle**, **dpo:AlcoholUse**, and **dpo:DrugUse**.
+
+**dpo:Occupation** includes the subclass **dpo:SedentaryOccupation**.
+
 ### History
+
+The top level subclasses of **dpo:History** include **dpo:FamilyHistory** and **dpo:PersonalHistory**.
 
 ## Therapy
 > An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]

@@ -613,9 +613,10 @@ dpo:BilateralLowerExtremityBurningSensation rdf:type owl:Class ;
 
 dpo:Disease rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
+    owl:equivalentClass ncit:C2991 ;
     rdfs:label "Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]"^^xsd:string .
 
 dpo:CoronaryArteryDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
@@ -688,6 +689,12 @@ dpo:SedentaryLifestyle rdf:type owl:Class ;
 dpo:AlcoholUse rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
     rdfs:label "Alcohol Use"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
+
+dpo:DrugUse rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Behavior ;
+    rdfs:label "Drug Use"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
