@@ -11,7 +11,7 @@
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
 @prefix symp: <http://purl.obolibrary.org/obo/SYMP_> .
-@prefix ebi: <http://www.ebi.ac.uk/efo/EFO_> .
+@prefix efo: <http://www.ebi.ac.uk/efo/EFO_> .
 @prefix hp: <http://purl.obolibrary.org/obo/HP_> .
 @prefix sio: <http://semanticscience.org/resource/> .
 
@@ -82,7 +82,7 @@ dpo:pharmacotherapyFactor rdf:type owl:ObjectProperty ;
     rdfs:range dpo:PharmacotherapyFactor .
 
 dpo:hasDiagnosis rdf:type owl:ObjectProperty ;
-    rdfs:subClassOf sio:hasAttribute ;
+    rdfs:subPropertyOf sio:hasAttribute ;
     rdfs:label "has diagnosis"^^xsd:string ;
     rdfs:range dpo:Disease .
 
@@ -190,11 +190,11 @@ dpo:Obese rdf:type owl:Class ; # diabetes symptom
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
-    owl:equivalentClass symp:0020018 , ncit:C3283 , ebi:0007041;
+    owl:equivalentClass symp:0020018 , ncit:C3283 , efo:0007041;
     rdfs:label "Obese"^^xsd:string ;
     rdfs:comment "30<BMI"^^xsd:string ;
     skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;
-    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]" .
+    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EFO:0007041]" .
 
 dpo:ObeseBMIRange rdf:type owl:DataRange ;
     rdfs:label "Obese BMI Range" ;
@@ -673,7 +673,7 @@ dpo:ChestPain rdf:type owl:Class ;
 
 dpo:Behavior rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
-#    owl:equivalentClass ncit:C16326 ;
+    owl:equivalentClass ncit:C16326 ;
     rdfs:label "Behavior"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -699,7 +699,7 @@ dpo:DrugUse rdf:type owl:Class ;
 
 dpo:Occupation rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
-#    owl:equivalentClass ncit:C25193 ;
+    owl:equivalentClass ncit:C25193 ;
     rdfs:label "Occupation"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -1106,9 +1106,9 @@ dpo:Alogliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
     skos:definition "A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]"^^xsd:string .
 
 dpo:Linagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
-    owl:equivalentClass chebi: , ncit:C83887 ;
+    owl:equivalentClass chebi:68610 , ncit:C83887 ;
     rdfs:label "Linagliptin"^^xsd:string ;
-    rdfs:comment "68610"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
     skos:definition "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]"^^xsd:string .
 
@@ -1202,20 +1202,408 @@ dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
 
+dpo:ExternalClass rdf:type owl:Class ;
+    rdfs:label "External Class" .
+
+symp:0000462 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "symptom"^^xsd:string .
+
+symp:0000473 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "nutrition, metabolism, and development symptom"^^xsd:string .
+
+symp:0000560 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "polydipsia"^^xsd:string .
+
+symp:0000524 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "polyphagia"^^xsd:string .
+
+symp:0020018 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "overweight"^^xsd:string .
+
+symp:0000486 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "urinary system symptom"^^xsd:string .
+
+symp:0000565 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "polyuria"^^xsd:string .
+
+symp:0000485 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "dysuria"^^xsd:string .
+
+symp:0000563 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "urinary frequency"^^xsd:string .
+
+symp:0000320 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "vision symptom"^^xsd:string .
+
+symp:0000012 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "blurred vision"^^xsd:string .
+
+symp:0000410 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "neurological and physiological symptom"^^xsd:string .
+
+symp:0019177 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "fatigue"^^xsd:string .
+
+symp:0000891 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "musculoskeletal system symptom"^^xsd:string .
+
+symp:0019169 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "arthritis"^^xsd:string .
+
+symp:0000352 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "peripheral muscle weakness"^^xsd:string .
+
+symp:0000480 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "nervous system symptom"^^xsd:string .
+
+symp:0000734 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "stroke"^^xsd:string .
+
+symp:0000099 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "pain"^^xsd:string .
+
+symp:0000576 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "chest pain"^^xsd:string .
+
+efo:0005936 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "underweight body mass index status"^^xsd:string .
+
+efo:0005935 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "overweight body mass index status"^^xsd:string .
+
+efo:0007041 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "obese body mass index status"^^xsd:string .
+
+hp:0100749 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Chest pain"^^xsd:string .
+
+hp:0100515 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Pollakisuria"^^xsd:string .
+
+omit:0015388 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Urinary Tract Infections"^^xsd:string .
+
+omit:0003194 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Body Weight Changes"^^xsd:string .
+
+omit:0009750 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Metformin"^^xsd:string .
+
+loinc:55548-2 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "metFORMIN [Moles/volume] in Serum or Plasma"^^xsd:string .
+
 loinc:1558-6 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Fasting glucose [Mass/volume] in Serum or Plasma"^^xsd:string .
 
 loinc:1518-0 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO"^^xsd:string .
 
 loinc:59261-8 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Hemoglobin A1c/Hemoglobin.total in Blood by IFCC protocol"^^xsd:string .
 
 loinc:2089-1 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Cholesterol in LDL [Mass/volume] in Serum or Plasma"^^xsd:string .
 
 loinc:12228-3 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Triglyceride [Mass/volume] in Body fluid"^^xsd:string .
+
+ncit:C49236 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Therapeutic Procedure"^^xsd:string .
+
+ncit:C138901 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Body Mass Index Finding"^^xsd:string .
+
+ncit:C3283 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Obesity"^^xsd:string .
+
+ncit:C50791 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Urinary Tract Infection"^^xsd:string .
+
+ncit:C25457 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Condition"^^xsd:string .
+
+ncit:C34707 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Hyperlipidemia"^^xsd:string .
+
+ncit:C3117 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Hypertension"^^xsd:string .
+
+ncit:C2991 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Disease or Disorder"^^xsd:string .
+
+ncit:C26732 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Coronary Artery Disease"^^xsd:string .
+
+ncit:C3390 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Stroke"^^xsd:string .
+
+ncit:C38665 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Chest Pain"^^xsd:string .
+
+ncit:C16326 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Behavior"^^xsd:string .
+
+ncit:C86589 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Sedentary Lifestyle"^^xsd:string .
+
+ncit:C25193 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Occupation"^^xsd:string .
+
+ncit:C88183 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Efficacy"^^xsd:string .
+
+ncit:C9232 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Weight Change"^^xsd:string .
+
+ncit:C69088 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Cost"^^xsd:string .
+
+ncit:C98234 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Biguanide Antidiabetic Agent"^^xsd:string .
+
+ncit:C61612 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Metformin"^^xsd:string .
+
+ncit:C98083 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "SGLT2 Inhibitor"^^xsd:string .
+
+ncit:C158136 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Empagliflozin"^^xsd:string .
+
+ncit:C91018 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Canagliflozin"^^xsd:string .
+
+ncit:C78126 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Dapagliflozin"^^xsd:string .
+
+ncit:C166925 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Ertugliflozin"^^xsd:string .
+
+ncit:C98085 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "GLP-1 Mimetics"^^xsd:string .
+
+ncit:C169923 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Dulaglutide"^^xsd:string .
+
+ncit:C82239 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Liraglutide"^^xsd:string .
+
+ncit:C152328 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Semaglutide"^^xsd:string .
+
+ncit:C166988 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Lixisenatide"^^xsd:string .
+
+ncit:C65611 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Exenatide"^^xsd:string .
+
+ncit:C98086 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Dipeptidyl Peptidase-4 Inhibitor"^^xsd:string .
+
+ncit:C73838 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Sitagliptin"^^xsd:string .
+
+ncit:C75983 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Saxagliptin"^^xsd:string .
+
+ncit:C76906 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Alogliptin"^^xsd:string .
+
+ncit:C83887 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Linagliptin"^^xsd:string .
+
+ncit:C98241 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Thiazolidinedione Antidiabetic Agent"^^xsd:string .
+
+ncit:C71633 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Pioglitazone"^^xsd:string .
+
+ncit:C62076 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Rosiglitazone"^^xsd:string .
+
+ncit:C97936 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Sulfonylurea Antidiabetic Agent"^^xsd:string .
+
+ncit:C29076 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Glyburide"^^xsd:string .
+
+ncit:C29074 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Glipizide"^^xsd:string .
+
+ncit:C29073 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Glimepiride"^^xsd:string .
+
+chebi:5383 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "glimepiride"^^xsd:string .
+
+chebi:5384 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "glipizide"^^xsd:string .
+
+chebi:5441 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "glyburide"^^xsd:string .
+
+chebi:76983 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "N-sulfonylurea"^^xsd:string .
+
+chebi:50122 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "rosiglitazone"^^xsd:string .
+
+chebi:8228 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "pioglitazone"^^xsd:string .
+
+chebi:50990 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "thiazolidinediones"^^xsd:string .
+
+chebi:68610 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "linagliptin"^^xsd:string .
+
+chebi:72323 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "alogliptin"^^xsd:string .
+
+chebi:71272 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "saxagliptin"^^xsd:string .
+
+chebi:73273 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "sodium-glucose transport protein subtype 2 inhibitor"^^xsd:string .
+
+chebi:82720 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "empagliflozin"^^xsd:string .
+
+chebi:73274 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "canagliflozin"^^xsd:string .
+
+chebi:85078 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "dapagliflozin"^^xsd:string .
+
+chebi:188719 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Ertugliflozin"^^xsd:string .
+
+chebi:71196 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "glucagon-like peptide-1 receptor agonist"^^xsd:string .
+
+chebi:71193 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "liraglutide"^^xsd:string .
+
+chebi:167574 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "semaglutide"^^xsd:string .
+
+chebi:85662 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "lixisenatide"^^xsd:string .
+
+chebi:64073 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "exendin-4"^^xsd:string .
+
+chebi:68612 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "EC 3.4.14.5 (dipeptidyl-peptidase IV) inhibitor"^^xsd:string .
+
+chebi:40237 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "sitagliptin"^^xsd:string .
+
+chebi:3095 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "biguanide"^^xsd:string .
+
+chebi:6801 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "metformin"^^xsd:string .
 
 sio:hasAttribute rdf:type owl:ObjectProperty ;
     rdfs:label "has attribute"^^xsd:string .
