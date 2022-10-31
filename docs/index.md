@@ -70,8 +70,8 @@ The namespaces used in DPO are listed below.
 
 | Prefix | URI |
 |:-------------|:------------------|
-| dpo | [http://purl.org/twc/DPO/ont/](http://purl.org/twc/DPO/ont/) |
-| dpo-kb | [http://purl.org/twc/DPO/kb/](http://purl.org/twc/DPO/kb/) |
+| dpo | [http://purl.org/twc/DPO/ont/](http://purl.org/twc/dpo/ont/) |
+| dpo-kb | [http://purl.org/twc/DPO/kb/](http://purl.org/twc/dpo/kb/) |
 | owl | [http://www.w3.org/2002/07/owl#](http://www.w3.org/2002/07/owl#) |
 | rdf | [http://www.w3.org/1999/02/22-rdf-syntax-ns#](http://www.w3.org/1999/02/22-rdf-syntax-ns#) |
 | rdfs | [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#) |
@@ -81,7 +81,7 @@ The namespaces used in DPO are listed below.
 | ncit | [http://purl.obolibrary.org/obo/NCIT_](http://purl.obolibrary.org/obo/NCIT_) |
 | loinc | [http://purl.bioontology.org/ontology/LNC/](http://purl.bioontology.org/ontology/LNC/) |
 | chebi | [http://purl.obolibrary.org/obo/CHEBI_](http://purl.obolibrary.org/obo/CHEBI_) |
-| ebi | [http://www.ebi.ac.uk/efo/EFO_>](http://www.ebi.ac.uk/efo/EFO_>) |
+| efo | [http://www.ebi.ac.uk/efo/EFO_>](http://www.ebi.ac.uk/efo/EFO_>) |
 | omit | [http://purl.obolibrary.org/obo/OMIT_](http://purl.obolibrary.org/obo/OMIT_) |
 | symp | [http://purl.obolibrary.org/obo/SYMP_](http://purl.obolibrary.org/obo/SYMP_) |
 | hp | [http://purl.obolibrary.org/obo/HP_](http://purl.obolibrary.org/obo/HP_) |
