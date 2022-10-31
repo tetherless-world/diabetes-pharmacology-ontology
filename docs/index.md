@@ -165,6 +165,8 @@ Symptoms included in the ontology are based on the symtoms of the example patien
 
 The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAndDevelopmentSymptom**, **dpo:UrinarySystemSymptom**, **dpo:VisionSymptom**, **dpo:NeurologicalAndPhysiologicalSymptom**, **dpo:MusculoskeletalSystemSymptom**, and **dpo:NervousSystemSymptom**.
 
+![pto:Symptom](./assets/images/Symptom.png)
+
 The symtpoms included in the ontology are linked to terms in the Symptoms Ontology using _owl:equivalentClass_.
 
 ### Condition
