@@ -1,5 +1,5 @@
-@prefix dpo: <http://purl.org/twc/DPO/ont/> .
-@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+@prefix dpo: <http://purl.org/twc/dpo/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,7 +15,7 @@
 @prefix hp: <http://purl.obolibrary.org/obo/HP_> .
 @prefix sio: <http://semanticscience.org/resource/> .
 
-<http://purl.org/ontology/heals/diabetes_pharmacology_ontology.ttl>
+<http://purl.org/twc/dpo/ont/diabetes_pharmacology_ontology.ttl>
     rdf:type owl:Ontology ;
     dct:title "Diabetes Pharmacology Ontology"^^xsd:string ;
     dct:creator "Sabbir M. Rashid"^^xsd:string ;
@@ -24,7 +24,7 @@
     dct:modified "2022-10-25T18:00:00"^^xsd:dateTime ;
     dct:description "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies."^^xsd:string ;
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-    owl:versionIRI <http://purl.org/ontology/heals/dpo/0.1> .
+    owl:versionIRI <http://purl.org/twc/dpo/ont/0.1> .
 ncit:C138901 rdf:type owl:Class ;
     rdfs:label "Body Mass Index Finding"^^xsd:string .
 
