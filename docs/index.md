@@ -6,6 +6,8 @@ layout: default
 
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
+![DPO](./assets/images/DPO.png)
+
 # Table of Contents
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
