@@ -7,7 +7,6 @@ layout: default
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
 # Table of Contents
-  * [layout: default](#layout--default)
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
@@ -188,7 +187,7 @@ The top level subclasses of **dpo:History** include **dpo:FamilyHistory** and **
 ## Therapy
 > An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
 
-**dpo:Therapy** contains the subclass **dpo:AntihyperglycemicTreatment** which in turn contains the subclasses **dpo:Biguanide**, **dpo:SGLT2Inhibitor**, **dpo:GLP1RA**, **dpo:DPP4Inhibitor**, **dpo:Thiazolidinedione**, and **dpo:Sulfonylurea**.
+**dpo:Therapy** contains the subclass **dpo:AntihyperglycemicTreatment** which in turn contains the subclasses **dpo:Biguanide**, **dpo:SGLT2Inhibitor**, **dpo:GLP1RA**, **dpo:DPP4Inhibitor**, **dpo:Sulfonylurea**, and **dpo:Thiazolidinedione**.
 
 ![pto:Therapy](./assets/images/Therapy.png)
 
