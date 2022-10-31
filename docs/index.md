@@ -152,7 +152,7 @@ Subclasses of **dpo:DiabeticKidneyDiseaseProgression** include **dpo:PotentialDK
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
 
-Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Hyperlipidemia**, **dpo:Hypertension**, **dpo:FetalMacrosomia**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
+Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Condition**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
 
 ![pto:DiagnosticFactor](./assets/images/DiagnosticFactor.png)
 
@@ -166,6 +166,11 @@ Symptoms included in the ontology are based on the symtoms of the example patien
 The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAndDevelopmentSymptom**, **dpo:UrinarySystemSymptom**, **dpo:VisionSymptom**, **dpo:NeurologicalAndPhysiologicalSymptom**, **dpo:MusculoskeletalSystemSymptom**, and **dpo:NervousSystemSymptom**.
 
 The symtpoms included in the ontology are linked to terms in the Symptoms Ontology using _owl:equivalentClass_.
+
+### Condition
+
+Subclasses of **dpo:Condition** include **dpo:Hyperlipidemia** and **dpo:Hypertension**.
+
 
 ### Disease
 > Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]

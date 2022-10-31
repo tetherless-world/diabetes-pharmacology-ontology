@@ -541,23 +541,22 @@ dpo:PeripheralNeuropathy rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:FetalMacrosomia rdf:type owl:Class ;
+dpo:Condition rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
-    owl:equivalentClass omit:0006531 , ncit:C113486 , hp:0001520 ;
-    rdfs:label "Fetal Macrosomia"^^xsd:string ;
-    rdfs:comment "gave birth to a child weighing more than 9 lbs"^^xsd:string ;
-    skos:definition "A fetus exceeding 4500 grams. [Definition Source: NCI][attribution: NICHD]"^^xsd:string ;
-    skos:defintion "The term large for gestational age applies to babies whose birth weight lies above the 90th percentile for that gestational age. [Definition Source: HP:0001520]"^^xsd:string .
+    owl:equivalentClass ncit:C25457 ;
+    rdfs:label "Condition"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A state of being, such as a state of health. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Hyperlipidemia rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:Condition ;
     owl:equivalentClass ncit:C34707 ;
     rdfs:label "Hyperlipidemia"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Elevated levels of lipids in the blood. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Hypertension rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:Condition ;
     owl:equivalentClass ncit:C3117 ;
     rdfs:label "Hypertension"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
