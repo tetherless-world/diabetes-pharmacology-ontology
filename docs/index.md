@@ -6,25 +6,46 @@ layout: default
 
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
-![DPO](./assets/images/DPO.png)
-
 # Table of Contents
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
+        * [DPO Namespaces](#dpo-namespaces)
 - [Diabetes Pharmacology Ontology](#diabetes-pharmacology-ontology)
+  * [Factor](#factor)
   * [Pharmacotherapy Factor](#pharmacotherapy-factor)
     + [Efficacy](#efficacy)
+      - [High Efficacy](#high-efficacy)
+      - [Intermediate Efficacy](#intermediate-efficacy)
+      - [Low Efficacy](#low-efficacy)
     + [Weight Change Potential](#weight-change-potential)
+      - [Weight Loss Potential](#weight-loss-potential)
+      - [Weight Gain Potential](#weight-gain-potential)
+      - [Neutral Weight Change](#neutral-weight-change)
     + [Hypoglycemia Risk](#hypoglycemia-risk)
+      - [No Known Hypoglycemia Risk](#no-known-hypoglycemia-risk)
+      - [Known Hypoglycemia Risk](#known-hypoglycemia-risk)
     + [Cardiovascular Effect](#cardiovascular-effect)
       - [Atherosclerotic Cardiovascular Disease Risk](#atherosclerotic-cardiovascular-disease-risk)
+        * [Potential ASCVD Benefit](#potential-ascvd-benefit)
+        * [Increased ASCVD Risk](#increased-ascvd-risk)
+        * [Neutral ASCVD Risk](#neutral-ascvd-risk)
       - [Heart Failure Risk](#heart-failure-risk)
+        * [Potential Heart Failure Benefit](#potential-heart-failure-benefit)
+        * [Increased Heart Failure Risk](#increased-heart-failure-risk)
+        * [Neutral Heart Failure Risk](#neutral-heart-failure-risk)
     + [Cost](#cost)
+      - [Low Cost](#low-cost)
+      - [High Cost](#high-cost)
     + [Renal Effect](#renal-effect)
       - [Diabetic Kidney Disease Progression](#diabetic-kidney-disease-progression)
+        * [Potential Diabetic Kidney Disease Benefit](#potential-diabetic-kidney-disease-benefit)
+        * [Increased Diabetic Kidney Disease Risk](#increased-diabetic-kidney-disease-risk)
+        * [Neutral Diabetic Kidney Disease Risk](#neutral-diabetic-kidney-disease-risk)
+      - [Renal Dosing Consideration](#renal-dosing-consideration)
   * [Diagnostic Factor](#diagnostic-factor)
     + [Symptom](#symptom)
+    + [Condition](#condition)
     + [Disease](#disease)
     + [Behavior and Occupation](#behavior-and-occupation)
     + [History](#history)
@@ -90,7 +111,11 @@ The namespaces used in DPO are listed below.
 
 # Diabetes Pharmacology Ontology
 
-The root branch of DPO is **dpo:Factor**. A factor is defined as follows:
+The root branch of the Diabetes Pharmacology Ontology is **dpo:Factor**. All other branches of the ontology extend from this branch.
+
+![DPO](./assets/images/DPO.png)
+
+## Factor
 > A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements.
 
 Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:MeasurementFinding**.
@@ -111,15 +136,39 @@ Potential categorizations of these top level pharmacotherapy factors are encoded
 
 Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateEfficacy**, and **dpo:LowEfficacy**.
 
+#### High Efficacy
+> A high capacity to bring about a desired effect.
+
+#### Intermediate Efficacy
+> An intermediate capacity to bring about a desired effect.
+
+#### Low Efficacy
+> A low capacity to bring about a desired effect.
+
 ### Weight Change Potential
 > The capacity for an increase or decrease in the weight of an individual.
 
 Subclasses of **dpo:WeightChangePotential** include **dpo:WeightLossPotential**, **dpo:WeightGainPotential**, and **dpo:NeutralWeightChange**.
 
+#### Weight Loss Potential
+> The capacity for a decrease in the weight of an individual.
+
+#### Weight Gain Potential
+> The capacity for an increase in the weight of an individual.
+
+#### Neutral Weight Change
+> The lack of an effect on the capacity for an increase or decrease in the weight of an individual.
+
 ### Hypoglycemia Risk
 > The possiblility of lowering blood sugar below the normal range.
 
 Subclasses of **dpo:HypoglycemiaRisk** include **dpo:NoKnownHypoglycemiaRisk** and **dpo:KnownHypoglycemiaRisk**.
+
+#### No Known Hypoglycemia Risk
+> No known association with the lowering of blood sugar below the normal range.
+
+#### Known Hypoglycemia Risk
+> A known association with the lowering of blood sugar below the normal range.
 
 ### Cardiovascular Effect
 > A pharmacotherapy factor related to the heart or blood vessels.
@@ -131,15 +180,39 @@ Subclasses of **dpo:HypoglycemiaRisk** include **dpo:NoKnownHypoglycemiaRisk** a
 
 Subclasses of **dpo:AtheroscleroticCardiovascularDiseaseRisk** include **dpo:PotentialASCVDBenefit**, **dpo:IncreasedASCVDRisk**, and **dpo:NeutralASCVDRisk**.
 
+##### Potential ASCVD Benefit
+> Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis.
+
+##### Increased ASCVD Risk
+> Potential to increase the risk of cardiovascular disease resulting from atherosclerosis.
+
+##### Neutral ASCVD Risk
+> Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis.
+
 #### Heart Failure Risk
 > Risk of heart failure.
 
 Subclasses of **dpo:HeartFailureRisk** include **dpo:PotentialHeartFailureBenefit**, **dpo:IncreasedHeartFailureRisk**, and **dpo:NeutralHeartFailureRisk**.
 
+##### Potential Heart Failure Benefit
+> Potential to decrease the risk of heart failure.
+
+##### Increased Heart Failure Risk
+> Potential to increase the risk of heart failure.
+
+##### Neutral Heart Failure Risk
+> Minimal effect on reducing or increasing the risk of heart failure.
+
 ### Cost
 > The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]
 
 Subclasses of **dpo:Cost** include **dpo:LowCost** and **dpo:HighCost**.
+
+#### Low Cost
+> Relatively inexpensive.
+
+#### High Cost
+> Relatively expensive.
 
 ### Renal Effect
 > A pharmacotherapy factor related to the kidneys.
@@ -150,6 +223,18 @@ Subclasses of **dpo:RenalEffect** include **dpo:DiabeticKidneyDiseaseProgression
 > The progression of diabetic kidney disease.
 
 Subclasses of **dpo:DiabeticKidneyDiseaseProgression** include **dpo:PotentialDKDBenefit**, **dpo:IncreasedDKDRisk**, and **dpo:NeutralDKDRisk**.
+
+##### Potential Diabetic Kidney Disease Benefit
+> Potential to decrease the risk or progression of diabetic kidney disease.
+
+##### Increased Diabetic Kidney Disease Risk
+> Potential to increase the risk or progression of diabetic kidney disease.
+
+##### Neutral Diabetic Kidney Disease Risk
+> Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease.
+
+#### Renal Dosing Consideration
+> Drug dosage considerations related to the effect on the kidneys.
 
 ## Diagnostic Factor
 > A circumstance influencing the dianosis of a disease.
