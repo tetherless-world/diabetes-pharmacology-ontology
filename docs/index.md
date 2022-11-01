@@ -7,10 +7,10 @@ layout: default
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
 # Table of Contents
+  * [layout: default](#layout--default)
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
-        * [DPO Namespaces](#dpo-namespaces)
 - [Diabetes Pharmacology Ontology](#diabetes-pharmacology-ontology)
   * [Factor](#factor)
   * [Pharmacotherapy Factor](#pharmacotherapy-factor)
@@ -45,18 +45,74 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
       - [Renal Dosing Consideration](#renal-dosing-consideration)
   * [Diagnostic Factor](#diagnostic-factor)
     + [Symptom](#symptom)
+      - [Nutrition Metabolism and Development Symptom](#nutrition-metabolism-and-development-symptom)
+        * [Polydipsia](#polydipsia)
+        * [Polyphagia](#polyphagia)
+      - [Urinary System Symptom](#urinary-system-symptom)
+        * [Polyuria](#polyuria)
+        * [Dysuria](#dysuria)
+        * [Urinary Tract Infection (UTI)](#urinary-tract-infection--uti-)
+        * [Frequent Urination](#frequent-urination)
+        * [Foul Urine](#foul-urine)
+      - [Vision Symptom](#vision-symptom)
+        * [Blurred Vision](#blurred-vision)
+      - [Neurological and Physiological Symptom](#neurological-and-physiological-symptom)
+        * [Fatigue](#fatigue)
+      - [Musculoskeletal System Symptom](#musculoskeletal-system-symptom)
+        * [Arthritis](#arthritis)
+        * [Peripheral Neuropathy](#peripheral-neuropathy)
+      - [Nervous System Symptom](#nervous-system-symptom)
+        * [Cerebral Vascular Accident](#cerebral-vascular-accident)
+        * [Pain](#pain)
+          + [Chest Pain](#chest-pain)
+        * [Bilateral Lower Extremity Burning Sensation](#bilateral-lower-extremity-burning-sensation)
     + [Condition](#condition)
+      - [Hyperlipidemia](#hyperlipidemia)
+      - [Hypertension](#hypertension)
     + [Disease](#disease)
-    + [Behavior and Occupation](#behavior-and-occupation)
+      - [Coronary Artery Disease](#coronary-artery-disease)
+      - [Diabetes](#diabetes)
+      - [Renal Disease](#renal-disease)
+      - [Cardiovascular Disease](#cardiovascular-disease)
+    + [Behavior](#behavior)
+      - [Sedentary Lifestyle](#sedentary-lifestyle)
+      - [Alcohol Use](#alcohol-use)
+      - [Drug Use](#drug-use)
+    + [Occupation](#occupation)
+      - [Sedentary Occupation](#sedentary-occupation)
     + [History](#history)
+      - [Family History](#family-history)
+        * [Family History of Coronary Artery Disease](#family-history-of-coronary-artery-disease)
+        * [Family History of Diabetes](#family-history-of-diabetes)
+      - [Personal History](#personal-history)
+        * [Personal History of Gestational Diabetes](#personal-history-of-gestational-diabetes)
+        * [Personal History of Febrile States](#personal-history-of-febrile-states)
   * [Therapy](#therapy)
     + [Biguanide](#biguanide)
       - [Metformin](#metformin)
     + [SGLT2 Inhibitor](#sglt2-inhibitor)
+      - [Empagliflozin](#empagliflozin)
+      - [Canagliflozin](#canagliflozin)
+      - [Dapagliflozin](#dapagliflozin)
+      - [Ertugliflozin](#ertugliflozin)
     + [GLP-1 RA](#glp-1-ra)
+      - [Dulaglutide](#dulaglutide)
+      - [Liraglutide](#liraglutide)
+      - [Semaglutide](#semaglutide)
+      - [Lixisenatide](#lixisenatide)
+      - [Exenatide](#exenatide)
     + [DPP-4 Inhibitor](#dpp-4-inhibitor)
+      - [Sitagliptin](#sitagliptin)
+      - [Saxagliptin](#saxagliptin)
+      - [Alogliptin](#alogliptin)
+      - [Linagliptin](#linagliptin)
     + [Thiazolidinedione](#thiazolidinedione)
+      - [Pioglitazone](#pioglitazone)
+      - [Rosiglitazone](#rosiglitazone)
     + [Sulfonylurea](#sulfonylurea)
+      - [Glyburide](#glyburide)
+      - [Glipizide](#glipizide)
+      - [Glimepiride](#glimepiride)
   * [Measurement Finding](#measurement-finding)
     + [Weight Related Finding](#weight-related-finding)
       - [Underweight](#underweight)
@@ -465,6 +521,72 @@ dpo:SGLT2Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:hasValue [ rdf:type dpo:HighCost ] ] .
 ```
 
+#### Empagliflozin
+> An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]
+
+```
+dpo:Empagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:82720 , ncit:C158136 ;
+    rdfs:label "Empagliflozin"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+```
+#### Canagliflozin
+> A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. [Definition Source: NCI]
+
+```
+dpo:Canagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:73274 , ncit:C91018 ;
+    rdfs:label "Canagliflozin"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+```
+
+#### Dapagliflozin
+> A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. [Definition Source: NCI]
+
+```
+dpo:Dapagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:85078 , ncit:C78126 ;
+    rdfs:label "Dapagliflozin"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+```
+
+#### Ertugliflozin
+> Ertugliflozin is in a class of medications called sodium-glucose co-transporter 2 (SGLT2) inhibitors. It lowers blood sugar by causing the kidneys to get rid of more glucose in the urine. Ertugliflozin is not used to treat type 1 diabetes (condition in which the body does not produce insulin and, therefore, cannot control the amount of sugar in the blood) or diabetic ketoacidosis (a serious condition that may develop if high blood sugar is not treated). [Definition Source: https://medlineplus.gov/druginfo/meds/a618011.html]
+
+```
+dpo:Ertugliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
+    owl:equivalentClass chebi:188719 , ncit:C166925 ;
+    rdfs:label "Ertugliflozin"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialHeartFailureBenefit ] ] .
+```
+
 ### GLP-1 RA
 > Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]
 > An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]
@@ -490,6 +612,82 @@ dpo:GLP1RA rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
           owl:hasValue [ rdf:type dpo:HighCost ] ] .
+```
+
+#### Dulaglutide
+> A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]
+
+```
+dpo:Dulaglutide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass ncit:C169923 ;
+    rdfs:label "Dulaglutide"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+
+```
+
+#### Liraglutide
+> A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. [Definition Source: NCI]
+
+```
+dpo:Liraglutide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:71193 , ncit:C82239 ;
+    rdfs:label "Liraglutide"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+```
+
+#### Semaglutide
+> A polypeptide that contains a linear sequence of 31 amino acids joined together by peptide linkages. It is an agonist of glucagon-like peptide-1 receptors (GLP-1 AR) and used for the treatment of type 2 diabetes. [Definition Source: CHEBI]
+
+```
+dpo:Semaglutide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:167574 , ncit:C152328 ;
+    rdfs:label "Semaglutide"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
+```
+
+#### Lixisenatide
+> A forty-four membered polypeptide consisting of L-His, Gly, L-Glu, Gly, L-Thr, L-Phe, L-Thr, L-Ser, L-Asp, L-Leu, L-Ser, L-Lys, L-Gln, L-Met, L-Glu, L-Glu, L-Glu, L-Ala, L-Val, L-Arg, L-Leu, L-Phe, L-Ile, L-Glu, L-Trp, L-Leu, L-Lys, L-Asn, Gly, Gly, LPro, L-Ser, L-Ser, Gly, L-Ala, L-Pro, L-Pro, L-Ser, L-Lys, L-Lys, L-Lys, L-Lys, L-Lys, and L-Lys-NH2 residues joined in sequence. Used as an adjunct to diet and exercise for the treatment of adults with type II diabetes. [Definition Source: CHEBI]
+
+```
+dpo:Lixisenatide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:85662 , ncit:C166988 ;
+    rdfs:label "Lixisenatide"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralASCVDRisk ] ] .
+```
+
+#### Exenatide
+> A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]
+> A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]
+
+```
+dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
+    owl:equivalentClass chebi:64073 , ncit:C65611 ;
+    rdfs:label "Exenatide"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:NeutralASCVDRisk ] ] .
 ```
 
 ### DPP-4 Inhibitor
@@ -521,6 +719,31 @@ dpo:DPP4Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
 ```
 
+#### Sitagliptin
+> An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]
+
+#### Saxagliptin
+> A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]
+> A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]
+
+```
+dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
+    owl:equivalentClass chebi:71272 , ncit:C75983 ;
+    rdfs:label "Saxagliptin"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:IncreasedHeartFailureRisk ] ] .
+```
+
+#### Alogliptin
+> A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]
+> A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]
+
+#### Linagliptin
+> A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]
+> A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]
+
 ### Thiazolidinedione
 > Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]
 
@@ -548,6 +771,23 @@ dpo:Thiazolidinedione rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:onProperty sio:hasAttribute ;
           owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
 ```
+
+#### Pioglitazone
+> An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]
+> A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]
+
+```
+dpo:Pioglitazone rdfs:subClassOf dpo:Thiazolidinedione ;
+    owl:equivalentClass chebi:8228 , ncit:C71633 ;
+    rdfs:label "Pioglitazone"^^xsd:string ;
+    rdfs:subClassOf
+        [ rdf:type owl:Restriction ;
+          owl:onProperty sio:hasAttribute ;
+          owl:hasValue [ rdf:type dpo:PotentialASCVDBenefit ] ] .
+```
+
+#### Rosiglitazone
+> An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. [Definition Source: NCI]
 
 ### Sulfonylurea
 > Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). [Definition Source: NCI]
@@ -579,6 +819,17 @@ dpo:Sulfonylurea rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:onProperty sio:hasAttribute ;
           owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
 ```
+
+#### Glyburide
+> A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]
+> An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]
+
+#### Glipizide
+> A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]
+> An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]
+
+#### Glimepiride
+> A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]
 
 ## Measurement Finding
 > A finding surmised from recorded measurements.

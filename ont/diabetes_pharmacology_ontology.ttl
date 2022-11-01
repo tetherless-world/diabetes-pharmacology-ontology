@@ -606,8 +606,8 @@ dpo:PersonalHistoryOfFebrileStates rdf:type owl:Class ;
 
 dpo:BilateralLowerExtremityBurningSensation rdf:type owl:Class ;
     rdfs:subClassOf dpo:NervousSystemSymptom ;
-    rdfs:label "Occasional Burning Sensation in Bilateral Lower Extremities"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
+    rdfs:label "Bilateral Lower Extremity Burning Sensation"^^xsd:string ;
+    rdfs:comment "Occasional Burning Sensation in Bilateral Lower Extremities"^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:Disease rdf:type owl:Class ;
