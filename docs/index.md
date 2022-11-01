@@ -301,7 +301,7 @@ Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Condition*
 Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies.
 
 ### Symptom
-> A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ ![https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5](https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5) url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]
+> A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ [https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5](https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5) url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]
 
 Symptoms included in the ontology are based on the symtoms of the example patients in the NetCE diabetes related case studies.
 
