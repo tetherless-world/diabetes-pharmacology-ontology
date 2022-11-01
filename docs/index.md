@@ -250,16 +250,86 @@ Diagnostic Factors included within the ontology are based on diabetes related Ne
 
 Symptoms included in the ontology are based on the symtoms of the example patients in the NetCE diabetes related case studies.
 
-The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAndDevelopmentSymptom**, **dpo:UrinarySystemSymptom**, **dpo:VisionSymptom**, **dpo:NeurologicalAndPhysiologicalSymptom**, **dpo:MusculoskeletalSystemSymptom**, and **dpo:NervousSystemSymptom**.
+The symtpoms included in the ontology are linked to terms in the Symptoms Ontology using _owl:equivalentClass_.
 
 ![pto:Symptom](./assets/images/Symptom.png)
 
-The symtpoms included in the ontology are linked to terms in the Symptoms Ontology using _owl:equivalentClass_.
+The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAndDevelopmentSymptom**, **dpo:UrinarySystemSymptom**, **dpo:VisionSymptom**, **dpo:NeurologicalAndPhysiologicalSymptom**, **dpo:MusculoskeletalSystemSymptom**, and **dpo:NervousSystemSymptom**.
+
+#### Nutrition Metabolism and Development Symptom
+> A symptom involving the nutrition, metabolism, and/or development system.
+
+##### Polydipsia
+> Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]
+
+##### Polyphagia
+> Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]
+
+#### Urinary System Symptom
+> A symptom involving the urinary system.
+
+##### Polyuria
+> A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]
+
+##### Dysuria
+> A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]
+
+##### Urinary Tract Infection (UTI)
+> A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]
+
+##### Frequent Urination
+> Increased frequency of urination. [Definition Source: HP:0100515]
+
+##### Foul Urine
+> 
+
+#### Vision Symptom
+> A symptom involving visual impairment.
+
+##### Blurred Vision
+> A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]
+
+#### Neurological and Physiological Symptom
+> 
+
+##### Fatigue
+> Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]
+
+#### Musculoskeletal System Symptom
+> A symptom involving the musculoskeletal system.
+
+##### Arthritis
+> Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]
+
+##### Peripheral Neuropathy
+> 
+
+#### Nervous System Symptom
+> 
+
+##### Cerebral Vascular Accident
+> A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]
+> Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke ][Definition Source: SYMP:0000734]
+
+##### Pain
+> A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body. [ url:http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp ][Definition Source: SYMP:0000576]
+
+###### Chest Pain
+> An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the chest. [Definition Source: HP:0100749]
+
+##### Bilateral Lower Extremity Burning Sensation
+> 
 
 ### Condition
+> A state of being, such as a state of health. [Definition Source: NCI]
 
 Subclasses of **dpo:Condition** include **dpo:Hyperlipidemia** and **dpo:Hypertension**.
 
+#### Hyperlipidemia
+> Elevated levels of lipids in the blood. [Definition Source: NCI]
+
+#### Hypertension
+> Blood pressure that is abnormally high. [Definition Source: NCI]
 
 ### Disease
 > Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]
@@ -268,15 +338,65 @@ Diseases included in the ontology are those related to the diagnosis or treatmen
 
 Subclasses of **dpo:Disease** include **dpo:Diabetes**, **dpo:CoronaryArteryDisease**, **dpo:RenalDisease**, and **dpo:CardiovascularDisease**.
 
-### Behavior and Occupation
+#### Coronary Artery Disease
+> Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]
+
+#### Diabetes
+> 
+
+#### Renal Disease
+> Disease associated with kidneys, typically chronic kidney disease.
+
+#### Cardiovascular Disease
+> 
+
+### Behavior
+> 
 
 Subclasses of **dpo:Behavior** include **dpo:SedentaryLifestyle**, **dpo:AlcoholUse**, and **dpo:DrugUse**.
 
+#### Sedentary Lifestyle
+> A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. [Definition Source: NCI]
+
+#### Alcohol Use
+> 
+
+#### Drug Use
+> 
+
+### Occupation
+> 
+
 **dpo:Occupation** includes the subclass **dpo:SedentaryOccupation**.
 
+#### Sedentary Occupation
+> 
+
 ### History
+> 
 
 The top level subclasses of **dpo:History** include **dpo:FamilyHistory** and **dpo:PersonalHistory**.
+
+#### Family History
+> 
+
+##### Family History of Coronary Artery Disease
+> 
+
+##### Family History of Diabetes
+> 
+
+
+#### Personal History
+> 
+
+##### Personal History of Gestational Diabetes
+> 
+
+
+##### Personal History of Febrile States
+> 
+
 
 ## Therapy
 > An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
