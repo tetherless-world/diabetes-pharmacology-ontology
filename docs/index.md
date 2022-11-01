@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Diabetes Pharmacology Ontology
 ---
 
 # Overview
@@ -301,7 +302,7 @@ Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Condition*
 Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies.
 
 ### Symptom
-> A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ [https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5](https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5) url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]
+> A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ [https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5](https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5) [https://www.nature.com/subjects/signs-and-symptoms](https://www.nature.com/subjects/signs-and-symptoms) [https://www.merriam-webster.com/dictionary/symptom](https://www.merriam-webster.com/dictionary/symptom) ][Definition Source: SYMP:0000462]
 
 Symptoms included in the ontology are based on the symtoms of the example patients in the NetCE diabetes related case studies.
 
@@ -315,19 +316,19 @@ The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAnd
 > A symptom involving the nutrition, metabolism, and/or development system.
 
 ##### Polydipsia
-> Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]
+> Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia) ][Definition Source: SYMP:0000560]
 
 ##### Polyphagia
-> Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]
+> Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia) ][Definition Source: SYMP:0000524]
 
 #### Urinary System Symptom
 > A symptom involving the urinary system.
 
 ##### Polyuria
-> A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]
+> A urinary system symptom that is characterized by the excessive secretion of urine. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria) ][Definition Source: SYMP:0000565]
 
 ##### Dysuria
-> A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]
+> A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria) ][Definition Source: SYMP:0000485]
 
 ##### Urinary Tract Infection (UTI)
 > A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]
@@ -348,13 +349,13 @@ The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAnd
 > 
 
 ##### Fatigue
-> Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]
+> Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue) ][Definition Source: SYMP:0019177]
 
 #### Musculoskeletal System Symptom
 > A symptom involving the musculoskeletal system.
 
 ##### Arthritis
-> Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]
+> Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis) ][Definition Source: SYMP:0019169]
 
 ##### Peripheral Neuropathy
 > 
@@ -364,10 +365,10 @@ The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAnd
 
 ##### Cerebral Vascular Accident
 > A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]
-> Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke ][Definition Source: SYMP:0000734]
+> Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke) ][Definition Source: SYMP:0000734]
 
 ##### Pain
-> A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body. [ url:http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp ][Definition Source: SYMP:0000576]
+> A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body. [ [http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp](http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp) ][Definition Source: SYMP:0000576]
 
 ###### Chest Pain
 > An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the chest. [Definition Source: HP:0100749]
