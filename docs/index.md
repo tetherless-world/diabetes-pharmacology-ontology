@@ -51,7 +51,7 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
       - [Urinary System Symptom](#urinary-system-symptom)
         * [Polyuria](#polyuria)
         * [Dysuria](#dysuria)
-        * [Urinary Tract Infection (UTI)](#urinary-tract-infection--uti-)
+        * [Urinary Tract Infection](#urinary-tract-infection)
         * [Frequent Urination](#frequent-urination)
         * [Foul Urine](#foul-urine)
       - [Vision Symptom](#vision-symptom)
@@ -330,7 +330,7 @@ The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAnd
 ##### Dysuria
 > A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria) ][Definition Source: SYMP:0000485]
 
-##### Urinary Tract Infection (UTI)
+##### Urinary Tract Infection
 > A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]
 
 ##### Frequent Urination
