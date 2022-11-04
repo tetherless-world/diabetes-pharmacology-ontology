@@ -652,6 +652,7 @@ Subclasses of **dpo:NervousSystemSymptom** include **dpo:CerebralVascularAcciden
 
 ##### Cerebral Vascular Accident
 > A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]
+
 > Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke) ][Definition Source: SYMP:0000734]
 
 ```
@@ -1101,6 +1102,7 @@ dpo:Ertugliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
 
 #### GLP-1 RA
 > Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]
+
 > An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]
 
 ```
@@ -1197,6 +1199,7 @@ dpo:Lixisenatide rdfs:subClassOf dpo:GLP1RA ;
 
 ##### Exenatide
 > A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]
+
 > A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]
 
 ```
@@ -1213,6 +1216,7 @@ dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
 
 #### DPP-4 Inhibitor
 > Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]
+
 > An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]
 
 ```
@@ -1256,6 +1260,7 @@ dpo:Sitagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 
 ##### Saxagliptin
 > A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]
+
 > A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]
 
 ```
@@ -1272,6 +1277,7 @@ dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 
 ##### Alogliptin
 > A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]
+
 > A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]
 
 ```
@@ -1284,6 +1290,7 @@ dpo:Alogliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 
 ##### Linagliptin
 > A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]
+
 > A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]
 
 ```
@@ -1327,6 +1334,7 @@ The subclasses of **dpo:Thiazolidinedione** include **dpo:Pioglitazone** and **d
 
 ##### Pioglitazone
 > An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]
+
 > A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]
 
 ```
@@ -1387,6 +1395,7 @@ The subclasses of **dpo:Sulfonylurea** include **dpo:Glyburide**, **dpo:Glipizid
 
 ##### Glyburide
 > A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]
+
 > An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]
 
 ```
@@ -1399,6 +1408,7 @@ dpo:Glyburide rdfs:subClassOf dpo:Sulfonylurea ;
 
 ##### Glipizide
 > A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]
+
 > An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]
 
 ```
@@ -1524,6 +1534,7 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
 
 #### Obese
 > Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]
+
 > The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
 
 ```
@@ -2402,6 +2413,7 @@ Subclasses of **dpo:NervousSystemSymptom** include **dpo:CerebralVascularAcciden
 
 ##### Cerebral Vascular Accident
 > A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]
+
 > Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke) ][Definition Source: SYMP:0000734]
 
 ```
@@ -2843,6 +2855,7 @@ dpo:Ertugliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
 
 #### GLP-1 RA
 > Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]
+
 > An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]
 
 ```
@@ -2939,6 +2952,7 @@ dpo:Lixisenatide rdfs:subClassOf dpo:GLP1RA ;
 
 ##### Exenatide
 > A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]
+
 > A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]
 
 ```
@@ -2955,6 +2969,7 @@ dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
 
 #### DPP-4 Inhibitor
 > Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]
+
 > An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]
 
 ```
@@ -2998,6 +3013,7 @@ dpo:Sitagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 
 ##### Saxagliptin
 > A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]
+
 > A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]
 
 ```
@@ -3014,6 +3030,7 @@ dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 
 ##### Alogliptin
 > A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]
+
 > A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]
 
 ```
@@ -3026,6 +3043,7 @@ dpo:Alogliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 
 ##### Linagliptin
 > A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]
+
 > A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]
 
 ```
@@ -3069,6 +3087,7 @@ The subclasses of **dpo:Thiazolidinedione** include **dpo:Pioglitazone** and **d
 
 ##### Pioglitazone
 > An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]
+
 > A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]
 
 ```
@@ -3129,6 +3148,7 @@ The subclasses of **dpo:Sulfonylurea** include **dpo:Glyburide**, **dpo:Glipizid
 
 ##### Glyburide
 > A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]
+
 > An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]
 
 ```
@@ -3141,6 +3161,7 @@ dpo:Glyburide rdfs:subClassOf dpo:Sulfonylurea ;
 
 ##### Glipizide
 > A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]
+
 > An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]
 
 ```
@@ -3266,6 +3287,7 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
 
 #### Obese
 > Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]
+
 > The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
 
 ```
