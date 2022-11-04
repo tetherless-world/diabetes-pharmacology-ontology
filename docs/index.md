@@ -113,26 +113,26 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
       - [Glyburide](#glyburide)
       - [Glipizide](#glipizide)
       - [Glimepiride](#glimepiride)
-  * [Measurement Finding](#measurement-finding)
-    + [Weight Related Finding](#weight-related-finding)
+  * [Measurement](#measurement)
+    + [Weight Measurement](#weight-measurement)
       - [Underweight](#underweight)
       - [Normal Weight](#normal-weight)
       - [Overweight](#overweight)
       - [Obese](#obese)
-    + [Blood Glucose Related Finding](#blood-glucose-related-finding)
+    + [Blood Glucose Measurement](#blood-glucose-measurement)
       - [Prediabetes Fasting Blood Glucose Level](#prediabetes-fasting-blood-glucose-level)
       - [Diabetes Fasting Blood Glucose Level](#diabetes-fasting-blood-glucose-level)
       - [Prediabetes Two Hour Blood Glucose Level](#prediabetes-two-hour-blood-glucose-level)
       - [Diabetes Two Hour Blood Glucose Level](#diabetes-two-hour-blood-glucose-level)
       - [Prediabetes HbA1C Level](#prediabetes-hba1c-level)
       - [Diabetes HbA1C Level](#diabetes-hba1c-level)
-    + [Cholesterol Related Finding](#cholesterol-related-finding)
+    + [Cholesterol Measurement](#cholesterol-measurement)
       - [Optimal LDL Level](#optimal-ldl-level)
       - [Near Optimal LDL Level](#near-optimal-ldl-level)
       - [Borderline High LDL Level](#borderline-high-ldl-level)
       - [High LDL Level](#high-ldl-level)
       - [Very High LDL Level](#very-high-ldl-level)
-    + [Triglyceride Related Finding](#triglyceride-related-finding)
+    + [Triglyceride Measurement](#triglyceride-measurement)
       - [Normal Triglyceride Level](#normal-triglyceride-level)
       - [Borderline High Triglyceride Level](#borderline-high-triglyceride-level)
       - [High Triglyceride Level](#high-triglyceride-level)
@@ -185,7 +185,7 @@ dpo:Factor rdf:type owl:Class ;
     skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
 ```
 
-Four top level branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:MeasurementFinding**.
+Four top level branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:Measurement**.
 
 ![pto:Factor](./assets/images/Factor.png)
 
@@ -1360,43 +1360,43 @@ dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
 ```
 
-## Measurement Finding
+## Measurement
 > Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]
 
 ```
-dpo:MeasurementFinding rdf:type owl:Class ; 
+dpo:Measurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Factor ;
     owl:equivalentClass ncit:C25209 ;
-    rdfs:label "Measurement Finding"^^xsd:string ;
+    rdfs:label "Measurement"^^xsd:string ;
     rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
     skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
 ```
 
-The measurement finding branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:MeasurementFinding** include **dpo:WeightRelatedFinding**, **dpo:BloodGlucoseRelatedFinding**, **dpo:CholesterolRelatedFinding**, and **dpo:TriglycerideRelatedFinding**.
+The measurement branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:Measurement** include **dpo:WeightMeasurement**, **dpo:BloodGlucoseMeasurement**, **dpo:CholesterolMeasurement**, and **dpo:TriglycerideMeasurement**.
 
-![pto:MeasurementFinding](./assets/images/MeasurementFinding.png)
+![pto:Measurement](./assets/images/Measurement.png)
 
-The measurement finding categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
+The measurement categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
 
-### Weight Related Finding
+### Weight Measurement
 > 
 
 ```
 
 ```
 
-Subclasses of **dpo:WeightRelatedFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
+Subclasses of **dpo:WeightMeasurement** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
 
-![pto:WeightRelatedFinding](./assets/images/WeightRelatedFinding.png)
+![pto:WeightMeasurement](./assets/images/WeightMeasurement.png)
 
-The categorization of the weight related findings and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
+The categorization of the weight measurements and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
 
 #### Underweight
 > The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]
 
 ```
 dpo:Underweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:equivalentClass efo:0005936 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -1418,7 +1418,7 @@ dpo:UnderweightBMIRange rdf:type owl:DataRange ;
 
 ```
 dpo:NormalWeight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -1441,7 +1441,7 @@ dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
 
 ```
 dpo:Overweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:equivalentClass efo:0005935 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -1465,7 +1465,7 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
 
 ```
 dpo:Obese rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -1483,17 +1483,17 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
     owl:minInclusive "30"^^xsd:decimal .
 ```
 
-### Blood Glucose Related Finding
+### Blood Glucose Measurement
 
-Subclasses of **dpo:BloodGlucoseRelatedFinding** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
+Subclasses of **dpo:BloodGlucoseMeasurement** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
 
-![pto:BloodGlucoseRelatedFinding](./assets/images/BloodGlucoseRelatedFinding.png)
+![pto:BloodGlucoseMeasurement](./assets/images/BloodGlucoseMeasurement.png)
 
 #### Prediabetes Fasting Blood Glucose Level
 
 ```
 dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1558-6 
               [ rdf:type owl:Restriction ;
@@ -1512,7 +1512,7 @@ dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
 
 ```
 dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1558-6 
               [ rdf:type owl:Restriction ;
@@ -1530,7 +1530,7 @@ dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
 
 ```
 dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1518-0 
               [ rdf:type owl:Restriction ;
@@ -1549,7 +1549,7 @@ dpo:PrediabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
 
 ```
 dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1518-0 
               [ rdf:type owl:Restriction ;
@@ -1567,7 +1567,7 @@ dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
 
 ```
 dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:59261-8 
               [ rdf:type owl:Restriction ;
@@ -1587,7 +1587,7 @@ dpo:PrediabetesHbA1CRange rdf:type owl:DataRange ;
 
 ```
 dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:59261-8
               [ rdf:type owl:Restriction ;
@@ -1601,17 +1601,17 @@ dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
     owl:minInclusive "141"^^xsd:decimal .
 ```
 
-### Cholesterol Related Finding
+### Cholesterol Measurement
 
-Subclasses of **dpo:CholesterolRelatedFinding** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
+Subclasses of **dpo:CholesterolMeasurement** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
 
-![pto:CholesterolRelatedFinding](./assets/images/CholesterolRelatedFinding.png)
+![pto:CholesterolMeasurement](./assets/images/CholesterolMeasurement.png)
 
 #### Optimal LDL Level
 
 ```
 dpo:OptimalLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -1629,7 +1629,7 @@ dpo:OptimalLDLRange rdf:type owl:DataRange ;
 
 ```
 dpo:NearOptimalLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -1648,7 +1648,7 @@ dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
 
 ```
 dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -1667,7 +1667,7 @@ dpo:BorderlineHighLDLRange rdf:type owl:DataRange ;
 
 ```
 dpo:HighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -1686,7 +1686,7 @@ dpo:HighLDLRange rdf:type owl:DataRange ;
 
 ```
 dpo:VeryHighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -1700,17 +1700,17 @@ dpo:VeryHighLDLRange rdf:type owl:DataRange ;
     owl:minInclusive "190"^^xsd:decimal .
 ```
 
-### Triglyceride Related Finding
+### Triglyceride Measurement
 
-Subclasses of **dpo:TriglycerideRelatedFinding** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
+Subclasses of **dpo:TriglycerideMeasurement** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
 
-![pto:TriglycerideRelatedFinding](./assets/images/TriglycerideRelatedFinding.png)
+![pto:TriglycerideMeasurement](./assets/images/TriglycerideMeasurement.png)
 
 #### Normal Triglyceride Level
 
 ```
 dpo:NormalTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
@@ -1728,7 +1728,7 @@ dpo:NormalTriglycerideRange rdf:type owl:DataRange ;
 
 ```
 dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
@@ -1747,7 +1747,7 @@ dpo:BorderlineHighTriglycerideRange rdf:type owl:DataRange ;
 
 ```
 dpo:HighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
@@ -1766,7 +1766,7 @@ dpo:HighTriglycerideRange rdf:type owl:DataRange ;
 
 ```
 dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;

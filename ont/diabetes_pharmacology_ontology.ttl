@@ -53,10 +53,10 @@ dpo:Therapy rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]"^^xsd:string .
 
-dpo:MeasurementFinding rdf:type owl:Class ; 
+dpo:Measurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Factor ;
     owl:equivalentClass ncit:C25209 ;
-    rdfs:label "Measurement Finding"^^xsd:string ;
+    rdfs:label "Measurement"^^xsd:string ;
     rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
     skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
 
@@ -109,32 +109,32 @@ dpo:Polyphagia rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
 
-dpo:WeightRelatedFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:MeasurementFinding ;
-    rdfs:label "Weight Related Finding"^^xsd:string ;
+dpo:WeightMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    rdfs:label "Weight Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:BloodGlucoseRelatedFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:MeasurementFinding ;
-    rdfs:label "Blood Glucose Related Finding"^^xsd:string ;
+dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    rdfs:label "Blood Glucose Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:CholesterolRelatedFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:MeasurementFinding ;
-    rdfs:label "Cholesterol Related Finding"^^xsd:string ;
+dpo:CholesterolMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    rdfs:label "Cholesterol Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:TriglycerideRelatedFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:MeasurementFinding ;
-    rdfs:label "Triglyceride Related Finding"^^xsd:string ;
+dpo:TriglycerideMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    rdfs:label "Triglyceride Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo:Underweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:equivalentClass efo:0005936 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -151,7 +151,7 @@ dpo:UnderweightBMIRange rdf:type owl:DataRange ;
     owl:maxInclusive "18.5"^^xsd:decimal .
 
 dpo:NormalWeight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -168,7 +168,7 @@ dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
     owl:maxInclusive "24.9"^^xsd:decimal .
 
 dpo:Overweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:equivalentClass efo:0005935 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -186,7 +186,7 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
     owl:maxInclusive "30"^^xsd:decimal .
 
 dpo:Obese rdf:type owl:Class ;
-    rdfs:subClassOf dpo:WeightRelatedFinding ;
+    rdfs:subClassOf dpo:WeightMeasurement ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -204,7 +204,7 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
     owl:minInclusive "30"^^xsd:decimal .
 
 dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1558-6 
               [ rdf:type owl:Restriction ;
@@ -215,7 +215,7 @@ dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
     skos:definition ""^^xsd:string .
 
 dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1558-6 
               [ rdf:type owl:Restriction ;
@@ -238,7 +238,7 @@ dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
     owl:minInclusive "126"^^xsd:decimal .
 
 dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1518-0 
               [ rdf:type owl:Restriction ;
@@ -249,7 +249,7 @@ dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
     skos:definition ""^^xsd:string .
 
 dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:1518-0 
               [ rdf:type owl:Restriction ;
@@ -271,7 +271,7 @@ dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
     owl:minInclusive "200"^^xsd:decimal .
 
 dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:59261-8 
               [ rdf:type owl:Restriction ;
@@ -282,7 +282,7 @@ dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
     skos:definition ""^^xsd:string .
 
 dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
     owl:intersectionOf
             ( loinc:59261-8
               [ rdf:type owl:Restriction ;
@@ -304,7 +304,7 @@ dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
     owl:minInclusive "141"^^xsd:decimal .
 
 dpo:OptimalLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -320,7 +320,7 @@ dpo:OptimalLDLRange rdf:type owl:DataRange ;
     owl:maxInclusive "100"^^xsd:decimal .
 
 dpo:NearOptimalLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -337,7 +337,7 @@ dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
     owl:maxInclusive "129"^^xsd:decimal .
 
 dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -354,7 +354,7 @@ dpo:BorderlineHighLDLRange rdf:type owl:DataRange ;
     owl:maxInclusive "159"^^xsd:decimal .
 
 dpo:HighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -371,7 +371,7 @@ dpo:HighLDLRange rdf:type owl:DataRange ;
     owl:maxInclusive "189"^^xsd:decimal .
 
 dpo:VeryHighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolRelatedFinding ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
     owl:intersectionOf
             ( loinc:2089-1
               [ rdf:type owl:Restriction ;
@@ -387,7 +387,7 @@ dpo:VeryHighLDLRange rdf:type owl:DataRange ;
     owl:minInclusive "190"^^xsd:decimal .
 
 dpo:NormalTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
@@ -403,7 +403,7 @@ dpo:NormalTriglycerideRange rdf:type owl:DataRange ;
     owl:maxInclusive "149"^^xsd:decimal .
 
 dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
@@ -420,7 +420,7 @@ dpo:BorderlineHighTriglycerideRange rdf:type owl:DataRange ;
     owl:maxInclusive "199"^^xsd:decimal .
 
 dpo:HighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
@@ -437,7 +437,7 @@ dpo:HighTriglycerideRange rdf:type owl:DataRange ;
     owl:maxInclusive "499"^^xsd:decimal .
 
 dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideRelatedFinding ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
     owl:intersectionOf
             ( loinc:12228-3
               [ rdf:type owl:Restriction ;
