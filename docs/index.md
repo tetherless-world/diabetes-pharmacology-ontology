@@ -1503,7 +1503,7 @@ Subclasses of **dpo:BloodGlucoseMeasurement** include **dpo:PrediabetesFastingBl
 ![pto:BloodGlucoseMeasurement](./assets/images/BloodGlucoseMeasurement.png)
 
 #### Prediabetes Fasting Blood Glucose Level
-> 
+> FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
 
 ```
 dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
@@ -1513,7 +1513,9 @@ dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:PrediabetesFastingBloodGlucoseRange ] ) ;
-    rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string .
+    rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string ;
+    rdfs:comment " impaired fasting glucose"^^xsd:string ;
+    skos:definition "FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
 
 dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
     rdfs:label "Prediabetes Fasting Blood Glucose Range" ;
@@ -1523,7 +1525,7 @@ dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Diabetes Fasting Blood Glucose Level
-> 
+> FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
 
 ```
 dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
@@ -1533,7 +1535,9 @@ dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:DiabetesFastingBloodGlucoseRange ] ) ;
-    rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string .
+    rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
 
 dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
     rdfs:label "Diabetes Fasting Blood Glucose Range" ;
@@ -1542,7 +1546,7 @@ dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Prediabetes Two Hour Blood Glucose Level
-> 
+> 2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
 
 ```
 dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
@@ -1552,17 +1556,20 @@ dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:PrediabetesTwoHourBloodGlucoseRange ] ) ;
-    rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string .
+    rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string ;
+    rdfs:comment "impaired glucose tolerance"^^xsd:string ;
+    skos:definition "2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
 
 dpo:PrediabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
     rdfs:label "Prediabetes Two Hour Blood Glucose Range" ;
     owl:onDataRange xsd:decimal ;
     owl:minInclusive "140"^^xsd:decimal ;
     owl:maxInclusive "199"^^xsd:decimal .
+
 ```
 
 #### Diabetes Two Hour Blood Glucose Level
-> 
+> 2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
 
 ```
 dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
@@ -1572,8 +1579,10 @@ dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:DiabetesTwoHourBloodGlucoseRange ] ) ;
-    rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string .
-
+    rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+    
 dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
     rdfs:label "Diabetes Two Hour Blood Glucose Range" ;
     owl:onDataRange xsd:decimal ;
@@ -1581,7 +1590,7 @@ dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Prediabetes HbA1C Level
-> 
+> A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
 
 ```
 dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
@@ -1591,18 +1600,19 @@ dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:PrediabetesHbA1CRange ] ) ;
-    rdfs:label "Prediabetes HbA1C Level"^^xsd:string .
+    rdfs:label "Prediabetes HbA1C Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
 
 dpo:PrediabetesHbA1CRange rdf:type owl:DataRange ;
     rdfs:label "Prediabetes HbA1C Range" ;
     owl:onDataRange xsd:decimal ;
-    owl:minInclusive "117"^^xsd:decimal ;
-    owl:maxInclusive "138"^^xsd:decimal .
-
+    owl:minInclusive "117.58"^^xsd:decimal ;
+    owl:maxInclusive "138.62"^^xsd:decimal .
 ```
 
 #### Diabetes HbA1C Level
-> 
+> A1C ≥6.5% (48 mmol/mol). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
 
 ```
 dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
@@ -1612,12 +1622,14 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:DiabetesHbA1CRange ] ) ;
-    rdfs:label "Diabetes HbA1C Level"^^xsd:string .
+    rdfs:label "Diabetes HbA1C Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A1C ≥6.5% (48 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
 
 dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
     rdfs:label "Prediabetes HbA1C Range" ;
     owl:onDataRange xsd:decimal ;
-    owl:minInclusive "141"^^xsd:decimal .
+    owl:minInclusive "141.25"^^xsd:decimal .
 ```
 
 ### Cholesterol Measurement
