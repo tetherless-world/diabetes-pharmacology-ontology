@@ -490,9 +490,10 @@ dpo:FrequentUrination rdf:type owl:Class ;
 
 dpo:FoulUrine rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
+    owl:equivalentClass hp:0012088;
     rdfs:label "Foul Urine"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A deviation from the normal odor of the urine. [Definition Source: HP:0012088]"^^xsd:string .
 
 dpo:VisionSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
@@ -566,27 +567,31 @@ dpo:Hypertension rdf:type owl:Class ;
 
 dpo:History rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
+    owl:equivalentClass ncit:C54625 ;
     rdfs:label "History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events. [Definition Source: NCI]"^^xsd:string .
 
 dpo:FamilyHistory rdf:type owl:Class ;
     rdfs:subClassOf dpo:History ;
+    owl:equivalentClass ncit:C17726 ;
     rdfs:label "Family History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A record of a patient's background regarding health and disease events of blood relatives. A patient's family medical history may be important in diagnosing existing conditions. [Definition Source: NCI]"^^xsd:string .
 
 dpo:PersonalHistory rdf:type owl:Class ;
     rdfs:subClassOf dpo:History ;
+    owl:equivalentClass ncit:C18772 ;
     rdfs:label "Personal History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A record of a patient's background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. [Definition Source: NCI]"^^xsd:string .
 
 dpo:FamilyHistoryOfCAD rdf:type owl:Class ;
     rdfs:subClassOf dpo:FamilyHistory ;
+    owl:equivalentClass ncit:C80398 ;
     rdfs:label "Family History of Coronary Artery Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause. [Definition Source: NCI]"^^xsd:string .
 
 dpo:FamilyHistoryOfDiabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:FamilyHistory ;
@@ -635,15 +640,17 @@ dpo:DiabetesMellitus rdf:type owl:Class ;
 
 dpo:RenalDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
+    owl:equivalentClass ncit:C3149 ;
     rdfs:label "Renal Disease"^^xsd:string ;
     rdfs:comment "Disease associated with kidneys, typically chronic kidney disease."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A neoplastic or non-neoplastic condition affecting the kidney. Representative examples of non-neoplastic conditions include glomerulonephritis and nephrotic syndrome. Representative examples of neoplastic conditions include benign processes (e.g., renal lipoma and renal fibroma) and malignant processes (e.g., renal cell carcinoma and renal lymphoma). [Definition Source: NCI]"^^xsd:string .
 
 dpo:CardiovascularDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
+    owl:equivalentClass ncit:C2931 ;
     rdfs:label "Cardiovascular Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. [Definition Source: NCI]"^^xsd:string .
 
 dpo:NervousSystemSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
@@ -690,22 +697,24 @@ dpo:SedentaryLifestyle rdf:type owl:Class ;
 
 dpo:AlcoholUse rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
+    owl:equivalentClass ncit:C81229 ;
     rdfs:label "Alcohol Use"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A description of an individual's current and past experience with alcoholic beverage consumption. [Definition Source: NCI]"^^xsd:string .
 
 dpo:DrugUse rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
+    owl:equivalentClass ncit:C81246 ;
     rdfs:label "Drug Use"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A description of an individual's current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Occupation rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass ncit:C25193 ;
     rdfs:label "Occupation"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The principal activity that a person does to earn money. [Definition Source: NCI]"^^xsd:string .
 
 dpo:SedentaryOccupation rdf:type owl:Class ;
     rdfs:subClassOf dpo:Occupation ;
@@ -714,9 +723,10 @@ dpo:SedentaryOccupation rdf:type owl:Class ;
     skos:definition ""^^xsd:string .
 
 dpo:AntihyperglycemicTreatment rdfs:subClassOf dpo:Therapy ;
+    owl:equivalentClass chebi:35526 ;
     rdfs:label "Antihyperglycemic Treatment"^^xsd:string ;
     rdfs:comment "Treatment designed to lower blood sugar levels."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A drug which lowers the blood glucose level. [Definition Source: CHEBI]"^^xsd:string .
 
 dpo:Efficacy rdfs:subClassOf dpo:PharmacotherapyFactor ;
     owl:equivalentClass ncit:C88183 ;
@@ -1308,6 +1318,10 @@ hp:0100515 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Pollakisuria"^^xsd:string .
 
+hp:0012088 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Abnormal urinary odor"^^xsd:string .
+
 loinc:55548-2 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "metFORMIN [Moles/volume] in Serum or Plasma"^^xsd:string .
@@ -1528,6 +1542,38 @@ ncit:C29073 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Glimepiride"^^xsd:string .
 
+ncit:C54625 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "History"^^xsd:string .
+
+ncit:C18772 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Personal Medical History"^^xsd:string .
+
+ncit:C17726 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Family Medical History"^^xsd:string .
+
+ncit:C80398 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Family History of Coronary Artery Disease"^^xsd:string .
+
+ncit:C3149 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Kidney Disorder"^^xsd:string .
+
+ncit:C2931 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Cardiovascular Disorder"^^xsd:string .
+
+ncit:C81229 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Alcohol Use History"^^xsd:string .
+
+ncit:C81246 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Drug Use History"^^xsd:string .
+
 chebi:5383 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "glimepiride"^^xsd:string .
@@ -1623,6 +1669,10 @@ chebi:3095 rdf:type owl:Class ;
 chebi:6801 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "metformin"^^xsd:string .
+
+chebi:35526 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "hypoglycemic agent"^^xsd:string .
 
 sio:hasAttribute rdf:type owl:ObjectProperty ;
     rdfs:label "has attribute"^^xsd:string .
