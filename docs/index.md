@@ -71,7 +71,7 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
       - [Hypertension](#hypertension)
     + [Disease](#disease)
       - [Coronary Artery Disease](#coronary-artery-disease)
-      - [Diabetes](#diabetes)
+      - [Diabetes Mellitus](#diabetes-mellitus)
       - [Renal Disease](#renal-disease)
       - [Cardiovascular Disease](#cardiovascular-disease)
     + [Behavior](#behavior)
@@ -114,7 +114,7 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
       - [Glipizide](#glipizide)
       - [Glimepiride](#glimepiride)
   * [Measurement](#measurement)
-    + [Weight Measurement](#weight-measurement)
+    + [Body Mass Index Finding](#body-mass-index-finding)
       - [Underweight](#underweight)
       - [Normal Weight](#normal-weight)
       - [Overweight](#overweight)
@@ -486,7 +486,7 @@ Subclasses of **dpo:NutritionMetabolismAndDevelopmentSymptom** include **dpo:Pol
 > Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia) ][Definition Source: SYMP:0000560]
 
 ```
-dpo:Polydipsia rdf:type owl:Class ; # diabetes symptom
+dpo:Polydipsia rdf:type owl:Class ;
     rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
     owl:equivalentClass symp:0000560 ;
     rdfs:label "Polydipsia"^^xsd:string ;
@@ -497,7 +497,7 @@ dpo:Polydipsia rdf:type owl:Class ; # diabetes symptom
 > Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia) ][Definition Source: SYMP:0000524]
 
 ```
-dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
+dpo:Polyphagia rdf:type owl:Class ;
     rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
     owl:equivalentClass symp:0000524 ;
     rdfs:label "Polyphagia"^^xsd:string ;
@@ -746,14 +746,14 @@ dpo:CoronaryArteryDisease rdf:type owl:Class ;
     skos:definition "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]"^^xsd:string .
 ```
 
-#### Diabetes
+#### Diabetes Mellitus
 > A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]
 
 ```
-dpo:Diabetes rdf:type owl:Class ;
+dpo:DiabetesMellitus rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
     owl:equivalentClass ncit:C2985 ;
-    rdfs:label "Diabetes"^^xsd:string ;
+    rdfs:label "Diabetes Mellitus"^^xsd:string ;
     skos:definition "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]"^^xsd:string .
 ```
 
@@ -1372,31 +1372,35 @@ dpo:Measurement rdf:type owl:Class ;
     skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
 ```
 
-The measurement branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:Measurement** include **dpo:WeightMeasurement**, **dpo:BloodGlucoseMeasurement**, **dpo:CholesterolMeasurement**, and **dpo:TriglycerideMeasurement**.
+The measurement branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:Measurement** include **dpo:BodyMassIndexFinding**, **dpo:BloodGlucoseMeasurement**, **dpo:CholesterolMeasurement**, and **dpo:TriglycerideMeasurement**.
 
 ![pto:Measurement](./assets/images/Measurement.png)
 
 The measurement categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
 
-### Weight Measurement
-> 
+### Body Mass Index Finding
+> The result of a body mass index measurement. [Definition Source: NCI]
 
 ```
-
+dpo:BodyMassIndexFinding rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C138901 ;
+    rdfs:label "Body Mass Index Finding"^^xsd:string ;
+    skos:definition "The result of a body mass index measurement. [Definition Source: NCI]"^^xsd:string .
 ```
 
-Subclasses of **dpo:WeightMeasurement** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
+Subclasses of **dpo:BodyMassIndexFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
 
-![pto:WeightMeasurement](./assets/images/WeightMeasurement.png)
+![pto:BodyMassIndexFinding](./assets/images/BodyMassIndexFinding.png)
 
-The categorization of the weight measurements and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
+The categorization of the BMI measurements and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
 
 #### Underweight
 > The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]
 
 ```
 dpo:Underweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:equivalentClass efo:0005936 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -1418,7 +1422,7 @@ dpo:UnderweightBMIRange rdf:type owl:DataRange ;
 
 ```
 dpo:NormalWeight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -1441,7 +1445,7 @@ dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
 
 ```
 dpo:Overweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:equivalentClass efo:0005935 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -1464,8 +1468,8 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
 > The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
 
 ```
-dpo:Obese rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:WeightMeasurement ;
+dpo:Obese rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -1484,12 +1488,22 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
 ```
 
 ### Blood Glucose Measurement
+> A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]
+
+```
+dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C92744 ;
+    rdfs:label "Blood Glucose Measurement"^^xsd:string ;
+    skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]"^^xsd:string .
+```
 
 Subclasses of **dpo:BloodGlucoseMeasurement** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
 
 ![pto:BloodGlucoseMeasurement](./assets/images/BloodGlucoseMeasurement.png)
 
 #### Prediabetes Fasting Blood Glucose Level
+> 
 
 ```
 dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
@@ -1509,6 +1523,7 @@ dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Diabetes Fasting Blood Glucose Level
+> 
 
 ```
 dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
@@ -1527,6 +1542,7 @@ dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Prediabetes Two Hour Blood Glucose Level
+> 
 
 ```
 dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
@@ -1546,6 +1562,7 @@ dpo:PrediabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Diabetes Two Hour Blood Glucose Level
+> 
 
 ```
 dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
@@ -1564,6 +1581,7 @@ dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
 ```
 
 #### Prediabetes HbA1C Level
+> 
 
 ```
 dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
@@ -1584,6 +1602,7 @@ dpo:PrediabetesHbA1CRange rdf:type owl:DataRange ;
 ```
 
 #### Diabetes HbA1C Level
+> 
 
 ```
 dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
@@ -1602,12 +1621,22 @@ dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
 ```
 
 ### Cholesterol Measurement
+> The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]
+
+```
+dpo:CholesterolMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C105586 ;
+    rdfs:label "Cholesterol Measurement"^^xsd:string ;
+    skos:definition "The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]"^^xsd:string .
+```
 
 Subclasses of **dpo:CholesterolMeasurement** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
 
 ![pto:CholesterolMeasurement](./assets/images/CholesterolMeasurement.png)
 
 #### Optimal LDL Level
+> 
 
 ```
 dpo:OptimalLDLLevel rdf:type owl:Class ;
@@ -1626,6 +1655,7 @@ dpo:OptimalLDLRange rdf:type owl:DataRange ;
 ```
 
 #### Near Optimal LDL Level
+> 
 
 ```
 dpo:NearOptimalLDLLevel rdf:type owl:Class ;
@@ -1645,6 +1675,7 @@ dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
 ```
 
 #### Borderline High LDL Level
+> 
 
 ```
 dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
@@ -1664,6 +1695,7 @@ dpo:BorderlineHighLDLRange rdf:type owl:DataRange ;
 ```
 
 #### High LDL Level
+> 
 
 ```
 dpo:HighLDLLevel rdf:type owl:Class ;
@@ -1683,6 +1715,7 @@ dpo:HighLDLRange rdf:type owl:DataRange ;
 ```
 
 #### Very High LDL Level
+> 
 
 ```
 dpo:VeryHighLDLLevel rdf:type owl:Class ;
@@ -1701,12 +1734,22 @@ dpo:VeryHighLDLRange rdf:type owl:DataRange ;
 ```
 
 ### Triglyceride Measurement
+> A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]
+
+```
+dpo:TriglycerideMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C64812 ;
+    rdfs:label "Triglyceride Measurement"^^xsd:string ;
+    skos:definition "A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]"^^xsd:string .
+```
 
 Subclasses of **dpo:TriglycerideMeasurement** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
 
 ![pto:TriglycerideMeasurement](./assets/images/TriglycerideMeasurement.png)
 
 #### Normal Triglyceride Level
+> 
 
 ```
 dpo:NormalTriglycerideLevel rdf:type owl:Class ;
@@ -1725,6 +1768,7 @@ dpo:NormalTriglycerideRange rdf:type owl:DataRange ;
 ```
 
 #### Borderline High Triglyceride Level
+> 
 
 ```
 dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
@@ -1744,6 +1788,7 @@ dpo:BorderlineHighTriglycerideRange rdf:type owl:DataRange ;
 ```
 
 #### High Triglyceride Level
+> 
 
 ```
 dpo:HighTriglycerideLevel rdf:type owl:Class ;
@@ -1763,6 +1808,7 @@ dpo:HighTriglycerideRange rdf:type owl:DataRange ;
 ```
 
 #### Very High Triglyceride Level
+> 
 
 ```
 dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;

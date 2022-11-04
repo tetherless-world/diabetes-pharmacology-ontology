@@ -24,8 +24,6 @@
     dct:description "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies."^^xsd:string ;
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionIRI <http://purl.org/twc/dpo/ont/0.1> .
-ncit:C138901 rdf:type owl:Class ;
-    rdfs:label "Body Mass Index Finding"^^xsd:string .
 
 dpo:Factor rdf:type owl:Class ;
     rdfs:label "Factor" ;
@@ -109,32 +107,36 @@ dpo:Polyphagia rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
 
-dpo:WeightMeasurement rdf:type owl:Class ; 
+dpo:BodyMassIndexFinding rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
-    rdfs:label "Weight Measurement"^^xsd:string ;
+    owl:equivalentClass ncit:C138901 ;
+    rdfs:label "Body Mass Index Finding"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The result of a body mass index measurement. [Definition Source: NCI]"^^xsd:string .
 
 dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C92744 ;
     rdfs:label "Blood Glucose Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]"^^xsd:string .
 
 dpo:CholesterolMeasurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C105586 ;
     rdfs:label "Cholesterol Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]"^^xsd:string .
 
 dpo:TriglycerideMeasurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C64812 ;
     rdfs:label "Triglyceride Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Underweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:equivalentClass efo:0005936 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -151,7 +153,7 @@ dpo:UnderweightBMIRange rdf:type owl:DataRange ;
     owl:maxInclusive "18.5"^^xsd:decimal .
 
 dpo:NormalWeight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -168,7 +170,7 @@ dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
     owl:maxInclusive "24.9"^^xsd:decimal .
 
 dpo:Overweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:equivalentClass efo:0005935 ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -186,7 +188,7 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
     owl:maxInclusive "30"^^xsd:decimal .
 
 dpo:Obese rdf:type owl:Class ;
-    rdfs:subClassOf dpo:WeightMeasurement ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
     owl:intersectionOf
             ( ncit:C138901 
               [ rdf:type owl:Restriction ;
@@ -625,10 +627,10 @@ dpo:CoronaryArteryDisease rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]"^^xsd:string .
 
-dpo:Diabetes rdf:type owl:Class ;
+dpo:DiabetesMellitus rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
     owl:equivalentClass ncit:C2985 ;
-    rdfs:label "Diabetes"^^xsd:string ;
+    rdfs:label "Diabetes Mellitus"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]"^^xsd:string .
 
@@ -1347,6 +1349,18 @@ ncit:C25209 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Measurement"^^xsd:string .
 
+ncit:C92744 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Blood Glucose Measurement"^^xsd:string .
+
+ncit:C105586 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Cholesterol Measurement"^^xsd:string .
+
+ncit:C64812 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Triglyceride Measurement"^^xsd:string .
+
 ncit:C138901 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Body Mass Index Finding"^^xsd:string .
@@ -1377,7 +1391,7 @@ ncit:C2991 rdf:type owl:Class ;
 
 ncit:C2985 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "Diabetes M"^^xsd:string .
+    rdfs:label "Diabetes Mellitus"^^xsd:string .
 
 ncit:C26732 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
