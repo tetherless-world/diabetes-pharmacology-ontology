@@ -480,6 +480,8 @@ The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAnd
 
 ```
 
+Subclasses of **dpo:NutritionMetabolismAndDevelopmentSymptom** include **dpo:Polydipsia** and **dpo:Polyphagia**.
+
 ##### Polydipsia
 > Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia) ][Definition Source: SYMP:0000560]
 
@@ -508,6 +510,8 @@ dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
 ```
 
 ```
+
+Subclasses of **dpo:UrinarySystemSymptom** include **dpo:Polyuria**, **dpo:Dysuria**, **dpo:UrinaryTractInfection**, **dpo:FrequentUrination**, and **dpo:FoulUrine**.
 
 ##### Polyuria
 > A urinary system symptom that is characterized by the excessive secretion of urine. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria) ][Definition Source: SYMP:0000565]
@@ -567,6 +571,8 @@ dpo:FrequentUrination rdf:type owl:Class ;
 
 ```
 
+The subclasses of **dpo:VisionSymptom** included in the ontology is **dpo:BlurredVision**.
+
 ##### Blurred Vision
 > A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]
 
@@ -585,6 +591,8 @@ dpo:BlurredVision rdf:type owl:Class ;
 
 ```
 
+The subclass of **dpo:NeurologicalAndPhysiologicalSymptom** included in the ontology is **dpo:Fatigue**.
+
 ##### Fatigue
 > Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue) ][Definition Source: SYMP:0019177]
 
@@ -602,6 +610,8 @@ dpo:Fatigue rdf:type owl:Class ;
 ```
 
 ```
+
+Subclasses of **dpo:MusculoskeletalSystemSymptom** include **dpo:Arthritis** and **dpo:PeripheralNeuropathy**.
 
 ##### Arthritis
 > Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis) ][Definition Source: SYMP:0019169]
@@ -628,6 +638,8 @@ dpo:Arthritis rdf:type owl:Class ;
 
 ```
 
+Subclasses of **dpo:NervousSystemSymptom** include **dpo:CerebralVascularAccident**, **dpo:Pain**, and **dpo:BilateralLowerExtremityBurningSensation**.
+
 ##### Cerebral Vascular Accident
 > A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]
 > Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke) ][Definition Source: SYMP:0000734]
@@ -652,6 +664,8 @@ dpo:Pain rdf:type owl:Class ;
     rdfs:label "Pain"^^xsd:string ;
     skos:definition "A sensation perception where there is an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body. [ url:http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp ][Definition Source: SYMP:0000576]"^^xsd:string .
 ```
+
+The subclass of **dpo:Pain** included in the ontology is **dpo:ChestPain**.
 
 ###### Chest Pain
 > An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the chest. [Definition Source: HP:0100749]
@@ -827,6 +841,9 @@ The top level subclasses of **dpo:History** include **dpo:FamilyHistory** and **
 
 ```
 
+Subclasses of **dpo:FamilyHistory** include **dpo:FamilyHistoryOfCAD** and **dpo:FamilyHistoryOfDiabetes**.
+
+
 ##### Family History of Coronary Artery Disease
 > 
 
@@ -848,6 +865,8 @@ The top level subclasses of **dpo:History** include **dpo:FamilyHistory** and **
 ```
 
 ```
+
+Subclasses of **dpo:PersonalHistory** include **dpo:PersonalHistoryOfGestationalDiabetes** and **dpo:PersonalHistoryOfFebrileStates**.
 
 ##### Personal History of Gestational Diabetes
 > 
@@ -949,6 +968,8 @@ dpo:SGLT2Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:hasValue [ rdf:type dpo:HighCost ] ] .
 ```
 
+The subclasses of **dpo:SGLT2Inhibitor** include **dpo:Empagliflozin**, **dpo:Canagliflozin**, **dpo:Dapagliflozin**, and **dpo:Ertugliflozin**.
+
 #### Empagliflozin
 > An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]
 
@@ -1046,6 +1067,8 @@ dpo:GLP1RA rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:onProperty sio:hasAttribute ;
           owl:hasValue [ rdf:type dpo:HighCost ] ] .
 ```
+
+The subclasses of **dpo:GLP1RA** include **dpo:Dulaglutide**, **dpo:Liraglutide**, **dpo:Semaglutide**, **dpo:Lixisenatide**, and **dpo:Exenatide**.
 
 #### Dulaglutide
 > A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]
@@ -1160,6 +1183,8 @@ dpo:DPP4Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
 ```
 
+The subclasses of **dpo:DPP4Inhibitor** include **dpo:Sitagliptin**, **dpo:Saxagliptin**, **dpo:Alogliptin**, and **dpo:Linagliptin**.
+
 #### Sitagliptin
 > An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]
 
@@ -1239,6 +1264,8 @@ dpo:Thiazolidinedione rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
 ```
 
+The subclasses of **dpo:Thiazolidinedione** include **dpo:Pioglitazone** and **dpo:Rosiglitazone**.
+
 #### Pioglitazone
 > An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]
 > A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]
@@ -1296,6 +1323,8 @@ dpo:Sulfonylurea rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
           owl:onProperty sio:hasAttribute ;
           owl:hasValue [ rdf:type dpo:NeutralDKDRisk ] ] .
 ```
+
+The subclasses of **dpo:Sulfonylurea** include **dpo:Glyburide**, **dpo:Glipizide**, and **dpo:Glimepiride**.
 
 #### Glyburide
 > A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]
@@ -1356,7 +1385,7 @@ The measurement finding categorizations included in the ontology are based on me
 
 ```
 
-Subclasses of **dpo:WeightRelatedFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight** and **dpo:Obese**.
+Subclasses of **dpo:WeightRelatedFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
 
 ![pto:WeightRelatedFinding](./assets/images/WeightRelatedFinding.png)
 
@@ -1456,7 +1485,7 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
 
 ### Blood Glucose Related Finding
 
-Subclasses of **dpo:BloodGlucoseRelatedFinding** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel** and **dpo:DiabetesHbA1CLevel**.
+Subclasses of **dpo:BloodGlucoseRelatedFinding** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
 
 ![pto:BloodGlucoseRelatedFinding](./assets/images/BloodGlucoseRelatedFinding.png)
 
@@ -1673,7 +1702,7 @@ dpo:VeryHighLDLRange rdf:type owl:DataRange ;
 
 ### Triglyceride Related Finding
 
-Subclasses of **dpo:TriglycerideRelatedFinding** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel** and **dpo:VeryHighTriglycerideLevel**.
+Subclasses of **dpo:TriglycerideRelatedFinding** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
 
 ![pto:TriglycerideRelatedFinding](./assets/images/TriglycerideRelatedFinding.png)
 
