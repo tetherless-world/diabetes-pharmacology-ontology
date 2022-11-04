@@ -30,8 +30,9 @@ ncit:C138901 rdf:type owl:Class ;
 
 dpo:Factor rdf:type owl:Class ;
     rdfs:label "Factor" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string .
+    owl:equivalentClass ncit:C25506 ;
+    rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
+    skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
     
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
@@ -1340,6 +1341,10 @@ loinc:2089-1 rdf:type owl:Class ;
 loinc:12228-3 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Triglyceride [Mass/volume] in Body fluid"^^xsd:string .
+
+ncit:C25506 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Factor"^^xsd:string .
 
 ncit:C49236 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;

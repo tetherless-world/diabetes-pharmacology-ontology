@@ -167,16 +167,30 @@ The namespaces used in DPO are listed below.
 
 # Diabetes Pharmacology Ontology
 
-The root branch of the Diabetes Pharmacology Ontology is **dpo:Factor**. All other branches of the ontology extend from this branch.
+The Diabetes Pharmacology Ontology is an ontology designed to aid in clinical decision making tasks related to type 2 diabetes. Included in the ontology are pharmacotherapy and diagnostic factors, antiglycemic therapies, and diabetes associated categorizations of measurements.
 
 ![DPO](./assets/images/DPO.png)
 
-## Factor
-> A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements.
+The diagram above shows the concepts in the ontology that extend from the root concept, **dpo:Factor**, up to 3 hops from the root. While all the classes in the ontology are not included in this diagram, the complete set of concepts are described in this document below.
 
-Four branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:MeasurementFinding**.
+## Factor
+> Anything that contributes causally to a result. [Definition Source: NCI]
+
+The root branch of the Diabetes Pharmacology Ontology is **dpo:Factor**.
+
+```
+dpo:Factor rdf:type owl:Class ;
+    rdfs:label "Factor" ;
+    owl:equivalentClass ncit:C25506 ;
+    rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
+    skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
+```
+
+Four top level branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:MeasurementFinding**.
 
 ![pto:Factor](./assets/images/Factor.png)
+
+All other branches of the ontology extend from these top level concepts.
 
 ## Pharmacotherapy Factor
 > A circumstance influencing the treatment of a disease through the use of drugs.
