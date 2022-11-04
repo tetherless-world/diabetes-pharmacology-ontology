@@ -9,7 +9,6 @@
 @prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix loinc: <http://purl.bioontology.org/ontology/LNC/>.
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
-@prefix omit: <http://purl.obolibrary.org/obo/OMIT_> .
 @prefix symp: <http://purl.obolibrary.org/obo/SYMP_> .
 @prefix efo: <http://www.ebi.ac.uk/efo/EFO_> .
 @prefix hp: <http://purl.obolibrary.org/obo/HP_> .
@@ -37,14 +36,15 @@ dpo:Factor rdf:type owl:Class ;
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
     rdfs:label "Pharmacotherapy Factor" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the treatment of a disease through the use of drugs."^^xsd:string .
-    
+    rdfs:comment "A circumstance influencing the treatment of a disease through the use or recommendation of one or more drugs."^^xsd:string ;
+    skos:definition "Therapy-related factors identified include: route of administration, treatment complexity, duration of treatment period, medication side effects, degree of behavioral change required, taste of medication and requirement for drug storage. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2503662/ ]"^^xsd:string .
+
 dpo:DiagnosticFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
+    owl:equivalentClass ncit:C19591 ;
     rdfs:label "Diagnostic Factor" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A circumstance influencing the dianosis of a disease."^^xsd:string .
+    rdfs:comment "A circumstance influencing the dianosis of a disease."^^xsd:string ;
+    skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Therapy rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
@@ -55,9 +55,10 @@ dpo:Therapy rdf:type owl:Class ;
 
 dpo:MeasurementFinding rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Factor ;
+    owl:equivalentClass ncit:C25209 ;
     rdfs:label "Measurement Finding"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A finding surmised from recorded measurements."^^xsd:string .
+    rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
+    skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Symptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
@@ -91,17 +92,17 @@ dpo:NutritionMetabolismAndDevelopmentSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
     owl:equivalentClass symp:0000473 ;
     rdfs:label "Nutrition Metabolism and Development Symptom"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving the nutrition, metabolism, and/or development system."^^xsd:string .
+    rdfs:comment "A symptom involving the nutrition, metabolism, and/or development system."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
-dpo:Polydipsia rdf:type owl:Class ; # diabetes symptom
+dpo:Polydipsia rdf:type owl:Class ;
     rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
     owl:equivalentClass symp:0000560 ;
     rdfs:label "Polydipsia"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]"^^xsd:string .
 
-dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
+dpo:Polyphagia rdf:type owl:Class ;
     rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
     owl:equivalentClass symp:0000524 ;
     rdfs:label "Polyphagia"^^xsd:string ;
@@ -158,7 +159,7 @@ dpo:NormalWeight rdf:type owl:Class ;
                 owl:allValuesFrom dpo:NormalWeightBMIRange ] ) ;
     rdfs:label "Normal Weight"^^xsd:string ;
     rdfs:comment "18.5<BMI<24.9"^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "BMI greater than or equal to 18.5 to 24.9 kg/m^2 [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK541070/ ]"^^xsd:string .
 
 dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
     rdfs:label "Normal Weight BMI Range" ;
@@ -175,16 +176,16 @@ dpo:Overweight rdf:type owl:Class ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:OverweightBMIRange ] ) ;
     rdfs:label "Overweight"^^xsd:string ;
-    rdfs:comment "25<BMI<29.9"^^xsd:string ;
+    rdfs:comment "25<BMI<30"^^xsd:string ;
     skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]"^^xsd:string .
 
 dpo:OverweightBMIRange rdf:type owl:DataRange ;
     rdfs:label "Overweight BMI Range" ;
     owl:onDataRange xsd:decimal ;
     owl:minInclusive "25"^^xsd:decimal ;
-    owl:maxInclusive "29.9"^^xsd:decimal .
+    owl:maxInclusive "30"^^xsd:decimal .
 
-dpo:Obese rdf:type owl:Class ; # diabetes symptom
+dpo:Obese rdf:type owl:Class ;
     rdfs:subClassOf dpo:WeightRelatedFinding ;
     owl:intersectionOf
             ( ncit:C138901 
@@ -212,7 +213,6 @@ dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
     rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
-
 
 dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
     rdfs:subClassOf dpo:BloodGlucoseRelatedFinding ;
@@ -456,31 +456,31 @@ dpo:UrinarySystemSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
     owl:equivalentClass symp:0000486 ;
     rdfs:label "Urinary System Symptom"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving the urinary system."^^xsd:string .
+    rdfs:comment "A symptom involving the urinary system."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
-dpo:Polyuria rdf:type owl:Class ; # diabetes symptom
+dpo:Polyuria rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
     owl:equivalentClass symp:0000565 ;
     rdfs:label "Polyuria"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]"^^xsd:string .
 
-dpo:Dysuria rdf:type owl:Class ; # diabetes symptom
+dpo:Dysuria rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
     owl:equivalentClass symp:0000485 ;
     rdfs:label "Dysuria"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]"^^xsd:string .
 
-dpo:UrinaryTractInfection rdf:type owl:Class ; # diabetes symptom
+dpo:UrinaryTractInfection rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
-    owl:equivalentClass ncit:C50791 , omit:0015388 ;
+    owl:equivalentClass ncit:C50791 ;
     rdfs:label "Urinary Tract Infection (UTI)"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]"^^xsd:string .
 
-dpo:FrequentUrination rdf:type owl:Class ; # diabetes symptom
+dpo:FrequentUrination rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
     owl:equivalentClass symp:0000563 , hp:0100515;
     rdfs:label "Frequent Urination"^^xsd:string ;
@@ -497,10 +497,10 @@ dpo:VisionSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
     owl:equivalentClass symp:0000320 ;
     rdfs:label "Vision Symptom"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving visual impairment."^^xsd:string .
+    rdfs:comment "A symptom involving visual impairment."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
-dpo:BlurredVision rdf:type owl:Class ; # diabetes symptom
+dpo:BlurredVision rdf:type owl:Class ;
     rdfs:subClassOf dpo:VisionSymptom ;
     owl:equivalentClass symp:0000012 ;
     rdfs:label "Blurred Vision"^^xsd:string ;
@@ -514,7 +514,7 @@ dpo:NeurologicalAndPhysiologicalSymptom rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:Fatigue rdf:type owl:Class ; # diabetes symptom
+dpo:Fatigue rdf:type owl:Class ;
     rdfs:subClassOf dpo:NeurologicalAndPhysiologicalSymptom ;
     owl:equivalentClass symp:0019177 ;
     rdfs:label "Fatigue"^^xsd:string ;
@@ -525,8 +525,8 @@ dpo:MusculoskeletalSystemSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
     owl:equivalentClass symp:0000891 ;
     rdfs:label "Musculoskeletal System Symptom"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving the musculoskeletal system."^^xsd:string .
+    rdfs:comment "A symptom involving the musculoskeletal system."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:Arthritis rdf:type owl:Class ;
     rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
@@ -627,15 +627,16 @@ dpo:CoronaryArteryDisease rdf:type owl:Class ;
 
 dpo:Diabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
+    owl:equivalentClass ncit:C2985 ;
     rdfs:label "Diabetes"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]"^^xsd:string .
 
 dpo:RenalDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
     rdfs:label "Renal Disease"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Disease associated with kidneys, typically chronic kidney disease."^^xsd:string .
+    rdfs:comment "Disease associated with kidneys, typically chronic kidney disease."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:CardiovascularDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
@@ -677,7 +678,7 @@ dpo:Behavior rdf:type owl:Class ;
     owl:equivalentClass ncit:C16326 ;
     rdfs:label "Behavior"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The actions or reactions of an object or organism, usually in relation to the environment or surrounding world of stimuli. [Definition Source: NCI]"^^xsd:string .
 
 dpo:SedentaryLifestyle rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
@@ -713,8 +714,8 @@ dpo:SedentaryOccupation rdf:type owl:Class ;
 
 dpo:AntihyperglycemicTreatment rdfs:subClassOf dpo:Therapy ;
     rdfs:label "Antihyperglycemic Treatment"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Treatment designed to lower blood sugar levels."^^xsd:string .
+    rdfs:comment "Treatment designed to lower blood sugar levels."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:Efficacy rdfs:subClassOf dpo:PharmacotherapyFactor ;
     owl:equivalentClass ncit:C88183 ;
@@ -724,145 +725,145 @@ dpo:Efficacy rdfs:subClassOf dpo:PharmacotherapyFactor ;
 
 dpo:HighEfficacy rdfs:subClassOf dpo:Efficacy ;
     rdfs:label "High Efficacy"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A high capacity to bring about a desired effect."^^xsd:string .
+    rdfs:comment "A high capacity to bring about a desired effect."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:IntermediateEfficacy rdfs:subClassOf dpo:Efficacy ;
     rdfs:label "Intermediate Efficacy"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "An intermediate capacity to bring about a desired effect."^^xsd:string .
+    rdfs:comment "An intermediate capacity to bring about a desired effect."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:LowEfficacy rdfs:subClassOf dpo:Efficacy ;
     rdfs:label "Low Efficacy"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A low capacity to bring about a desired effect."^^xsd:string .
+    rdfs:comment "A low capacity to bring about a desired effect."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:WeightChangePotential rdfs:subClassOf dpo:PharmacotherapyFactor ;
-    owl:equivalentClass ncit:C9232, omit:0003194 ;
+    owl:equivalentClass ncit:C9232 ;
     rdfs:label "Weight Change Potential"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "The capacity for an increase or decrease in the weight of an individual."^^xsd:string .
+    rdfs:comment "The capacity for an increase or decrease in the weight of an individual."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:WeightLossPotential rdfs:subClassOf dpo:WeightChangePotential ;
     rdfs:label "Weight Loss Potential"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "The capacity for a decrease in the weight of an individual."^^xsd:string .
+    rdfs:comment "The capacity for a decrease in the weight of an individual."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:WeightGainPotential rdfs:subClassOf dpo:WeightChangePotential ;
     rdfs:label "Weight Gain Potential"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "The capacity for an increase in the weight of an individual."^^xsd:string .
+    rdfs:comment "The capacity for an increase in the weight of an individual."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:NeutralWeightChange rdfs:subClassOf dpo:WeightChangePotential ;
     rdfs:label "Neutral Weight Change"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "The lack of an effect on the capacity for an increase or decrease in the weight of an individual."^^xsd:string .
+    rdfs:comment "The lack of an effect on the capacity for an increase or decrease in the weight of an individual."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:HypoglycemiaRisk rdfs:subClassOf dpo:PharmacotherapyFactor ;
     rdfs:label "Hypoglycemia Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "The possiblility of lowering blood sugar below the normal range."^^xsd:string .
+    rdfs:comment "The possiblility of lowering blood sugar below the normal range."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:NoKnownHypoglycemiaRisk rdfs:subClassOf dpo:HypoglycemiaRisk ;
     rdfs:label "No Known Hypoglycemia Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "No known association with the lowering of blood sugar below the normal range."^^xsd:string .
+    rdfs:comment "No known association with the lowering of blood sugar below the normal range."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:KnownHypoglycemiaRisk rdfs:subClassOf dpo:HypoglycemiaRisk ;
     rdfs:label "Known Hypoglycemia Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A known association with the lowering of blood sugar below the normal range."^^xsd:string .
+    rdfs:comment "A known association with the lowering of blood sugar below the normal range."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:CardiovascularEffect rdfs:subClassOf dpo:PharmacotherapyFactor ;
     rdfs:label "Cardiovascular Effect" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A pharmacotherapy factor related to the heart or blood vessels."^^xsd:string .
+    rdfs:comment "A pharmacotherapy factor related to the heart or blood vessels."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:AtheroscleroticCardiovascularDiseaseRisk  rdfs:subClassOf dpo:CardiovascularEffect ;
     rdfs:label "Atherosclerotic Cardiovascular Disease Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string .
+    rdfs:comment "Risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:PotentialASCVDBenefit rdfs:subClassOf dpo:AtheroscleroticCardiovascularDiseaseRisk ;
     rdfs:label "Potential ASCVD Benefit" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string .
+    rdfs:comment "Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:IncreasedASCVDRisk rdfs:subClassOf dpo:AtheroscleroticCardiovascularDiseaseRisk ;
     rdfs:label "Increased ASCVD Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Potential to increase the risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string .
+    rdfs:comment "Potential to increase the risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:NeutralASCVDRisk rdfs:subClassOf dpo:AtheroscleroticCardiovascularDiseaseRisk ;
     rdfs:label "Neutral ASCVD Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string .
+    rdfs:comment "Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
-dpo:HeartFailureRisk  rdfs:subClassOf dpo:CardiovascularEffect ;
+dpo:HeartFailureRisk rdfs:subClassOf dpo:CardiovascularEffect ;
     rdfs:label "Heart Failure Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Risk of heart failure."^^xsd:string .
+    rdfs:comment "Risk of heart failure."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:PotentialHeartFailureBenefit rdfs:subClassOf dpo:HeartFailureRisk ;
     rdfs:label "Potential Heart Failure Benefit" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Potential to decrease the risk of heart failure."^^xsd:string .
+    rdfs:comment "Potential to decrease the risk of heart failure."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:IncreasedHeartFailureRisk rdfs:subClassOf dpo:HeartFailureRisk ;
     rdfs:label "Increased Heart Failure Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Potential to increase the risk of heart failure."^^xsd:string .
+    rdfs:comment "Potential to increase the risk of heart failure."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:NeutralHeartFailureRisk rdfs:subClassOf dpo:HeartFailureRisk ;
     rdfs:label "Neutral Heart Failure Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Minimal effect on reducing or increasing the risk of heart failure."^^xsd:string .
+    rdfs:comment "Minimal effect on reducing or increasing the risk of heart failure."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:Cost rdfs:subClassOf dpo:PharmacotherapyFactor ;
     owl:equivalentClass ncit:C69088 ;
     rdfs:label "Cost" ;
-    rdfs:comment ""^^xsd:string ;
+    rdfs:comment "The expense associated with a therapy."^^xsd:string ;
     skos:definition "The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]"^^xsd:string .
 
 dpo:LowCost rdfs:subClassOf dpo:Cost ;
     rdfs:label "Low Cost"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Relatively inexpensive."^^xsd:string .
+    rdfs:comment "Relatively inexpensive."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:HighCost rdfs:subClassOf dpo:Cost ;
     rdfs:label "High Cost"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Relatively expensive."^^xsd:string .
+    rdfs:comment "Relatively expensive."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:RenalEffect rdfs:subClassOf dpo:PharmacotherapyFactor ;
     rdfs:label "Renal Effect"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "A pharmacotherapy factor related to the kidneys."^^xsd:string .
+    rdfs:comment "A pharmacotherapy factor related to the kidneys."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:DiabeticKidneyDiseaseProgression rdfs:subClassOf dpo:RenalEffect;
     rdfs:label "Diabetic Kidney Disease Progression"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "The progression of diabetic kidney disease."^^xsd:string .
+    rdfs:comment "The progression of diabetic kidney disease."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:RenalDosingConsideration rdfs:subClassOf dpo:RenalEffect;
     rdfs:label "Renal Dosing Consideration"^^xsd:string ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Drug dosage considerations related to the effect on the kidneys."^^xsd:string .
+    rdfs:comment "Drug dosage considerations related to the effect on the kidneys."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:PotentialDKDBenefit rdfs:subClassOf dpo:DiabeticKidneyDiseaseProgression ;
     rdfs:label "Potential Diabetic Kidney Disease Benefit" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Potential to decrease the risk or progression of diabetic kidney disease."^^xsd:string .
+    rdfs:comment "Potential to decrease the risk or progression of diabetic kidney disease."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:IncreasedDKDRisk rdfs:subClassOf dpo:DiabeticKidneyDiseaseProgression ;
     rdfs:label "Increased Diabetic Kidney Disease Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Potential to increase the risk or progression of diabetic kidney disease."^^xsd:string .
+    rdfs:comment "Potential to increase the risk or progression of diabetic kidney disease."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:NeutralDKDRisk rdfs:subClassOf dpo:DiabeticKidneyDiseaseProgression ;
     rdfs:label "Neutral Diabetic Kidney Disease Risk" ;
-    rdfs:comment ""^^xsd:string ;
-    skos:definition "Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease."^^xsd:string .
+    rdfs:comment "Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease."^^xsd:string ;
+    skos:definition ""^^xsd:string .
 
 dpo:Biguanide rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:3095 , ncit:C98234 ;
@@ -871,7 +872,7 @@ dpo:Biguanide rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     skos:definition "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Metformin rdfs:subClassOf dpo:Biguanide ;
-    owl:equivalentClass omit:0009750 , chebi:6801 , loinc:55548-2, ncit:C61612 ;
+    owl:equivalentClass chebi:6801 , loinc:55548-2, ncit:C61612 ;
     rdfs:label "Metformin"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. [Definition Source: NCI]"^^xsd:string ;
@@ -1306,18 +1307,6 @@ hp:0100515 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Pollakisuria"^^xsd:string .
 
-omit:0015388 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "Urinary Tract Infections"^^xsd:string .
-
-omit:0003194 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "Body Weight Changes"^^xsd:string .
-
-omit:0009750 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "Metformin"^^xsd:string .
-
 loinc:55548-2 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "metFORMIN [Moles/volume] in Serum or Plasma"^^xsd:string .
@@ -1346,9 +1335,17 @@ ncit:C25506 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Factor"^^xsd:string .
 
+ncit:C19591 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Diagnostic Factor"^^xsd:string .
+
 ncit:C49236 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Therapeutic Procedure"^^xsd:string .
+
+ncit:C25209 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Measurement"^^xsd:string .
 
 ncit:C138901 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
@@ -1377,6 +1374,10 @@ ncit:C3117 rdf:type owl:Class ;
 ncit:C2991 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Disease or Disorder"^^xsd:string .
+
+ncit:C2985 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Diabetes M"^^xsd:string .
 
 ncit:C26732 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
