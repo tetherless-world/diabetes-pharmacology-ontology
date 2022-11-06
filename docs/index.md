@@ -169,6 +169,7 @@ The namespaces used in DPO are listed below.
 | hp | [http://purl.obolibrary.org/obo/HP_](http://purl.obolibrary.org/obo/HP_) |
 | sio | [http://semanticscience.org/resource/](http://semanticscience.org/resource/) |
 
+![Imports](./assets/images/Imports.png)
 
 # Diabetes Pharmacology Ontology
 
