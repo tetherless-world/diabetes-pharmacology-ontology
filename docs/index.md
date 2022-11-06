@@ -2003,10 +2003,14 @@ Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateE
 ```
 
 #### Low Efficacy
-> A low capacity to bring about a desired effect.
+> The lack of expected or desired effect related to a therapy. [Definition Source: NCI]
 
 ```
-
+dpo:LowEfficacy rdfs:subClassOf dpo:Efficacy ;
+    owl:equivalentClass ncit:C48226 ;
+    rdfs:label "Low Efficacy"^^xsd:string ;
+    rdfs:comment "A low capacity to bring about a desired effect."^^xsd:string ;
+    skos:definition "The lack of expected or desired effect related to a therapy. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ### Weight Change Potential

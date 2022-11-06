@@ -745,9 +745,10 @@ dpo:IntermediateEfficacy rdfs:subClassOf dpo:Efficacy ;
     skos:definition ""^^xsd:string .
 
 dpo:LowEfficacy rdfs:subClassOf dpo:Efficacy ;
+    owl:equivalentClass ncit:C48226 ;
     rdfs:label "Low Efficacy"^^xsd:string ;
     rdfs:comment "A low capacity to bring about a desired effect."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The lack of expected or desired effect related to a therapy. [Definition Source: NCI]"^^xsd:string .
 
 dpo:WeightChangePotential rdfs:subClassOf dpo:PharmacotherapyFactor ;
     owl:equivalentClass ncit:C9232 ;
@@ -1573,6 +1574,10 @@ ncit:C81229 rdf:type owl:Class ;
 ncit:C81246 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Drug Use History"^^xsd:string .
+
+ncit:C48226 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Lack of Efficacy"^^xsd:string .
 
 chebi:5383 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
