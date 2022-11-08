@@ -204,6 +204,7 @@ All other branches of the ontology extend from these top level concepts.
 ```
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
+    owl:equivalentClass ncit:C18228 ;
     rdfs:label "Pharmacotherapy Factor" ;
     rdfs:comment "A circumstance influencing the treatment of a disease through the use or recommendation of one or more drugs."^^xsd:string ;
     skos:definition "Therapy-related factors identified include: route of administration, treatment complexity, duration of treatment period, medication side effects, degree of behavioral change required, taste of medication and requirement for drug storage. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2503662/ ]"^^xsd:string .
@@ -216,13 +217,13 @@ The Pharmacotherapy Factors included in this ontology are based on those include
 Potential categorizations of these top level pharmacotherapy factors are encoded as subclasses of each respective pharmacotherapy factor. The recommendation of a therapy may be based on whether or not a patient has an attribute that is of type one of the subclasses of the top level pharmacotherapy factors.
 
 ### Efficacy
-> The capacity to bring about a desired effect. [Definition Source: NCI]
+> The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients' compliance, usually determined in randomized trials. [Definition Source: NCI]
 
 ```
 dpo:Efficacy rdfs:subClassOf dpo:PharmacotherapyFactor ;
-    owl:equivalentClass ncit:C88183 ;
+    owl:equivalentClass ncit:C39547 ;
     rdfs:label "Efficacy"^^xsd:string ;
-    skos:definition "The capacity to bring about a desired effect. [Definition Source: NCI]"^^xsd:string .
+    skos:definition "The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients' compliance, usually determined in randomized trials. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateEfficacy**, and **dpo:LowEfficacy**.
