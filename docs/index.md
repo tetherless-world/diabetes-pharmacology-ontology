@@ -3303,7 +3303,7 @@ dpo:Obese rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
-    owl:equivalentClass symp:0020018 , ncit:C3283 , efo:0007041;
+    owl:equivalentClass ncit:C3283 , efo:0007041;
     rdfs:label "Obese"^^xsd:string ;
     rdfs:comment "30<BMI"^^xsd:string ;
     skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;

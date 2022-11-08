@@ -194,7 +194,7 @@ dpo:Obese rdf:type owl:Class ;
               [ rdf:type owl:Restriction ;
                 owl:onProperty sio:hasValue ;
                 owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
-    owl:equivalentClass symp:0020018 , ncit:C3283 , efo:0007041;
+    owl:equivalentClass ncit:C3283 , efo:0007041;
     rdfs:label "Obese"^^xsd:string ;
     rdfs:comment "30<BMI"^^xsd:string ;
     skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;
@@ -1224,100 +1224,120 @@ symp:0000462 rdf:type owl:Class ;
     rdfs:label "symptom"^^xsd:string .
 
 symp:0000473 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000462 ;
     rdfs:label "nutrition, metabolism, and development symptom"^^xsd:string .
 
-symp:0000560 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "polydipsia"^^xsd:string .
+symp:0000410 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000462 ;
+    rdfs:label "neurological and physiological symptom"^^xsd:string .
 
-symp:0000524 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "polyphagia"^^xsd:string .
-
-symp:0020018 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "overweight"^^xsd:string .
+symp:0000891 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000462 ;
+    rdfs:label "musculoskeletal system symptom"^^xsd:string .
 
 symp:0000486 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000462 ;
     rdfs:label "urinary system symptom"^^xsd:string .
 
+symp:0000480 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000462 ;
+    rdfs:label "nervous system symptom"^^xsd:string .
+
 symp:0000565 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000486 ;
     rdfs:label "polyuria"^^xsd:string .
 
 symp:0000485 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000486 ;
     rdfs:label "dysuria"^^xsd:string .
 
 symp:0000563 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000486 ;
     rdfs:label "urinary frequency"^^xsd:string .
 
+symp:0000560 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000473 ;
+    rdfs:label "polydipsia"^^xsd:string .
+
+symp:0000524 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000473 ;
+    rdfs:label "polyphagia"^^xsd:string .
+
+symp:0019163 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000462 ;
+    rdfs:label "eye symptom"^^xsd:string .
+
 symp:0000320 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0019163 ;
     rdfs:label "vision symptom"^^xsd:string .
 
 symp:0000012 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0019163 ;
     rdfs:label "blurred vision"^^xsd:string .
 
-symp:0000410 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "neurological and physiological symptom"^^xsd:string .
-
 symp:0019177 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000410 ;
     rdfs:label "fatigue"^^xsd:string .
 
-symp:0000891 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "musculoskeletal system symptom"^^xsd:string .
-
 symp:0019169 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000891 ;
     rdfs:label "arthritis"^^xsd:string .
 
+symp:0000094 rdf:type owl:Class ;
+    rdfs:subClassOf symp:0000891 ;
+    rdfs:label "muscle weakness"^^xsd:string .
+
 symp:0000352 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000094 ;
     rdfs:label "peripheral muscle weakness"^^xsd:string .
 
-symp:0000480 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
-    rdfs:label "nervous system symptom"^^xsd:string .
-
 symp:0000734 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000480 ;
     rdfs:label "stroke"^^xsd:string .
 
 symp:0000099 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000480 ;
     rdfs:label "pain"^^xsd:string .
 
 symp:0000576 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf symp:0000099 ;
     rdfs:label "chest pain"^^xsd:string .
 
-efo:0005936 rdf:type owl:Class ;
+efo:0004340 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "body mass index"^^xsd:string .
+
+efo:0005936 rdf:type owl:Class ;
+    rdfs:subClassOf efo:0004340 ;
     rdfs:label "underweight body mass index status"^^xsd:string .
 
 efo:0005935 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf efo:0004340 ;
     rdfs:label "overweight body mass index status"^^xsd:string .
 
 efo:0007041 rdf:type owl:Class ;
-    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:subClassOf efo:0004340 ;
     rdfs:label "obese body mass index status"^^xsd:string .
 
-hp:0100749 rdf:type owl:Class ;
+hp:0025142 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Constitutional symptom"^^xsd:string .
+
+hp:0100749 rdf:type owl:Class ;
+    rdfs:subClassOf hp:0025142 ;
     rdfs:label "Chest pain"^^xsd:string .
+
+hp:0000009 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Functional abnormality of the bladder"^^xsd:string .
 
 hp:0100515 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Pollakisuria"^^xsd:string .
+
+hp:0033072 rdf:type owl:Class ;
+    rdfs:subClassOf dpo:ExternalClass ;
+    rdfs:label "Abnormal macroscopic urine appearance"^^xsd:string .
 
 hp:0012088 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
