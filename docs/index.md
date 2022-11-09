@@ -284,10 +284,13 @@ Subclasses of **dpo:WeightChangePotential** include **dpo:WeightLossPotential**,
 ```
 
 ### Hypoglycemia Risk
-> The possiblility of lowering blood sugar below the normal range.
+> The most important risk factor for the occurrence of hypoglycemia is the aggressiveness of therapy applied to achieve glycemic control. [Definition Source: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3784865/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3784865/) ]
 
 ```
-
+dpo:HypoglycemiaRisk rdfs:subClassOf dpo:PharmacotherapyFactor ;
+    rdfs:label "Hypoglycemia Risk" ;
+    rdfs:comment "The possiblility of lowering blood sugar below the normal range."^^xsd:string ;
+    skos:definition "The most important risk factor for the occurrence of hypoglycemia is the aggressiveness of therapy applied to achieve glycemic control. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3784865/ ]"^^xsd:string .
 ```
 
 Subclasses of **dpo:HypoglycemiaRisk** include **dpo:NoKnownHypoglycemiaRisk** and **dpo:KnownHypoglycemiaRisk**.
@@ -307,10 +310,13 @@ Subclasses of **dpo:HypoglycemiaRisk** include **dpo:NoKnownHypoglycemiaRisk** a
 ```
 
 ### Cardiovascular Effect
-> A pharmacotherapy factor related to the heart or blood vessels.
+> Cardiovascular effects are defined as any uncomfortable physical effect that relates to the heart and blood vessels. [Definition Source: [https://effectindex.com/categories/cardiovascular-effects](https://effectindex.com/categories/cardiovascular-effects) ]
 
 ```
-
+dpo:CardiovascularEffect rdfs:subClassOf dpo:PharmacotherapyFactor ;
+    rdfs:label "Cardiovascular Effect" ;
+    rdfs:comment "A pharmacotherapy factor related to the heart or blood vessels."^^xsd:string ;
+    skos:definition "Cardiovascular effects are defined as any uncomfortable physical effect that relates to the heart and blood vessels. [Definition Source: url:https://effectindex.com/categories/cardiovascular-effects ]"^^xsd:string .
 ```
 
 **dpo:CardiovascularEffect** contains two main subclasses, **dpo:AtheroscleroticCardiovascularDiseaseRisk** and **dpo:HeartFailureRisk**.
@@ -412,10 +418,13 @@ Subclasses of **dpo:Cost** include **dpo:LowCost** and **dpo:HighCost**.
 Subclasses of **dpo:RenalEffect** include **dpo:DiabeticKidneyDiseaseProgression** and **dpo:RenalDosingConsideration**.
 
 #### Diabetic Kidney Disease Progression
-> The progression of diabetic kidney disease.
+> Defined by the presence of diabetes and reduced estimated glomerular filtration rate (eGFR) to <60/ mL/min/1.73 m2, increased albuminuria (>300 mg/24 hours) or both, diabetic kidney disease (DKD) is a progressive disease that affects one in seven individuals worldwide eventuating renal replacement therapy (RRT) and premature death secondary to cardiovascular causes. [Definition Source: [https://www.ncbi.nlm.nih.gov/books/NBK571719/](https://www.ncbi.nlm.nih.gov/books/NBK571719/) ]
 
 ```
-
+dpo:DiabeticKidneyDiseaseProgression rdfs:subClassOf dpo:RenalEffect;
+    rdfs:label "Diabetic Kidney Disease Progression"^^xsd:string ;
+    rdfs:comment "The progression of diabetic kidney disease."^^xsd:string ;
+    skos:definition "Defined by the presence of diabetes and reduced estimated glomerular filtration rate (eGFR) to <60/ mL/min/1.73 m2, increased albuminuria (>300 mg/24 hours) or both, diabetic kidney disease (DKD) is a progressive disease that affects one in seven individuals worldwide eventuating renal replacement therapy (RRT) and premature death secondary to cardiovascular causes. [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK571719/ ]"^^xsd:string .
 ```
 
 Subclasses of **dpo:DiabeticKidneyDiseaseProgression** include **dpo:PotentialDKDBenefit**, **dpo:IncreasedDKDRisk**, and **dpo:NeutralDKDRisk**.
@@ -631,10 +640,15 @@ dpo:Fatigue rdf:type owl:Class ;
 ```
 
 #### Musculoskeletal System Symptom
-> A symptom involving the musculoskeletal system.
+> Musculoskeletal symptoms are defined as pain in the muscles, tendons, and nerves arising from repetitive, continuous, and unnatural movements. These symptoms can be expressed in various areas of the body and affect the quality of life by causing difficulties in performing occupational tasks and activities of daily living (ADL). [Definition Source: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3567324/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3567324/) ]
 
 ```
-
+dpo:MusculoskeletalSystemSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000891 ;
+    rdfs:label "Musculoskeletal System Symptom"^^xsd:string ;
+    rdfs:comment "A symptom involving the musculoskeletal system."^^xsd:string ;
+    skos:definition "Musculoskeletal symptoms are defined as pain in the muscles, tendons, and nerves arising from repetitive, continuous, and unnatural movements. These symptoms can be expressed in various areas of the body and affect the quality of life by causing difficulties in performing occupational tasks and activities of daily living (ADL). [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3567324/ ]"^^xsd:string .
 ```
 
 Subclasses of **dpo:MusculoskeletalSystemSymptom** include **dpo:Arthritis** and **dpo:PeripheralNeuropathy**.
@@ -651,10 +665,14 @@ dpo:Arthritis rdf:type owl:Class ;
 ```
 
 ##### Peripheral Neuropathy
-> 
+> Peripheral neuropathy refers to the many conditions that involve damage to the peripheral nervous system, the vast communication network that sends signals between the central nervous system (the brain and spinal cord) and all other parts of the body. [Definition Source: [https://www.ninds.nih.gov/peripheral-neuropathy-fact-sheet](Definition Source: [https://www.ninds.nih.gov/peripheral-neuropathy-fact-sheet) ]
 
 ```
-
+dpo:PeripheralNeuropathy rdf:type owl:Class ;
+    rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
+    owl:equivalentClass symp:0000352 ;
+    rdfs:label "Peripheral Neuropathy"^^xsd:string ;
+    skos:definition "Peripheral neuropathy refers to the many conditions that involve damage to the peripheral nervous system, the vast communication network that sends signals between the central nervous system (the brain and spinal cord) and all other parts of the body. [Definition Source: url:https://www.ninds.nih.gov/peripheral-neuropathy-fact-sheet ]"^^xsd:string .
 ```
 
 #### Nervous System Symptom

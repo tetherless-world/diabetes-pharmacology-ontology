@@ -529,7 +529,7 @@ dpo:MusculoskeletalSystemSymptom rdf:type owl:Class ;
     owl:equivalentClass symp:0000891 ;
     rdfs:label "Musculoskeletal System Symptom"^^xsd:string ;
     rdfs:comment "A symptom involving the musculoskeletal system."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Musculoskeletal symptoms are defined as pain in the muscles, tendons, and nerves arising from repetitive, continuous, and unnatural movements. These symptoms can be expressed in various areas of the body and affect the quality of life by causing difficulties in performing occupational tasks and activities of daily living (ADL). [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3567324/ ]"^^xsd:string .
 
 dpo:Arthritis rdf:type owl:Class ;
     rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
@@ -543,7 +543,7 @@ dpo:PeripheralNeuropathy rdf:type owl:Class ;
     owl:equivalentClass symp:0000352 ;
     rdfs:label "Peripheral Neuropathy"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Peripheral neuropathy refers to the many conditions that involve damage to the peripheral nervous system, the vast communication network that sends signals between the central nervous system (the brain and spinal cord) and all other parts of the body. [Definition Source: url:https://www.ninds.nih.gov/peripheral-neuropathy-fact-sheet ]"^^xsd:string .
 
 dpo:Condition rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
@@ -775,7 +775,7 @@ dpo:NeutralWeightChange rdfs:subClassOf dpo:WeightChangePotential ;
 dpo:HypoglycemiaRisk rdfs:subClassOf dpo:PharmacotherapyFactor ;
     rdfs:label "Hypoglycemia Risk" ;
     rdfs:comment "The possiblility of lowering blood sugar below the normal range."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "The most important risk factor for the occurrence of hypoglycemia is the aggressiveness of therapy applied to achieve glycemic control. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3784865/ ]"^^xsd:string .
 
 dpo:NoKnownHypoglycemiaRisk rdfs:subClassOf dpo:HypoglycemiaRisk ;
     rdfs:label "No Known Hypoglycemia Risk" ;
@@ -790,7 +790,7 @@ dpo:KnownHypoglycemiaRisk rdfs:subClassOf dpo:HypoglycemiaRisk ;
 dpo:CardiovascularEffect rdfs:subClassOf dpo:PharmacotherapyFactor ;
     rdfs:label "Cardiovascular Effect" ;
     rdfs:comment "A pharmacotherapy factor related to the heart or blood vessels."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Cardiovascular effects are defined as any uncomfortable physical effect that relates to the heart and blood vessels. [Definition Source: url:https://effectindex.com/categories/cardiovascular-effects ]"^^xsd:string .
 
 dpo:AtheroscleroticCardiovascularDiseaseRisk  rdfs:subClassOf dpo:CardiovascularEffect ;
     rdfs:label "Atherosclerotic Cardiovascular Disease Risk" ;
@@ -856,7 +856,7 @@ dpo:RenalEffect rdfs:subClassOf dpo:PharmacotherapyFactor ;
 dpo:DiabeticKidneyDiseaseProgression rdfs:subClassOf dpo:RenalEffect;
     rdfs:label "Diabetic Kidney Disease Progression"^^xsd:string ;
     rdfs:comment "The progression of diabetic kidney disease."^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Defined by the presence of diabetes and reduced estimated glomerular filtration rate (eGFR) to <60/ mL/min/1.73 m2, increased albuminuria (>300 mg/24 hours) or both, diabetic kidney disease (DKD) is a progressive disease that affects one in seven individuals worldwide eventuating renal replacement therapy (RRT) and premature death secondary to cardiovascular causes. [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK571719/ ]"^^xsd:string .
 
 dpo:RenalDosingConsideration rdfs:subClassOf dpo:RenalEffect;
     rdfs:label "Renal Dosing Consideration"^^xsd:string ;
