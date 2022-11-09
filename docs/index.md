@@ -3664,3 +3664,5 @@ dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
 ```
 
 # Personal Health Knowledge Graph
+
+![KaitlynKB](./assets/images/KaitlynKB.png)
