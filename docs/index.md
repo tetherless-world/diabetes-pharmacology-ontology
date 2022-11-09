@@ -486,10 +486,15 @@ The symtpoms included in the ontology are linked to terms in the Symptoms Ontolo
 The top level subclasses of **dpo:Symptom** include **dpo:NutritionMetabolismAndDevelopmentSymptom**, **dpo:UrinarySystemSymptom**, **dpo:VisionSymptom**, **dpo:NeurologicalAndPhysiologicalSymptom**, **dpo:MusculoskeletalSystemSymptom**, and **dpo:NervousSystemSymptom**.
 
 #### Nutrition Metabolism and Development Symptom
-> A symptom involving the nutrition, metabolism, and/or development system.
+> Symptoms concerning nutrition metabolism and development [include:] A disorder characterized by a loss of appetite; An abnormal loss of the appetite for food. Anorexia can be caused by cancer, aids, a mental disorder (i.e., anorexia nervosa), or other diseases; Clinical manifestation consisting of a physiopathological lack or loss of appetite accompanied by an aversion to food and the inability to eat; Loss of appetite; The lack or loss of appetite accompanied by an aversion to food and the inability to eat. It is the defining characteristic of the disorder anorexia nervosa. [Definition Source: url:[http://www.icd9data.com/2013/Volume1/780-799/780-789/783/default.htm](http://www.icd9data.com/2013/Volume1/780-799/780-789/783/default.htm) ]
 
 ```
-
+dpo:NutritionMetabolismAndDevelopmentSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000473 ;
+    rdfs:label "Nutrition Metabolism and Development Symptom"^^xsd:string ;
+    rdfs:comment "A symptom involving the nutrition, metabolism, and/or development system."^^xsd:string ;
+    skos:definition "Symptoms concerning nutrition metabolism and development [include:] A disorder characterized by a loss of appetite; An abnormal loss of the appetite for food. Anorexia can be caused by cancer, aids, a mental disorder (i.e., anorexia nervosa), or other diseases; Clinical manifestation consisting of a physiopathological lack or loss of appetite accompanied by an aversion to food and the inability to eat; Loss of appetite; The lack or loss of appetite accompanied by an aversion to food and the inability to eat. It is the defining characteristic of the disorder anorexia nervosa. [Definition Source: url:http://www.icd9data.com/2013/Volume1/780-799/780-789/783/default.htm ]"^^xsd:string .
 ```
 
 Subclasses of **dpo:NutritionMetabolismAndDevelopmentSymptom** include **dpo:Polydipsia** and **dpo:Polyphagia**.
@@ -517,10 +522,15 @@ dpo:Polyphagia rdf:type owl:Class ;
 ```
 
 #### Urinary System Symptom
-> A symptom involving the urinary system.
+> Symptoms of urinary disorders vary from person to person and based on the cause of the disorders. Common urinary symptoms include: Abdominal cramping; Abdominal, pelvic or back pain that can be severe; Bloody or pink-colored urine (hematuria); Cloudy urine; Fever and chills; Foul-smelling urine; Frequent urination; General ill feeling; Leaking of urine; Pain during sexual intercourse; Pain or burning with urination (dysuria); Unexplained weight loss; Urgent need to urinate. [Definition Source: url:[https://www.healthgrades.com/right-care/kidneys-and-the-urinary-system/urinary-disorders](https://www.healthgrades.com/right-care/kidneys-and-the-urinary-system/urinary-disorders) ]
 
 ```
-
+dpo:UrinarySystemSymptom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symptom ;
+    owl:equivalentClass symp:0000486 ;
+    rdfs:label "Urinary System Symptom"^^xsd:string ;
+    rdfs:comment "A symptom involving the urinary system."^^xsd:string ;
+    skos:definition "Symptoms of urinary disorders vary from person to person and based on the cause of the disorders. Common urinary symptoms include: Abdominal cramping; Abdominal, pelvic or back pain that can be severe; Bloody or pink-colored urine (hematuria); Cloudy urine; Fever and chills; Foul-smelling urine; Frequent urination; General ill feeling; Leaking of urine; Pain during sexual intercourse; Pain or burning with urination (dysuria); Unexplained weight loss; Urgent need to urinate. [Definition Source: url:https://www.healthgrades.com/right-care/kidneys-and-the-urinary-system/urinary-disorders ]"^^xsd:string .
 ```
 
 Subclasses of **dpo:UrinarySystemSymptom** include **dpo:Polyuria**, **dpo:Dysuria**, **dpo:UrinaryTractInfection**, **dpo:FrequentUrination**, and **dpo:FoulUrine**.
