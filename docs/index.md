@@ -243,10 +243,14 @@ Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateE
 ```
 
 #### Low Efficacy
-> A low capacity to bring about a desired effect.
+> The lack of expected or desired effect related to a therapy. [Definition Source: NCI]
 
 ```
-
+dpo:LowEfficacy rdfs:subClassOf dpo:Efficacy ;
+    owl:equivalentClass ncit:C48226 ;
+    rdfs:label "Low Efficacy"^^xsd:string ;
+    rdfs:comment "A low capacity to bring about a desired effect."^^xsd:string ;
+    skos:definition "The lack of expected or desired effect related to a therapy. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ### Weight Change Potential
@@ -853,10 +857,13 @@ dpo:Occupation rdf:type owl:Class ;
 **dpo:Occupation** includes the subclass **dpo:SedentaryOccupation**.
 
 #### Sedentary Occupation
-> 
+> A physical demand level described as the exertion of up to 10 pounds of force occasionally, negligible amount of work frequently, and a negligible amount of force constantly to move objects. [Definition Source: [https://medical-dictionary.thefreedictionary.com/sedentary+work](https://medical-dictionary.thefreedictionary.com/sedentary+work) ]
 
 ```
-
+dpo:SedentaryOccupation rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Occupation ;
+    rdfs:label "Sedentary Occupation"^^xsd:string ;
+    skos:definition "A physical demand level described as the exertion of up to 10 pounds of force occasionally, negligible amount of work frequently, and a negligible amount of force constantly to move objects. [Definition Source: url:https://medical-dictionary.thefreedictionary.com/sedentary+work ]"^^xsd:string .
 ```
 
 ### History
@@ -898,12 +905,14 @@ dpo:FamilyHistoryOfCAD rdf:type owl:Class ;
 ```
 
 ##### Family History of Diabetes
-> 
+> Having at least one-first-degree relative with diabetes. [Definition Source: [https://doi.org/10.1111/jdi.12033](https://doi.org/10.1111/jdi.12033) ]
 
 ```
-
+dpo:FamilyHistoryOfDiabetes rdf:type owl:Class ;
+    rdfs:subClassOf dpo:FamilyHistory ;
+    rdfs:label "Family History of Diabetes"^^xsd:string ;
+    skos:definition "Having at least one-first-degree relative with diabetes. [Definition Source: url:https://doi.org/10.1111/jdi.12033 ]"^^xsd:string .
 ```
-
 
 #### Personal History
 > A record of a patient's background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. [Definition Source: NCI]
@@ -919,18 +928,24 @@ dpo:PersonalHistory rdf:type owl:Class ;
 Subclasses of **dpo:PersonalHistory** include **dpo:PersonalHistoryOfGestationalDiabetes** and **dpo:PersonalHistoryOfFebrileStates**.
 
 ##### Personal History of Gestational Diabetes
-> 
+> Gestational diabetes mellitus (GDM), defined as glucose intolerance that is first recognized during pregnancy, is associated with maternal obesity and confers a 4‐ to 7‐fold greater risk of incident type 2 diabetes (DM), and increased risk of developing the metabolic syndrome (MetS) in midlife. In addition, a history of GDM among nondiabetic women is characterized by elevations in fasting glucose and insulin concentrations, as well as dyslipidemia and greater inflammation in the absence of the MetS. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4187501/ ]
 
 ```
-
+dpo:PersonalHistoryOfGestationalDiabetes rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PersonalHistory ;
+    rdfs:label "Personal History of Gestational Diabetes"^^xsd:string ;
+    skos:definition "Gestational diabetes mellitus (GDM), defined as glucose intolerance that is first recognized during pregnancy, is associated with maternal obesity and confers a 4‐ to 7‐fold greater risk of incident type 2 diabetes (DM), and increased risk of developing the metabolic syndrome (MetS) in midlife. In addition, a history of GDM among nondiabetic women is characterized by elevations in fasting glucose and insulin concentrations, as well as dyslipidemia and greater inflammation in the absence of the MetS. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4187501/ ]"^^xsd:string .
 ```
 
 
 ##### Personal History of Febrile States
-> 
+> Febrile seizures are defined as events in infancy or childhood that usually occur between three months and five years of age and are associated with a fever, but without evidence of intracranial infection or a defined cause for the seizure. [Definition Source: [https://www.aafp.org/pubs/afp/issues/2008/1115/p1199.html](https://www.aafp.org/pubs/afp/issues/2008/1115/p1199.html]) ]
 
 ```
-
+dpo:PersonalHistoryOfFebrileStates rdf:type owl:Class ;
+    rdfs:subClassOf dpo:PersonalHistory ;
+    rdfs:label "Personal History of Febrile States"^^xsd:string ;
+    skos:definition "Febrile seizures are defined as events in infancy or childhood that usually occur between three months and five years of age and are associated with a fever, but without evidence of intracranial infection or a defined cause for the seizure. [Definition Source: url:https://www.aafp.org/pubs/afp/issues/2008/1115/p1199.html ]"^^xsd:string .
 ```
 
 

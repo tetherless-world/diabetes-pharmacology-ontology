@@ -598,19 +598,19 @@ dpo:FamilyHistoryOfDiabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:FamilyHistory ;
     rdfs:label "Family History of Diabetes"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Having at least one-first-degree relative with diabetes. [Definition Source: url:https://doi.org/10.1111/jdi.12033 ]"^^xsd:string .
 
 dpo:PersonalHistoryOfGestationalDiabetes rdf:type owl:Class ;
     rdfs:subClassOf dpo:PersonalHistory ;
     rdfs:label "Personal History of Gestational Diabetes"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Gestational diabetes mellitus (GDM), defined as glucose intolerance that is first recognized during pregnancy, is associated with maternal obesity and confers a 4‐ to 7‐fold greater risk of incident type 2 diabetes (DM), and increased risk of developing the metabolic syndrome (MetS) in midlife. In addition, a history of GDM among nondiabetic women is characterized by elevations in fasting glucose and insulin concentrations, as well as dyslipidemia and greater inflammation in the absence of the MetS. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4187501/ ]"^^xsd:string .
 
 dpo:PersonalHistoryOfFebrileStates rdf:type owl:Class ;
     rdfs:subClassOf dpo:PersonalHistory ;
     rdfs:label "Personal History of Febrile States"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "Febrile seizures are defined as events in infancy or childhood that usually occur between three months and five years of age and are associated with a fever, but without evidence of intracranial infection or a defined cause for the seizure. [Definition Source: url:https://www.aafp.org/pubs/afp/issues/2008/1115/p1199.html ]"^^xsd:string .
 
 dpo:BilateralLowerExtremityBurningSensation rdf:type owl:Class ;
     rdfs:subClassOf dpo:NervousSystemSymptom ;
@@ -721,7 +721,7 @@ dpo:SedentaryOccupation rdf:type owl:Class ;
     rdfs:subClassOf dpo:Occupation ;
     rdfs:label "Sedentary Occupation"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition ""^^xsd:string .
+    skos:definition "A physical demand level described as the exertion of up to 10 pounds of force occasionally, negligible amount of work frequently, and a negligible amount of force constantly to move objects. [Definition Source: url:https://medical-dictionary.thefreedictionary.com/sedentary+work ]"^^xsd:string .
 
 dpo:AntihyperglycemicTreatment rdfs:subClassOf dpo:Therapy ;
     owl:equivalentClass chebi:35526 ;
