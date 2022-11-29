@@ -1,0 +1,323 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix heals: <http://purl.org/twc/HEALS/ont/> .
+@prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
+@prefix fhir: <http://hl7.org/fhir/> . 
+@prefix sio: <http://semanticscience.org/resource/> . 
+@prefix    loinc: <http://purl.bioontology.org/ontology/LNC/> .
+@prefix    uo: <http://purl.obolibrary.org/obo/UO_> . 
+
+fhir:Patient rdf:type owl:Class ;
+    rdfs:label "patient" .
+
+sio:hasAttribute rdf:type owl:ObjectProperty ;
+    rdfs:label "has attribute" .
+
+heals:WeightGain rdf:type owl:Class ;
+    rdfs:label "Weight Gain" ;
+    rdfs:subClassOf sio:Attribute .
+
+heals:ClinicallyRelevantWeightGain rdf:type owl:Class ;
+    rdfs:label "Clinically Relevant Weight Gain" ;
+    owl:equivalentClass 
+        [ rdf:type owl:Class ;
+            owl:unionOf (
+              heals:ClinicallyRelevantBMIGain
+              heals:DecreasedActivity
+              heals:ChangeInDiet
+              heals:MedicinalEffect
+              heals:BiologicalEffect
+            )
+        ] ;
+    rdfs:subClassOf heals:WeightGain .
+
+heals:WeightGainPatient rdf:type owl:Class ;
+    owl:intersectionOf (   
+        fhir:Patient 
+        [ rdf:type owl:Restriction ; 
+          owl:onProperty sio:hasAttribute ;
+          owl:someValuesFrom heals:WeightGain
+        ] 
+    );
+    rdfs:label "Weight Gain Patient" .
+
+fhir:Patient owl:disjointWith sio:Attribute .
+
+#heals:ClinicallyRelevantWeightGainPatient
+#    rdfs:subClassOf fhir:Patient ,
+#        [ rdf:type owl:Restriction ;
+#            owl:onProperty sio:hasAttribute ;
+#            owl:someValuesFrom heals:ClinicallyRelevantWeightGain ] ;
+#    rdfs:label "clinically relevant weight gain patient" .
+
+heals:ClinicallyRelevantWeightGainPatient rdf:type owl:Class  ;
+    owl:equivalentClass [
+    rdf:type owl:Class ;
+      owl:intersectionOf (
+       fhir:Patient 
+        [ rdf:type owl:Restriction ;
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:ClinicallyRelevantWeightGain ] 
+     )
+    ] ;
+    rdfs:subClassOf heals:WeightGainPatient ;
+    rdfs:label "clinically relevant weight gain patient" .
+
+heals:BMIGain rdf:type owl:Class ;
+    rdfs:label "BMI Gain" .
+
+heals:BMIGainPatient rdf:type owl:Class  ;
+  owl:equivalentClass [
+    rdf:type owl:Class ;
+    owl:intersectionOf (
+      fhir:Patient 
+      [ rdf:type owl:Restriction ;
+            owl:onProperty sio:hasAttribute ;
+            owl:someValuesFrom heals:heals:BMIGain ] 
+    )
+  ] ;
+  rdfs:label "BMI Gain Patient" .
+
+heals:ClinicallyRelevantBMIGain rdf:type owl:Class ;
+    rdfs:subClassOf heals:BMIGain ;
+    rdfs:label "Clinically Relevant BMI Gain" .
+
+heals:ClinicallyRelevantBMIGainPatient rdf:type owl:Class  ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasAttribute ;
+                owl:someValuesFrom heals:ClinicallyRelevantBMIGain ] 
+        )
+    ] ;
+    rdfs:label "Clinically Relevant BMI Gain Patient" ;
+    rdfs:subClassOf heals:BMIGainPatient .
+
+heals:DecreasedActivity rdf:type owl:Class ;
+    rdfs:label "Decreased Activity" .
+
+heals:DecreasedActivityPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:DecreasedActivity
+            ] 
+        )
+    ];
+    rdfs:label "Decreased Activity Patient" .
+
+heals:ReductionInSteps rdf:type owl:Class ;
+    rdfs:subClassOf heals:DecreasedActivity ;
+    rdfs:label "Reduction In Steps" .
+
+heals:StepsDecreasedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:ReductionInSteps
+            ] 
+        )
+    ];
+    rdfs:subClassOf heals:DecreasedActivityPatient ;
+    rdfs:label "Steps Decreased Patient" .
+
+
+heals:Injury rdf:type owl:Class ;
+    rdfs:subClassOf heals:DecreasedActivity ;
+    rdfs:label "Injury" .
+
+heals:InjuredPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:Injury
+            ] 
+        )
+    ];
+    rdfs:label "Injured Patient" ;
+    rdfs:subClassOf heals:DecreasedActivityPatient .
+
+heals:ChangeInDiet rdf:type owl:Class ;
+    rdfs:label "Change In Diet" .
+
+heals:ChangedDietPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:ChangeInDiet
+            ] 
+        )
+    ];
+    rdfs:label "Changed Diet Patient" .
+
+heals:MedicinalEffect rdf:type owl:Class ;
+    rdfs:label "Medicinal Effect" ;
+    rdfs:subClassOf 
+        [ rdf:type owl:Class ;
+            owl:unionOf (
+                heals:SingleDrugSideEffect
+                heals:MultipleDrugContraindication
+            )
+        ] .
+
+heals:MedicinallyEffectedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:MedicinalEffect
+            ] 
+        )
+    ];
+    rdfs:label "Medicinally Effected Patient" .
+
+heals:SingleDrugSideEffect rdf:type owl:Class ;
+    rdfs:subClassOf heals:MedicinalEffect ;
+    rdfs:label "Single Drug Side Effect" .
+
+heals:SingleDrugSideEffectedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:SingleDrugSideEffect
+            ] 
+        )
+    ];
+    rdfs:label "Single Drug Side Effected Patient" .
+
+heals:MultipleDrugContraindication rdf:type owl:Class ;
+    rdfs:subClassOf heals:MedicinalEffect ;
+    rdfs:label "Multiple Drug Contraindication" .
+
+heals:MultipleDrugContradictedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:MultipleDrugContraindication
+            ] 
+        )
+    ];
+    rdfs:label "Multiple Drug Contradicted Patient" .
+
+heals:BiologicalEffect rdf:type owl:Class ;
+    rdfs:label "Biological Effect" .
+
+heals:BiologicallyEffectedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:BiologicalEffect
+            ] 
+        )
+    ];
+    rdfs:label "Biologically Effected Patient" .
+
+heals:MetabolismDecrease rdf:type owl:Class ;
+    rdfs:subClassOf heals:BiologicalEffect ;
+    rdfs:label "Metabolism Decrease" .
+
+heals:MetabolismDecreasedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:MetabolismDecrease
+            ] 
+        )
+    ];
+    rdfs:label "Metabolism Decreased Patient" .
+
+heals:Hypothyroidism rdf:type owl:Class ;
+    rdfs:subClassOf heals:MetabolismDecrease ;
+    rdfs:label "Hypothyroidism" .
+
+heals:HypothyroidismPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom heals:Hypothyroidism
+            ] 
+        )
+    ];
+    rdfs:label "Hypothyroidism Patient" .
+
+heals:BMIMeasurement rdf:type owl:Class ;
+    rdfs:subClassOf fhir:Observation ;
+    owl:equivalentClass
+        [ rdf:type owl:Restriction ;
+            owl:onProperty heals:ObservationCode ;
+            owl:hasValue loinc:35925-4 ] ;
+    rdfs:label "BMI Measurement" .
+
+heals:WeightMeasurement rdf:type owl:Class ;
+    rdfs:subClassOf fhir:Observation ;
+    owl:equivalentClass
+        [ rdf:type owl:Restriction ;
+            owl:onProperty heals:ObservationCode ;
+            owl:hasValue loinc:29463-7  ] ;
+    rdfs:label "Weight Measurement" .
+
+heals:StepMeasurement rdf:type owl:Class ;
+    rdfs:subClassOf fhir:Observation ;
+    owl:equivalentClass
+        [ rdf:type owl:Restriction ;
+            owl:onProperty heals:ObservationCode ;
+            owl:hasValue loinc:55423-8  ] ;
+    rdfs:label "Step Measurement" .
+
+#heals-kb:jill rdf:type  fhir:Patient .
+
+heals-kb:decreasedActivity rdf:type heals:DecreasedActivity .
+
+heals-kb:reductionInSteps rdf:type heals:ReductionInSteps .
+
+heals-kb:changeInDiet rdf:type heals:ChangeInDiet .
+
+heals-kb:medicinalEffect rdf:type heals:MedicinalEffect .
+
+heals-kb:singleDrugSideEffect rdf:type heals:SingleDrugSideEffect.
+
+heals-kb:multipleDrugContraindication rdf:type heals:MultipleDrugContraindication .
+
+heals-kb:biologicalEffect rdf:type heals:BiologicalEffect .
+
+heals-kb:clinicalBMIGain rdf:type heals:ClinicallyRelevantBMIGain .
+
+heals-kb:clinicalWeightGain rdf:type heals:ClinicallyRelevantWeightGain .
+
+heals-kb:metabolismDecrease rdf:type heals:MetabolismDecrease .
+
+heals-kb:heals:hypothyroidism rdf:type heals:Hypothyroidism .
+

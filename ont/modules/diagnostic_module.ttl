@@ -37,54 +37,51 @@ sio:Attribute rdf:type owl:Class ;
 sio:hasAttribute rdf:type owl:ObjectProperty ;
     rdfs:label "has attribute" .
 
-dpo:Symptom rdf:type owl:Class ;
-    rdfs:label "Symptom" ;
+dpo:Symdpom rdf:type owl:Class ;
+    rdfs:label "Symdpom" ;
     rdfs:subClassOf sio:Attribute .
 
-dpo:DiabetesAssociatedSymptom rdf:type owl:Class ;
-    rdfs:label "Diabetes Associated Symptom" ;
+dpo:DiabetesAssociatedSymdpom rdf:type owl:Class ;
+    rdfs:label "Diabetes Associated Symdpom" ;
     owl:equivalentClass 
         [ rdf:type owl:Class ;
             owl:unionOf (
-                dpo:Polydipsia
-                dpo:Polyphagia
-                dpo:Obese
-                dpo:DiabetesFastingBloodGlucoseLevel
-                dpo:DiabetesTwoHourBloodGlucoseLevel
-                dpo:DiabetesHbA1CLevel
-                dpo:Polyuria
-                dpo:Dysuria
-                dpo:UrinaryTractInfection
-                dpo:FrequentUrination
-                dpo:BlurredVision
-                dpo:Fatigue
-                dpo:FamilyHistoryOfDiabetes
-                dpo:PersonalHistoryOfGestationalDiabetes
+              dpo:UrinarySystemSymdpom
+              dpo:Polydipsia
+              dpo:Polyphagia
+              dpo:Obese
+              dpo:DiabetesFastingBloodGlucoseLevel
+              dpo:DiabetesTwoHourBloodGlucoseLevel
+              dpo:DiabetesHbA1CLevel
+              dpo:BlurredVision
+              dpo:Fatigue
+              dpo:FamilyHistoryOfDiabetes
+              dpo:PersonalHistoryOfGestationalDiabetes
             )
         ] ;
-    rdfs:subClassOf dpo:Symptom .
+    rdfs:subClassOf dpo:Symdpom .
 
-dpo:SymptomaticPatient rdf:type owl:Class ;
+dpo:SymdpomaticPatient rdf:type owl:Class ;
     owl:intersectionOf (   
         fhir:Patient 
         [ rdf:type owl:Restriction ; 
           owl:onProperty sio:hasAttribute ;
-          owl:someValuesFrom dpo:Symptom
+          owl:someValuesFrom dpo:Symdpom
         ] 
     );
-    rdfs:label "Symptomatic Patient" .
+    rdfs:label "Symdpomatic Patient" .
 
-dpo:DiabetesAssociatedSymptomPatient rdf:type owl:Class  ;
+dpo:DiabetesAssociatedSymdpomPatient rdf:type owl:Class  ;
     owl:equivalentClass [
     rdf:type owl:Class ;
       owl:intersectionOf (
        fhir:Patient 
         [ rdf:type owl:Restriction ;
               owl:onProperty sio:hasAttribute ;
-              owl:someValuesFrom dpo:DiabetesAssociatedSymptom ] 
+              owl:someValuesFrom dpo:DiabetesAssociatedSymdpom ] 
      )
     ] ;
-    rdfs:subClassOf dpo:SymptomaticPatient ;
+    rdfs:subClassOf dpo:SymdpomaticPatient ;
     rdfs:label "clinically relevant weight gain patient" .
 
 dpo:DiabetesHbA1CLevelPatient rdf:type owl:Class ;
@@ -112,18 +109,18 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:UrinarySystemSymptomPatient rdf:type owl:Class ;
+dpo:UrinarySystemSymdpomPatient rdf:type owl:Class ;
     owl:equivalentClass [
         rdf:type owl:Class ;
         owl:intersectionOf (
             fhir:Patient 
             [ rdf:type owl:Restriction ; 
               owl:onProperty sio:hasAttribute ;
-              owl:someValuesFrom dpo:UrinarySystemSymptom
+              owl:someValuesFrom dpo:UrinarySystemSymdpom
             ] 
         )
     ];
-    rdfs:label "Urinary System Symptom Patient" .
+    rdfs:label "Urinary System Symdpom Patient" .
 
 dpo:PolydipsiaPatient rdf:type owl:Class ;
     owl:equivalentClass [
@@ -248,67 +245,67 @@ dpo:PersonalHistoryOfGestationalDiabetesPatient rdf:type owl:Class ;
 
 
 
-dpo:UrinarySystemSymptom rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Symptom ;
+dpo:UrinarySystemSymdpom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symdpom ;
     owl:equivalentClass symp:0000486 ;
-    rdfs:label "Urinary System Symptom"^^xsd:string ;
+    rdfs:label "Urinary System Symdpom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving the urinary system."^^xsd:string .
+    skos:definition "A symdpom involving the urinary system."^^xsd:string .
 
-dpo:Polyuria rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+dpo:Polyuria rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:UrinarySystemSymdpom ;
     owl:equivalentClass symp:0000565 ;
     rdfs:label "Polyuria"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A urinary system symptom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]"^^xsd:string .
+    skos:definition "A urinary system symdpom that is characterized by the excessive secretion of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyuria ][Definition Source: SYMP:0000565]"^^xsd:string .
 
-dpo:Dysuria rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+dpo:Dysuria rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:UrinarySystemSymdpom ;
     owl:equivalentClass symp:0000485 ;
     rdfs:label "Dysuria"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A urinary system symptom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]"^^xsd:string .
+    skos:definition "A urinary system symdpom that is characterized by the difficult, or painful, discharge of urine. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=dysuria ][Definition Source: SYMP:0000485]"^^xsd:string .
 
-dpo:UrinaryTractInfection rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+dpo:UrinaryTractInfection rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:UrinarySystemSymdpom ;
     owl:equivalentClass ncit:C50791 , omit:0015388 ;
     rdfs:label "Urinary Tract Infection (UTI)"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]"^^xsd:string .
+    skos:definition "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symdpoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]"^^xsd:string .
 
-dpo:FrequentUrination rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+dpo:FrequentUrination rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:UrinarySystemSymdpom ;
     owl:equivalentClass symp:0000563 , hp:0100515;
     rdfs:label "Frequent Urination"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "Increased frequency of urination. [Definition Source: HP:0100515]"^^xsd:string .
 
 dpo:FoulUrine rdf:type owl:Class ;
-    rdfs:subClassOf dpo:UrinarySystemSymptom ;
+    rdfs:subClassOf dpo:UrinarySystemSymdpom ;
 #    owl:equivalentClass symp: ;
     rdfs:label "Foul Urine"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
-dpo:NutritionMetabolismAndDevelopmentSymptom rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Symptom ;
+dpo:NutritionMetabolismAndDevelopmentSymdpom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symdpom ;
     owl:equivalentClass symp:0000473 ;
-    rdfs:label "Nutrition Metabolism and Development Symptom"^^xsd:string ;
+    rdfs:label "Nutrition Metabolism and Development Symdpom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving the nutrition, metabolism, and/or development system."^^xsd:string .
+    skos:definition "A symdpom involving the nutrition, metabolism, and/or development system."^^xsd:string .
 
-dpo:Polydipsia rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
+dpo:Polydipsia rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymdpom ;
     owl:equivalentClass symp:0000560 ;
     rdfs:label "Polydipsia"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "Polydipsia is a nutrition, metabolism, and development symptom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]"^^xsd:string .
+    skos:definition "Polydipsia is a nutrition, metabolism, and development symdpom characterized by an excessive or abnormal thirst. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polydipsia ][Definition Source: SYMP:0000560]"^^xsd:string .
 
-dpo:Polyphagia rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymptom ;
+dpo:Polyphagia rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:NutritionMetabolismAndDevelopmentSymdpom ;
     owl:equivalentClass symp:0000524 ;
     rdfs:label "Polyphagia"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
+    skos:definition "Polyphagia is a nutrition, metabolism, and development symdpom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
 
 dpo:MeasurementFinding rdf:type owl:Class ; 
     rdfs:subClassOf dpo:PharmacotherapyFactor ;
@@ -335,7 +332,7 @@ dpo:Overweight rdf:type owl:Class ;
     rdfs:comment "25<BMI<29.9"^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:Obese rdf:type owl:Class ; # diabetes symptom
+dpo:Obese rdf:type owl:Class ; # diabetes symdpom
     rdfs:subClassOf dpo:MeasurementFinding ;
     owl:equivalentClass symp:0020018 , ncit:C3283;
     rdfs:label "Obese"^^xsd:string ;
@@ -420,50 +417,50 @@ dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:VisionSymptom rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Symptom ;
+dpo:VisionSymdpom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symdpom ;
     owl:equivalentClass symp:0000320 ;
-    rdfs:label "Vision Symptom"^^xsd:string ;
+    rdfs:label "Vision Symdpom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving visual impairment."^^xsd:string .
+    skos:definition "A symdpom involving visual impairment."^^xsd:string .
 
-dpo:BlurredVision rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:VisionSymptom ;
+dpo:BlurredVision rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:VisionSymdpom ;
     owl:equivalentClass symp:0000012 ;
     rdfs:label "Blurred Vision"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]"^^xsd:string .
+    skos:definition "A vision symdpom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]"^^xsd:string .
 
-dpo:NeurologicalAndPhysiologicalSymptom rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Symptom ;
+dpo:NeurologicalAndPhysiologicalSymdpom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symdpom ;
     owl:equivalentClass symp:0000410 ;
-    rdfs:label "Neurological and Physiological Symptom"^^xsd:string ;
+    rdfs:label "Neurological and Physiological Symdpom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo:Fatigue rdf:type owl:Class ; # diabetes symptom
-    rdfs:subClassOf dpo:NeurologicalAndPhysiologicalSymptom ;
+dpo:Fatigue rdf:type owl:Class ; # diabetes symdpom
+    rdfs:subClassOf dpo:NeurologicalAndPhysiologicalSymdpom ;
     owl:equivalentClass symp:0019177 ;
     rdfs:label "Fatigue"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "Fatigue is a neurological and physiological symptom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]"^^xsd:string .
+    skos:definition "Fatigue is a neurological and physiological symdpom characterized by a weariness or exhaustion from labor, exertion, or stress. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=fatigue ][Definition Source: SYMP:0019177]"^^xsd:string .
 
-dpo:MusculoskeletalSystemSymptom rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Symptom ;
+dpo:MusculoskeletalSystemSymdpom rdf:type owl:Class ;
+    rdfs:subClassOf dpo:Symdpom ;
     owl:equivalentClass symp:0000891 ;
-    rdfs:label "Musculoskeletal System Symptom"^^xsd:string ;
+    rdfs:label "Musculoskeletal System Symdpom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "A symptom involving the musculoskeletal system."^^xsd:string .
+    skos:definition "A symdpom involving the musculoskeletal system."^^xsd:string .
 
 dpo:Arthritis rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
+    rdfs:subClassOf dpo:MusculoskeletalSystemSymdpom ;
     owl:equivalentClass symp:0019169 ;
     rdfs:label "Arthritis"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
-    skos:definition "Arthritis is a musculoskeletal system symptom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]"^^xsd:string .
+    skos:definition "Arthritis is a musculoskeletal system symdpom characterized as an inflammation of joints due to infectious, metabolic, or constitutional causes. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=arthritis ][Definition Source: SYMP:0019169]"^^xsd:string .
 
 dpo:PeripheralNeuropathy rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MusculoskeletalSystemSymptom ;
+    rdfs:subClassOf dpo:MusculoskeletalSystemSymdpom ;
     owl:equivalentClass symp:0000352 ;
     rdfs:label "Peripheral Neuropathy"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -534,9 +531,9 @@ dpo:PersonalHistoryOfGestationalDiabetes rdf:type owl:Class ;
     skos:definition ""^^xsd:string .
 
 
-dpo-kb:diabetesAssociatedSymptom rdf:type dpo:DiabetesAssociatedSymptom .
+dpo-kb:diabetesAssociatedSymdpom rdf:type dpo:DiabetesAssociatedSymdpom .
 
-dpo-kb:urinarySystemSymptom rdf:type dpo:UrinarySystemSymptom .
+dpo-kb:urinarySystemSymdpom rdf:type dpo:UrinarySystemSymdpom .
 
 dpo-kb:polyuria rdf:type dpo:Polyuria.
 
