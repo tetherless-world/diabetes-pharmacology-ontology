@@ -52,9 +52,9 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
     owl:equivalentClass 
         [ rdf:type owl:Class ;
             owl:unionOf (
-              dpo:MedicationNotEffective
+              dpo:TherapyNotEffective
               dpo:NotComplyingWithTherapy
-              dpo:NotExercising
+              dpo:InsufficientExercise
               dpo:HighSugarDiet
             )
         ] ;
@@ -80,13 +80,13 @@ dpo:DiabetesHbA1CLevelPatient rdf:type owl:Class  ;
 
 dpo-kb:diabetesHbA1CLevel rdf:type dpo:DiabetesHbA1CLevel .
 
-dpo:MedicationNotEffective rdf:type owl:Class ;
+dpo:TherapyNotEffective rdf:type owl:Class ;
     rdfs:subClassOf dpo:Measurement ;
-    rdfs:label "medication not effective"^^xsd:string ;
+    rdfs:label "therapy not effective"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo-kb:medicationNotEffective rdf:type dpo:MedicationNotEffective .
+dpo-kb:therapyNotEffective rdf:type dpo:MedicationNotEffective .
 
 dpo:NotComplyingWithTherapy rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
@@ -104,11 +104,11 @@ dpo:HighSugarDiet rdf:type owl:Class ;
 
 dpo-kb:highSugarDiet rdf:type dpo:HighSugarDiet .
 
-dpo:NotExercising rdf:type owl:Class ;
+dpo:InsufficientExercise rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
-    rdfs:label "not exercising"^^xsd:string ;
+    rdfs:label "insufficient exercise"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo-kb:notExercising rdf:type dpo:NotExercising .
+dpo-kb:insufficientExercise rdf:type dpo:InsufficientExercise .
 
