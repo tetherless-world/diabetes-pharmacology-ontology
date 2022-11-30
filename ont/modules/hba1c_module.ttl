@@ -43,8 +43,8 @@ dpo:Symptom rdf:type owl:Class ;
     rdfs:label "Symptom" ;
     rdfs:subClassOf sio:Attribute .
 
-dpo:MeasurementFinding rdf:type owl:Class ;
-    rdfs:label "Measurement Finding" ;
+dpo:Measurement rdf:type owl:Class ;
+    rdfs:label "Measurement" ;
     rdfs:subClassOf sio:Attribute .
 
 dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
@@ -58,7 +58,7 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
               dpo:HighSugarDiet
             )
         ] ;
-    rdfs:subClassOf dpo:MeasurementFinding .
+    rdfs:subClassOf dpo:Measurement .
 
 dpo:SymptomaticPatient rdf:type owl:Class ;
     owl:intersectionOf (   
@@ -81,7 +81,7 @@ dpo:DiabetesHbA1CLevelPatient rdf:type owl:Class  ;
 dpo-kb:diabetesHbA1CLevel rdf:type dpo:DiabetesHbA1CLevel .
 
 dpo:MedicationNotEffective rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:subClassOf dpo:Measurement ;
     rdfs:label "medication not effective"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -89,7 +89,7 @@ dpo:MedicationNotEffective rdf:type owl:Class ;
 dpo-kb:medicationNotEffective rdf:type dpo:MedicationNotEffective .
 
 dpo:NotComplyingWithTherapy rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:subClassOf dpo:Behavior ;
     rdfs:label "not complying with therapy"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -97,7 +97,7 @@ dpo:NotComplyingWithTherapy rdf:type owl:Class ;
 dpo-kb:notComplyingWithTherapy rdf:type dpo:NotComplyingWithTherapy .
 
 dpo:HighSugarDiet rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:subClassOf dpo:Behavior ;
     rdfs:label "high sugar diet"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
@@ -105,7 +105,7 @@ dpo:HighSugarDiet rdf:type owl:Class ;
 dpo-kb:highSugarDiet rdf:type dpo:HighSugarDiet .
 
 dpo:NotExercising rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:subClassOf dpo:Behavior ;
     rdfs:label "not exercising"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
