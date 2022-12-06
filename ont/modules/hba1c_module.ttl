@@ -105,10 +105,9 @@ dpo:HighSugarDiet rdf:type owl:Class ;
 dpo-kb:highSugarDiet rdf:type dpo:HighSugarDiet .
 
 dpo:InsufficientExercise rdf:type owl:Class ;
-    rdfs:subClassOf dpo:MeasurementFinding ;
+    rdfs:subClassOf dpo:Behavior ;
     rdfs:label "insufficient exercise"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
 dpo-kb:insufficientExercise rdf:type dpo:InsufficientExercise .
-
