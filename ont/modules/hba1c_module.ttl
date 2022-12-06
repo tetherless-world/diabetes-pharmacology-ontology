@@ -54,7 +54,7 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
             owl:unionOf (
               dpo:MedicationNotEffective
               dpo:NotComplyingWithTherapy
-              dpo:NotExercising
+              dpo:InsufficientExercise
               dpo:HighSugarDiet
             )
         ] ;
@@ -104,11 +104,11 @@ dpo:HighSugarDiet rdf:type owl:Class ;
 
 dpo-kb:highSugarDiet rdf:type dpo:HighSugarDiet .
 
-dpo:NotExercising rdf:type owl:Class ;
+dpo:InsufficientExercise rdf:type owl:Class ;
     rdfs:subClassOf dpo:MeasurementFinding ;
-    rdfs:label "not exercising"^^xsd:string ;
+    rdfs:label "insufficient exercise"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition ""^^xsd:string .
 
-dpo-kb:notExercising rdf:type dpo:NotExercising .
+dpo-kb:insufficientExercise rdf:type dpo:InsufficientExercise .
 

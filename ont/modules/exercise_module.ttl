@@ -1,0 +1,99 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dpo: <http://purl.org/twc/DPO/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+@prefix fhir: <http://hl7.org/fhir/> . 
+@prefix sio: <http://semanticscience.org/resource/> . 
+@prefix    loinc: <http://purl.bioontology.org/ontology/LNC/> .
+@prefix    uo: <http://purl.obolibrary.org/obo/UO_> . 
+
+fhir:Patient rdf:type owl:Class ;
+    rdfs:label "patient" .
+
+sio:hasAttribute rdf:type owl:ObjectProperty ;
+    rdfs:label "has attribute" .
+
+dpo:SedentaryLifestyle rdf:type owl:Class ;
+    rdfs:label "Sedentary Lifestyle" ;
+    rdfs:subClassOf sio:Attribute .
+
+fhir:Patient owl:disjointWith sio:Attribute .
+
+dpo:InsufficientExercise rdf:type owl:Class ;
+    rdfs:label "Insufficient Exercise" ;
+    owl:equivalentClass 
+        [ rdf:type owl:Class ;
+            owl:unionOf (
+              dpo:DecreasedActivity
+            )
+        ] ;
+    rdfs:subClassOf dpo:SedentaryLifestyle .
+
+dpo:InsufficientExercisePatient rdf:type owl:Class  ;
+    owl:equivalentClass [
+    rdf:type owl:Class ;
+      owl:intersectionOf (
+       fhir:Patient 
+        [ rdf:type owl:Restriction ;
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:InsufficientExercise ] 
+     )
+    ] ;
+    rdfs:subClassOf dpo:Patient ;
+    rdfs:label "insufficient exercise patient" .
+
+dpo:DecreasedActivity rdf:type owl:Class ;
+    rdfs:label "Decreased Activity" .
+
+dpo:DecreasedActivityPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:DecreasedActivity
+            ] 
+        )
+    ];
+    rdfs:label "Decreased Activity Patient" .
+
+dpo:ReductionInSteps rdf:type owl:Class ;
+    rdfs:subClassOf dpo:DecreasedActivity ;
+    rdfs:label "Reduction In Steps" .
+
+dpo:StepsDecreasedPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:ReductionInSteps
+            ] 
+        )
+    ];
+    rdfs:subClassOf dpo:DecreasedActivityPatient ;
+    rdfs:label "Steps Decreased Patient" .
+
+dpo:Injury rdf:type owl:Class ;
+    rdfs:subClassOf dpo:DecreasedActivity ;
+    rdfs:label "Injury" .
+
+dpo:InjuredPatient rdf:type owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            fhir:Patient 
+            [ rdf:type owl:Restriction ; 
+              owl:onProperty sio:hasAttribute ;
+              owl:someValuesFrom dpo:Injury
+            ] 
+        )
+    ];
+    rdfs:label "Injured Patient" ;
+    rdfs:subClassOf dpo:DecreasedActivityPatient .
+
+
