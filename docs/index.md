@@ -1958,8 +1958,18 @@ dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
 
 ## Drug-Specific and Patient Factors to Consider When Selecting Antihyperglycemic Treatment in Adults With Type 2 Diabetes
 
+Source: [https://diabetesjournals.org/clinical/article/40/1/10/139035/Standards-of-Medical-Care-in-Diabetes-2022](https://diabetesjournals.org/clinical/article/40/1/10/139035/Standards-of-Medical-Care-in-Diabetes-2022)
+
+Committee, A.D.A.P.P., Committee:, A.D.A.P.P.: 9. pharmacologic approaches to glycemic treatment: Standards of medical care in diabetes—2022. Diabetes Care
+45(Supplement 1), S125–S143 (2022)
+
 ![Table9.2](./assets/images/Table9_2ADA.png)
 
 ## Pharmacologic Treatment of Hyperglycemia in Adults With Type 2 Diabetes
+
+Source: [https://diabetesjournals.org/clinical/article/40/1/10/139035/Standards-of-Medical-Care-in-Diabetes-2022](https://diabetesjournals.org/clinical/article/40/1/10/139035/Standards-of-Medical-Care-in-Diabetes-2022)
+
+Committee, A.D.A.P.P., Committee:, A.D.A.P.P.: 9. pharmacologic approaches to glycemic treatment: Standards of medical care in diabetes—2022. Diabetes Care
+45(Supplement 1), S125–S143 (2022)
 
 ![Fig9.2](./assets/images/Fig9_3ADA.png)
