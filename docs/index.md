@@ -1952,3 +1952,14 @@ dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
 # Personal Health Knowledge Graph
 
 ![KaitlynKB](./assets/images/KaitlynKB.png)
+
+
+# Supplementary Material 
+
+## Drug-Specific and Patient Factors to Consider When Selecting Antihyperglycemic Treatment in Adults With Type 2 Diabetes
+
+![Table9.2](./assets/images/Table9_2ADA.png)
+
+## Pharmacologic Treatment of Hyperglycemia in Adults With Type 2 Diabetes
+
+![Fig9.2](./assets/images/Fig9_3ADA.png)
