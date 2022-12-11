@@ -1957,12 +1957,12 @@ dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
 # Supplementary Material 
 
 ## Evaluation against Principles for Developing Computational Biomedical Knowledge
-A recent article [1] promotes three guiding principles for developing computational biomedical knowledge (CBK) and its associated infrastructure;  CBK should be FAIR, trustworthy, and open. In this section, we use these principles to evaluate the Diabetes Pharmacology Ontology.
+A recent article \[1\] promotes three guiding principles for developing computational biomedical knowledge (CBK) and its associated infrastructure;  CBK should be FAIR, trustworthy, and open. In this section, we use these principles to evaluate the Diabetes Pharmacology Ontology.
 
 ### Adherence to the FAIR Principles
 The Findability, Accessibility, Interoperability, and
 Reusability (FAIR) principles include guidelines that have been widely adopted and cited for publishing data and metadata on the web.
-Highlighted in these principles are recommendations intended to assist with the automatic discovery, use, and reuse of data, both by computational stakeholders as well as humans [2].
+Highlighted in these principles are recommendations intended to assist with the automatic discovery, use, and reuse of data, both by computational stakeholders as well as humans \[2\].
 For data to adhere to the FAIR principles, resources described within should use unique and persistent identifiers.
 The current version as well as earlier versions of the data should be freely, openly, and readily accessible.
 Metadata used to describe resources with the data should also be FAIR.
@@ -1986,13 +1986,13 @@ The websites to which the ontology is published allow for multiple versions of t
 Interoperability is ``the ability of data or tools from non-cooperating resources to integrate or work together with minimal effort \[2\]."
 Designing data or tools in a manner that is interoperable is important for advocating the presentation of data in a way that is understandable and able to be integrated amongst various users, including those who did not partake in the original creation of the data.
 To achieve interoperability of data throughout and across multiple disciplines, adherence to a set of standards is necessary.
-The FAIR principles are one such existing standard that guides the creation of data resources, and by adhering to its guidelines we advance the interoperability of our resources. We link concepts in our ontology to other standard vocabularies, including the FHIR~\cite{bender2013hl7} compliant vocabulary LOINC, as well as well-accepted standard biomedical ontologies, including ChEBI, Symptom Ontology, and NCIT.
-When designing our ontology, additional standards are taken into consideration, including Ontology Design Patterns (ODPs)~\cite{gangemi2005ontology}, the HCLS dataset specification~\cite{gray2015dataset}, and the Data on the Web Best Practices~\cite{locio2017dataontheweb}.
+The FAIR principles are one such existing standard that guides the creation of data resources, and by adhering to its guidelines we advance the interoperability of our resources. We link concepts in our ontology to other standard vocabularies, including the FHIR \[4\] compliant vocabulary LOINC, as well as well-accepted standard biomedical ontologies, including ChEBI, Symptom Ontology, and NCIT.
+When designing our ontology, additional standards are taken into consideration, including Ontology Design Patterns (ODPs) \[5\], the HCLS dataset specification \[6\], and the Data on the Web Best Practices \[\7].
 
 #### Reusability
 To promote the reusability of our resource, we created this website describing the ontology, how a PHKG can be created using the concepts in the ontology, and how to leverage the ontology to conduct clinical decision-making tasks.
 Each original concept in the ontology has a dedicated section within this resource, which is linked through the persistent URL of the resource, as described above.
-To further assist in the reusability of the Diabetes Pharmacology Ontology, WIDOCO~\cite{garijo2017widoco} is used to generate documentation for the ontology. ([https://tetherless-world.github.io/diabetes-pharmacology-ontology/docs/DiabetesPharmacologyOntology/index-en.html](bit.ly/dpo\_documentation))
+To further assist in the reusability of the Diabetes Pharmacology Ontology, WIDOCO \[8\] is used to generate documentation for the ontology. ([https://tetherless-world.github.io/diabetes-pharmacology-ontology/docs/DiabetesPharmacologyOntology/index-en.html](bit.ly/dpo\_documentation))
 The resources described above are linked at the end of the abstract of this article. The website also includes links to these resources.
 
 ### Trustworthiness
@@ -2029,12 +2029,21 @@ We promote the use of our ontology by publishing using Apache-2 ([https://www.ap
 Furthermore, we've only linked to concepts from external vocabularies that too are openly available.
 We have promoted the transparency of this work by including attribution information whenever necessary and by sufficiently documenting our resources and their use.
 
-[1] McCusker, J., McIntosh, L.D., Shaffer, C., Boisvert, P., Ryan, J., Navale, V., Topaloglu, U., Richesson, R.L.: Guiding principles for technical infrastructure to support computable biomedical knowledge. Learning Health Systems, e10352 (2022). [https://doi.org/https://doi.org/10.1002/lrh2.10352](https://doi.org/https://doi.org/10.1002/lrh2.10352),[https://onlinelibrary.wiley.com/doi/abs/10.1002/lrh2.10352](https://onlinelibrary.wiley.com/doi/abs/10.1002/lrh2.10352)
+\[1\] McCusker, J., McIntosh, L.D., Shaffer, C., Boisvert, P., Ryan, J., Navale, V., Topaloglu, U., Richesson, R.L.: Guiding principles for technical infrastructure to support computable biomedical knowledge. Learning Health Systems, e10352 (2022). [https://doi.org/https://doi.org/10.1002/lrh2.10352](https://doi.org/https://doi.org/10.1002/lrh2.10352),[https://onlinelibrary.wiley.com/doi/abs/10.1002/lrh2.10352](https://onlinelibrary.wiley.com/doi/abs/10.1002/lrh2.10352)
 
-[2] Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.W., da Silva Santos, L.B., Bourne, P.E., et al.: The fair guiding principles for scientific data management and stewardship. Scientific data *3* (2016)
+\[2\] Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.W., da Silva Santos, L.B., Bourne, P.E., et al.: The fair guiding principles for scientific data management and stewardship. Scientific data *3* (2016)
 
-[3] Noy, N.F., Shah, N.H., Whetzel, P.L., Dai, B., Dorf, M., Griffith, N., Jonquet, C., Rubin, D.L., Storey, M.A., Chute, C.G., et al.: Bioportal: ontologies and integrated data resources at the click of a mouse. Nucleic acids research 37(suppl 2), W170–W173 (2009)
+\[3\] Noy, N.F., Shah, N.H., Whetzel, P.L., Dai, B., Dorf, M., Griffith, N., Jonquet, C., Rubin, D.L., Storey, M.A., Chute, C.G., et al.: Bioportal: ontologies and integrated data resources at the click of a mouse. Nucleic acids research 37(suppl 2), W170–W173 (2009)
 
+\[4\] Bender, D., Sartipi, K.: Hl7 fhir: An agile and restful approach to healthcare information exchange. In: Proceedings of the 26th IEEE international symposium on computer-based medical systems. pp. 326–331. IEEE (2013)
+
+\[5\] Gangemi, A.: Ontology design patterns for semantic web content. In: International semantic web conference. pp. 262–276. Springer (2005)
+
+\[6\] Gray, A.J., Baran, J., Marshall, M.S., Dumontier, M.: Dataset descriptions: Hcls community profile. Interest group note, W3C (May 2015) [http://www.w3.org/TR/hcls-dataset](http://www.w3.org/TR/hcls-dataset) (2015)
+
+\[7\] L´oscio, B.F., Burle, C., Calegaro, N.: Data on the web best practices. W3C recommendation (2017), [https://www.w3.org/TR/dwbp/](https://www.w3.org/TR/dwbp/)
+
+\[8\] Garijo, D.: Widoco: a wizard for documenting ontologies. In: International Semantic Web Conference. pp. 94–102. Springer (2017)
 
 ## Drug-Specific and Patient Factors to Consider When Selecting Antihyperglycemic Treatment in Adults With Type 2 Diabetes
 
