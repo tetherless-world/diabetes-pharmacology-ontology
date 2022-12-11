@@ -180,7 +180,7 @@ The Diabetes Pharmacology Ontology is an ontology designed to aid in clinical de
 The diagram above shows the concepts in the ontology that extend from the root concept, **dpo:Factor**, up to 3 hops from the root. While all the classes in the ontology are not included in this diagram, the complete set of concepts are described in this document below.
 
 ## Factor
-> Anything that contributes causally to a result. \[Definition Source: NCI\]
+> Anything that contributes causally to a result. [Definition Source: NCI]
 
 The root branch of the Diabetes Pharmacology Ontology is **dpo:Factor**.
 
@@ -189,7 +189,7 @@ dpo:Factor rdf:type owl:Class ;
     rdfs:label "Factor" ;
     owl:equivalentClass ncit:C25506 ;
     rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
-    skos:definition "Anything that contributes causally to a result. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Four top level branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:Measurement**.
@@ -217,13 +217,13 @@ The Pharmacotherapy Factors included in this ontology are based on those include
 Potential categorizations of these top level pharmacotherapy factors are encoded as subclasses of each respective pharmacotherapy factor. The recommendation of a therapy may be based on whether or not a patient has an attribute that is of type one of the subclasses of the top level pharmacotherapy factors.
 
 ### Efficacy
-> The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients' compliance, usually determined in randomized trials. \[Definition Source: NCI\]
+> The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients' compliance, usually determined in randomized trials. [Definition Source: NCI]
 
 ```
 dpo:Efficacy rdfs:subClassOf dpo:PharmacotherapyFactor ;
     owl:equivalentClass ncit:C39547 ;
     rdfs:label "Efficacy"^^xsd:string ;
-    skos:definition "The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients' compliance, usually determined in randomized trials. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients' compliance, usually determined in randomized trials. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateEfficacy**, and **dpo:LowEfficacy**.
@@ -243,14 +243,14 @@ Subclasses of **dpo:Efficacy** include **dpo:HighEfficacy**, **dpo:IntermediateE
 ```
 
 #### Low Efficacy
-> The lack of expected or desired effect related to a therapy. \[Definition Source: NCI\]
+> The lack of expected or desired effect related to a therapy. [Definition Source: NCI]
 
 ```
 dpo:LowEfficacy rdfs:subClassOf dpo:Efficacy ;
     owl:equivalentClass ncit:C48226 ;
     rdfs:label "Low Efficacy"^^xsd:string ;
     rdfs:comment "A low capacity to bring about a desired effect."^^xsd:string ;
-    skos:definition "The lack of expected or desired effect related to a therapy. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The lack of expected or desired effect related to a therapy. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ### Weight Change Potential
@@ -382,14 +382,14 @@ Subclasses of **dpo:HeartFailureRisk** include **dpo:PotentialHeartFailureBenefi
 ```
 
 ### Cost
-> The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. \[Definition Source: NCI\]
+> The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]
 
 ```
 dpo:Cost rdfs:subClassOf dpo:PharmacotherapyFactor ;
     owl:equivalentClass ncit:C69088 ;
     rdfs:label "Cost" ;
     rdfs:comment "The expense associated with a therapy."^^xsd:string ;
-    skos:definition "The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:Cost** include **dpo:LowCost** and **dpo:HighCost**.
@@ -458,7 +458,7 @@ Subclasses of **dpo:DiabeticKidneyDiseaseProgression** include **dpo:PotentialDK
 ```
 
 ## Diagnostic Factor
-> A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. \[Definition Source: NCI\]
+> A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]
 
 ```
 dpo:DiagnosticFactor rdf:type owl:Class ;
@@ -466,7 +466,7 @@ dpo:DiagnosticFactor rdf:type owl:Class ;
     owl:equivalentClass ncit:C19591 ;
     rdfs:label "Diagnostic Factor" ;
     rdfs:comment "A circumstance influencing the dianosis of a disease."^^xsd:string ;
-    skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Condition**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
@@ -567,14 +567,14 @@ dpo:Dysuria rdf:type owl:Class ;
 ```
 
 ##### Urinary Tract Infection
-> A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. \[Definition Source: NCI\]
+> A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]
 
 ```
 dpo:UrinaryTractInfection rdf:type owl:Class ;
     rdfs:subClassOf dpo:UrinarySystemSymptom ;
     owl:equivalentClass ncit:C50791 ;
     rdfs:label "Urinary Tract Infection (UTI)"^^xsd:string ;
-    skos:definition "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A bacterial infectious process affecting any part of the urinary tract, most commonly the bladder and the urethra. Symptoms include urinary urgency and frequency, burning sensation during urination, lower abdominal discomfort, and cloudy urine. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ##### Frequent Urination
@@ -685,7 +685,7 @@ dpo:PeripheralNeuropathy rdf:type owl:Class ;
 Subclasses of **dpo:NervousSystemSymptom** include **dpo:CerebralVascularAccident**, **dpo:Pain**, and **dpo:BilateralLowerExtremityBurningSensation**.
 
 ##### Cerebral Vascular Accident
-> A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. \[Definition Source: NCI\]
+> A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]
 
 > Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ [http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke](http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke) ][Definition Source: SYMP:0000734]
 
@@ -695,7 +695,7 @@ dpo:CerebralVascularAccident rdf:type owl:Class ;
     owl:equivalentClass symp:0000734 , ncit:C3390 ;
     rdfs:label "Cerebral Vascular Accident"^^xsd:string ;
     rdfs:comment "A stroke."^^xsd:string ;
-    skos:definition "A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A sudden loss of neurological function secondary to hemorrhage or ischemia in the brain parenchyma due to a vascular event. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "Stroke is a nervous system symptom characterized by a sudden diminution or loss of consciousness, sensation, and voluntary motion caused by rupture or obstruction (as by a clot) of a blood vessel of the brain. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=stroke ][Definition Source: SYMP:0000734]"^^xsd:string .
 ```
 
@@ -731,49 +731,49 @@ dpo:ChestPain rdf:type owl:Class ;
 ```
 
 ### Condition
-> A state of being, such as a state of health. \[Definition Source: NCI\]
+> A state of being, such as a state of health. [Definition Source: NCI]
 
 ```
 dpo:Condition rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass ncit:C25457 ;
     rdfs:label "Condition"^^xsd:string ;
-    skos:definition "A state of being, such as a state of health. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A state of being, such as a state of health. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:Condition** include **dpo:Hyperlipidemia** and **dpo:Hypertension**.
 
 #### Hyperlipidemia
-> Elevated levels of lipids in the blood. \[Definition Source: NCI\]
+> Elevated levels of lipids in the blood. [Definition Source: NCI]
 
 ```
 dpo:Hyperlipidemia rdf:type owl:Class ;
     rdfs:subClassOf dpo:Condition ;
     owl:equivalentClass ncit:C34707 ;
     rdfs:label "Hyperlipidemia"^^xsd:string ;
-    skos:definition "Elevated levels of lipids in the blood. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Elevated levels of lipids in the blood. [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Hypertension
-> Blood pressure that is abnormally high. \[Definition Source: NCI\]
+> Blood pressure that is abnormally high. [Definition Source: NCI]
 
 ```
 dpo:Hypertension rdf:type owl:Class ;
     rdfs:subClassOf dpo:Condition ;
     owl:equivalentClass ncit:C3117 ;
     rdfs:label "Hypertension"^^xsd:string ;
-    skos:definition "Blood pressure that is abnormally high. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Blood pressure that is abnormally high. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ### Disease
-> Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. \[Definition Source: NCI\]
+> Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]
 
 ```
 dpo:Disease rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass ncit:C2991 ;
     rdfs:label "Disease"^^xsd:string ;
-    skos:definition "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Diseases included in the ontology are those related to the diagnosis or treatment of diabetes based on the considerations of Chapter 9 of the ADA guidelines.
@@ -781,29 +781,29 @@ Diseases included in the ontology are those related to the diagnosis or treatmen
 Subclasses of **dpo:Disease** include **dpo:Diabetes**, **dpo:CoronaryArteryDisease**, **dpo:RenalDisease**, and **dpo:CardiovascularDisease**.
 
 #### Coronary Artery Disease
-> Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) \[Definition Source: NCI\]
+> Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]
 
 ```
 dpo:CoronaryArteryDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
     owl:equivalentClass ncit:C26732 ;
     rdfs:label "Coronary Artery Disease"^^xsd:string ;
-    skos:definition "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC) [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Diabetes Mellitus
-> A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. \[Definition Source: NCI\]
+> A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]
 
 ```
 dpo:DiabetesMellitus rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
     owl:equivalentClass ncit:C2985 ;
     rdfs:label "Diabetes Mellitus"^^xsd:string ;
-    skos:definition "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Renal Disease
-> A neoplastic or non-neoplastic condition affecting the kidney. Representative examples of non-neoplastic conditions include glomerulonephritis and nephrotic syndrome. Representative examples of neoplastic conditions include benign processes (e.g., renal lipoma and renal fibroma) and malignant processes (e.g., renal cell carcinoma and renal lymphoma). \[Definition Source: NCI\]
+> A neoplastic or non-neoplastic condition affecting the kidney. Representative examples of non-neoplastic conditions include glomerulonephritis and nephrotic syndrome. Representative examples of neoplastic conditions include benign processes (e.g., renal lipoma and renal fibroma) and malignant processes (e.g., renal cell carcinoma and renal lymphoma). [Definition Source: NCI]
 
 ```
 dpo:RenalDisease rdf:type owl:Class ;
@@ -811,75 +811,75 @@ dpo:RenalDisease rdf:type owl:Class ;
     owl:equivalentClass ncit:C3149 ;
     rdfs:label "Renal Disease"^^xsd:string ;
     rdfs:comment "Disease associated with kidneys, typically chronic kidney disease."^^xsd:string ;
-    skos:definition "A neoplastic or non-neoplastic condition affecting the kidney. Representative examples of non-neoplastic conditions include glomerulonephritis and nephrotic syndrome. Representative examples of neoplastic conditions include benign processes (e.g., renal lipoma and renal fibroma) and malignant processes (e.g., renal cell carcinoma and renal lymphoma). \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A neoplastic or non-neoplastic condition affecting the kidney. Representative examples of non-neoplastic conditions include glomerulonephritis and nephrotic syndrome. Representative examples of neoplastic conditions include benign processes (e.g., renal lipoma and renal fibroma) and malignant processes (e.g., renal cell carcinoma and renal lymphoma). [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Cardiovascular Disease
-> A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. \[Definition Source: NCI\]
+> A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. [Definition Source: NCI]
 
 ```
 dpo:CardiovascularDisease rdf:type owl:Class ;
     rdfs:subClassOf dpo:Disease ;
     owl:equivalentClass ncit:C2931 ;
     rdfs:label "Cardiovascular Disease"^^xsd:string ;
-    skos:definition "A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ### Behavior
-> The actions or reactions of an object or organism, usually in relation to the environment or surrounding world of stimuli. \[Definition Source: NCI\]
+> The actions or reactions of an object or organism, usually in relation to the environment or surrounding world of stimuli. [Definition Source: NCI]
 
 ```
 dpo:Behavior rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass ncit:C16326 ;
     rdfs:label "Behavior"^^xsd:string ;
-    skos:definition "The actions or reactions of an object or organism, usually in relation to the environment or surrounding world of stimuli. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The actions or reactions of an object or organism, usually in relation to the environment or surrounding world of stimuli. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:Behavior** include **dpo:SedentaryLifestyle**, **dpo:AlcoholUse**, and **dpo:DrugUse**.
 
 #### Sedentary Lifestyle
-> A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. \[Definition Source: NCI\]
+> A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. [Definition Source: NCI]
 
 ```
 dpo:SedentaryLifestyle rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
     owl:equivalentClass ncit:C86589 ;
     rdfs:label "Sedentary Lifestyle"^^xsd:string ;
-    skos:definition "A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Alcohol Use
-> A description of an individual's current and past experience with alcoholic beverage consumption. \[Definition Source: NCI\]
+> A description of an individual's current and past experience with alcoholic beverage consumption. [Definition Source: NCI]
 
 ```
 dpo:AlcoholUse rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
     owl:equivalentClass ncit:C81229 ;
     rdfs:label "Alcohol Use"^^xsd:string ;
-    skos:definition "A description of an individual's current and past experience with alcoholic beverage consumption. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A description of an individual's current and past experience with alcoholic beverage consumption. [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Drug Use
-> A description of an individual's current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. \[Definition Source: NCI\]
+> A description of an individual's current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. [Definition Source: NCI]
 
 ```
 dpo:DrugUse rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
     owl:equivalentClass ncit:C81246 ;
     rdfs:label "Drug Use"^^xsd:string ;
-    skos:definition "A description of an individual's current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A description of an individual's current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ### Occupation
-> The principal activity that a person does to earn money. \[Definition Source: NCI\]
+> The principal activity that a person does to earn money. [Definition Source: NCI]
 
 ```
 dpo:Occupation rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass ncit:C25193 ;
     rdfs:label "Occupation"^^xsd:string ;
-    skos:definition "The principal activity that a person does to earn money. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The principal activity that a person does to earn money. [Definition Source: NCI]"^^xsd:string .
 ```
 
 **dpo:Occupation** includes the subclass **dpo:SedentaryOccupation**.
@@ -895,41 +895,41 @@ dpo:SedentaryOccupation rdf:type owl:Class ;
 ```
 
 ### History
-> The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events. \[Definition Source: NCI\]
+> The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events. [Definition Source: NCI]
 
 ```
 dpo:History rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
     owl:equivalentClass ncit:C54625 ;
     rdfs:label "History"^^xsd:string ;
-    skos:definition "The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events. [Definition Source: NCI]"^^xsd:string .
 ```
 
 The top level subclasses of **dpo:History** include **dpo:FamilyHistory** and **dpo:PersonalHistory**.
 
 #### Family History
-> A record of a patient's background regarding health and disease events of blood relatives. A patient's family medical history may be important in diagnosing existing conditions. \[Definition Source: NCI\]
+> A record of a patient's background regarding health and disease events of blood relatives. A patient's family medical history may be important in diagnosing existing conditions. [Definition Source: NCI]
 
 ```
 dpo:FamilyHistory rdf:type owl:Class ;
     rdfs:subClassOf dpo:History ;
     owl:equivalentClass ncit:C17726 ;
     rdfs:label "Family History"^^xsd:string ;
-    skos:definition "A record of a patient's background regarding health and disease events of blood relatives. A patient's family medical history may be important in diagnosing existing conditions. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A record of a patient's background regarding health and disease events of blood relatives. A patient's family medical history may be important in diagnosing existing conditions. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:FamilyHistory** include **dpo:FamilyHistoryOfCAD** and **dpo:FamilyHistoryOfDiabetes**.
 
 
 ##### Family History of Coronary Artery Disease
-> History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause. \[Definition Source: NCI\]
+> History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause. [Definition Source: NCI]
 
 ```
 dpo:FamilyHistoryOfCAD rdf:type owl:Class ;
     rdfs:subClassOf dpo:FamilyHistory ;
     owl:equivalentClass ncit:C80398 ;
     rdfs:label "Family History of Coronary Artery Disease"^^xsd:string ;
-    skos:definition "History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ##### Family History of Diabetes
@@ -943,14 +943,14 @@ dpo:FamilyHistoryOfDiabetes rdf:type owl:Class ;
 ```
 
 #### Personal History
-> A record of a patient's background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. \[Definition Source: NCI\]
+> A record of a patient's background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. [Definition Source: NCI]
 
 ```
 dpo:PersonalHistory rdf:type owl:Class ;
     rdfs:subClassOf dpo:History ;
     owl:equivalentClass ncit:C18772 ;
     rdfs:label "Personal History"^^xsd:string ;
-    skos:definition "A record of a patient's background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A record of a patient's background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:PersonalHistory** include **dpo:PersonalHistoryOfGestationalDiabetes** and **dpo:PersonalHistoryOfFebrileStates**.
@@ -978,14 +978,14 @@ dpo:PersonalHistoryOfFebrileStates rdf:type owl:Class ;
 
 
 ## Therapy
-> An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. \[Definition Source: NCI\]
+> An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
 
 ```
 dpo:Therapy rdf:type owl:Class ;
     rdfs:subClassOf dpo:Factor ;
     owl:equivalentClass ncit:C49236 ;
     rdfs:label "Therapy"^^xsd:string ;
-    skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]"^^xsd:string .
 ```
 
 **dpo:Therapy** contains the subclass **dpo:AntihyperglycemicTreatment** which in turn contains the subclasses **dpo:Biguanide**, **dpo:SGLT2Inhibitor**, **dpo:GLP1RA**, **dpo:DPP4Inhibitor**, **dpo:Sulfonylurea**, and **dpo:Thiazolidinedione**.
@@ -1007,25 +1007,25 @@ dpo:AntihyperglycemicTreatment rdfs:subClassOf dpo:Therapy ;
 The therapies included within this ontology are based on the therapies included in Table 9.2 of the ADA guidelines.
 
 #### Biguanide
-> Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. \[Definition Source: NCI\]
+> Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. [Definition Source: NCI]
 
 ```
 dpo:Biguanide rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:3095 , ncit:C98234 ;
     rdfs:label "Biguanide"^^xsd:string ;
-    skos:definition "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract. [Definition Source: NCI]"^^xsd:string .
 ```
 
 For the scope of this work, **dpo:Biguanide** only includes the agent **dpo:Metformin** as a subclass.
 
 ##### Metformin
-> An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. \[Definition Source: NCI\]
+> An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. [Definition Source: NCI]
 
 ```
 dpo:Metformin rdfs:subClassOf dpo:Biguanide ;
     owl:equivalentClass chebi:6801 , loinc:55548-2, ncit:C61612 ;
     rdfs:label "Metformin"^^xsd:string ;
-    skos:definition "An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "An agent belonging to the biguanide class of antidiabetics with antihyperglycemic activity. Metformin is associated with a very low incidence of lactic acidosis. This agent helps reduce LDL cholesterol and triglyceride levels, and is not associated with weight gain, and prevents the cardiovascular complications of diabetes. Metformin is not metabolized and is excreted unchanged by the kidneys. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1051,13 +1051,13 @@ dpo:Metformin rdfs:subClassOf dpo:Biguanide ;
 ```
 
 #### SGLT2 Inhibitor
-> Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. \[Definition Source: NCI\]
+> Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]
 
 ```
 dpo:SGLT2Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:73273, ncit:C98083 ;
     rdfs:label "SGLT2 Inhibitor"^^xsd:string ;
-    skos:definition "Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "Any inhibitor of the sodium-glucose co-transporter subtype 2 (SGLT2) with antihyperglycemic activity. By binding to and blocking SGLT2, these inhibitors suppress reabsorption of glucose in the proximal tubule within the kidneys and thereby enhancing urinary excretion of glucose. This eventually normalizes blood glucose levels. SGLT2, a transport system exclusively expressed in the proximal renal tubules, mediates about 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1076,13 +1076,13 @@ dpo:SGLT2Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
 The subclasses of **dpo:SGLT2Inhibitor** include **dpo:Empagliflozin**, **dpo:Canagliflozin**, **dpo:Dapagliflozin**, and **dpo:Ertugliflozin**.
 
 ##### Empagliflozin
-> An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. \[Definition Source: NCI\]
+> An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]
 
 ```
 dpo:Empagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
     owl:equivalentClass chebi:82720 , ncit:C158136 ;
     rdfs:label "Empagliflozin"^^xsd:string ;
-    skos:definition "An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "An orally available competitive inhibitor of sodium-glucose co-transporter 2 (SGLT2; SLC5A2) with antihyperglycemic activity. Upon oral administration, empagliflozin selectively and potently inhibits SGLT2 in the kidneys, thereby suppressing the reabsorption of glucose in the proximal tubule. Inhibition of SGLT2 increases urinary glucose excretion by the kidneys, resulting in a reduction of plasma glucose levels in an insulin-independent manner. Inhibition of SGLT2 in the kidneys also suppresses the renal reabsorption of 1,5-anhydroglucitol (1,5AG). This lowers serum 1,5AG and neutrophil 1,5-anhydroglucitol-6-phosphate (1,5AG6P) levels, which may improve neutropenia and neutrophil dysfunction in patients with glycogen storage disease type Ib (GSD Ib). SGLT2, a transport protein exclusively expressed in the proximal renal tubules, mediates approximately 90% of renal glucose reabsorption from tubular fluid. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1095,13 +1095,13 @@ dpo:Empagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
           owl:hasValue [ rdf:type dpo:PotentialDKDBenefit ] ] .
 ```
 ##### Canagliflozin
-> A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. \[Definition Source: NCI\]
+> A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. [Definition Source: NCI]
 
 ```
 dpo:Canagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
     owl:equivalentClass chebi:73274 , ncit:C91018 ;
     rdfs:label "Canagliflozin"^^xsd:string ;
-    skos:definition "A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A C-glucoside with a thiophene ring that is an orally available inhibitor of sodium-glucose transporter 2 (SGLT2) with antihyperglycemic activity. Canagliflozin is also able to reduce body weight and has a low risk for hypoglycemia. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1115,13 +1115,13 @@ dpo:Canagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
 ```
 
 ##### Dapagliflozin
-> A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. \[Definition Source: NCI\]
+> A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. [Definition Source: NCI]
 
 ```
 dpo:Dapagliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
     owl:equivalentClass chebi:85078 , ncit:C78126 ;
     rdfs:label "Dapagliflozin"^^xsd:string ;
-    skos:definition "A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A selective sodium-glucose co-transporter subtype 2 (SGLT2) inhibitor with antihyperglycemic activity. Dapagliflozin selectively and potently inhibits SGLT2 compared to SGLT1, which is the cotransporter of glucose in the gut. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1146,7 +1146,7 @@ dpo:Ertugliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
 ```
 
 #### GLP-1 RA
-> Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). \[Definition Source: NCI\]
+> Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]
 
 > An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]
 
@@ -1154,7 +1154,7 @@ dpo:Ertugliflozin rdfs:subClassOf dpo:SGLT2Inhibitor ;
 dpo:GLP1RA rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:71196 , ncit:C98085 ;
     rdfs:label "GLP-1 RA" ;
-    skos:definition "Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "Any of the analogues of the endogenous gastrointestinal hormone glucagon-like peptide-1 (GLP-1) with antihyperglycemic activity. GLP-1 mimetics mimic the activity of GLP-1 and thereby stimulate glucose-dependent secretion of insulin from pancreatic beta cells, suppress glucagon secretion from alpha cells, increase insulin sensitivity and inhibit gastric emptying thereby slowing absorption of nutrients and creating a satiating effect. Altogether, this lowers blood glucose levels. GLP-1 is rapidly inactivated by the enzyme dipeptidyl peptidase-4 (DPP-4). [Definition Source: NCI]"^^xsd:string ;
     skos:definition "An agonist that binds to and activates glucagon-like peptide-1 (GLP-1) receptors. [Definition Source: CHEBI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
@@ -1177,13 +1177,13 @@ dpo:GLP1RA rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
 The subclasses of **dpo:GLP1RA** include **dpo:Dulaglutide**, **dpo:Liraglutide**, **dpo:Semaglutide**, **dpo:Lixisenatide**, and **dpo:Exenatide**.
 
 ##### Dulaglutide
-> A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. \[Definition Source: NCI\]
+> A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]
 
 ```
 dpo:Dulaglutide rdfs:subClassOf dpo:GLP1RA ;
     owl:equivalentClass ncit:C169923 ;
     rdfs:label "Dulaglutide"^^xsd:string ;
-    skos:definition "A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A glucagon-like peptide-1 (GLP-1) receptor agonist that is 90% homologous to native human GLP-1 (7-37) and is composed of a dipeptidyl peptidase-IV-protected GLP-1 analog covalently linked to a human immunoglobulin G4 (IgG4)-Fc heavy chain, with antihyperglycemic activity. Upon administration, dulaglutide binds to and activates GLP-1 receptors, thereby increasing intracellular cyclic AMP (cAMP) in pancreatic beta cells. This increases glucose-dependent insulin release. Dulaglutide also reduces the elevated glucagon secretion by inhibiting alpha cells of the pancreas and slows gastric emptying. Altogether this lowers the postprandial glucose level. GLP-1 is normally secreted by L cells of the gastrointestinal (GI) mucosa in response to a meal to normalize blood glucose levels. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1195,13 +1195,13 @@ dpo:Dulaglutide rdfs:subClassOf dpo:GLP1RA ;
 ```
 
 ##### Liraglutide
-> A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. \[Definition Source: NCI\]
+> A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. [Definition Source: NCI]
 
 ```
 dpo:Liraglutide rdfs:subClassOf dpo:GLP1RA ;
     owl:equivalentClass chebi:71193 , ncit:C82239 ;
     rdfs:label "Liraglutide"^^xsd:string ;
-    skos:definition "A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A long-acting, fatty acylated glucagon-like peptide-1 (GLP-1) analog administered subcutaneously, with antihyperglycemic activity. Liraglutide's prolonged action and half-life of 11-15 hours are attributed to the attachment of the fatty acid palmitic acid to GLP-1 that reversibly binds to albumin. Albumin binding protects liraglutide from immediate degradation and elimination and causes GLP-1 to be released from abumin in a slow and consistent manner. This agent may cause thyroid C-cell tumors and increases the risk of acute pancreatitis. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1243,7 +1243,7 @@ dpo:Lixisenatide rdfs:subClassOf dpo:GLP1RA ;
 ```
 
 ##### Exenatide
-> A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. \[Definition Source: NCI\]
+> A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]
 
 > A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]
 
@@ -1251,7 +1251,7 @@ dpo:Lixisenatide rdfs:subClassOf dpo:GLP1RA ;
 dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
     owl:equivalentClass chebi:64073 , ncit:C65611 ;
     rdfs:label "Exenatide"^^xsd:string ;
-    skos:definition "A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A 39 amino acid peptide and synthetic version of exendin-4, a hormone found in the saliva of the venomous lizard Gila monster, with insulin secretagogue and antihyperglycemic activity. Exenatide is administered subcutaneously and mimics human glucagon-like peptide-1 (GLP-1). Compared to GLP-1, exenatide has a longer half-life of 2.4 hours. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "A bioactive polypeptide of 39 amino acid residues isolated from the saliva of the Gila monster (Heloderma suspectum). High-affinity glucagon-like peptide 1 (GLP-1) receptor agonist (Kd = 136 pM); potently induces cAMP formation without stimulating amylase release in pancreatic acini; potentiates glucose-induced insulin secretion in isolated rat islets; protects against glutamate-induced neurotoxicity. A synthetic version is called exenatide. [Definition Source: CHEBI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
@@ -1260,7 +1260,7 @@ dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
 ```
 
 #### DPP-4 Inhibitor
-> Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. \[Definition Source: NCI\]
+> Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]
 
 > An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]
 
@@ -1268,7 +1268,7 @@ dpo:Exenatide rdfs:subClassOf dpo:GLP1RA ;
 dpo:DPP4Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:68612 , ncit:C98086 ;
     rdfs:label "DPP-4 Inhibitor"^^xsd:string ;
-    skos:definition "Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "Any inhibitor of the proline-specific serine protease dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. DPP-4 inhibitors bind to DPP-4 and inhibit the breakdown of the incretin hormones glucagon-like peptide-1 (GLP-1) and glucose-dependent insulinotropic polypeptide (GIP). This prolongs incretin activity, increases postprandial insulin release, decreases glucagon release, delays gastric emptying and lowers blood glucose levels. The risk for hypoglycemia is negligible with the use of DPP-4 inhibitors. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "An EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor that specifically inhibits dipeptidyl peptidase-4 (EC 3.4.14.5). [Definition Source: CHEBI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
@@ -1294,17 +1294,17 @@ dpo:DPP4Inhibitor rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
 The subclasses of **dpo:DPP4Inhibitor** include **dpo:Sitagliptin**, **dpo:Saxagliptin**, **dpo:Alogliptin**, and **dpo:Linagliptin**.
 
 ##### Sitagliptin
-> An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. \[Definition Source: NCI\]
+> An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]
 
 ```
 dpo:Sitagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
     owl:equivalentClass chebi:40237 , ncit:C73838 ;
     rdfs:label "Sitagliptin"^^xsd:string ;
-    skos:definition "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ##### Saxagliptin
-> A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. \[Definition Source: NCI\]
+> A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]
 
 > A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]
 
@@ -1312,7 +1312,7 @@ dpo:Sitagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
     owl:equivalentClass chebi:71272 , ncit:C75983 ;
     rdfs:label "Saxagliptin"^^xsd:string ;
-    skos:definition "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "A monocarboxylic acid amide obtained by formal condensation of the carboxy group of (2S)-amino(3-hydroxyadamantan-1-yl)acetic acid with the amino group of (1S,3S,5S)-2-azabicyclo[3.1.0]hexane-3-carbonitrile. Used in its monohydrate form for the treatment of Type II diabetes. [Definition Source: CHEBI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
@@ -1321,7 +1321,7 @@ dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 ```
 
 ##### Alogliptin
-> A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. \[Definition Source: NCI\]
+> A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]
 
 > A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]
 
@@ -1329,12 +1329,12 @@ dpo:Saxagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 dpo:Alogliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
     owl:equivalentClass chebi:72323 , ncit:C76906 ;
     rdfs:label "Alogliptin"^^xsd:string ;
-    skos:definition "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "A piperidine that is 3-methyl-2,4-dioxo-3,4-dihydropyrimidine carrying additional 2-cyanobenzyl and 3-aminopiperidin-1-yl groups at positions 1 and 2 respectively (the R-enantiomer). Used in the form of its benzoate salt for treatment of type 2 diabetes. [Definition Source: CHEBI]"^^xsd:string .
 ```
 
 ##### Linagliptin
-> A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. \[Definition Source: NCI\]
+> A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]
 
 > A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]
 
@@ -1342,18 +1342,18 @@ dpo:Alogliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
 dpo:Linagliptin rdfs:subClassOf dpo:DPP4Inhibitor ;
     owl:equivalentClass chebi:68610 , ncit:C83887 ;
     rdfs:label "Linagliptin"^^xsd:string ;
-    skos:definition "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "A xanthine that is 7H-xanthine bearing (4-methylquinazolin-2-yl)methyl, methyl, but-2-yn-1-yl and 3-aminopiperidin-1-yl substituents at positions 1, 3, 7 and 8 respectively (the R-enantiomer). Used for treatment of type II diabetes. [Definition Source: CHEBI]"^^xsd:string .
 ```
 
 #### Thiazolidinedione
-> Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. \[Definition Source: NCI\]
+> Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]
 
 ```
 dpo:Thiazolidinedione rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:50990 , ncit:C98241 ;
     rdfs:label "Thiazolidinedione"^^xsd:string ;
-    skos:definition "Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1378,7 +1378,7 @@ dpo:Thiazolidinedione rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
 The subclasses of **dpo:Thiazolidinedione** include **dpo:Pioglitazone** and **dpo:Rosiglitazone**.
 
 ##### Pioglitazone
-> An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. \[Definition Source: NCI\]
+> An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]
 
 > A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]
 
@@ -1386,7 +1386,7 @@ The subclasses of **dpo:Thiazolidinedione** include **dpo:Pioglitazone** and **d
 dpo:Pioglitazone rdfs:subClassOf dpo:Thiazolidinedione ;
     owl:equivalentClass chebi:8228 , ncit:C71633 ;
     rdfs:label "Pioglitazone"^^xsd:string ;
-    skos:definition "An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "An orally-active thiazolidinedione with antidiabetic properties and potential antineoplastic activity. Pioglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "A member of the class of thiazolidenediones that is 1,3-thiazolidine-2,4-dione substituted by a benzyl group at position 5 which in turn is substituted by a 2-(5-ethylpyridin-2-yl)ethoxy group at position 4 of the phenyl ring. It exhibits hypoglycemic activity. [Definition Source: CHEBI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
@@ -1395,23 +1395,23 @@ dpo:Pioglitazone rdfs:subClassOf dpo:Thiazolidinedione ;
 ```
 
 ##### Rosiglitazone
-> An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. \[Definition Source: NCI\]
+> An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. [Definition Source: NCI]
 
 ```
 dpo:Rosiglitazone rdfs:subClassOf dpo:Thiazolidinedione ;
     owl:equivalentClass chebi:50122 , ncit:C62076 ;
     rdfs:label "Rosiglitazone"^^xsd:string ;
-    skos:definition "An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "An agent belonging to the glitazone class of antidiabetic agents with antihyperglycemic and anti-inflammatory activities. In addition to its selective affinity for peroxisome proliferator-activated receptor (PPAR) gamma and its ability to lower blood glucose levels, rosiglitazone also exerts anti-inflammatory activity through its ability to inhibit nuclear factor-kappaB (NF-KB) activity and increase I-kappaB levels. In addition, rosiglitazone may cause fluid retention and may worsen congestive heart failure. This agent is also associated with an increased risk of heart attacks. [Definition Source: NCI]"^^xsd:string .
 ```
 
 #### Sulfonylurea
-> Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). \[Definition Source: NCI\]
+> Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). [Definition Source: NCI]
 
 ```
 dpo:Sulfonylurea rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
     owl:equivalentClass chebi:76983 , ncit:C97936 ;
     rdfs:label "Sulfonylurea"^^xsd:string ;
-    skos:definition "Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "Sulfonamide urea derivatives with antihyperglycemic activity. Sulphonylurea antidiabetic agents bind to sulfonylurea receptor type 1 (SUR1), the subunit of ATP-sensitive inwardly-rectifier potassium (IKATP) channels on the membranes of pancreatic beta cells, thereby blocking the inward current flow (influx) of positively charged K+ ions into the cell. This results in tonic membrane depolarization, and induces a calcium ion influx through voltage-sensitive calcium channels; increased intracellular calcium ion levels trigger exocytosis of insulin-containing granules. This eventually induces secretion of insulin. The IKATP channels found in pancreatic islets are complexes of four IKATP 6.2 and four SUR1 subunits. In addition, some sulfonylureas of larger molecular size may increase the sensitivity of peripheral tissues to insulin mediated through peroxisome proliferator-activated receptor gamma (PPARgamma). [Definition Source: NCI]"^^xsd:string ;
     rdfs:subClassOf
         [ rdf:type owl:Restriction ;
           owl:onProperty sio:hasAttribute ;
@@ -1439,7 +1439,7 @@ dpo:Sulfonylurea rdfs:subClassOf dpo:AntihyperglycemicTreatment ;
 The subclasses of **dpo:Sulfonylurea** include **dpo:Glyburide**, **dpo:Glipizide**, and **dpo:Glimepiride**.
 
 ##### Glyburide
-> A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. \[Definition Source: NCI\]
+> A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]
 
 > An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]
 
@@ -1447,12 +1447,12 @@ The subclasses of **dpo:Sulfonylurea** include **dpo:Glyburide**, **dpo:Glipizid
 dpo:Glyburide rdfs:subClassOf dpo:Sulfonylurea ;
     owl:equivalentClass chebi:5441 , ncit:C29076 ;
     rdfs:label "Glyburide"^^xsd:string ;
-    skos:definition "A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A sulfonamide urea derivative with antihyperglycemic activity that can potentially be used to decrease cerebral edema. Upon administration, glyburide binds to and blocks the sulfonylurea receptor type 1 (SUR1) subunit of the ATP-sensitive inwardly-rectifying potassium (K(ATP)) channels on the membranes of pancreatic beta cells. This prevents the inward current flow of positively charged potassium (K+) ions into the cell, and induces a calcium ion (Ca2+) influx through voltage-sensitive calcium channels, which triggers exocytosis of insulin-containing granules. In addition, glyburide also inhibits the SUR1-regulated nonselective cation (NC) Ca-ATP channel, melastatin 4 (transient receptor potential cation channel subfamily M member 4; (TRPM4)), thereby preventing capillary failure and brain swelling. SUR1-TRPM4 channels are formed by co-assembly of SUR1 with TRPM4 in neurons, astrocytes, and capillary endothelium during cerebral ischemia. Upon ischemia-induced ATP depletion, channels open which results in sodium influx, cytotoxic edema formation, capillary fragmentation and necrotic cell death. SUR1-TRPM4 is not expressed in normal, uninjured tissues. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "An N-sulfonylurea that is acetohexamide in which the acetyl group is replaced by a 2-(5-chloro-2-methoxybenzamido)ethyl group. [Definition Source: CHEBI]"^^xsd:string .
 ```
 
 ##### Glipizide
-> A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. \[Definition Source: NCI\]
+> A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]
 
 > An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]
 
@@ -1460,22 +1460,22 @@ dpo:Glyburide rdfs:subClassOf dpo:Sulfonylurea ;
 dpo:Glipizide rdfs:subClassOf dpo:Sulfonylurea ;
     owl:equivalentClass chebi:5384 , ncit:C29074 ;
     rdfs:label "Glipizide"^^xsd:string ;
-    skos:definition "A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "A short-acting, second-generation sulfonylurea with hypoglycemic activity. Glipizide is rapidly absorbed, has a very quick onset of action and a short half-life. This agent is extensively metabolized in the liver and the metabolites as well as the unchanged form are excreted in the urine. [Definition Source: NCI]"^^xsd:string ;
     skos:definition "An N-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus. [Definition Source: CHEBI]"^^xsd:string .
 ```
 
 ##### Glimepiride
-> A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. \[Definition Source: NCI\]
+> A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]
 
 ```
 dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     owl:equivalentClass chebi:5383 , ncit:C29073 ;
     rdfs:label "Glimepiride"^^xsd:string ;
-    skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
 ```
 
 ## Measurement
-> Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. \[Definition Source: NCI\]
+> Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]
 
 ```
 dpo:Measurement rdf:type owl:Class ; 
@@ -1483,7 +1483,7 @@ dpo:Measurement rdf:type owl:Class ;
     owl:equivalentClass ncit:C25209 ;
     rdfs:label "Measurement"^^xsd:string ;
     rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
-    skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
 ```
 
 The measurement branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:Measurement** include **dpo:BodyMassIndexFinding**, **dpo:BloodGlucoseMeasurement**, **dpo:CholesterolMeasurement**, and **dpo:TriglycerideMeasurement**.
@@ -1493,14 +1493,14 @@ The measurement branch contains categorizations that can be made based on lab me
 The measurement categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
 
 ### Body Mass Index Finding
-> The result of a body mass index measurement. \[Definition Source: NCI\]
+> The result of a body mass index measurement. [Definition Source: NCI]
 
 ```
 dpo:BodyMassIndexFinding rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
     owl:equivalentClass ncit:C138901 ;
     rdfs:label "Body Mass Index Finding"^^xsd:string ;
-    skos:definition "The result of a body mass index measurement. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The result of a body mass index measurement. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:BodyMassIndexFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
@@ -1578,7 +1578,7 @@ dpo:OverweightBMIRange rdf:type owl:DataRange ;
 ```
 
 #### Obese
-> Having a high amount of body fat (body mass index [BMI] of 30 or more). \[Definition Source: NCI\]
+> Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]
 
 > The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
 
@@ -1593,7 +1593,7 @@ dpo:Obese rdf:type owl:Class ;
     owl:equivalentClass symp:0020018 , ncit:C3283 , efo:0007041;
     rdfs:label "Obese"^^xsd:string ;
     rdfs:comment "30<BMI"^^xsd:string ;
-    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). \[Definition Source: NCI\]"^^xsd:string ;
+    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;
     skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EFO:0007041]" .
 
 dpo:ObeseBMIRange rdf:type owl:DataRange ;
@@ -1603,14 +1603,14 @@ dpo:ObeseBMIRange rdf:type owl:DataRange ;
 ```
 
 ### Blood Glucose Measurement
-> A quantitative measurement for assessing the amount of glucose present in a blood sample. \[Definition Source: NCI\]
+> A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]
 
 ```
 dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
     owl:equivalentClass ncit:C92744 ;
     rdfs:label "Blood Glucose Measurement"^^xsd:string ;
-    skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:BloodGlucoseMeasurement** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
@@ -1744,14 +1744,14 @@ dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
 ```
 
 ### Cholesterol Measurement
-> The determination of the amount of total cholesterol present in a sample. \[Definition Source: NCI\]
+> The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]
 
 ```
 dpo:CholesterolMeasurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
     owl:equivalentClass ncit:C105586 ;
     rdfs:label "Cholesterol Measurement"^^xsd:string ;
-    skos:definition "The determination of the amount of total cholesterol present in a sample. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:CholesterolMeasurement** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
@@ -1857,14 +1857,14 @@ dpo:VeryHighLDLRange rdf:type owl:DataRange ;
 ```
 
 ### Triglyceride Measurement
-> A quantitative measurement of the amount of triglyceride present in a sample. \[Definition Source: NCI\]
+> A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]
 
 ```
 dpo:TriglycerideMeasurement rdf:type owl:Class ; 
     rdfs:subClassOf dpo:Measurement ;
     owl:equivalentClass ncit:C64812 ;
     rdfs:label "Triglyceride Measurement"^^xsd:string ;
-    skos:definition "A quantitative measurement of the amount of triglyceride present in a sample. \[Definition Source: NCI\]"^^xsd:string .
+    skos:definition "A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]"^^xsd:string .
 ```
 
 Subclasses of **dpo:TriglycerideMeasurement** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
@@ -1987,13 +1987,12 @@ Interoperability is ``the ability of data or tools from non-cooperating resource
 Designing data or tools in a manner that is interoperable is important for advocating the presentation of data in a way that is understandable and able to be integrated amongst various users, including those who did not partake in the original creation of the data.
 To achieve interoperability of data throughout and across multiple disciplines, adherence to a set of standards is necessary.
 The FAIR principles are one such existing standard that guides the creation of data resources, and by adhering to its guidelines we advance the interoperability of our resources. We link concepts in our ontology to other standard vocabularies, including the FHIR \[4\] compliant vocabulary LOINC, as well as well-accepted standard biomedical ontologies, including ChEBI, Symptom Ontology, and NCIT.
-When designing our ontology, additional standards are taken into consideration, including Ontology Design Patterns (ODPs) \[5\], the HCLS dataset specification \[6\], and the Data on the Web Best Practices \[\7].
+When designing our ontology, additional standards are taken into consideration, including Ontology Design Patterns (ODPs) \[5\], the HCLS dataset specification \[6\], and the Data on the Web Best Practices \[7\].
 
 #### Reusability
 To promote the reusability of our resource, we created this website describing the ontology, how a PHKG can be created using the concepts in the ontology, and how to leverage the ontology to conduct clinical decision-making tasks.
 Each original concept in the ontology has a dedicated section within this resource, which is linked through the persistent URL of the resource, as described above.
 To further assist in the reusability of the Diabetes Pharmacology Ontology, WIDOCO \[8\] is used to generate documentation for the ontology. ([https://tetherless-world.github.io/diabetes-pharmacology-ontology/docs/DiabetesPharmacologyOntology/index-en.html](bit.ly/dpo\_documentation))
-The resources described above are linked at the end of the abstract of this article. The website also includes links to these resources.
 
 ### Trustworthiness
 The guiding principles for developing CBK include several metrics of trustworthy knowledge.
@@ -2019,12 +2018,12 @@ To promote the sustainability of our resource, we have published it in multiple 
 While we do not own BioPortal or purl.org, the credentials of these websites give us reason to believe that our ontology will persevere at these locations.
 In fact, the P in PURL stands for persistent, and thus purl.org is intended to provide permanent addresses for web resources.
 We further include the ontology in an open GitHub repository which is managed by the organization involved in this research.
-While we have already published the resources described in this article, our intent is to publish this article itself to further support trustworthiness.
+While we have already published the resources described in the corresponding article, our intent is to publish this article itself to further support trustworthiness.
 
 ### Openness
 The final principle for developing CBK states that knowledge and its associated infrastructure should be open.
 This principle relates both to the equity of access to knowledge as well as the transparency of its foundations.
-To the extent of our ability, we have made the resources described in this paper openly accessible.
+To the extent of our ability, we have made the resources described in the corresponding paper openly accessible.
 We promote the use of our ontology by publishing using Apache-2 ([https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)), an open license.
 Furthermore, we've only linked to concepts from external vocabularies that too are openly available.
 We have promoted the transparency of this work by including attribution information whenever necessary and by sufficiently documenting our resources and their use.
