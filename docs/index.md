@@ -8,11 +8,6 @@ title: Diabetes Pharmacology Ontology
 The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
 
 # Table of Contents
-# Overview
-
-The Diabetes Pharmacology Ontology was designed by leveraging the American Diabetes Association 2022 Guidelines Chapter 9 - Pharmacologic Approaches to Glycemic Treatment to represent some common diabetes treatments and several of their characteristics that play a role in therapy planning. Additionally, common symptoms associated with diabetes and lab measurement types were included in the ontology based on NetCE case studies related to diabetes.
-
-# Table of Contents
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
@@ -144,6 +139,19 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
       - [High Triglyceride Level](#high-triglyceride-level)
       - [Very High Triglyceride Level](#very-high-triglyceride-level)
 - [Personal Health Knowledge Graph](#personal-health-knowledge-graph)
+- [Supplementary Material](#supplementary-material)
+  * [Evaluation against Principles for Developing Computational Biomedical Knowledge](#evaluation-against-principles-for-developing-computational-biomedical-knowledge)
+    + [Adherence to the FAIR Principles](#adherence-to-the-fair-principles)
+      - [Findability and Accessibility](#findability-and-accessibility)
+      - [Interoperability](#interoperability)
+      - [Reusability](#reusability)
+    + [Trustworthiness](#trustworthiness)
+      - [Knowledge](#knowledge)
+      - [Evolution](#evolution)
+      - [Publication](#publication)
+    + [Openness](#openness)
+  * [Drug-Specific and Patient Factors to Consider When Selecting Antihyperglycemic Treatment in Adults With Type 2 Diabetes](#drug-specific-and-patient-factors-to-consider-when-selecting-antihyperglycemic-treatment-in-adults-with-type-2-diabetes)
+  * [Pharmacologic Treatment of Hyperglycemia in Adults With Type 2 Diabetes](#pharmacologic-treatment-of-hyperglycemia-in-adults-with-type-2-diabetes)
 
 # Namespaces
 
