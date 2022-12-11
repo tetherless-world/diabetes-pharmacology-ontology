@@ -26,6 +26,7 @@ http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/WeightGainPatient,
 http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/jane))}}
 
 java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/ClinicallyRelevantWeightGainPatient,	 http://purl.org/twc/DPO/kb/jane,	 http://purl.org/twc/DPO/ont/WeightGainPatient,	 http://purl.org/twc/DPO/ont/ClinicallyRelevantWeightGain,	  http://hl7.org/fhir/Patient,	  http://semanticscience.org/resource/hasAttribute,	 http://purl.org/twc/DPO/kb/clinicalWeightGain,	 http://purl.org/twc/DPO/ont/MedicinalEffect,	 http://purl.org/twc/DPO/kb/medicinalEffect,	 http://purl.org/twc/DPO/ont/SingleDrugSideEffect,	 http://purl.org/twc/DPO/kb/singleDrugSideEffect" -d 3 -i ont/modules/abductive_example.ttl -l -obs "http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/ClinicallyRelevantWeightGainPatient" -out output.txt -r 
+
 {http://purl.org/twc/DPO/kb/jane: http://hl7.org/fhir/Patient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/singleDrugSideEffect))}, 
 
 {http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/WeightGainPatient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/clinicalWeightGain))}, 
@@ -178,19 +179,18 @@ java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/DiabetesAssociated
 
 How can we explain high hba1c level?
 
-<<<<<<< HEAD
-java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/DiabetesHbA1CLevelPatient, http://purl.org/twc/DPO/kb/jane, http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel , http://semanticscience.org/resource/hasAttribute, http://purl.org/twc/DPO/kb/diabetesHbA1CLevel, http://purl.org/twc/DPO/ont/MedicationNotEffective, http://purl.org/twc/DPO/kb/medicationNotEffective,  http://purl.org/twc/DPO/ont/NotComplyingWithTherapy, http://purl.org/twc/DPO/kb/notComplyingWithTherapy,http://purl.org/twc/DPO/ont/HighSugarDiet, http://purl.org/twc/DPO/kb/highSugarDiet,  http://purl.org/twc/DPO/ont/InsufficientExercise, http://purl.org/twc/DPO/kb/insufficientExercise" -d 3 -i ont/modules/hba1c_module.ttl -obs "http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/DiabetesHbA1CLevelPatient" -out output.txt -r 
-=======
-java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/DiabetesHbA1CLevelPatient, http://purl.org/twc/DPO/kb/jane, http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel , http://semanticscience.org/resource/hasAttribute, http://purl.org/twc/DPO/kb/diabetesHbA1CLevel, http://purl.org/twc/DPO/ont/TherapyNotEffective, http://purl.org/twc/DPO/kb/therapyNotEffective,  http://purl.org/twc/DPO/ont/NotComplyingWithTherapy, http://purl.org/twc/DPO/kb/notComplyingWithTherapy,http://purl.org/twc/DPO/ont/HighSugarDiet, http://purl.org/twc/DPO/kb/highSugarDiet,  http://purl.org/twc/DPO/ont/InsufficientExercise, http://purl.org/twc/DPO/kb/insufficientExercise" -d 3 -i ont/modules/hba1c_module.ttl -obs "http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/DiabetesHbA1CLevelPatient" -out output.txt -r 
->>>>>>> b9e9aa18c4ea09205f208164549fb348f7ee1b40
-
-{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/therapyNotEffective))}, 
-{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/diabetesHbA1CLevel))}, 
-{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/insufficientExercise)), http://purl.org/twc/DPO/kb/insufficientExercise: http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel}, 
-{http://purl.org/twc/DPO/kb/highSugarDiet: http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel, http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/highSugarDiet))}, 
-{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/SymptomaticPatient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/notComplyingWithTherapy))}}
+java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/DiabetesHbA1CLevelPatient,	 http://purl.org/twc/DPO/kb/jane,	 http://purl.org/twc/DPO/ont/DiabetesHbA1CLevel,	  http://hl7.org/fhir/Patient,	  http://semanticscience.org/resource/hasAttribute,	 http://purl.org/twc/DPO/kb/diabetesHbA1CLevel,	 http://purl.org/twc/DPO/ont/MedicationNotEffectivePatient,	 http://purl.org/twc/DPO/ont/MedicationNotEffective,	 http://purl.org/twc/DPO/kb/medicationNotEffective, http://purl.org/twc/DPO/ont/InsufficientExercisePatient,	 http://purl.org/twc/DPO/ont/InsufficientExercise,	 http://purl.org/twc/DPO/kb/insufficientExercise, http://purl.org/twc/DPO/ont/HighSugarDietPatient,	 http://purl.org/twc/DPO/ont/HighSugarDiet,	 http://purl.org/twc/DPO/kb/highSugarDiet, http://purl.org/twc/DPO/ont/NotComplyingWithTherapy,	http://purl.org/twc/DPO/ont/NotComplyingWithTherapyPatient, http://purl.org/twc/DPO/kb/notComplyingWithTherapy" -d 2 -i ont/modules/hba1c_module.ttl -l -obs "http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/DiabetesHbA1CLevelPatient" -out output.txt -r 
 
 
+{http://purl.org/twc/DPO/kb/jane: http://hl7.org/fhir/Patient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/medicationNotEffective))}, 
+{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/HighSugarDietPatient}, 
+{http://purl.org/twc/DPO/kb/jane: http://hl7.org/fhir/Patient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/highSugarDiet))}, 
+{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/InsufficientExercisePatient}, 
+{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/MedicationNotEffectivePatient}, 
+{http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/NotComplyingWithTherapyPatient}, 
+{http://purl.org/twc/DPO/kb/jane: http://hl7.org/fhir/Patient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/diabetesHbA1CLevel))}, 
+{http://purl.org/twc/DPO/kb/jane: http://hl7.org/fhir/Patient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/notComplyingWithTherapy))}, 
+{http://purl.org/twc/DPO/kb/jane: http://hl7.org/fhir/Patient, http://purl.org/twc/DPO/kb/jane: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/DPO/kb/insufficientExercise))}}
 
 What therapies are favorable/have potential benefits?
 
@@ -522,7 +522,7 @@ java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/SGLT2Inhibitor , h
 
 How do we explain lack of exercise?
 
-    java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/InsufficientExercisePatient,	 http://purl.org/twc/DPO/kb/jane,	 http://purl.org/twc/DPO/ont/DecreasedActivityPatient,	http://purl.org/twc/DPO/ont/StepsDecreasedPatient, http://purl.org/twc/DPO/ont/InsufficientExercise, http://purl.org/twc/DPO/ont/InjuredPatient, http://purl.org/twc/DPO/ont/Patient,	  http://semanticscience.org/resource/hasAttribute,	 http://purl.org/twc/DPO/ont/DecreasedActivity" -d 3 -i ont/modules/exercise_module.ttl -l -obs "http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/InsufficientExercisePatient" -out output.txt -r 
+java -Xmx4096m -jar AAA.jar -abd "http://purl.org/twc/DPO/ont/InsufficientExercisePatient,	 http://purl.org/twc/DPO/kb/jane,	 http://purl.org/twc/DPO/ont/DecreasedActivityPatient,	http://purl.org/twc/DPO/ont/StepsDecreasedPatient, http://purl.org/twc/DPO/ont/InsufficientExercise, http://purl.org/twc/DPO/ont/InjuredPatient, http://purl.org/twc/DPO/ont/Patient,	  http://semanticscience.org/resource/hasAttribute,	 http://purl.org/twc/DPO/ont/DecreasedActivity" -d 3 -i ont/modules/exercise_module.ttl -l -obs "http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/InsufficientExercisePatient" -out output.txt -r 
 
 {http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/StepsDecreasedPatient}, 
 {http://purl.org/twc/DPO/kb/jane: http://purl.org/twc/DPO/ont/InjuredPatient}, 
