@@ -1,5 +1,5 @@
-@prefix dpo: <http://purl.org/twc/DPO/ont/> .
-@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+@prefix dpo: <http://purl.org/twc/dpo/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
 
 @prefix heals: <http://purl.org/twc/HEALS/ont/> .
 @prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .

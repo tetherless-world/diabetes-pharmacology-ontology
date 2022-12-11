@@ -2,8 +2,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dpo: <http://purl.org/twc/DPO/ont/> .
-@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+@prefix dpo: <http://purl.org/twc/dpo/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
 @prefix fhir: <http://hl7.org/fhir/> . 
 @prefix sio: <http://semanticscience.org/resource/> . 
 @prefix    loinc: <http://purl.bioontology.org/ontology/LNC/> .

@@ -3,8 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix uo: <http://purl.obolibrary.org/obo/UO_> . 
-@prefix dpo: <http://purl.org/twc/DPO/ont/> .
-@prefix dpo-kb: <http://purl.org/twc/DPO/kb/> .
+@prefix dpo: <http://purl.org/twc/dpo/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
 
 @prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
 @prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
