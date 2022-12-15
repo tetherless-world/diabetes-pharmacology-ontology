@@ -25,42 +25,50 @@
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionIRI <http://purl.org/twc/dpo/ont/0.1> .
 
-dpo:Factor rdf:type owl:Class ;
-    rdfs:label "Factor" ;
-    owl:equivalentClass ncit:C25506 ;
-    rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
-    skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
+dpo:Thing rdf:type owl:Class ;
+    rdfs:label "Thing" .#;
+    #owl:equivalentClass ncit:C25506 ;
+    #rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
+    #skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
     
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Factor ;
+    rdfs:subClassOf dpo:Thing ;
     owl:equivalentClass ncit:C18228 ;
     rdfs:label "Pharmacotherapy Factor" ;
     rdfs:comment "A circumstance influencing the treatment of a disease through the use or recommendation of one or more drugs."^^xsd:string ;
     skos:definition "Therapy-related factors identified include: route of administration, treatment complexity, duration of treatment period, medication side effects, degree of behavioral change required, taste of medication and requirement for drug storage. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2503662/ ]"^^xsd:string .
 
+    
 dpo:DiagnosticFactor rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Factor ;
+    rdfs:subClassOf dpo:Thing ;
     owl:equivalentClass ncit:C19591 ;
     rdfs:label "Diagnostic Factor" ;
     rdfs:comment "A circumstance influencing the dianosis of a disease."^^xsd:string ;
     skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]"^^xsd:string .
+    
+dpo:PatientCharacteristic rdf:type owl:Class ;
+    rdfs:subClassOf dpo:DiagnosticFactor ;
+    #owl:equivalentClass ncit:C19591 ;
+    rdfs:label "Patient Characteristic" . # ;
+    #rdfs:comment "A circumstance influencing the dianosis of a disease."^^xsd:string ;
+    #skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Therapy rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Factor ;
+    rdfs:subClassOf dpo:Thing ;
     owl:equivalentClass ncit:C49236 ;
     rdfs:label "Therapy"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]"^^xsd:string .
 
-dpo:Measurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Factor ;
-    owl:equivalentClass ncit:C25209 ;
-    rdfs:label "Measurement"^^xsd:string ;
+dpo:TestFinding rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:DiagnosticFactor ;
+    #owl:equivalentClass ncit:C25209 ;
+    rdfs:label "Test Finding"^^xsd:string ;
     rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
     skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Symptom rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:PatientCharacteristic ;
     owl:equivalentClass symp:0000462 ;
     rdfs:label "Symptom"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -109,28 +117,28 @@ dpo:Polyphagia rdf:type owl:Class ;
     skos:definition "Polyphagia is a nutrition, metabolism, and development symptom characterized by an excessive appetite or eating. [ url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=polyphagia ][Definition Source: SYMP:0000524]"^^xsd:string .
 
 dpo:BodyMassIndexFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
+    rdfs:subClassOf dpo:TestFinding ;
     owl:equivalentClass ncit:C138901 ;
     rdfs:label "Body Mass Index Finding"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "The result of a body mass index measurement. [Definition Source: NCI]"^^xsd:string .
 
 dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
+    rdfs:subClassOf dpo:TestFinding ;
     owl:equivalentClass ncit:C92744 ;
     rdfs:label "Blood Glucose Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]"^^xsd:string .
 
 dpo:CholesterolMeasurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
+    rdfs:subClassOf dpo:TestFinding ;
     owl:equivalentClass ncit:C105586 ;
     rdfs:label "Cholesterol Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]"^^xsd:string .
 
 dpo:TriglycerideMeasurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
+    rdfs:subClassOf dpo:TestFinding ;
     owl:equivalentClass ncit:C64812 ;
     rdfs:label "Triglyceride Measurement"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -546,7 +554,7 @@ dpo:PeripheralNeuropathy rdf:type owl:Class ;
     skos:definition "Peripheral neuropathy refers to the many conditions that involve damage to the peripheral nervous system, the vast communication network that sends signals between the central nervous system (the brain and spinal cord) and all other parts of the body. [Definition Source: url:https://www.ninds.nih.gov/peripheral-neuropathy-fact-sheet ]"^^xsd:string .
 
 dpo:Condition rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:PatientCharacteristic ;
     owl:equivalentClass ncit:C25457 ;
     rdfs:label "Condition"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -567,7 +575,7 @@ dpo:Hypertension rdf:type owl:Class ;
     skos:definition "Blood pressure that is abnormally high. [Definition Source: NCI]"^^xsd:string .
 
 dpo:History rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:PatientCharacteristic ;
     owl:equivalentClass ncit:C54625 ;
     rdfs:label "History"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -619,7 +627,7 @@ dpo:BilateralLowerExtremityBurningSensation rdf:type owl:Class ;
     skos:definition ""^^xsd:string .
 
 dpo:Disease rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:PatientCharacteristic ;
     owl:equivalentClass ncit:C2991 ;
     rdfs:label "Disease"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -683,7 +691,7 @@ dpo:ChestPain rdf:type owl:Class ;
     skos:definition "An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the chest. [Definition Source: HP:0100749]"^^xsd:string .
 
 dpo:Behavior rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:PatientCharacteristic ;
     owl:equivalentClass ncit:C16326 ;
     rdfs:label "Behavior"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
@@ -711,7 +719,7 @@ dpo:DrugUse rdf:type owl:Class ;
     skos:definition "A description of an individual's current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Occupation rdf:type owl:Class ;
-    rdfs:subClassOf dpo:DiagnosticFactor ;
+    rdfs:subClassOf dpo:PatientCharacteristic ;
     owl:equivalentClass ncit:C25193 ;
     rdfs:label "Occupation"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
