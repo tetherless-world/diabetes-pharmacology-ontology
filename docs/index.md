@@ -187,22 +187,22 @@ The Diabetes Pharmacology Ontology is an ontology designed to aid in clinical de
 
 The diagram above shows the concepts in the ontology that extend from the root concept, **dpo:Factor**, up to 3 hops from the root. While all the classes in the ontology are not included in this diagram, the complete set of concepts are described in this document below.
 
-## Factor
+## Thing
 > Anything that contributes causally to a result. [Definition Source: NCI]
 
-The root branch of the Diabetes Pharmacology Ontology is **dpo:Factor**.
+The root branch of the Diabetes Pharmacology Ontology is **dpo:Thing**.
 
 ```
-dpo:Factor rdf:type owl:Class ;
-    rdfs:label "Factor" ;
+dpo:Thing rdf:type owl:Class ;
+    rdfs:label "Thing" ;
     owl:equivalentClass ncit:C25506 ;
     rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
     skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
 ```
 
-Four top level branches extend from **dpo:Factor**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, **dpo:Therapy**, and **dpo:Measurement**.
+Four top level branches extend from **dpo:Thing**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, and **dpo:Therapy**. **dpo:DiagnosticFactor** is made up of the **dpo:PatientCharacteristic** and **dpo:TestFinding** branches.
 
-![pto:Factor](./assets/images/Factor.png)
+![pto:Thing](./assets/images/Thing.png)
 
 All other branches of the ontology extend from these top level concepts.
 
