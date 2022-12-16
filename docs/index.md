@@ -477,11 +477,18 @@ dpo:DiagnosticFactor rdf:type owl:Class ;
     skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]"^^xsd:string .
 ```
 
-Subclasses of **dpo:DiagnosticFactor** include **dpo:Symptom**, **dpo:Condition**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
+Subclasses of **dpo:DiagnosticFactor** include **dpo:PatientCharacteristic** and **dpo:TestFinding**.
 
-![pto:DiagnosticFactor](./assets/images/DiagnosticFactor.png)
+## Patient Characteristic
+> 
 
-Diagnostic Factors included within the ontology are based on diabetes related NetCE case studies.
+```
+```
+Subclasses of **dpo:PatientCharacteristic** include **dpo:Symptom**, **dpo:Condition**, **dpo:Disease**, **dpo:Behavior**, **dpo:Occupation**, and **dpo:History**.
+
+![pto:PatientCharacteristic](./assets/images/PatientCharacteristic.png)
+
+Patient characteristics included within the ontology are based on diabetes related NetCE case studies.
 
 ### Symptom
 > A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ [https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5](https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5) [https://www.nature.com/subjects/signs-and-symptoms](https://www.nature.com/subjects/signs-and-symptoms) [https://www.merriam-webster.com/dictionary/symptom](https://www.merriam-webster.com/dictionary/symptom) ][Definition Source: SYMP:0000462]
@@ -984,6 +991,475 @@ dpo:PersonalHistoryOfFebrileStates rdf:type owl:Class ;
     skos:definition "Febrile seizures are defined as events in infancy or childhood that usually occur between three months and five years of age and are associated with a fever, but without evidence of intracranial infection or a defined cause for the seizure. [Definition Source: url:https://www.aafp.org/pubs/afp/issues/2008/1115/p1199.html ]"^^xsd:string .
 ```
 
+## Test Finding
+> 
+
+```
+```
+
+The test finding contains categorizations that can be made based on lab measurements. Subclasses of **dpo:TestFinding** include **dpo:BodyMassIndexFinding**, **dpo:BloodGlucoseMeasurement**, **dpo:CholesterolMeasurement**, and **dpo:TriglycerideMeasurement**.
+
+![pto:TestFinding](./assets/images/TestFinding.png)
+
+The test finding categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
+
+### Body Mass Index Finding
+> The result of a body mass index measurement. [Definition Source: NCI]
+
+```
+dpo:BodyMassIndexFinding rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C138901 ;
+    rdfs:label "Body Mass Index Finding"^^xsd:string ;
+    skos:definition "The result of a body mass index measurement. [Definition Source: NCI]"^^xsd:string .
+```
+
+Subclasses of **dpo:BodyMassIndexFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
+
+![pto:BodyMassIndexFinding](./assets/images/BodyMassIndexFinding.png)
+
+The categorization of the BMI measurements and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
+
+#### Underweight
+> The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]
+
+```
+dpo:Underweight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
+    owl:equivalentClass efo:0005936 ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:UnderweightBMIRange ] ) ;
+    rdfs:label "Underweight"^^xsd:string ;
+    rdfs:comment "BMI<18.5"^^xsd:string ;
+    skos:definition "The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]"^^xsd:string .
+
+dpo:UnderweightBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Underweight BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:maxInclusive "18.5"^^xsd:decimal .
+```
+
+#### Normal Weight
+> BMI greater than or equal to 18.5 to 24.9 kg/m^2 [Definition Source: [https://www.ncbi.nlm.nih.gov/books/NBK541070/](https://www.ncbi.nlm.nih.gov/books/NBK541070/) ]
+
+```
+dpo:NormalWeight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:NormalWeightBMIRange ] ) ;
+    rdfs:label "Normal Weight"^^xsd:string ;
+    rdfs:comment "18.5<BMI<24.9"^^xsd:string ;
+    skos:definition "BMI greater than or equal to 18.5 to 24.9 kg/m^2 [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK541070/ ]"^^xsd:string .
+
+dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Normal Weight BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "18.5"^^xsd:decimal ;
+    owl:maxInclusive "24.9"^^xsd:decimal .
+```
+
+
+#### Overweight
+> The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]
+
+```
+dpo:Overweight rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
+    owl:equivalentClass efo:0005935 ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:OverweightBMIRange ] ) ;
+    rdfs:label "Overweight"^^xsd:string ;
+    rdfs:comment "25<BMI<30"^^xsd:string ;
+    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]"^^xsd:string .
+
+dpo:OverweightBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Overweight BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "25"^^xsd:decimal ;
+    owl:maxInclusive "30"^^xsd:decimal .
+```
+
+#### Obese
+> Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]
+
+> The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
+
+```
+dpo:Obese rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BodyMassIndexFinding ;
+    owl:intersectionOf
+            ( ncit:C138901 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
+    owl:equivalentClass symp:0020018 , ncit:C3283 , efo:0007041;
+    rdfs:label "Obese"^^xsd:string ;
+    rdfs:comment "30<BMI"^^xsd:string ;
+    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;
+    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EFO:0007041]" .
+
+dpo:ObeseBMIRange rdf:type owl:DataRange ;
+    rdfs:label "Obese BMI Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "30"^^xsd:decimal .
+```
+
+### Blood Glucose Measurement
+> A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]
+
+```
+dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C92744 ;
+    rdfs:label "Blood Glucose Measurement"^^xsd:string ;
+    skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]"^^xsd:string .
+```
+
+Subclasses of **dpo:BloodGlucoseMeasurement** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
+
+![pto:BloodGlucoseMeasurement](./assets/images/BloodGlucoseMeasurement.png)
+
+#### Prediabetes Fasting Blood Glucose Level
+> FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
+
+```
+dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:1558-6 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:PrediabetesFastingBloodGlucoseRange ] ) ;
+    rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string ;
+    rdfs:comment " impaired fasting glucose"^^xsd:string ;
+    skos:definition "FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+
+dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes Fasting Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "100"^^xsd:decimal ;
+    owl:maxInclusive "125"^^xsd:decimal .
+```
+
+#### Diabetes Fasting Blood Glucose Level
+> FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
+
+```
+dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:1558-6 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:DiabetesFastingBloodGlucoseRange ] ) ;
+    rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string ;
+    skos:definition "FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+
+dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Diabetes Fasting Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "126"^^xsd:decimal .
+```
+
+#### Prediabetes Two Hour Blood Glucose Level
+> 2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
+
+```
+dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:1518-0 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:PrediabetesTwoHourBloodGlucoseRange ] ) ;
+    rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string ;
+    rdfs:comment "impaired glucose tolerance"^^xsd:string ;
+    skos:definition "2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+
+dpo:PrediabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes Two Hour Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "140"^^xsd:decimal ;
+    owl:maxInclusive "199"^^xsd:decimal .
+
+```
+
+#### Diabetes Two Hour Blood Glucose Level
+> 2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
+
+```
+dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:1518-0 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:DiabetesTwoHourBloodGlucoseRange ] ) ;
+    rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string ;
+    skos:definition "2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+    
+dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
+    rdfs:label "Diabetes Two Hour Blood Glucose Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "200"^^xsd:decimal .
+```
+
+#### Prediabetes HbA1C Level
+> A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
+
+```
+dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:59261-8 
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:PrediabetesHbA1CRange ] ) ;
+    rdfs:label "Prediabetes HbA1C Level"^^xsd:string ;
+    skos:definition "A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+
+dpo:PrediabetesHbA1CRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes HbA1C Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "117.58"^^xsd:decimal ;
+    owl:maxInclusive "138.62"^^xsd:decimal .
+```
+
+#### Diabetes HbA1C Level
+> A1C ≥6.5% (48 mmol/mol). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
+
+```
+dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:59261-8
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:DiabetesHbA1CRange ] ) ;
+    rdfs:label "Diabetes HbA1C Level"^^xsd:string ;
+    skos:definition "A1C ≥6.5% (48 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
+
+dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
+    rdfs:label "Prediabetes HbA1C Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "141.25"^^xsd:decimal .
+```
+
+### Cholesterol Measurement
+> The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]
+
+```
+dpo:CholesterolMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C105586 ;
+    rdfs:label "Cholesterol Measurement"^^xsd:string ;
+    skos:definition "The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]"^^xsd:string .
+```
+
+Subclasses of **dpo:CholesterolMeasurement** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
+
+![pto:CholesterolMeasurement](./assets/images/CholesterolMeasurement.png)
+
+#### Optimal LDL Level
+> 
+
+```
+dpo:OptimalLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:OptimalLDLRange ] ) ;
+    rdfs:label "Optimal LDL Level"^^xsd:string .
+
+dpo:OptimalLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Optimal LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:maxInclusive "100"^^xsd:decimal .
+```
+
+#### Near Optimal LDL Level
+> 
+
+```
+dpo:NearOptimalLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:NearOptimalLDLRange ] ) ;
+    rdfs:label "Near Optimal LDL Level"^^xsd:string .
+
+dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Near Optimal LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "100"^^xsd:decimal ;
+    owl:maxInclusive "129"^^xsd:decimal .
+```
+
+#### Borderline High LDL Level
+> 
+
+```
+dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:BorderlineHighLDLRange ] ) ;
+    rdfs:label "Borderline High LDL Level"^^xsd:string .
+
+dpo:BorderlineHighLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Borderline High LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "130"^^xsd:decimal ;
+    owl:maxInclusive "159"^^xsd:decimal .
+```
+
+#### High LDL Level
+> 
+
+```
+dpo:HighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:HighLDLRange ] ) ;
+    rdfs:label "High LDL Level"^^xsd:string .
+
+dpo:HighLDLRange rdf:type owl:DataRange ;
+    rdfs:label "High LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "160"^^xsd:decimal ;
+    owl:maxInclusive "189"^^xsd:decimal .
+```
+
+#### Very High LDL Level
+> 
+
+```
+dpo:VeryHighLDLLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:CholesterolMeasurement ;
+    owl:intersectionOf
+            ( loinc:2089-1
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:VeryHighLDLRange ] ) ;
+    rdfs:label "Very High LDL Level"^^xsd:string .
+
+dpo:VeryHighLDLRange rdf:type owl:DataRange ;
+    rdfs:label "Very High LDL Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "190"^^xsd:decimal .
+```
+
+### Triglyceride Measurement
+> A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]
+
+```
+dpo:TriglycerideMeasurement rdf:type owl:Class ; 
+    rdfs:subClassOf dpo:Measurement ;
+    owl:equivalentClass ncit:C64812 ;
+    rdfs:label "Triglyceride Measurement"^^xsd:string ;
+    skos:definition "A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]"^^xsd:string .
+```
+
+Subclasses of **dpo:TriglycerideMeasurement** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
+
+![pto:TriglycerideMeasurement](./assets/images/TriglycerideMeasurement.png)
+
+#### Normal Triglyceride Level
+> 
+
+```
+dpo:NormalTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:NormalTriglycerideRange ] ) ;
+    rdfs:label "Normal Triglyceride Level"^^xsd:string .
+
+dpo:NormalTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "Normal Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:maxInclusive "149"^^xsd:decimal .
+```
+
+#### Borderline High Triglyceride Level
+> 
+
+```
+dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:BorderlineHighTriglycerideRange ] ) ;
+    rdfs:label "Borderline High Triglyceride Level"^^xsd:string .
+
+dpo:BorderlineHighTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "Borderline High Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "150"^^xsd:decimal ;
+    owl:maxInclusive "199"^^xsd:decimal .
+```
+
+#### High Triglyceride Level
+> 
+
+```
+dpo:HighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:HighTriglycerideRange ] ) ;
+    rdfs:label "High Triglyceride Level"^^xsd:string .
+
+dpo:HighTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "High Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "200"^^xsd:decimal ;
+    owl:maxInclusive "499"^^xsd:decimal .
+```
+
+#### Very High Triglyceride Level
+> 
+
+```
+dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:TriglycerideMeasurement ;
+    owl:intersectionOf
+            ( loinc:12228-3
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:VeryHighTriglycerideRange ] ) ;
+    rdfs:label "Very High Triglyceride Level"^^xsd:string .
+
+dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
+    rdfs:label "Very High Triglyceride Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "500"^^xsd:decimal .
+```
+
 
 ## Therapy
 > An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. [Definition Source: NCI]
@@ -1480,481 +1956,6 @@ dpo:Glimepiride rdfs:subClassOf dpo:Sulfonylurea ;
     owl:equivalentClass chebi:5383 , ncit:C29073 ;
     rdfs:label "Glimepiride"^^xsd:string ;
     skos:definition "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. [Definition Source: NCI]"^^xsd:string .
-```
-
-## Measurement
-> Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]
-
-```
-dpo:Measurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Factor ;
-    owl:equivalentClass ncit:C25209 ;
-    rdfs:label "Measurement"^^xsd:string ;
-    rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
-    skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
-```
-
-The measurement branch contains categorizations that can be made based on lab measurements. Subclasses of **dpo:Measurement** include **dpo:BodyMassIndexFinding**, **dpo:BloodGlucoseMeasurement**, **dpo:CholesterolMeasurement**, and **dpo:TriglycerideMeasurement**.
-
-![pto:Measurement](./assets/images/Measurement.png)
-
-The measurement categorizations included in the ontology are based on measurement values found in the diabetes related NetCE case studies.
-
-### Body Mass Index Finding
-> The result of a body mass index measurement. [Definition Source: NCI]
-
-```
-dpo:BodyMassIndexFinding rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
-    owl:equivalentClass ncit:C138901 ;
-    rdfs:label "Body Mass Index Finding"^^xsd:string ;
-    skos:definition "The result of a body mass index measurement. [Definition Source: NCI]"^^xsd:string .
-```
-
-Subclasses of **dpo:BodyMassIndexFinding** include **dpo:Underweight**, **dpo:NormalWeight**, **dpo:Overweight**, and **dpo:Obese**.
-
-![pto:BodyMassIndexFinding](./assets/images/BodyMassIndexFinding.png)
-
-The categorization of the BMI measurements and the associated BMI ranges are based on the Centers for Disease Control and Prevention interpretation of BMI for adults.
-
-#### Underweight
-> The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]
-
-```
-dpo:Underweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:BodyMassIndexFinding ;
-    owl:equivalentClass efo:0005936 ;
-    owl:intersectionOf
-            ( ncit:C138901 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:UnderweightBMIRange ] ) ;
-    rdfs:label "Underweight"^^xsd:string ;
-    rdfs:comment "BMI<18.5"^^xsd:string ;
-    skos:definition "The quantification of weight/height relationships below a certain threshold that classes an individual as underweight. This threshold may vary based on an individual's ethnicity but is commonly considered in European populations to correspond to a BMI < 18. [Definition Source: EFO:0005936]"^^xsd:string .
-
-dpo:UnderweightBMIRange rdf:type owl:DataRange ;
-    rdfs:label "Underweight BMI Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:maxInclusive "18.5"^^xsd:decimal .
-```
-
-#### Normal Weight
-> BMI greater than or equal to 18.5 to 24.9 kg/m^2 [Definition Source: [https://www.ncbi.nlm.nih.gov/books/NBK541070/](https://www.ncbi.nlm.nih.gov/books/NBK541070/) ]
-
-```
-dpo:NormalWeight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:BodyMassIndexFinding ;
-    owl:intersectionOf
-            ( ncit:C138901 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:NormalWeightBMIRange ] ) ;
-    rdfs:label "Normal Weight"^^xsd:string ;
-    rdfs:comment "18.5<BMI<24.9"^^xsd:string ;
-    skos:definition "BMI greater than or equal to 18.5 to 24.9 kg/m^2 [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK541070/ ]"^^xsd:string .
-
-dpo:NormalWeightBMIRange rdf:type owl:DataRange ;
-    rdfs:label "Normal Weight BMI Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "18.5"^^xsd:decimal ;
-    owl:maxInclusive "24.9"^^xsd:decimal .
-```
-
-
-#### Overweight
-> The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]
-
-```
-dpo:Overweight rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:BodyMassIndexFinding ;
-    owl:equivalentClass efo:0005935 ;
-    owl:intersectionOf
-            ( ncit:C138901 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:OverweightBMIRange ] ) ;
-    rdfs:label "Overweight"^^xsd:string ;
-    rdfs:comment "25<BMI<30"^^xsd:string ;
-    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a 25<BMI<30. [Definition Source: EFO:0005935]"^^xsd:string .
-
-dpo:OverweightBMIRange rdf:type owl:DataRange ;
-    rdfs:label "Overweight BMI Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "25"^^xsd:decimal ;
-    owl:maxInclusive "30"^^xsd:decimal .
-```
-
-#### Obese
-> Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]
-
-> The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EBI:0007041]
-
-```
-dpo:Obese rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BodyMassIndexFinding ;
-    owl:intersectionOf
-            ( ncit:C138901 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:ObeseBMIRange ] ) ;
-    owl:equivalentClass symp:0020018 , ncit:C3283 , efo:0007041;
-    rdfs:label "Obese"^^xsd:string ;
-    rdfs:comment "30<BMI"^^xsd:string ;
-    skos:definition "Having a high amount of body fat (body mass index [BMI] of 30 or more). [Definition Source: NCI]"^^xsd:string ;
-    skos:definition "The quantification of weight/height relationships above a certain threshold that classes an individual as overweight. This threshold may vary based on an individual's ethnicity but is commonly considered to correspond in European populations to a BMI > 30. [Definition Source: EFO:0007041]" .
-
-dpo:ObeseBMIRange rdf:type owl:DataRange ;
-    rdfs:label "Obese BMI Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "30"^^xsd:decimal .
-```
-
-### Blood Glucose Measurement
-> A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]
-
-```
-dpo:BloodGlucoseMeasurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
-    owl:equivalentClass ncit:C92744 ;
-    rdfs:label "Blood Glucose Measurement"^^xsd:string ;
-    skos:definition "A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]"^^xsd:string .
-```
-
-Subclasses of **dpo:BloodGlucoseMeasurement** include **dpo:PrediabetesFastingBloodGlucoseLevel**, **dpo:DiabetesFastingBloodGlucoseLevel**, **dpo:PrediabetesTwoHourBloodGlucoseLevel**, **dpo:DiabetesTwoHourBloodGlucoseLevel**, **dpo:PrediabetesHbA1CLevel**, and **dpo:DiabetesHbA1CLevel**.
-
-![pto:BloodGlucoseMeasurement](./assets/images/BloodGlucoseMeasurement.png)
-
-#### Prediabetes Fasting Blood Glucose Level
-> FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
-
-```
-dpo:PrediabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
-    owl:intersectionOf
-            ( loinc:1558-6 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:PrediabetesFastingBloodGlucoseRange ] ) ;
-    rdfs:label "Prediabetes Fasting Blood Glucose Level"^^xsd:string ;
-    rdfs:comment " impaired fasting glucose"^^xsd:string ;
-    skos:definition "FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
-
-dpo:PrediabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
-    rdfs:label "Prediabetes Fasting Blood Glucose Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "100"^^xsd:decimal ;
-    owl:maxInclusive "125"^^xsd:decimal .
-```
-
-#### Diabetes Fasting Blood Glucose Level
-> FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
-
-```
-dpo:DiabetesFastingBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
-    owl:intersectionOf
-            ( loinc:1558-6 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:DiabetesFastingBloodGlucoseRange ] ) ;
-    rdfs:label "Diabetes Fasting Blood Glucose Level"^^xsd:string ;
-    skos:definition "FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
-
-dpo:DiabetesFastingBloodGlucoseRange rdf:type owl:DataRange ;
-    rdfs:label "Diabetes Fasting Blood Glucose Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "126"^^xsd:decimal .
-```
-
-#### Prediabetes Two Hour Blood Glucose Level
-> 2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
-
-```
-dpo:PrediabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
-    owl:intersectionOf
-            ( loinc:1518-0 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:PrediabetesTwoHourBloodGlucoseRange ] ) ;
-    rdfs:label "Prediabetes Two Hour Blood Glucose Level"^^xsd:string ;
-    rdfs:comment "impaired glucose tolerance"^^xsd:string ;
-    skos:definition "2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
-
-dpo:PrediabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
-    rdfs:label "Prediabetes Two Hour Blood Glucose Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "140"^^xsd:decimal ;
-    owl:maxInclusive "199"^^xsd:decimal .
-
-```
-
-#### Diabetes Two Hour Blood Glucose Level
-> 2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
-
-```
-dpo:DiabetesTwoHourBloodGlucoseLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
-    owl:intersectionOf
-            ( loinc:1518-0 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:DiabetesTwoHourBloodGlucoseRange ] ) ;
-    rdfs:label "Diabetes Two Hour Blood Glucose Level"^^xsd:string ;
-    skos:definition "2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
-    
-dpo:DiabetesTwoHourBloodGlucoseRange rdf:type owl:DataRange ;
-    rdfs:label "Diabetes Two Hour Blood Glucose Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "200"^^xsd:decimal .
-```
-
-#### Prediabetes HbA1C Level
-> A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
-
-```
-dpo:PrediabetesHbA1CLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
-    owl:intersectionOf
-            ( loinc:59261-8 
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:PrediabetesHbA1CRange ] ) ;
-    rdfs:label "Prediabetes HbA1C Level"^^xsd:string ;
-    skos:definition "A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
-
-dpo:PrediabetesHbA1CRange rdf:type owl:DataRange ;
-    rdfs:label "Prediabetes HbA1C Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "117.58"^^xsd:decimal ;
-    owl:maxInclusive "138.62"^^xsd:decimal .
-```
-
-#### Diabetes HbA1C Level
-> A1C ≥6.5% (48 mmol/mol). [Definition Source: [https://doi.org/10.2337/dc22-S002](https://doi.org/10.2337/dc22-S002) ]
-
-```
-dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
-    owl:intersectionOf
-            ( loinc:59261-8
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:DiabetesHbA1CRange ] ) ;
-    rdfs:label "Diabetes HbA1C Level"^^xsd:string ;
-    skos:definition "A1C ≥6.5% (48 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
-
-dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
-    rdfs:label "Prediabetes HbA1C Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "141.25"^^xsd:decimal .
-```
-
-### Cholesterol Measurement
-> The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]
-
-```
-dpo:CholesterolMeasurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
-    owl:equivalentClass ncit:C105586 ;
-    rdfs:label "Cholesterol Measurement"^^xsd:string ;
-    skos:definition "The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]"^^xsd:string .
-```
-
-Subclasses of **dpo:CholesterolMeasurement** include **dpo:OptimalLDLLevel**, **dpo:NearOptimalLDLLevel**, **dpo:BorderlineHighLDLLevel**, **dpo:HighLDLLevel**, and **dpo:VeryHighLDLLevel**.
-
-![pto:CholesterolMeasurement](./assets/images/CholesterolMeasurement.png)
-
-#### Optimal LDL Level
-> 
-
-```
-dpo:OptimalLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolMeasurement ;
-    owl:intersectionOf
-            ( loinc:2089-1
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:OptimalLDLRange ] ) ;
-    rdfs:label "Optimal LDL Level"^^xsd:string .
-
-dpo:OptimalLDLRange rdf:type owl:DataRange ;
-    rdfs:label "Optimal LDL Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:maxInclusive "100"^^xsd:decimal .
-```
-
-#### Near Optimal LDL Level
-> 
-
-```
-dpo:NearOptimalLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolMeasurement ;
-    owl:intersectionOf
-            ( loinc:2089-1
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:NearOptimalLDLRange ] ) ;
-    rdfs:label "Near Optimal LDL Level"^^xsd:string .
-
-dpo:NearOptimalLDLRange rdf:type owl:DataRange ;
-    rdfs:label "Near Optimal LDL Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "100"^^xsd:decimal ;
-    owl:maxInclusive "129"^^xsd:decimal .
-```
-
-#### Borderline High LDL Level
-> 
-
-```
-dpo:BorderlineHighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolMeasurement ;
-    owl:intersectionOf
-            ( loinc:2089-1
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:BorderlineHighLDLRange ] ) ;
-    rdfs:label "Borderline High LDL Level"^^xsd:string .
-
-dpo:BorderlineHighLDLRange rdf:type owl:DataRange ;
-    rdfs:label "Borderline High LDL Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "130"^^xsd:decimal ;
-    owl:maxInclusive "159"^^xsd:decimal .
-```
-
-#### High LDL Level
-> 
-
-```
-dpo:HighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolMeasurement ;
-    owl:intersectionOf
-            ( loinc:2089-1
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:HighLDLRange ] ) ;
-    rdfs:label "High LDL Level"^^xsd:string .
-
-dpo:HighLDLRange rdf:type owl:DataRange ;
-    rdfs:label "High LDL Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "160"^^xsd:decimal ;
-    owl:maxInclusive "189"^^xsd:decimal .
-```
-
-#### Very High LDL Level
-> 
-
-```
-dpo:VeryHighLDLLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:CholesterolMeasurement ;
-    owl:intersectionOf
-            ( loinc:2089-1
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:VeryHighLDLRange ] ) ;
-    rdfs:label "Very High LDL Level"^^xsd:string .
-
-dpo:VeryHighLDLRange rdf:type owl:DataRange ;
-    rdfs:label "Very High LDL Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "190"^^xsd:decimal .
-```
-
-### Triglyceride Measurement
-> A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]
-
-```
-dpo:TriglycerideMeasurement rdf:type owl:Class ; 
-    rdfs:subClassOf dpo:Measurement ;
-    owl:equivalentClass ncit:C64812 ;
-    rdfs:label "Triglyceride Measurement"^^xsd:string ;
-    skos:definition "A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]"^^xsd:string .
-```
-
-Subclasses of **dpo:TriglycerideMeasurement** include **dpo:NormalTriglycerideLevel**, **dpo:BorderlineHighTriglycerideLevel**, **dpo:HighTriglycerideLevel**, and **dpo:VeryHighTriglycerideLevel**.
-
-![pto:TriglycerideMeasurement](./assets/images/TriglycerideMeasurement.png)
-
-#### Normal Triglyceride Level
-> 
-
-```
-dpo:NormalTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideMeasurement ;
-    owl:intersectionOf
-            ( loinc:12228-3
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:NormalTriglycerideRange ] ) ;
-    rdfs:label "Normal Triglyceride Level"^^xsd:string .
-
-dpo:NormalTriglycerideRange rdf:type owl:DataRange ;
-    rdfs:label "Normal Triglyceride Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:maxInclusive "149"^^xsd:decimal .
-```
-
-#### Borderline High Triglyceride Level
-> 
-
-```
-dpo:BorderlineHighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideMeasurement ;
-    owl:intersectionOf
-            ( loinc:12228-3
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:BorderlineHighTriglycerideRange ] ) ;
-    rdfs:label "Borderline High Triglyceride Level"^^xsd:string .
-
-dpo:BorderlineHighTriglycerideRange rdf:type owl:DataRange ;
-    rdfs:label "Borderline High Triglyceride Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "150"^^xsd:decimal ;
-    owl:maxInclusive "199"^^xsd:decimal .
-```
-
-#### High Triglyceride Level
-> 
-
-```
-dpo:HighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideMeasurement ;
-    owl:intersectionOf
-            ( loinc:12228-3
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:HighTriglycerideRange ] ) ;
-    rdfs:label "High Triglyceride Level"^^xsd:string .
-
-dpo:HighTriglycerideRange rdf:type owl:DataRange ;
-    rdfs:label "High Triglyceride Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "200"^^xsd:decimal ;
-    owl:maxInclusive "499"^^xsd:decimal .
-```
-
-#### Very High Triglyceride Level
-> 
-
-```
-dpo:VeryHighTriglycerideLevel rdf:type owl:Class ;
-    rdfs:subClassOf dpo:TriglycerideMeasurement ;
-    owl:intersectionOf
-            ( loinc:12228-3
-              [ rdf:type owl:Restriction ;
-                owl:onProperty sio:hasValue ;
-                owl:allValuesFrom dpo:VeryHighTriglycerideRange ] ) ;
-    rdfs:label "Very High Triglyceride Level"^^xsd:string .
-
-dpo:VeryHighTriglycerideRange rdf:type owl:DataRange ;
-    rdfs:label "Very High Triglyceride Range" ;
-    owl:onDataRange xsd:decimal ;
-    owl:minInclusive "500"^^xsd:decimal .
 ```
 
 # Personal Health Knowledge Graph
