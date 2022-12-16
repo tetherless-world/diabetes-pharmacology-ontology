@@ -1,0 +1,31 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: false
+Observation: http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/DiabetesHbA1CLevelPatient
+Abducibles: http://purl.org/twc/dpo/ont/DiabetesHbA1CLevelPatient, http://purl.org/twc/dpo/kb/patient, http://purl.org/twc/dpo/ont/DiabetesHbA1CLevel,  http://hl7.org/fhir/Patient,  http://semanticscience.org/resource/hasAttribute, http://purl.org/twc/dpo/kb/diabetesHbA1CLevel, http://purl.org/twc/dpo/ont/MedicationNotEffectivePatient, http://purl.org/twc/dpo/ont/MedicationNotEffective, http://purl.org/twc/dpo/kb/medicationNotEffective, http://purl.org/twc/dpo/ont/InsufficientExercisePatient, http://purl.org/twc/dpo/ont/InsufficientExercise, http://purl.org/twc/dpo/kb/insufficientExercise, http://purl.org/twc/dpo/ont/HighSugarDietPatient, http://purl.org/twc/dpo/ont/HighSugarDiet, http://purl.org/twc/dpo/kb/highSugarDiet, http://purl.org/twc/dpo/ont/NotComplyingWithTherapy,http://purl.org/twc/dpo/ont/NotComplyingWithTherapyPatient, http://purl.org/twc/dpo/kb/notComplyingWithTherapy
+Depth limitation: 1
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 13
+Number of roles: 1
+Number of individuals: 7
+Number of TBox axioms: 18
+Number of ABox assertions: 7
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 0.91 n 103 ta 100 r 2 p 1 tt 0.0 kb 0.5500000000000002 ata 144 att 0.18999999999999995
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 1
+Number of nodes: 103
+Number of TA calls: 100
+Number of reused models: 2
+Number of pruned nodes: 1
+Number of explanations: 4
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/HighSugarDietPatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/MedicationNotEffectivePatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/NotComplyingWithTherapyPatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/InsufficientExercisePatient}}

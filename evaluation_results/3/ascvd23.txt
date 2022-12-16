@@ -1,0 +1,30 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: true
+Observation: http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/PotentialASCVDBenefitDiabetesTherapy
+Abducibles:  http://purl.org/twc/dpo/ont/Pioglitazone , http://purl.org/twc/dpo/ont/Rosiglitazone , http://purl.org/twc/dpo/ont/Biguanide , http://purl.org/twc/dpo/ont/Metformin, http://purl.org/twc/dpo/ont/Sulfonylurea, http://purl.org/twc/dpo/ont/Glimepiride , http://purl.org/twc/dpo/ont/Glipizide , http://purl.org/twc/dpo/ont/Glyburide , http://purl.org/twc/dpo/kb/therapy
+Depth limitation: 2
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 117
+Number of roles: 1
+Number of individuals: 81
+Number of TBox axioms: 217
+Number of ABox assertions: 115
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 1.73 n 73 ta 62 r 11 p 0 tt 0.0 kb 0.97 ata 74 att 0.49
+2 time 13.94 n 5113 ta 1929 r 588 p 2596 tt 0.9899999999999993 kb 7.630000000000003 ata 2526 att 1.0799999999999998
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 2
+Number of nodes: 5113
+Number of TA calls: 1929
+Number of reused models: 588
+Number of pruned nodes: 2596
+Number of explanations: 2
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Pioglitazone}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Metformin}}

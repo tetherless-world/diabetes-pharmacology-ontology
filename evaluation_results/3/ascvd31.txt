@@ -1,0 +1,36 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: true
+Observation: http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/PotentialASCVDBenefitDiabetesTherapy
+Abducibles: http://purl.org/twc/dpo/ont/SGLT2Inhibitor , http://purl.org/twc/dpo/ont/Empagliflozin , http://purl.org/twc/dpo/ont/Canagliflozin , http://purl.org/twc/dpo/ont/Dapagliflozin , http://purl.org/twc/dpo/ont/Ertugliflozin , http://purl.org/twc/dpo/ont/GLP1RA , http://purl.org/twc/dpo/ont/Dulaglutide , http://purl.org/twc/dpo/ont/Liraglutide , http://purl.org/twc/dpo/ont/Semaglutide , http://purl.org/twc/dpo/kb/therapy
+Depth limitation: 3
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 117
+Number of roles: 1
+Number of individuals: 81
+Number of TBox axioms: 229
+Number of ABox assertions: 115
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 2.83 n 91 ta 79 r 12 p 0 tt 0.08999999999999997 kb 1.04 ata 95 att 1.4300000000000006
+2 time 20.85 n 7741 ta 2486 r 1240 p 4015 tt 1.3499999999999974 kb 9.729999999999997 ata 3795 att 2.219999999999997
+timeout
+timeout
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 3
+Number of nodes: 19647
+Number of TA calls: 8842
+Number of reused models: 4660
+Number of pruned nodes: 6145
+Number of explanations: 6
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Empagliflozin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Liraglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Semaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Canagliflozin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Dulaglutide}, 
+{http://purl.org/twc/dpo/ont/Canagliflozin: http://purl.org/twc/dpo/ont/Dulaglutide, http://purl.org/twc/dpo/ont/Dapagliflozin: http://purl.org/twc/dpo/ont/Liraglutide, http://purl.org/twc/dpo/ont/Liraglutide: http://purl.org/twc/dpo/ont/Empagliflozin}}

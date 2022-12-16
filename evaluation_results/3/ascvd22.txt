@@ -1,0 +1,28 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: true
+Observation: http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/PotentialASCVDBenefitDiabetesTherapy
+Abducibles:  http://purl.org/twc/dpo/ont/Lixisenatide , http://purl.org/twc/dpo/ont/Exenatide , http://purl.org/twc/dpo/ont/DPP4Inhibitor , http://purl.org/twc/dpo/ont/Sitagliptin , http://purl.org/twc/dpo/ont/Saxagliptin , http://purl.org/twc/dpo/ont/Alogliptin , http://purl.org/twc/dpo/ont/Linagliptin , http://purl.org/twc/dpo/ont/Thiazolidinedione , http://purl.org/twc/dpo/kb/therapy
+Depth limitation: 2
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 117
+Number of roles: 1
+Number of individuals: 81
+Number of TBox axioms: 235
+Number of ABox assertions: 115
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 1.43 n 73 ta 67 r 6 p 0 tt 0.18999999999999984 kb 1.1500000000000001 ata 72 att 0.0
+2 time 15.27 n 5257 ta 2226 r 425 p 2606 tt 1.559999999999997 kb 9.489999999999998 ata 2659 att 0.5100000000000007
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 2
+Number of nodes: 5257
+Number of TA calls: 2226
+Number of reused models: 425
+Number of pruned nodes: 2606
+Number of explanations: 0
+--------------------EXPLANATIONS-------------------
+All explanations: no explanations

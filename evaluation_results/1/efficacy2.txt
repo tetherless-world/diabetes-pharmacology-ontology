@@ -1,0 +1,42 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: true
+Observation: http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/HighEfficacyDiabetesTherapy
+Abducibles: http://purl.org/twc/dpo/ont/SGLT2Inhibitor , http://purl.org/twc/dpo/ont/Empagliflozin , http://purl.org/twc/dpo/ont/Canagliflozin , http://purl.org/twc/dpo/ont/Dapagliflozin , http://purl.org/twc/dpo/ont/Ertugliflozin , http://purl.org/twc/dpo/ont/GLP1RA , http://purl.org/twc/dpo/ont/Dulaglutide , http://purl.org/twc/dpo/ont/Liraglutide , http://purl.org/twc/dpo/ont/Semaglutide , http://purl.org/twc/dpo/ont/Lixisenatide , http://purl.org/twc/dpo/ont/Exenatide , http://purl.org/twc/dpo/ont/DPP4Inhibitor , http://purl.org/twc/dpo/ont/Sitagliptin , http://purl.org/twc/dpo/ont/Saxagliptin , http://purl.org/twc/dpo/ont/Alogliptin , http://purl.org/twc/dpo/ont/Linagliptin , http://purl.org/twc/dpo/ont/Thiazolidinedione , http://purl.org/twc/dpo/ont/Pioglitazone , http://purl.org/twc/dpo/ont/Rosiglitazone , http://purl.org/twc/dpo/ont/Biguanide , http://purl.org/twc/dpo/ont/Metformin, http://purl.org/twc/dpo/ont/Sulfonylurea, http://purl.org/twc/dpo/ont/Glimepiride , http://purl.org/twc/dpo/ont/Glipizide , http://purl.org/twc/dpo/ont/Glyburide , http://purl.org/twc/dpo/kb/therapy
+Depth limitation: 2
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 117
+Number of roles: 1
+Number of individuals: 81
+Number of TBox axioms: 234
+Number of ABox assertions: 115
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 8.47 n 651 ta 542 r 109 p 0 tt 0.3699999999999999 kb 3.070000000000003 ata 664 att 3.769999999999998
+timeout
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 2
+Number of nodes: 8406
+Number of TA calls: 6804
+Number of reused models: 1356
+Number of pruned nodes: 246
+Number of explanations: 14
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Glyburide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Sulfonylurea}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Glimepiride}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Exenatide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Pioglitazone}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Dulaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Thiazolidinedione}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Rosiglitazone}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Liraglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Lixisenatide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Metformin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Glipizide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Semaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/GLP1RA}}

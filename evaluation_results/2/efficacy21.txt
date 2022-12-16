@@ -1,0 +1,35 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: true
+Observation: http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/HighEfficacyDiabetesTherapy
+Abducibles: http://purl.org/twc/dpo/ont/SGLT2Inhibitor , http://purl.org/twc/dpo/ont/Empagliflozin , http://purl.org/twc/dpo/ont/Canagliflozin , http://purl.org/twc/dpo/ont/Dapagliflozin , http://purl.org/twc/dpo/ont/Ertugliflozin , http://purl.org/twc/dpo/ont/GLP1RA , http://purl.org/twc/dpo/ont/Dulaglutide , http://purl.org/twc/dpo/ont/Liraglutide , http://purl.org/twc/dpo/ont/Semaglutide , http://purl.org/twc/dpo/ont/Lixisenatide , http://purl.org/twc/dpo/ont/Exenatide , http://purl.org/twc/dpo/ont/DPP4Inhibitor , http://purl.org/twc/dpo/ont/Sitagliptin , http://purl.org/twc/dpo/kb/therapy
+Depth limitation: 2
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 117
+Number of roles: 1
+Number of individuals: 81
+Number of TBox axioms: 230
+Number of ABox assertions: 115
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 3.73 n 183 ta 158 r 25 p 0 tt 0.19999999999999996 kb 1.7400000000000007 ata 188 att 1.4999999999999996
+timeout
+timeout
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 2
+Number of nodes: 17117
+Number of TA calls: 8626
+Number of reused models: 3599
+Number of pruned nodes: 4892
+Number of explanations: 6
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Exenatide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Semaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Liraglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Dulaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Lixisenatide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/GLP1RA}}

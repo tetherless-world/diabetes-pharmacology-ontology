@@ -1,0 +1,37 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: true
+Observation: http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/WeightLossDiabetesTherapy
+Abducibles: http://purl.org/twc/dpo/ont/SGLT2Inhibitor , http://purl.org/twc/dpo/ont/Empagliflozin , http://purl.org/twc/dpo/ont/Canagliflozin , http://purl.org/twc/dpo/ont/Dapagliflozin , http://purl.org/twc/dpo/ont/Ertugliflozin , http://purl.org/twc/dpo/ont/GLP1RA , http://purl.org/twc/dpo/ont/Dulaglutide , http://purl.org/twc/dpo/ont/Liraglutide , http://purl.org/twc/dpo/ont/Semaglutide , http://purl.org/twc/dpo/kb/therapy
+Depth limitation: 2
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 117
+Number of roles: 1
+Number of individuals: 81
+Number of TBox axioms: 224
+Number of ABox assertions: 115
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 3.52 n 91 ta 75 r 16 p 0 tt 0.08999999999999997 kb 0.8499999999999996 ata 99 att 2.2
+2 time 20.3 n 7381 ta 2360 r 1034 p 3987 tt 0.6800000000000016 kb 10.270000000000005 ata 3465 att 2.5999999999999996
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 2
+Number of nodes: 7381
+Number of TA calls: 2360
+Number of reused models: 1034
+Number of pruned nodes: 3987
+Number of explanations: 9
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Empagliflozin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Dapagliflozin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Canagliflozin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Semaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/GLP1RA}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Ertugliflozin}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Dulaglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/Liraglutide}, 
+{http://purl.org/twc/dpo/kb/therapy: http://purl.org/twc/dpo/ont/SGLT2Inhibitor}}

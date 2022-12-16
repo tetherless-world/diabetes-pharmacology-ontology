@@ -1,0 +1,32 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: false
+Observation: http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/InsufficientExercisePatient
+Abducibles: 
+Depth limitation: 3
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 12
+Number of roles: 1
+Number of individuals: 2
+Number of TBox axioms: 21
+Number of ABox assertions: 2
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 0.39 n 14 ta 11 r 2 p 1 tt 0.0 kb 0.39 ata 15 att 0.0
+2 time 0.68 n 131 ta 49 r 20 p 62 tt 0.0 kb 0.39 ata 97 att 0.08999999999999997
+3 time 1.33 n 521 ta 164 r 80 p 277 tt 0.0 kb 0.4900000000000001 ata 379 att 0.5499999999999999
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 3
+Number of nodes: 521
+Number of TA calls: 164
+Number of reused models: 80
+Number of pruned nodes: 277
+Number of explanations: 3
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/InjuredPatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/StepsDecreasedPatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/DecreasedActivityPatient}}

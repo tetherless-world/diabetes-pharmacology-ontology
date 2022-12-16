@@ -1,0 +1,37 @@
+Version: 0.11
+Timeout: 120 s
+-------------------INPUT DETAILS-------------------
+Negations: true
+Reduction: true
+Avoid loops: false
+Observation: http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/DiabetesHbA1CLevelPatient
+Abducibles: 
+Depth limitation: 2
+-----------------ONTOLOGY DETAILS----------------- 
+Number of concepts: 13
+Number of roles: 1
+Number of individuals: 7
+Number of TBox axioms: 18
+Number of ABox assertions: 7
+-------------------TIME DETAILS------------------- 
+time -- total time; n -- nodes; ta -- r. calls; r -- reused mods; p -- pruned nodes; tt -- r. time; kb -- kb load time; ata -- aux r. calls; att -- aux r. time
+1 time 1.01 n 115 ta 110 r 4 p 1 tt 0.0 kb 0.93 ata 166 att 0.0
+2 time 14.2 n 6955 ta 4675 r 172 p 2108 tt 0.1999999999999995 kb 3.6800000000000024 ata 7873 att 2.6499999999999995
+--------------------MHS DETAILS--------------------
+Depth of MHS-tree: 2
+Number of nodes: 6955
+Number of TA calls: 4675
+Number of reused models: 172
+Number of pruned nodes: 2108
+Number of explanations: 9
+--------------------EXPLANATIONS-------------------
+All explanations: {
+{http://purl.org/twc/dpo/kb/patient: http://hl7.org/fhir/Patient, http://purl.org/twc/dpo/kb/patient: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/dpo/kb/medicationNotEffective))}, 
+{http://purl.org/twc/dpo/kb/patient: http://hl7.org/fhir/Patient, http://purl.org/twc/dpo/kb/patient: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/dpo/kb/diabetesHbA1CLevel))}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/HighSugarDietPatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://hl7.org/fhir/Patient, http://purl.org/twc/dpo/kb/patient: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/dpo/kb/insufficientExercise))}, 
+{http://purl.org/twc/dpo/kb/patient: http://hl7.org/fhir/Patient, http://purl.org/twc/dpo/kb/patient: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/dpo/kb/notComplyingWithTherapy))}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/InsufficientExercisePatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/NotComplyingWithTherapyPatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://purl.org/twc/dpo/ont/MedicationNotEffectivePatient}, 
+{http://purl.org/twc/dpo/kb/patient: http://hl7.org/fhir/Patient, http://purl.org/twc/dpo/kb/patient: some(http://semanticscience.org/resource/hasAttribute,value(http://purl.org/twc/dpo/kb/highSugarDiet))}}
