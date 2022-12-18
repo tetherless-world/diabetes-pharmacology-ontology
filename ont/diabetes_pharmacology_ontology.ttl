@@ -26,10 +26,7 @@
     owl:versionIRI <http://purl.org/twc/dpo/ont/0.1> .
 
 dpo:Thing rdf:type owl:Class ;
-    rdfs:label "Thing" .#;
-    #owl:equivalentClass ncit:C25506 ;
-    #rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
-    #skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
+    rdfs:label "Thing" .
     
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
     rdfs:subClassOf dpo:Thing ;
@@ -48,10 +45,10 @@ dpo:DiagnosticFactor rdf:type owl:Class ;
     
 dpo:PatientCharacteristic rdf:type owl:Class ;
     rdfs:subClassOf dpo:DiagnosticFactor ;
-    #owl:equivalentClass ncit:C19591 ;
-    rdfs:label "Patient Characteristic" . # ;
-    #rdfs:comment "A circumstance influencing the dianosis of a disease."^^xsd:string ;
-    #skos:definition "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]"^^xsd:string .
+    owl:equivalentClass ncit:C25447 ;
+    rdfs:label "Patient Characteristic" ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "The distinguishing qualities or prominent aspect of a person. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Therapy rdf:type owl:Class ;
     rdfs:subClassOf dpo:Thing ;
@@ -62,7 +59,7 @@ dpo:Therapy rdf:type owl:Class ;
 
 dpo:TestFinding rdf:type owl:Class ; 
     rdfs:subClassOf dpo:DiagnosticFactor ;
-    #owl:equivalentClass ncit:C25209 ;
+    owl:equivalentClass ncit:C25209 ;
     rdfs:label "Test Finding"^^xsd:string ;
     rdfs:comment "A finding or categorization surmised from recorded measurements."^^xsd:string ;
     skos:definition "Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]"^^xsd:string .
@@ -1684,9 +1681,9 @@ ncit:C19591 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;
     rdfs:label "Diagnostic Factor"^^xsd:string .
 
-ncit:C25506 rdf:type owl:Class ;
-    rdfs:subClassOf ncit:C20181 ;
-    rdfs:label "Factor"^^xsd:string .
+ncit:C25447 rdf:type owl:Class ;
+    rdfs:subClassOf ncit:C20189 ;
+    rdfs:label "Characteristic"^^xsd:string .
 
 chebi:5383 rdf:type owl:Class ;
     rdfs:subClassOf dpo:ExternalClass ;

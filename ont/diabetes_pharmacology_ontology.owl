@@ -17,7 +17,6 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="ncit" IRI="http://purl.obolibrary.org/obo/NCIT_"/>
-    <Prefix name="omit" IRI="http://purl.obolibrary.org/obo/OMIT_"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="symp" IRI="http://purl.obolibrary.org/obo/SYMP_"/>
@@ -92,6 +91,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/CHEBI_3095"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/CHEBI_40237"/>
     </Declaration>
     <Declaration>
@@ -155,10 +157,28 @@
         <Class IRI="http://purl.obolibrary.org/obo/CHEBI_85662"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0012088"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0025142"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0033072"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/HP_0100515"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/HP_0100749"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C105585"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C105586"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C138901"/>
@@ -179,16 +199,64 @@
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C166988"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C16795"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C169923"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C171128"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C173902"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C17726"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18228"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18772"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C19160"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C19591"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25193"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25209"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25218"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25447"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25457"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C26732"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27993"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29073"/>
@@ -200,22 +268,58 @@
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29076"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2931"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2938"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2985"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2991"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3117"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3149"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3283"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3303"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3390"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3430"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C34707"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C35719"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C35741"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C38665"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C39547"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C43431"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C48226"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C49236"/>
@@ -224,10 +328,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C50791"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C53458"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54625"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54707"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C61612"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C62076"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C64812"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C65611"/>
@@ -236,10 +352,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C69088"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C71633"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C73838"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C74949"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C75983"/>
@@ -251,7 +373,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C78126"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C80398"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C81229"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C81246"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C82239"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C83119"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C83887"/>
@@ -267,6 +401,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C9232"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C92744"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C97936"/>
@@ -287,16 +424,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98241"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0003194"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0009750"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0015388"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000094"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000099"/>
@@ -347,13 +478,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000891"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019163"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019169"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019177"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0020018"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:AlcoholUse"/>
@@ -368,10 +499,13 @@
         <Class abbreviatedIRI="dpo:BilateralLowerExtremityBurningSensation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:BlurredVision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:BorderlineHighLDLLevel"/>
@@ -389,7 +523,7 @@
         <Class abbreviatedIRI="dpo:ChestPain"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:Condition"/>
@@ -398,13 +532,13 @@
         <Class abbreviatedIRI="dpo:CoronaryArteryDisease"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dpo:Diabetes"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="dpo:DiabetesFastingBloodGlucoseLevel"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:DiabetesHbA1CLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dpo:DiabetesMellitus"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:DiabetesTwoHourBloodGlucoseLevel"/>
@@ -423,9 +557,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dpo:Factor"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:FamilyHistory"/>
@@ -459,9 +590,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:Hypertension"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dpo:MeasurementFinding"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:MusculoskeletalSystemSymptom"/>
@@ -498,6 +626,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:PeripheralNeuropathy"/>
@@ -545,10 +676,16 @@
         <Class abbreviatedIRI="dpo:Symptom"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dpo:Therapy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dpo:TriglycerideRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dpo:Underweight"/>
@@ -569,7 +706,7 @@
         <Class abbreviatedIRI="dpo:VisionSymptom"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dpo:WeightRelatedFinding"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004340"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005935"/>
@@ -870,6 +1007,10 @@
         <Class abbreviatedIRI="dpo:Biguanide"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+        <Class abbreviatedIRI="dpo:AntihyperglycemicTreatment"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/CHEBI_40237"/>
         <Class abbreviatedIRI="dpo:Sitagliptin"/>
     </EquivalentClasses>
@@ -954,12 +1095,24 @@
         <Class abbreviatedIRI="dpo:Lixisenatide"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0012088"/>
+        <Class abbreviatedIRI="dpo:FoulUrine"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/HP_0100515"/>
         <Class abbreviatedIRI="dpo:FrequentUrination"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/HP_0100749"/>
         <Class abbreviatedIRI="dpo:ChestPain"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C105586"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C138901"/>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C152328"/>
@@ -986,8 +1139,32 @@
         <Class abbreviatedIRI="dpo:Dulaglutide"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C17726"/>
+        <Class abbreviatedIRI="dpo:FamilyHistory"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18228"/>
+        <Class abbreviatedIRI="dpo:PharmacotherapyFactor"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18772"/>
+        <Class abbreviatedIRI="dpo:PersonalHistory"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C19591"/>
+        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25193"/>
         <Class abbreviatedIRI="dpo:Occupation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25209"/>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25447"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25457"/>
@@ -1010,12 +1187,24 @@
         <Class abbreviatedIRI="dpo:Glyburide"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2931"/>
+        <Class abbreviatedIRI="dpo:CardiovascularDisease"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2985"/>
+        <Class abbreviatedIRI="dpo:DiabetesMellitus"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2991"/>
         <Class abbreviatedIRI="dpo:Disease"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3117"/>
         <Class abbreviatedIRI="dpo:Hypertension"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3149"/>
+        <Class abbreviatedIRI="dpo:RenalDisease"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3283"/>
@@ -1034,6 +1223,14 @@
         <Class abbreviatedIRI="dpo:ChestPain"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C39547"/>
+        <Class abbreviatedIRI="dpo:Efficacy"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C48226"/>
+        <Class abbreviatedIRI="dpo:LowEfficacy"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C49236"/>
         <Class abbreviatedIRI="dpo:Therapy"/>
     </EquivalentClasses>
@@ -1042,12 +1239,20 @@
         <Class abbreviatedIRI="dpo:UrinaryTractInfection"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54625"/>
+        <Class abbreviatedIRI="dpo:History"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C61612"/>
         <Class abbreviatedIRI="dpo:Metformin"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C62076"/>
         <Class abbreviatedIRI="dpo:Rosiglitazone"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C64812"/>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C65611"/>
@@ -1078,6 +1283,18 @@
         <Class abbreviatedIRI="dpo:Dapagliflozin"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C80398"/>
+        <Class abbreviatedIRI="dpo:FamilyHistoryOfCAD"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C81229"/>
+        <Class abbreviatedIRI="dpo:AlcoholUse"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C81246"/>
+        <Class abbreviatedIRI="dpo:DrugUse"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C82239"/>
         <Class abbreviatedIRI="dpo:Liraglutide"/>
     </EquivalentClasses>
@@ -1090,16 +1307,16 @@
         <Class abbreviatedIRI="dpo:SedentaryLifestyle"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C88183"/>
-        <Class abbreviatedIRI="dpo:Efficacy"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C91018"/>
         <Class abbreviatedIRI="dpo:Canagliflozin"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C9232"/>
         <Class abbreviatedIRI="dpo:WeightChangePotential"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C92744"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C97936"/>
@@ -1124,18 +1341,6 @@
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98241"/>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0003194"/>
-        <Class abbreviatedIRI="dpo:WeightChangePotential"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0009750"/>
-        <Class abbreviatedIRI="dpo:Metformin"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0015388"/>
-        <Class abbreviatedIRI="dpo:UrinaryTractInfection"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000012"/>
@@ -1212,10 +1417,6 @@
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019177"/>
         <Class abbreviatedIRI="dpo:Fatigue"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0020018"/>
-        <Class abbreviatedIRI="dpo:Obese"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="dpo:BorderlineHighLDLLevel"/>
@@ -1456,6 +1657,10 @@
         <Class abbreviatedIRI="dpo:ExternalClass"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/CHEBI_40237"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
     </SubClassOf>
@@ -1540,212 +1745,396 @@
         <Class abbreviatedIRI="dpo:ExternalClass"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/HP_0100515"/>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0000009"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0012088"/>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0033072"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0025142"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0033072"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0100515"/>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0000009"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/HP_0100749"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0025142"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C105585"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25218"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C105586"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C74949"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C138901"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C83119"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C152328"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98085"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C158136"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98083"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C16326"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C43431"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C166925"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98083"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C166988"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98085"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C16795"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C16326"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C169923"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98085"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C171128"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C173902"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C17726"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18772"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18228"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18772"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54625"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C19160"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C19591"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20047"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20189"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25193"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C19160"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25209"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25218"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25447"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20189"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25457"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27993"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C26732"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C35741"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2991"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20189"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29073"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C97936"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29074"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C97936"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29076"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C97936"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2931"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2938"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2985"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C171128"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2991"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3117"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C173902"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3117"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54707"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3149"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3430"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3283"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C173902"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3283"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C53458"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3303"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3390"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2938"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3430"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C34707"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C34707"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C34707"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C35719"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C2991"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C35741"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C27551"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C38665"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C3303"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C39547"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C88183"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C43431"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C48226"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C39547"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C49236"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25218"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C50791"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C35719"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C53458"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54625"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C54707"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C61612"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98234"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C62076"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98241"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C64812"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C74949"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C65611"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98085"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C69088"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
         <Class abbreviatedIRI="dpo:ExternalClass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C71633"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98241"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C73838"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98086"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C25218"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C75983"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98086"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C76906"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98086"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C78126"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98083"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C80398"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C17726"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C81229"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18772"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C81246"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C18772"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C82239"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98085"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C83119"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C7057"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C83887"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98086"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C86589"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C16795"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C88183"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C20189"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C91018"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98083"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C9232"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C53458"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C92744"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C105585"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C97936"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98083"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98085"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98086"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98234"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/NCIT_C98241"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0003194"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0009750"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OMIT_0015388"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/NCIT_C29711"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000012"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019163"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000094"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000891"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000099"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000480"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000320"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019163"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000352"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000094"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000410"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
@@ -1753,59 +2142,59 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000473"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000480"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000485"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000486"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000486"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000524"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000473"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000560"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000473"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000563"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000486"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000565"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000486"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000576"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000099"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000734"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000480"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000891"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019163"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000462"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019169"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000891"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/SYMP_0019177"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0020018"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SYMP_0000410"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:AlcoholUse"/>
@@ -1829,7 +2218,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Behavior"/>
-        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Biguanide"/>
@@ -1840,20 +2229,24 @@
         <Class abbreviatedIRI="dpo:NervousSystemSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
-        <Class abbreviatedIRI="dpo:MeasurementFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:BlurredVision"/>
         <Class abbreviatedIRI="dpo:VisionSymptom"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="dpo:BorderlineHighLDLLevel"/>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:BorderlineHighTriglycerideLevel"/>
-        <Class abbreviatedIRI="dpo:TriglycerideRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Canagliflozin"/>
@@ -1863,21 +2256,21 @@
         <Class abbreviatedIRI="dpo:Canagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483824"/>
+            <AnonymousIndividual nodeID="_:genid2147483662"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Canagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483825"/>
+            <AnonymousIndividual nodeID="_:genid2147483663"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Canagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483826"/>
+            <AnonymousIndividual nodeID="_:genid2147483664"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -1897,12 +2290,12 @@
         <Class abbreviatedIRI="dpo:Pain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
-        <Class abbreviatedIRI="dpo:MeasurementFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Condition"/>
-        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:CoronaryArteryDisease"/>
@@ -1920,42 +2313,42 @@
         <Class abbreviatedIRI="dpo:DPP4Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483843"/>
+            <AnonymousIndividual nodeID="_:genid2147483681"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DPP4Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483844"/>
+            <AnonymousIndividual nodeID="_:genid2147483682"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DPP4Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483845"/>
+            <AnonymousIndividual nodeID="_:genid2147483683"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DPP4Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483846"/>
+            <AnonymousIndividual nodeID="_:genid2147483684"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DPP4Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483847"/>
+            <AnonymousIndividual nodeID="_:genid2147483685"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DPP4Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483848"/>
+            <AnonymousIndividual nodeID="_:genid2147483686"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -1966,31 +2359,31 @@
         <Class abbreviatedIRI="dpo:Dapagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483827"/>
+            <AnonymousIndividual nodeID="_:genid2147483665"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Dapagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483828"/>
+            <AnonymousIndividual nodeID="_:genid2147483666"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dpo:Diabetes"/>
-        <Class abbreviatedIRI="dpo:Disease"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="dpo:DiabetesFastingBloodGlucoseLevel"/>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DiabetesHbA1CLevel"/>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dpo:DiabetesMellitus"/>
+        <Class abbreviatedIRI="dpo:Disease"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DiabetesTwoHourBloodGlucoseLevel"/>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DiabeticKidneyDiseaseProgression"/>
@@ -1998,11 +2391,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
-        <Class abbreviatedIRI="dpo:Factor"/>
+        <Class abbreviatedIRI="dpo:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Disease"/>
-        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:DrugUse"/>
@@ -2016,14 +2409,14 @@
         <Class abbreviatedIRI="dpo:Dulaglutide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483835"/>
+            <AnonymousIndividual nodeID="_:genid2147483673"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Dulaglutide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483836"/>
+            <AnonymousIndividual nodeID="_:genid2147483674"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2042,21 +2435,21 @@
         <Class abbreviatedIRI="dpo:Empagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483821"/>
+            <AnonymousIndividual nodeID="_:genid2147483659"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Empagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483822"/>
+            <AnonymousIndividual nodeID="_:genid2147483660"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Empagliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483823"/>
+            <AnonymousIndividual nodeID="_:genid2147483661"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2067,7 +2460,7 @@
         <Class abbreviatedIRI="dpo:Ertugliflozin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483829"/>
+            <AnonymousIndividual nodeID="_:genid2147483667"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2078,7 +2471,7 @@
         <Class abbreviatedIRI="dpo:Exenatide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483842"/>
+            <AnonymousIndividual nodeID="_:genid2147483680"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2113,35 +2506,35 @@
         <Class abbreviatedIRI="dpo:GLP1RA"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483830"/>
+            <AnonymousIndividual nodeID="_:genid2147483668"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:GLP1RA"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483831"/>
+            <AnonymousIndividual nodeID="_:genid2147483669"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:GLP1RA"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483832"/>
+            <AnonymousIndividual nodeID="_:genid2147483670"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:GLP1RA"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483833"/>
+            <AnonymousIndividual nodeID="_:genid2147483671"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:GLP1RA"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483834"/>
+            <AnonymousIndividual nodeID="_:genid2147483672"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2170,15 +2563,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:HighLDLLevel"/>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:HighTriglycerideLevel"/>
-        <Class abbreviatedIRI="dpo:TriglycerideRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:History"/>
-        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Hyperlipidemia"/>
@@ -2224,14 +2617,14 @@
         <Class abbreviatedIRI="dpo:Liraglutide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483837"/>
+            <AnonymousIndividual nodeID="_:genid2147483675"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Liraglutide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483838"/>
+            <AnonymousIndividual nodeID="_:genid2147483676"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2242,7 +2635,7 @@
         <Class abbreviatedIRI="dpo:Lixisenatide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483841"/>
+            <AnonymousIndividual nodeID="_:genid2147483679"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2254,10 +2647,6 @@
         <Class abbreviatedIRI="dpo:Efficacy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dpo:MeasurementFinding"/>
-        <Class abbreviatedIRI="dpo:Factor"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <Class abbreviatedIRI="dpo:Biguanide"/>
     </SubClassOf>
@@ -2265,49 +2654,49 @@
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483810"/>
+            <AnonymousIndividual nodeID="_:genid2147483648"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483811"/>
+            <AnonymousIndividual nodeID="_:genid2147483649"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483812"/>
+            <AnonymousIndividual nodeID="_:genid2147483650"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483813"/>
+            <AnonymousIndividual nodeID="_:genid2147483651"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483814"/>
+            <AnonymousIndividual nodeID="_:genid2147483652"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483815"/>
+            <AnonymousIndividual nodeID="_:genid2147483653"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Metformin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483816"/>
+            <AnonymousIndividual nodeID="_:genid2147483654"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2316,7 +2705,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:NearOptimalLDLLevel"/>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:NervousSystemSymptom"/>
@@ -2348,11 +2737,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:NormalTriglycerideLevel"/>
-        <Class abbreviatedIRI="dpo:TriglycerideRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:NormalWeight"/>
-        <Class abbreviatedIRI="dpo:WeightRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:NutritionMetabolismAndDevelopmentSymptom"/>
@@ -2360,23 +2749,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Obese"/>
-        <Class abbreviatedIRI="dpo:WeightRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Occupation"/>
-        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:OptimalLDLLevel"/>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Overweight"/>
-        <Class abbreviatedIRI="dpo:WeightRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Pain"/>
         <Class abbreviatedIRI="dpo:NervousSystemSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
+        <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:PeripheralNeuropathy"/>
@@ -2396,7 +2789,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:PharmacotherapyFactor"/>
-        <Class abbreviatedIRI="dpo:Factor"/>
+        <Class abbreviatedIRI="dpo:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Pioglitazone"/>
@@ -2406,7 +2799,7 @@
         <Class abbreviatedIRI="dpo:Pioglitazone"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483856"/>
+            <AnonymousIndividual nodeID="_:genid2147483694"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2435,15 +2828,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:PrediabetesFastingBloodGlucoseLevel"/>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:PrediabetesHbA1CLevel"/>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:PrediabetesTwoHourBloodGlucoseLevel"/>
-        <Class abbreviatedIRI="dpo:BloodGlucoseRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BloodGlucoseMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:RenalDisease"/>
@@ -2469,28 +2862,28 @@
         <Class abbreviatedIRI="dpo:SGLT2Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483817"/>
+            <AnonymousIndividual nodeID="_:genid2147483655"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:SGLT2Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483818"/>
+            <AnonymousIndividual nodeID="_:genid2147483656"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:SGLT2Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483819"/>
+            <AnonymousIndividual nodeID="_:genid2147483657"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:SGLT2Inhibitor"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483820"/>
+            <AnonymousIndividual nodeID="_:genid2147483658"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2501,7 +2894,7 @@
         <Class abbreviatedIRI="dpo:Saxagliptin"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483849"/>
+            <AnonymousIndividual nodeID="_:genid2147483687"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2520,14 +2913,14 @@
         <Class abbreviatedIRI="dpo:Semaglutide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483839"/>
+            <AnonymousIndividual nodeID="_:genid2147483677"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Semaglutide"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483840"/>
+            <AnonymousIndividual nodeID="_:genid2147483678"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2542,58 +2935,62 @@
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483857"/>
+            <AnonymousIndividual nodeID="_:genid2147483695"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483858"/>
+            <AnonymousIndividual nodeID="_:genid2147483696"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483859"/>
+            <AnonymousIndividual nodeID="_:genid2147483697"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483860"/>
+            <AnonymousIndividual nodeID="_:genid2147483698"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483861"/>
+            <AnonymousIndividual nodeID="_:genid2147483699"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483862"/>
+            <AnonymousIndividual nodeID="_:genid2147483700"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Sulfonylurea"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483863"/>
+            <AnonymousIndividual nodeID="_:genid2147483701"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Symptom"/>
+        <Class abbreviatedIRI="dpo:PatientCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
         <Class abbreviatedIRI="dpo:DiagnosticFactor"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Therapy"/>
-        <Class abbreviatedIRI="dpo:Factor"/>
+        <Class abbreviatedIRI="dpo:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
@@ -2603,51 +3000,51 @@
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483850"/>
+            <AnonymousIndividual nodeID="_:genid2147483688"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483851"/>
+            <AnonymousIndividual nodeID="_:genid2147483689"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483852"/>
+            <AnonymousIndividual nodeID="_:genid2147483690"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483853"/>
+            <AnonymousIndividual nodeID="_:genid2147483691"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483854"/>
+            <AnonymousIndividual nodeID="_:genid2147483692"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Thiazolidinedione"/>
         <ObjectHasValue>
             <ObjectProperty abbreviatedIRI="sio:hasAttribute"/>
-            <AnonymousIndividual nodeID="_:genid2147483855"/>
+            <AnonymousIndividual nodeID="_:genid2147483693"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dpo:TriglycerideRelatedFinding"/>
-        <Class abbreviatedIRI="dpo:MeasurementFinding"/>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
+        <Class abbreviatedIRI="dpo:TestFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:Underweight"/>
-        <Class abbreviatedIRI="dpo:WeightRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:BodyMassIndexFinding"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:UrinarySystemSymptom"/>
@@ -2659,11 +3056,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:VeryHighLDLLevel"/>
-        <Class abbreviatedIRI="dpo:CholesterolRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:CholesterolMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:VeryHighTriglycerideLevel"/>
-        <Class abbreviatedIRI="dpo:TriglycerideRelatedFinding"/>
+        <Class abbreviatedIRI="dpo:TriglycerideMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dpo:VisionSymptom"/>
@@ -2682,236 +3079,236 @@
         <Class abbreviatedIRI="dpo:WeightChangePotential"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dpo:WeightRelatedFinding"/>
-        <Class abbreviatedIRI="dpo:MeasurementFinding"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004340"/>
+        <Class abbreviatedIRI="dpo:ExternalClass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005935"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004340"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005936"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004340"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ebi.ac.uk/efo/EFO_0007041"/>
-        <Class abbreviatedIRI="dpo:ExternalClass"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004340"/>
     </SubClassOf>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighEfficacy"/>
-        <AnonymousIndividual nodeID="_:genid2147483810"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralWeightChange"/>
-        <AnonymousIndividual nodeID="_:genid2147483811"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NoKnownHypoglycemiaRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483812"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483813"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralHeartFailureRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483814"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:LowCost"/>
-        <AnonymousIndividual nodeID="_:genid2147483815"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralDKDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483816"/>
+        <AnonymousIndividual nodeID="_:genid2147483654"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:IntermediateEfficacy"/>
-        <AnonymousIndividual nodeID="_:genid2147483817"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:WeightLossPotential"/>
-        <AnonymousIndividual nodeID="_:genid2147483818"/>
+        <AnonymousIndividual nodeID="_:genid2147483656"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NoKnownHypoglycemiaRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483819"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighCost"/>
-        <AnonymousIndividual nodeID="_:genid2147483820"/>
+        <AnonymousIndividual nodeID="_:genid2147483658"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483821"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialHeartFailureBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483822"/>
+        <AnonymousIndividual nodeID="_:genid2147483660"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialDKDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483823"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483824"/>
+        <AnonymousIndividual nodeID="_:genid2147483662"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialHeartFailureBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483825"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialDKDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483826"/>
+        <AnonymousIndividual nodeID="_:genid2147483664"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialHeartFailureBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483827"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialDKDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483828"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialHeartFailureBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483829"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighEfficacy"/>
-        <AnonymousIndividual nodeID="_:genid2147483830"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:WeightLossPotential"/>
-        <AnonymousIndividual nodeID="_:genid2147483831"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NoKnownHypoglycemiaRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483832"/>
+        <AnonymousIndividual nodeID="_:genid2147483670"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralHeartFailureRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483833"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighCost"/>
-        <AnonymousIndividual nodeID="_:genid2147483834"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483835"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialDKDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483836"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483837"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialDKDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483838"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483839"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialDKDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483840"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralASCVDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483841"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralASCVDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483842"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:IntermediateEfficacy"/>
-        <AnonymousIndividual nodeID="_:genid2147483843"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralWeightChange"/>
-        <AnonymousIndividual nodeID="_:genid2147483844"/>
+        <AnonymousIndividual nodeID="_:genid2147483682"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NoKnownHypoglycemiaRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483845"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralASCVDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483846"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighCost"/>
-        <AnonymousIndividual nodeID="_:genid2147483847"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralDKDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483848"/>
+        <AnonymousIndividual nodeID="_:genid2147483686"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:IncreasedHeartFailureRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483849"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighEfficacy"/>
-        <AnonymousIndividual nodeID="_:genid2147483850"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:WeightGainPotential"/>
-        <AnonymousIndividual nodeID="_:genid2147483851"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NoKnownHypoglycemiaRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483852"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:IncreasedHeartFailureRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483853"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:LowCost"/>
-        <AnonymousIndividual nodeID="_:genid2147483854"/>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralDKDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483855"/>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:PotentialASCVDBenefit"/>
-        <AnonymousIndividual nodeID="_:genid2147483856"/>
+        <AnonymousIndividual nodeID="_:genid2147483694"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:HighEfficacy"/>
-        <AnonymousIndividual nodeID="_:genid2147483857"/>
+        <AnonymousIndividual nodeID="_:genid2147483695"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:WeightGainPotential"/>
-        <AnonymousIndividual nodeID="_:genid2147483858"/>
+        <AnonymousIndividual nodeID="_:genid2147483696"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:KnownHypoglycemiaRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483859"/>
+        <AnonymousIndividual nodeID="_:genid2147483697"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralASCVDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483860"/>
+        <AnonymousIndividual nodeID="_:genid2147483698"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralHeartFailureRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483861"/>
+        <AnonymousIndividual nodeID="_:genid2147483699"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:LowCost"/>
-        <AnonymousIndividual nodeID="_:genid2147483862"/>
+        <AnonymousIndividual nodeID="_:genid2147483700"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="dpo:NeutralDKDRisk"/>
-        <AnonymousIndividual nodeID="_:genid2147483863"/>
+        <AnonymousIndividual nodeID="_:genid2147483701"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty abbreviatedIRI="dpo:hasDiagnosis"/>
@@ -2981,6 +3378,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/CHEBI_3095</IRI>
         <Literal>biguanide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_35526</IRI>
+        <Literal>hypoglycemic agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3089,6 +3491,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/HP_0000009</IRI>
+        <Literal>Functional abnormality of the bladder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/HP_0012088</IRI>
+        <Literal>Abnormal urinary odor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/HP_0025142</IRI>
+        <Literal>Constitutional symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/HP_0033072</IRI>
+        <Literal>Abnormal macroscopic urine appearance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/HP_0100515</IRI>
         <Literal>Pollakisuria</Literal>
     </AnnotationAssertion>
@@ -3096,6 +3518,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/HP_0100749</IRI>
         <Literal>Chest pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C105585</IRI>
+        <Literal>Glucose Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C105586</IRI>
+        <Literal>Cholesterol Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3129,13 +3561,83 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C16795</IRI>
+        <Literal>Lifestyle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C169923</IRI>
         <Literal>Dulaglutide</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C171128</IRI>
+        <Literal>Non-Neoplastic Endocrine Pancreas Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C173902</IRI>
+        <Literal>CTRP Clinical Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C17726</IRI>
+        <Literal>Family Medical History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C18228</IRI>
+        <Literal>Treatment Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C18772</IRI>
+        <Literal>Personal Medical History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C19160</IRI>
+        <Literal>Occupation or Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C19591</IRI>
+        <Literal>Diagnostic Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C20047</IRI>
+        <Literal>Diagnostic or Prognostic Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C20181</IRI>
+        <Literal>Conceptual Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C20189</IRI>
+        <Literal>Property or Attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C25193</IRI>
         <Literal>Occupation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C25209</IRI>
+        <Literal>Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C25218</IRI>
+        <Literal>Intervention or Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C25447</IRI>
+        <Literal>Characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3146,6 +3648,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C26732</IRI>
         <Literal>Coronary Artery Disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C27551</IRI>
+        <Literal>Disorder by Site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C27993</IRI>
+        <Literal>General Qualifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3164,6 +3676,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C2931</IRI>
+        <Literal>Cardiovascular Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C2938</IRI>
+        <Literal>Cerebrovascular Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C29711</IRI>
+        <Literal>Anti-diabetic Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C2985</IRI>
+        <Literal>Diabetes Mellitus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C2991</IRI>
         <Literal>Disease or Disorder</Literal>
     </AnnotationAssertion>
@@ -3174,8 +3706,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C3149</IRI>
+        <Literal>Kidney Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C3283</IRI>
         <Literal>Obesity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C3303</IRI>
+        <Literal>Pain</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3184,13 +3726,48 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C3430</IRI>
+        <Literal>Urinary System Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C34707</IRI>
+        <Literal>Abnormal Blood Chemistry and Hematology Test Result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C34707</IRI>
         <Literal>Hyperlipidemia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C35719</IRI>
+        <Literal>Genitourinary System Infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C35741</IRI>
+        <Literal>Non-Neoplastic Heart Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C38665</IRI>
         <Literal>Chest Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C39547</IRI>
+        <Literal>Treatment Efficacy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C43431</IRI>
+        <Literal>Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C48226</IRI>
+        <Literal>Lack of Efficacy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3204,6 +3781,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C53458</IRI>
+        <Literal>Sign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C54625</IRI>
+        <Literal>History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C54707</IRI>
+        <Literal>Blood Pressure Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C61612</IRI>
         <Literal>Metformin</Literal>
     </AnnotationAssertion>
@@ -3211,6 +3803,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C62076</IRI>
         <Literal>Rosiglitazone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C64812</IRI>
+        <Literal>Triglyceride Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3224,6 +3821,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C7057</IRI>
+        <Literal>Disease, Disorder or Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C71633</IRI>
         <Literal>Pioglitazone</Literal>
     </AnnotationAssertion>
@@ -3231,6 +3833,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C73838</IRI>
         <Literal>Sitagliptin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C74949</IRI>
+        <Literal>Lipid Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3249,8 +3856,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C80398</IRI>
+        <Literal>Family History of Coronary Artery Disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C81229</IRI>
+        <Literal>Alcohol Use History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C81246</IRI>
+        <Literal>Drug Use History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C82239</IRI>
         <Literal>Liraglutide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C83119</IRI>
+        <Literal>Physical Examination Finding</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3276,6 +3903,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/NCIT_C9232</IRI>
         <Literal>Weight Change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/NCIT_C92744</IRI>
+        <Literal>Blood Glucose Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3309,23 +3941,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OMIT_0003194</IRI>
-        <Literal>Body Weight Changes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OMIT_0009750</IRI>
-        <Literal>Metformin</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OMIT_0015388</IRI>
-        <Literal>Urinary Tract Infections</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/SYMP_0000012</IRI>
         <Literal>blurred vision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SYMP_0000094</IRI>
+        <Literal>muscle weakness</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3409,6 +4031,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SYMP_0019163</IRI>
+        <Literal>eye symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/SYMP_0019169</IRI>
         <Literal>arthritis</Literal>
     </AnnotationAssertion>
@@ -3416,11 +4043,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/SYMP_0019177</IRI>
         <Literal>fatigue</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SYMP_0020018</IRI>
-        <Literal>overweight</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3435,7 +4057,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:AlcoholUse</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A description of an individual&apos;s current and past experience with alcoholic beverage consumption. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3460,7 +4082,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:AntihyperglycemicTreatment</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Treatment designed to lower blood sugar levels.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3470,7 +4092,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:AntihyperglycemicTreatment</AbbreviatedIRI>
-        <Literal>Treatment designed to lower blood sugar levels.</Literal>
+        <Literal>A drug which lowers the blood glucose level. [Definition Source: CHEBI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3490,7 +4112,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:AtheroscleroticCardiovascularDiseaseRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Risk of cardiovascular disease resulting from atherosclerosis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3500,7 +4122,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:AtheroscleroticCardiovascularDiseaseRisk</AbbreviatedIRI>
-        <Literal>Risk of cardiovascular disease resulting from atherosclerosis.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3515,7 +4137,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:Behavior</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The actions or reactions of an object or organism, usually in relation to the environment or surrounding world of stimuli. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3535,12 +4157,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:BilateralLowerExtremityBurningSensation</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Occasional Burning Sensation in Bilateral Lower Extremities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>dpo:BilateralLowerExtremityBurningSensation</AbbreviatedIRI>
-        <Literal>Occasional Burning Sensation in Bilateral Lower Extremities</Literal>
+        <Literal>Bilateral Lower Extremity Burning Sensation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -3549,18 +4171,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:BloodGlucoseRelatedFinding</AbbreviatedIRI>
+        <AbbreviatedIRI>dpo:BloodGlucoseMeasurement</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:BloodGlucoseRelatedFinding</AbbreviatedIRI>
-        <Literal>Blood Glucose Related Finding</Literal>
+        <AbbreviatedIRI>dpo:BloodGlucoseMeasurement</AbbreviatedIRI>
+        <Literal>Blood Glucose Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:BloodGlucoseRelatedFinding</AbbreviatedIRI>
-        <Literal></Literal>
+        <AbbreviatedIRI>dpo:BloodGlucoseMeasurement</AbbreviatedIRI>
+        <Literal>A quantitative measurement for assessing the amount of glucose present in a blood sample. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3576,6 +4198,21 @@
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:BlurredVision</AbbreviatedIRI>
         <Literal>A vision symptom that is characterized by a decreased clarity or sharpness in vision, which can be caused by eye conditions myopia or hyperopia. [Definition Source: SYMP:0000012]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dpo:BodyMassIndexFinding</AbbreviatedIRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dpo:BodyMassIndexFinding</AbbreviatedIRI>
+        <Literal>Body Mass Index Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dpo:BodyMassIndexFinding</AbbreviatedIRI>
+        <Literal>The result of a body mass index measurement. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3665,12 +4302,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:CardiovascularDisease</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:CardiovascularEffect</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A pharmacotherapy factor related to the heart or blood vessels.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3680,7 +4317,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:CardiovascularEffect</AbbreviatedIRI>
-        <Literal>A pharmacotherapy factor related to the heart or blood vessels.</Literal>
+        <Literal>Cardiovascular effects are defined as any uncomfortable physical effect that relates to the heart and blood vessels. [Definition Source: url:https://effectindex.com/categories/cardiovascular-effects ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3719,18 +4356,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:CholesterolRelatedFinding</AbbreviatedIRI>
+        <AbbreviatedIRI>dpo:CholesterolMeasurement</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:CholesterolRelatedFinding</AbbreviatedIRI>
-        <Literal>Cholesterol Related Finding</Literal>
+        <AbbreviatedIRI>dpo:CholesterolMeasurement</AbbreviatedIRI>
+        <Literal>Cholesterol Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:CholesterolRelatedFinding</AbbreviatedIRI>
-        <Literal></Literal>
+        <AbbreviatedIRI>dpo:CholesterolMeasurement</AbbreviatedIRI>
+        <Literal>The determination of the amount of total cholesterol present in a sample. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3765,7 +4402,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:Cost</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The expense associated with a therapy.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3814,21 +4451,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:Diabetes</AbbreviatedIRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:Diabetes</AbbreviatedIRI>
-        <Literal>Diabetes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:Diabetes</AbbreviatedIRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:DiabetesFastingBloodGlucoseLevel</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
@@ -3840,7 +4462,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:DiabetesFastingBloodGlucoseLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>FPG ≥126 mg/dL (7.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3865,7 +4487,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:DiabetesHbA1CLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A1C ≥6.5% (48 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3875,7 +4497,22 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:minInclusive"/>
         <AbbreviatedIRI>dpo:DiabetesHbA1CRange</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">141</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">141.25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dpo:DiabetesMellitus</AbbreviatedIRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dpo:DiabetesMellitus</AbbreviatedIRI>
+        <Literal>Diabetes Mellitus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dpo:DiabetesMellitus</AbbreviatedIRI>
+        <Literal>A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3890,7 +4527,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:DiabetesTwoHourBloodGlucoseLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>2-h PG ≥200 mg/dL (11.1 mmol/L) during OGTT. [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3905,7 +4542,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:DiabeticKidneyDiseaseProgression</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The progression of diabetic kidney disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3915,12 +4552,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:DiabeticKidneyDiseaseProgression</AbbreviatedIRI>
-        <Literal>The progression of diabetic kidney disease.</Literal>
+        <Literal>Defined by the presence of diabetes and reduced estimated glomerular filtration rate (eGFR) to &lt;60/ mL/min/1.73 m2, increased albuminuria (&gt;300 mg/24 hours) or both, diabetic kidney disease (DKD) is a progressive disease that affects one in seven individuals worldwide eventuating renal replacement therapy (RRT) and premature death secondary to cardiovascular causes. [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK571719/ ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:DiagnosticFactor</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A circumstance influencing the dianosis of a disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3930,7 +4567,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:DiagnosticFactor</AbbreviatedIRI>
-        <Literal>A circumstance influencing the dianosis of a disease.</Literal>
+        <Literal>A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3960,7 +4597,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:DrugUse</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A description of an individual&apos;s current and past use and/or abuse of drugs and chemicals. This includes prescription medication, illicit drugs and recreational substances. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4005,7 +4642,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:Efficacy</AbbreviatedIRI>
-        <Literal>The capacity to bring about a desired effect. [Definition Source: NCI]</Literal>
+        <Literal>The probability of benefit to individuals in a defined population from a medical technology applied for a given medical problem under ideal conditions of use. Efficacy is a measure of effect of therapy among appropriate patients in whom treatment is tolerated and effectively administered, under the condition of sufficient patients&apos; compliance, usually determined in randomized trials. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4064,21 +4701,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:Factor</AbbreviatedIRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:Factor</AbbreviatedIRI>
-        <Literal>Factor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:Factor</AbbreviatedIRI>
-        <Literal>A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:FamilyHistory</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
@@ -4090,7 +4712,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:FamilyHistory</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A record of a patient&apos;s background regarding health and disease events of blood relatives. A patient&apos;s family medical history may be important in diagnosing existing conditions. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4105,7 +4727,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:FamilyHistoryOfCAD</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4120,7 +4742,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:FamilyHistoryOfDiabetes</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Having at least one-first-degree relative with diabetes. [Definition Source: url:https://doi.org/10.1111/jdi.12033 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4150,7 +4772,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:FoulUrine</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A deviation from the normal odor of the urine. [Definition Source: HP:0012088]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4245,7 +4867,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:HeartFailureRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Risk of heart failure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4255,12 +4877,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:HeartFailureRisk</AbbreviatedIRI>
-        <Literal>Risk of heart failure.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:HighCost</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Relatively expensive.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4270,12 +4892,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:HighCost</AbbreviatedIRI>
-        <Literal>Relatively expensive.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:HighEfficacy</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A high capacity to bring about a desired effect.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4285,7 +4907,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:HighEfficacy</AbbreviatedIRI>
-        <Literal>A high capacity to bring about a desired effect.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4360,7 +4982,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:History</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4395,7 +5017,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:HypoglycemiaRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The possiblility of lowering blood sugar below the normal range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4405,12 +5027,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:HypoglycemiaRisk</AbbreviatedIRI>
-        <Literal>The possiblility of lowering blood sugar below the normal range.</Literal>
+        <Literal>The most important risk factor for the occurrence of hypoglycemia is the aggressiveness of therapy applied to achieve glycemic control. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3784865/ ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:IncreasedASCVDRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Potential to increase the risk of cardiovascular disease resulting from atherosclerosis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4420,12 +5042,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:IncreasedASCVDRisk</AbbreviatedIRI>
-        <Literal>Potential to increase the risk of cardiovascular disease resulting from atherosclerosis.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:IncreasedDKDRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Potential to increase the risk or progression of diabetic kidney disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4435,12 +5057,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:IncreasedDKDRisk</AbbreviatedIRI>
-        <Literal>Potential to increase the risk or progression of diabetic kidney disease.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:IncreasedHeartFailureRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Potential to increase the risk of heart failure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4450,12 +5072,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:IncreasedHeartFailureRisk</AbbreviatedIRI>
-        <Literal>Potential to increase the risk of heart failure.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:IntermediateEfficacy</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>An intermediate capacity to bring about a desired effect.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4465,12 +5087,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:IntermediateEfficacy</AbbreviatedIRI>
-        <Literal>An intermediate capacity to bring about a desired effect.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:KnownHypoglycemiaRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A known association with the lowering of blood sugar below the normal range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4480,7 +5102,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:KnownHypoglycemiaRisk</AbbreviatedIRI>
-        <Literal>A known association with the lowering of blood sugar below the normal range.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4535,7 +5157,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:LowCost</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Relatively inexpensive.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4545,12 +5167,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:LowCost</AbbreviatedIRI>
-        <Literal>Relatively inexpensive.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:LowEfficacy</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A low capacity to bring about a desired effect.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4560,22 +5182,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:LowEfficacy</AbbreviatedIRI>
-        <Literal>A low capacity to bring about a desired effect.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:MeasurementFinding</AbbreviatedIRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:MeasurementFinding</AbbreviatedIRI>
-        <Literal>Measurement Finding</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:MeasurementFinding</AbbreviatedIRI>
-        <Literal>A finding surmised from recorded measurements.</Literal>
+        <Literal>The lack of expected or desired effect related to a therapy. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4595,7 +5202,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:MusculoskeletalSystemSymptom</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A symptom involving the musculoskeletal system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4605,7 +5212,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:MusculoskeletalSystemSymptom</AbbreviatedIRI>
-        <Literal>A symptom involving the musculoskeletal system.</Literal>
+        <Literal>Musculoskeletal symptoms are defined as pain in the muscles, tendons, and nerves arising from repetitive, continuous, and unnatural movements. These symptoms can be expressed in various areas of the body and affect the quality of life by causing difficulties in performing occupational tasks and activities of daily living (ADL). [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3567324/ ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4670,7 +5277,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:NeutralASCVDRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4680,12 +5287,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NeutralASCVDRisk</AbbreviatedIRI>
-        <Literal>Minimal effect on reducing or increasing the risk of cardiovascular disease resulting from atherosclerosis.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:NeutralDKDRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4695,12 +5302,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NeutralDKDRisk</AbbreviatedIRI>
-        <Literal>Minimal effect on reducing or increasing the risk or progression of diabetic kidney disease.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:NeutralHeartFailureRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Minimal effect on reducing or increasing the risk of heart failure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4710,12 +5317,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NeutralHeartFailureRisk</AbbreviatedIRI>
-        <Literal>Minimal effect on reducing or increasing the risk of heart failure.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:NeutralWeightChange</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The lack of an effect on the capacity for an increase or decrease in the weight of an individual.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4725,12 +5332,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NeutralWeightChange</AbbreviatedIRI>
-        <Literal>The lack of an effect on the capacity for an increase or decrease in the weight of an individual.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:NoKnownHypoglycemiaRisk</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>No known association with the lowering of blood sugar below the normal range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4740,7 +5347,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NoKnownHypoglycemiaRisk</AbbreviatedIRI>
-        <Literal>No known association with the lowering of blood sugar below the normal range.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4780,7 +5387,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NormalWeight</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>BMI greater than or equal to 18.5 to 24.9 kg/m^2 [Definition Source: url:https://www.ncbi.nlm.nih.gov/books/NBK541070/ ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4800,7 +5407,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:NutritionMetabolismAndDevelopmentSymptom</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A symptom involving the nutrition, metabolism, and/or development system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4810,7 +5417,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:NutritionMetabolismAndDevelopmentSymptom</AbbreviatedIRI>
-        <Literal>A symptom involving the nutrition, metabolism, and/or development system.</Literal>
+        <Literal>Symptoms concerning nutrition metabolism and development [include:] A disorder characterized by a loss of appetite; An abnormal loss of the appetite for food. Anorexia can be caused by cancer, aids, a mental disorder (i.e., anorexia nervosa), or other diseases; Clinical manifestation consisting of a physiopathological lack or loss of appetite accompanied by an aversion to food and the inability to eat; Loss of appetite; The lack or loss of appetite accompanied by an aversion to food and the inability to eat. It is the defining characteristic of the disorder anorexia nervosa. [Definition Source: url:http://www.icd9data.com/2013/Volume1/780-799/780-789/783/default.htm ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4855,7 +5462,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:Occupation</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The principal activity that a person does to earn money. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4885,7 +5492,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:Overweight</AbbreviatedIRI>
-        <Literal>25&lt;BMI&lt;29.9</Literal>
+        <Literal>25&lt;BMI&lt;30</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4905,7 +5512,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:maxInclusive"/>
         <AbbreviatedIRI>dpo:OverweightBMIRange</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">29.9</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:minInclusive"/>
@@ -4929,6 +5536,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dpo:PatientCharacteristic</AbbreviatedIRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dpo:PatientCharacteristic</AbbreviatedIRI>
+        <Literal>Patient Characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dpo:PatientCharacteristic</AbbreviatedIRI>
+        <Literal>The distinguishing qualities or prominent aspect of a person. [Definition Source: NCI]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PeripheralNeuropathy</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
@@ -4940,7 +5562,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PeripheralNeuropathy</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Peripheral neuropathy refers to the many conditions that involve damage to the peripheral nervous system, the vast communication network that sends signals between the central nervous system (the brain and spinal cord) and all other parts of the body. [Definition Source: url:https://www.ninds.nih.gov/peripheral-neuropathy-fact-sheet ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4955,7 +5577,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PersonalHistory</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A record of a patient&apos;s background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4970,7 +5592,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PersonalHistoryOfFebrileStates</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Febrile seizures are defined as events in infancy or childhood that usually occur between three months and five years of age and are associated with a fever, but without evidence of intracranial infection or a defined cause for the seizure. [Definition Source: url:https://www.aafp.org/pubs/afp/issues/2008/1115/p1199.html ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4985,12 +5607,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PersonalHistoryOfGestationalDiabetes</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Gestational diabetes mellitus (GDM), defined as glucose intolerance that is first recognized during pregnancy, is associated with maternal obesity and confers a 4‐ to 7‐fold greater risk of incident type 2 diabetes (DM), and increased risk of developing the metabolic syndrome (MetS) in midlife. In addition, a history of GDM among nondiabetic women is characterized by elevations in fasting glucose and insulin concentrations, as well as dyslipidemia and greater inflammation in the absence of the MetS. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4187501/ ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PharmacotherapyFactor</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A circumstance influencing the treatment of a disease through the use or recommendation of one or more drugs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5000,7 +5622,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PharmacotherapyFactor</AbbreviatedIRI>
-        <Literal>A circumstance influencing the treatment of a disease through the use of drugs.</Literal>
+        <Literal>Therapy-related factors identified include: route of administration, treatment complexity, duration of treatment period, medication side effects, degree of behavioral change required, taste of medication and requirement for drug storage. [Definition Source: url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2503662/ ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5070,7 +5692,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PotentialASCVDBenefit</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5080,12 +5702,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PotentialASCVDBenefit</AbbreviatedIRI>
-        <Literal>Potential to reduce the risk of cardiovascular disease resulting from atherosclerosis.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PotentialDKDBenefit</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Potential to decrease the risk or progression of diabetic kidney disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5095,12 +5717,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PotentialDKDBenefit</AbbreviatedIRI>
-        <Literal>Potential to decrease the risk or progression of diabetic kidney disease.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PotentialHeartFailureBenefit</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Potential to decrease the risk of heart failure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5110,12 +5732,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PotentialHeartFailureBenefit</AbbreviatedIRI>
-        <Literal>Potential to decrease the risk of heart failure.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PrediabetesFastingBloodGlucoseLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal> impaired fasting glucose</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5125,7 +5747,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PrediabetesFastingBloodGlucoseLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>FPG 100 mg/dL (5.6 mmol/L) to 125 mg/dL (6.9 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5155,7 +5777,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PrediabetesHbA1CLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A1C 5.7–6.4% (39–47 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5165,17 +5787,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:maxInclusive"/>
         <AbbreviatedIRI>dpo:PrediabetesHbA1CRange</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">138</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">138.62</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:minInclusive"/>
         <AbbreviatedIRI>dpo:PrediabetesHbA1CRange</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">117</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">117.58</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:PrediabetesTwoHourBloodGlucoseLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>impaired glucose tolerance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5185,7 +5807,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:PrediabetesTwoHourBloodGlucoseLevel</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>2-h PG during 75-g OGTT 140 mg/dL (7.8 mmol/L) to 199 mg/dL (11.0 mmol/L). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5205,7 +5827,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:RenalDisease</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Disease associated with kidneys, typically chronic kidney disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5215,12 +5837,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:RenalDisease</AbbreviatedIRI>
-        <Literal>Disease associated with kidneys, typically chronic kidney disease.</Literal>
+        <Literal>A neoplastic or non-neoplastic condition affecting the kidney. Representative examples of non-neoplastic conditions include glomerulonephritis and nephrotic syndrome. Representative examples of neoplastic conditions include benign processes (e.g., renal lipoma and renal fibroma) and malignant processes (e.g., renal cell carcinoma and renal lymphoma). [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:RenalDosingConsideration</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>Drug dosage considerations related to the effect on the kidneys.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5230,12 +5852,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:RenalDosingConsideration</AbbreviatedIRI>
-        <Literal>Drug dosage considerations related to the effect on the kidneys.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:RenalEffect</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A pharmacotherapy factor related to the kidneys.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5245,7 +5867,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:RenalEffect</AbbreviatedIRI>
-        <Literal>A pharmacotherapy factor related to the kidneys.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5325,7 +5947,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:SedentaryOccupation</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A physical demand level described as the exertion of up to 10 pounds of force occasionally, negligible amount of work frequently, and a negligible amount of force constantly to move objects. [Definition Source: url:https://medical-dictionary.thefreedictionary.com/sedentary+work ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5389,6 +6011,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dpo:TestFinding</AbbreviatedIRI>
+        <Literal>A finding or categorization surmised from recorded measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dpo:TestFinding</AbbreviatedIRI>
+        <Literal>Test Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>dpo:TestFinding</AbbreviatedIRI>
+        <Literal>Annotation used to indicate the size or magnitude of something that was determined by comparison to a standard. [Definition Source: NCI]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:Therapy</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
@@ -5418,19 +6055,24 @@
         <Literal>Any antidiabetic agent with the glitazone (thiazolidinedione) base structure with antihyperglycemic activity. Glitazone antidiabetic agents selectively bind to and stimulate the nuclear receptor peroxisome proliferator-activated receptor (PPAR) gamma. This results in the selective transcription of a number of insulin-sensitive genes involved in glucose metabolism. This eventually enhances insulin sensitivity, reduces insulin resistance and decreases hepatic gluconeogenesis. PPARs function as transcription factors that regulate expressions of genes involved in cellular differentiation, development, and metabolism (carbohydrate, lipid, protein), as well as tumorigenesis; PPARgamma is expressed at high levels in adipose tissue. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dpo:Thing</AbbreviatedIRI>
+        <Literal>Thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:TriglycerideRelatedFinding</AbbreviatedIRI>
+        <AbbreviatedIRI>dpo:TriglycerideMeasurement</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:TriglycerideRelatedFinding</AbbreviatedIRI>
-        <Literal>Triglyceride Related Finding</Literal>
+        <AbbreviatedIRI>dpo:TriglycerideMeasurement</AbbreviatedIRI>
+        <Literal>Triglyceride Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:TriglycerideRelatedFinding</AbbreviatedIRI>
-        <Literal></Literal>
+        <AbbreviatedIRI>dpo:TriglycerideMeasurement</AbbreviatedIRI>
+        <Literal>A quantitative measurement of the amount of triglyceride present in a sample. [Definition Source: NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5460,7 +6102,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:UrinarySystemSymptom</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A symptom involving the urinary system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5470,7 +6112,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:UrinarySystemSymptom</AbbreviatedIRI>
-        <Literal>A symptom involving the urinary system.</Literal>
+        <Literal>Symptoms of urinary disorders vary from person to person and based on the cause of the disorders. Common urinary symptoms include: Abdominal cramping; Abdominal, pelvic or back pain that can be severe; Bloody or pink-colored urine (hematuria); Cloudy urine; Fever and chills; Foul-smelling urine; Frequent urination; General ill feeling; Leaking of urine; Pain during sexual intercourse; Pain or burning with urination (dysuria); Unexplained weight loss; Urgent need to urinate. [Definition Source: url:https://www.healthgrades.com/right-care/kidneys-and-the-urinary-system/urinary-disorders ]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5540,7 +6182,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:VisionSymptom</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>A symptom involving visual impairment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5550,12 +6192,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:VisionSymptom</AbbreviatedIRI>
-        <Literal>A symptom involving visual impairment.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:WeightChangePotential</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The capacity for an increase or decrease in the weight of an individual.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5565,12 +6207,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:WeightChangePotential</AbbreviatedIRI>
-        <Literal>The capacity for an increase or decrease in the weight of an individual.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:WeightGainPotential</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The capacity for an increase in the weight of an individual.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5580,12 +6222,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:WeightGainPotential</AbbreviatedIRI>
-        <Literal>The capacity for an increase in the weight of an individual.</Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dpo:WeightLossPotential</AbbreviatedIRI>
-        <Literal></Literal>
+        <Literal>The capacity for a decrease in the weight of an individual.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5595,21 +6237,6 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>dpo:WeightLossPotential</AbbreviatedIRI>
-        <Literal>The capacity for a decrease in the weight of an individual.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dpo:WeightRelatedFinding</AbbreviatedIRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dpo:WeightRelatedFinding</AbbreviatedIRI>
-        <Literal>Weight Related Finding</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>dpo:WeightRelatedFinding</AbbreviatedIRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5641,6 +6268,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sio:hasAttribute</AbbreviatedIRI>
         <Literal>has attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ebi.ac.uk/efo/EFO_0004340</IRI>
+        <Literal>body mass index</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
