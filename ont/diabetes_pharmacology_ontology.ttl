@@ -20,10 +20,10 @@
     dct:creator "Sabbir M. Rashid"^^xsd:string ;
     dct:contributor "Deborah L. McGuinness"^^xsd:string , "Jamie McCusker"^^xsd:string , "Oshani Seneviratne"^^xsd:string, "Daniel Gruen"^^xsd:string ;
     dct:created "2022-6-08T18:00:00"^^xsd:dateTime ;
-    dct:modified "2022-10-25T18:00:00"^^xsd:dateTime ;
+    dct:modified "2022-12-18T18:00:00"^^xsd:dateTime ;
     dct:description "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies."^^xsd:string ;
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-    owl:versionIRI <http://purl.org/twc/dpo/ont/0.1> .
+    owl:versionIRI <http://purl.org/twc/dpo/ont/1.0> .
 
 dpo:Thing rdf:type owl:Class ;
     rdfs:label "Thing" .

@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/twc/dpo/ont/diabetes_pharmacology_ontology.ttl"
-     versionIRI="http://purl.org/twc/dpo/ont/0.1">
+     versionIRI="http://purl.org/twc/dpo/ont/1.0">
     <Prefix name="hp" IRI="http://purl.obolibrary.org/obo/HP_"/>
     <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="dpo" IRI="http://purl.org/twc/dpo/ont/"/>
@@ -57,7 +57,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-25T18:00:00</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-12-18T18:00:00</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:title"/>
