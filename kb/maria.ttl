@@ -1,5 +1,5 @@
-@prefix heals: <http://purl.org/twc/HEALS/ont/> .
-@prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
+@prefix dpo: <http://purl.org/twc/dpo/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
 
 @prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
 @prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
@@ -17,7 +17,7 @@
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-heals-kb:P000000 a fhir:Patient;
+dpo-kb:P000000 a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000"];
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
@@ -71,18 +71,18 @@ heals-kb:P000000 a fhir:Patient;
      fhir:ContactPoint.use [ fhir:value "work" ]
   ].
 
-  heals-kb:insurance-example a fhir:Coverage;
+  dpo-kb:insurance-example a fhir:Coverage;
     fhir:nodeRole fhir:treeRoot;
     fhir:Coverage.identifier [ fhir:value "Blue Cross NC" ] ;
-    fhir:Coverage.subscriber [ fhir:link heals-kb:P000000; ];
-    fhir:Coverage.beneficiary [ fhir:link heals-kb:P000000; ]. 
+    fhir:Coverage.subscriber [ fhir:link dpo-kb:P000000; ];
+    fhir:Coverage.beneficiary [ fhir:link dpo-kb:P000000; ]. 
     
-  heals-kb:questionnaire-000001 a fhir:Questionnaire;
+  dpo-kb:questionnaire-000001 a fhir:Questionnaire;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:Questionnaire.subject [
-       fhir:link heals-kb:P000000;
-       fhir:Reference.reference [ fhir:value "http://purl.org/twc/HEALS/kb/P000000" ];
+       fhir:link dpo-kb:P000000;
+       fhir:Reference.reference [ fhir:value "http://purl.org/twc/dpo/kb/P000000" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];
     fhir:Questionnaire.item [
@@ -127,12 +127,12 @@ heals-kb:P000000 a fhir:Patient;
        ]
     ] .
 
-  heals-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
+  dpo-kb:questionnaire-response-000001 a fhir:QuestionnaireResponse;
     fhir:nodeRole fhir:treeRoot;
     fhir:Resource.id [ fhir:value "0001"];
     fhir:QuestionnaireResponse.subject [
-       fhir:link heals-kb:P000000;
-       fhir:Reference.reference [ fhir:value "http://purl.org/twc/HEALS/kb/P000000" ];
+       fhir:link dpo-kb:P000000;
+       fhir:Reference.reference [ fhir:value "http://purl.org/twc/dpo/kb/P000000" ];
        fhir:Reference.type [ fhir:value "Patient" ]
     ];
     fhir:DomainResource.contained [
@@ -201,11 +201,11 @@ heals-kb:P000000 a fhir:Patient;
     ] .
 
 # vvvvvvvvvvvvvvvvv Parents vvvvvvvvvvvvvvvvv
-heals-kb:family-history-000001 a fhir:FamilyMemberHistory;
+dpo-kb:family-history-000001 a fhir:FamilyMemberHistory;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "father"];
   fhir:FamilyMemberHistory.patient [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ];
      fhir:Reference.display [ fhir:value "Maria Vasquez" ]
   ];
@@ -246,11 +246,11 @@ heals-kb:family-history-000001 a fhir:FamilyMemberHistory;
      ];
   ] .
 
-heals-kb:family-history-000002 a fhir:FamilyMemberHistory;
+dpo-kb:family-history-000002 a fhir:FamilyMemberHistory;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "mother"];
   fhir:FamilyMemberHistory.patient [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ];
      fhir:Reference.display [ fhir:value "Maria Vasquez" ]
   ];
@@ -294,12 +294,12 @@ heals-kb:family-history-000002 a fhir:FamilyMemberHistory;
 
 # vvvvvvvvvvvvvvvvv Visits vvvvvvvvvvvvvvvvv
 
-heals-kb:P000000-visit-1 a fhir:Encounter;
+dpo-kb:P000000-visit-1 a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-visit-1"];
   fhir:Encounter.status [ fhir:value "finished"]; # can also be in-progress
   fhir:Encounter.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Encounter.period [
@@ -307,12 +307,12 @@ heals-kb:P000000-visit-1 a fhir:Encounter;
      fhir:Period.end [ fhir:value "2019-04-07T16:30:00+10:00"^^xsd:dateTime ]
   ].
 
-heals-kb:P000000-visit-2 a fhir:Encounter;
+dpo-kb:P000000-visit-2 a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-visit-2"];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Encounter.period [
@@ -320,12 +320,12 @@ heals-kb:P000000-visit-2 a fhir:Encounter;
      fhir:Period.end [ fhir:value "2019-05-17T16:30:00+10:00"^^xsd:dateTime ]
   ].
 
-heals-kb:P000000-visit-3 a fhir:Encounter;
+dpo-kb:P000000-visit-3 a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-visit-3"];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Encounter.period [
@@ -333,12 +333,12 @@ heals-kb:P000000-visit-3 a fhir:Encounter;
      fhir:Period.end [ fhir:value "2019-07-05T16:30:00+10:00"^^xsd:dateTime ]
   ].
 
-heals-kb:P000000-visit-4 a fhir:Encounter;
+dpo-kb:P000000-visit-4 a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-visit-4"];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Encounter.period [
@@ -346,12 +346,12 @@ heals-kb:P000000-visit-4 a fhir:Encounter;
      fhir:Period.end [ fhir:value "2019-08-04T16:30:00+10:00"^^xsd:dateTime ]
   ].
 
-heals-kb:P000000-visit-5 a fhir:Encounter;
+dpo-kb:P000000-visit-5 a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-visit-5"];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Encounter.period [
@@ -359,12 +359,12 @@ heals-kb:P000000-visit-5 a fhir:Encounter;
      fhir:Period.end [ fhir:value "2019-09-06T16:30:00+10:00"^^xsd:dateTime ]
   ].
 
-heals-kb:P000000-visit-6 a fhir:Encounter;
+dpo-kb:P000000-visit-6 a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-visit-6"];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Encounter.period [
@@ -375,7 +375,7 @@ heals-kb:P000000-visit-6 a fhir:Encounter;
 # ^^^^^^^^^^^^^^^^^ Visits ^^^^^^^^^^^^^^^^^
 
 # vvvvvvvvvvvvvvvvv Allergies vvvvvvvvvvvvvvvvv
-heals-kb:allergies-P000000 a fhir:List;
+dpo-kb:allergies-P000000 a fhir:List;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "allergies-P000000"];
   fhir:List.status [ fhir:value "current"];
@@ -392,7 +392,7 @@ heals-kb:allergies-P000000 a fhir:List;
      fhir:CodeableConcept.text [ fhir:value "Current Allergy List" ]
   ];
   fhir:List.source [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:List.orderedBy [
@@ -415,7 +415,7 @@ loinc:LP14319-5 a fhir:AllergyIntolerance.
 
 # vvvvvvvvvvvvvvvvv Conditions vvvvvvvvvvvvvvvvv
 # icdo:0000480 a fhir:Condition;
-heals-kb:condition-000000 a fhir:Condition;
+dpo-kb:condition-000000 a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "condition-000000"];
   fhir:Condition.clinicalStatus [
@@ -452,11 +452,11 @@ heals-kb:condition-000000 a fhir:Condition;
     fhir:CodeableConcept.text [ fhir:value "Obesity" ]
   ];
   fhir:Condition.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ].
 
-heals-kb:condition-000001 a fhir:Condition;
+dpo-kb:condition-000001 a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "0000480"];
   fhir:Condition.clinicalStatus [
@@ -493,14 +493,14 @@ heals-kb:condition-000001 a fhir:Condition;
     fhir:CodeableConcept.text [ fhir:value "Type 2 Diabetes" ]
   ];
   fhir:Condition.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ].
 # ^^^^^^^^^^^^^^^^^ Conditions ^^^^^^^^^^^^^^^^^
 
 
 # vvvvvvvvvvvvvvvvvvvv Procedures vvvvvvvvvvvvvvvvvvv
-heals-kb:procedure-000000 a fhir:Procedure;
+dpo-kb:procedure-000000 a fhir:Procedure;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "procedure-000000"];
   fhir:Procedure.status [ fhir:value "completed"];
@@ -515,7 +515,7 @@ heals-kb:procedure-000000 a fhir:Procedure;
      fhir:CodeableConcept.text [ fhir:value "Appendectomy" ]
   ];
   fhir:Procedure.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Procedure.performedDateTime [ fhir:value "1990-04-05"^^xsd:date];
@@ -550,9 +550,9 @@ heals-kb:procedure-000000 a fhir:Procedure;
      fhir:Annotation.text [ fhir:value "Routine Appendectomy. Appendix was inflamed and in retro-caecal position" ]
   ] .
 
-heals-kb:procedure-000001 a fhir:Procedure;
+dpo-kb:procedure-000001 a fhir:Procedure;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "heals-kb:procedure-000001"];
+  fhir:Resource.id [ fhir:value "dpo-kb:procedure-000001"];
   fhir:Procedure.status [ fhir:value "completed"];
   fhir:Procedure.category [
      fhir:CodeableConcept.coding [
@@ -575,7 +575,7 @@ heals-kb:procedure-000001 a fhir:Procedure;
      fhir:CodeableConcept.text [ fhir:value "Vaginal delivery" ]
   ];
   fhir:Procedure.subject [
-    fhir:link heals-kb:P000000;
+    fhir:link dpo-kb:P000000;
     fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Procedure.performedDateTime [ fhir:value "1994-06-02"^^xsd:date];
@@ -598,7 +598,7 @@ heals-kb:procedure-000001 a fhir:Procedure;
 # ^^^^^^^^^^^^^^^^^^^ Procedures ^^^^^^^^^^^^^^^^^^^^^
 
 # vvvvvvvvvvvvvvvvvvvv Observations vvvvvvvvvvvvvvvvvvvv
-heals-kb:P000000-weight-1 a fhir:Observation;
+dpo-kb:P000000-weight-1 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-weight-1"];
   fhir:Observation.status [ fhir:value "final"];
@@ -621,11 +621,11 @@ heals-kb:P000000-weight-1 a fhir:Observation;
      ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-1;
+     fhir:link dpo-kb:P000000-visit-1;
      fhir:Reference.reference [ fhir:value "P000000-visit-1" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-04-07"^^xsd:date];
@@ -636,7 +636,7 @@ heals-kb:P000000-weight-1 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "[lb_av]" ]
   ] .
 
-heals-kb:P000000-weight-2 a fhir:Observation;
+dpo-kb:P000000-weight-2 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-weight-2"];
 
@@ -660,11 +660,11 @@ heals-kb:P000000-weight-2 a fhir:Observation;
      ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-2;
+     fhir:link dpo-kb:P000000-visit-2;
      fhir:Reference.reference [ fhir:value "P000000-visit-2" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-05-17"^^xsd:date];
@@ -675,7 +675,7 @@ heals-kb:P000000-weight-2 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "[lb_av]" ]
   ] .
 
-heals-kb:P000000-weight-3 a fhir:Observation;
+dpo-kb:P000000-weight-3 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-weight-3"];
 
@@ -699,11 +699,11 @@ heals-kb:P000000-weight-3 a fhir:Observation;
      ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-3;
+     fhir:link dpo-kb:P000000-visit-3;
      fhir:Reference.reference [ fhir:value "P000000-visit-3" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-07-05"^^xsd:date];
@@ -714,7 +714,7 @@ heals-kb:P000000-weight-3 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "[lb_av]" ]
   ] .
 
-heals-kb:P000000-weight-4 a fhir:Observation;
+dpo-kb:P000000-weight-4 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-weight-4"];
 
@@ -738,11 +738,11 @@ heals-kb:P000000-weight-4 a fhir:Observation;
      ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-4;
+     fhir:link dpo-kb:P000000-visit-4;
      fhir:Reference.reference [ fhir:value "P000000-visit-4" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-08-04"^^xsd:date];
@@ -753,7 +753,7 @@ heals-kb:P000000-weight-4 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "[lb_av]" ]
   ] .
 
-heals-kb:P000000-weight-5 a fhir:Observation;
+dpo-kb:P000000-weight-5 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-weight-5"];
 
@@ -777,11 +777,11 @@ heals-kb:P000000-weight-5 a fhir:Observation;
      ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-5;
+     fhir:link dpo-kb:P000000-visit-5;
      fhir:Reference.reference [ fhir:value "P000000-visit-5" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-09-06"^^xsd:date];
@@ -792,7 +792,7 @@ heals-kb:P000000-weight-5 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "[lb_av]" ]
   ] .
 
-heals-kb:P000000-weight-6 a fhir:Observation;
+dpo-kb:P000000-weight-6 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-weight-6"];
 
@@ -816,11 +816,11 @@ heals-kb:P000000-weight-6 a fhir:Observation;
      ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-6;
+     fhir:link dpo-kb:P000000-visit-6;
      fhir:Reference.reference [ fhir:value "P000000-visit-6" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-11-18"^^xsd:date];
@@ -833,7 +833,7 @@ heals-kb:P000000-weight-6 a fhir:Observation;
 
 
 
-heals-kb:P000000-bmi-1 a fhir:Observation;
+dpo-kb:P000000-bmi-1 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-bmi-1"];
   fhir:Observation.code [
@@ -847,11 +847,11 @@ heals-kb:P000000-bmi-1 a fhir:Observation;
      fhir:CodeableConcept.text [ fhir:value "BMI" ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-1;
+     fhir:link dpo-kb:P000000-visit-1;
      fhir:Reference.reference [ fhir:value "P000000-visit-1" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-04-07"^^xsd:date];
@@ -862,7 +862,7 @@ heals-kb:P000000-bmi-1 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "kg/m2" ]
   ] .
 
-heals-kb:P000000-bmi-2 a fhir:Observation;
+dpo-kb:P000000-bmi-2 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-bmi-2"];
   fhir:Observation.code [
@@ -876,11 +876,11 @@ heals-kb:P000000-bmi-2 a fhir:Observation;
      fhir:CodeableConcept.text [ fhir:value "BMI" ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-2;
+     fhir:link dpo-kb:P000000-visit-2;
      fhir:Reference.reference [ fhir:value "P000000-visit-2" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-05-17"^^xsd:date];
@@ -891,7 +891,7 @@ heals-kb:P000000-bmi-2 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "kg/m2" ]
   ] .
 
-heals-kb:P000000-bmi-3 a fhir:Observation;
+dpo-kb:P000000-bmi-3 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-bmi-3"];
   fhir:Observation.code [
@@ -905,11 +905,11 @@ heals-kb:P000000-bmi-3 a fhir:Observation;
      fhir:CodeableConcept.text [ fhir:value "BMI" ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-3;
+     fhir:link dpo-kb:P000000-visit-3;
      fhir:Reference.reference [ fhir:value "P000000-visit-3" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-07-05"^^xsd:date];
@@ -920,7 +920,7 @@ heals-kb:P000000-bmi-3 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "kg/m2" ]
   ] .
 
-heals-kb:P000000-bmi-4 a fhir:Observation;
+dpo-kb:P000000-bmi-4 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-bmi-4"];
   fhir:Observation.code [
@@ -934,11 +934,11 @@ heals-kb:P000000-bmi-4 a fhir:Observation;
      fhir:CodeableConcept.text [ fhir:value "BMI" ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-4;
+     fhir:link dpo-kb:P000000-visit-4;
      fhir:Reference.reference [ fhir:value "P000000-visit-4" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-08-04"^^xsd:date];
@@ -949,7 +949,7 @@ heals-kb:P000000-bmi-4 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "kg/m2" ]
   ] .
 
-heals-kb:P000000-bmi-5 a fhir:Observation;
+dpo-kb:P000000-bmi-5 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-bmi-5"];
   fhir:Observation.code [
@@ -963,11 +963,11 @@ heals-kb:P000000-bmi-5 a fhir:Observation;
      fhir:CodeableConcept.text [ fhir:value "BMI" ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-5;
+     fhir:link dpo-kb:P000000-visit-5;
      fhir:Reference.reference [ fhir:value "P000000-visit-5" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-09-06"^^xsd:date];
@@ -978,7 +978,7 @@ heals-kb:P000000-bmi-5 a fhir:Observation;
      fhir:Quantity.code [ fhir:value "kg/m2" ]
   ] .
 
-heals-kb:P000000-bmi-6 a fhir:Observation;
+dpo-kb:P000000-bmi-6 a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P000000-bmi-6"];
   fhir:Observation.code [
@@ -992,11 +992,11 @@ heals-kb:P000000-bmi-6 a fhir:Observation;
      fhir:CodeableConcept.text [ fhir:value "BMI" ]
   ];
   fhir:Observation.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ]
   ];
   fhir:Observation.encounter [
-     fhir:link heals-kb:P000000-visit-6;
+     fhir:link dpo-kb:P000000-visit-6;
      fhir:Reference.reference [ fhir:value "P000000-visit-6" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2019-11-18"^^xsd:date];
@@ -1009,7 +1009,7 @@ heals-kb:P000000-bmi-6 a fhir:Observation;
 # ^^^^^^^^^^^^^^^^^^^ Observations ^^^^^^^^^^^^^^^^^^^^^
 
 # vvvvvvvvvvvvvvvvvvvv Medications vvvvvvvvvvvvvvvvvvvv
-heals-kb:medication-P000000-1 a fhir:MedicationDispense;
+dpo-kb:medication-P000000-1 a fhir:MedicationDispense;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "medication-P000000-1"];
   fhir:MedicationDispense.status [ fhir:value "completed"];
@@ -1022,7 +1022,7 @@ heals-kb:medication-P000000-1 a fhir:MedicationDispense;
      ]
   ];
   fhir:MedicationDispense.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ];
      fhir:Reference.display [ fhir:value "Maria Vasquez" ]
   ];
@@ -1069,7 +1069,7 @@ heals-kb:medication-P000000-1 a fhir:MedicationDispense;
      ]
   ] .
 
-heals-kb:medication-P000000-2 a fhir:MedicationDispense;
+dpo-kb:medication-P000000-2 a fhir:MedicationDispense;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "medication-P000000-2"];
   fhir:MedicationDispense.status [ fhir:value "completed"];
@@ -1082,7 +1082,7 @@ heals-kb:medication-P000000-2 a fhir:MedicationDispense;
      ]
   ];
   fhir:MedicationDispense.subject [
-     fhir:link heals-kb:P000000;
+     fhir:link dpo-kb:P000000;
      fhir:Reference.reference [ fhir:value "P000000" ];
      fhir:Reference.display [ fhir:value "Maria Vasquez" ]
   ];

@@ -1,9 +1,6 @@
 @prefix dpo: <http://purl.org/twc/dpo/ont/> .
 @prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
 
-@prefix heals: <http://purl.org/twc/HEALS/ont/> .
-@prefix heals-kb: <http://purl.org/twc/HEALS/kb/> .
-
 @prefix icdo: <http://purl.obolibrary.org/obo/icdo.owl#ICDO_>.
 @prefix ogms: <http://purl.obolibrary.org/obo/OGMS_>.
 @prefix bfo: <http://purl.obolibrary.org/obo/BFO_>.
@@ -328,7 +325,7 @@ dpo-kb:Kaitlyn rdf:type sio:Patient ;
         sio:hasRole [
             rdf:type sio:000715
         ];
-        sio:isParticipantIn heals:DiabetesDiagnosis ;
+        sio:isParticipantIn dpo:DiabetesDiagnosis ;
         sio:hasAttribute [
             rdf:type hhear:00224; # dob
             sio:hasValue "1982-08-18"^^xsd:date
@@ -377,7 +374,7 @@ dpo-kb:Kaitlyn rdf:type sio:Patient ;
             rdf:type hhear:00502; # mother
             sio:hasValue "Dead - CVA"^^xsd:string
         ];
-        sio:hasAttribute heals-kb:reasoning-line-P000000 .
+        sio:hasAttribute dpo-kb:reasoning-line-P000000 .
 
 
 dpo-kb:insurance-Kaitlyn a fhir:Coverage;
@@ -510,7 +507,7 @@ dpo-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
     ] .
 
 
-    heals-kb:metformin-ir rdf:type ncit:C459 ;
+    dpo-kb:metformin-ir rdf:type ncit:C459 ;
         sio:000221 [
             rdf:type uo:0000022; #milligram
             sio:hasValue "mg"
@@ -525,7 +522,7 @@ dpo-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
         ];
         rdfs:label "Metformin IR" .
 
-    heals-kb:metformin-xr rdf:type ncit:C459 ;
+    dpo-kb:metformin-xr rdf:type ncit:C459 ;
         sio:000221 [
           rdf:type uo:0000022; #milligram
           sio:hasValue "mg"
@@ -540,7 +537,7 @@ dpo-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
         ];
         rdfs:label "Metformin XR" .
 
-    heals-kb:glipizide-xl rdf:type ncit:C459 ;
+    dpo-kb:glipizide-xl rdf:type ncit:C459 ;
         sio:000221 [
           rdf:type uo:0000022; #milligram
           sio:hasValue "mg"
@@ -556,135 +553,135 @@ dpo-kb:questionnaire-Kaitlyn a fhir:Questionnaire;
         rdfs:label "Glipizide XL" .
 
 
-    heals-kb:reasoning-factor-1 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-1 rdf:type ncit:C25506;
         rdfs:label "A1C > 6.5" ;
-        heals:hasTruthValue "true"^^xsd:boolean ;
-        heals:ignore "false"^^xsd:boolean .
+        dpo:hasTruthValue "true"^^xsd:boolean ;
+        dpo:ignore "false"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-2 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-2 rdf:type ncit:C25506;
         rdfs:label "No current pharmacotherapy" ;
-        heals:hasTruthValue "true"^^xsd:boolean ;
-        heals:ignore "true"^^xsd:boolean .
+        dpo:hasTruthValue "true"^^xsd:boolean ;
+        dpo:ignore "true"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-3 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-3 rdf:type ncit:C25506;
         rdfs:label "Metformin Intolerance" ;
-        heals:hasTruthValue "false"^^xsd:boolean ;
-        heals:ignore "false"^^xsd:boolean .
+        dpo:hasTruthValue "false"^^xsd:boolean ;
+        dpo:ignore "false"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-4 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-4 rdf:type ncit:C25506;
         rdfs:label "Cost not an issue" ;
-        heals:hasTruthValue "true"^^xsd:boolean ;
-        heals:ignore "true"^^xsd:boolean .
+        dpo:hasTruthValue "true"^^xsd:boolean ;
+        dpo:ignore "true"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-5 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-5 rdf:type ncit:C25506;
         rdfs:label "Weight loss goal" ;
-        heals:hasTruthValue "false"^^xsd:boolean ;
-        heals:ignore "false"^^xsd:boolean .
+        dpo:hasTruthValue "false"^^xsd:boolean ;
+        dpo:ignore "false"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-6 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-6 rdf:type ncit:C25506;
         rdfs:label "No established ASCVD" ;
-        heals:hasTruthValue "false"^^xsd:boolean ;
-        heals:ignore "false"^^xsd:boolean .
+        dpo:hasTruthValue "false"^^xsd:boolean ;
+        dpo:ignore "false"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-7 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-7 rdf:type ncit:C25506;
         rdfs:label "No ASCVD risk indicators " ;
-        heals:hasTruthValue "false"^^xsd:boolean ;
-        heals:ignore "false"^^xsd:boolean .
+        dpo:hasTruthValue "false"^^xsd:boolean ;
+        dpo:ignore "false"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-8 rdf:type ncit:C25506;
+    dpo-kb:reasoning-factor-8 rdf:type ncit:C25506;
         rdfs:label "8" ;
-        heals:hasTruthValue "true"^^xsd:boolean ;
-        heals:ignore "true"^^xsd:boolean .
+        dpo:hasTruthValue "true"^^xsd:boolean ;
+        dpo:ignore "true"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-9 rdf:type heals:ExtraReasoningFactor ;
+    dpo-kb:reasoning-factor-9 rdf:type dpo:ExtraReasoningFactor ;
         rdfs:label "9" ;
-        heals:hasTruthValue "true"^^xsd:boolean ;
-        heals:ignore "true"^^xsd:boolean .
+        dpo:hasTruthValue "true"^^xsd:boolean ;
+        dpo:ignore "true"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-10 rdf:type heals:ExtraReasoningFactor ;
+    dpo-kb:reasoning-factor-10 rdf:type dpo:ExtraReasoningFactor ;
         rdfs:label "10" ;
-        heals:hasTruthValue "false"^^xsd:boolean ;
-        heals:ignore "true"^^xsd:boolean .
+        dpo:hasTruthValue "false"^^xsd:boolean ;
+        dpo:ignore "true"^^xsd:boolean .
 
-    heals-kb:reasoning-factor-11 rdf:type heals:ExtraReasoningFactor ;
+    dpo-kb:reasoning-factor-11 rdf:type dpo:ExtraReasoningFactor ;
         rdfs:label "11" ;
-        heals:hasTruthValue "false"^^xsd:boolean ;
-        heals:ignore "true"^^xsd:boolean .
+        dpo:hasTruthValue "false"^^xsd:boolean ;
+        dpo:ignore "true"^^xsd:boolean .
 
-    heals-kb:conclusion-1 rdf:type sio:000262 ;
+    dpo-kb:conclusion-1 rdf:type sio:000262 ;
         rdfs:label "SGLT2 Inhibitor" ;
-        heals:hasTruthValue "true"^^xsd:boolean;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-1 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-2 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-3 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-4 ;
-        heals:suggestedDrug rxnorm:1992672 ; # ertugliflozin
-        heals:suggestedDrug rxnorm:1488564 ; # dapagliflozin
-        heals:suggestedDrug rxnorm:1545653 ; # empagliflozin
-        heals:suggestedDrug rxnorm:1373458 . # canagliflozin
+        dpo:hasTruthValue "true"^^xsd:boolean;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-1 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-2 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-3 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-4 ;
+        dpo:suggestedDrug rxnorm:1992672 ; # ertugliflozin
+        dpo:suggestedDrug rxnorm:1488564 ; # dapagliflozin
+        dpo:suggestedDrug rxnorm:1545653 ; # empagliflozin
+        dpo:suggestedDrug rxnorm:1373458 . # canagliflozin
 
-    heals-kb:conclusion-2 rdf:type sio:000262 ;
+    dpo-kb:conclusion-2 rdf:type sio:000262 ;
         rdfs:label "GLP-1 Receptor Agonist" ;
-        heals:hasTruthValue "true"^^xsd:boolean;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-5 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-6 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-7 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-8 ;
-        heals:suggestedDrug rxnorm:1991302; # semaglutide
-        heals:suggestedDrug rxnorm:475968; # liraglutide
-        heals:suggestedDrug rxnorm:1551291; # dulaglutide
-        heals:suggestedDrug rxnorm:60548 . # exenatide
+        dpo:hasTruthValue "true"^^xsd:boolean;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-5 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-6 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-7 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-8 ;
+        dpo:suggestedDrug rxnorm:1991302; # semaglutide
+        dpo:suggestedDrug rxnorm:475968; # liraglutide
+        dpo:suggestedDrug rxnorm:1551291; # dulaglutide
+        dpo:suggestedDrug rxnorm:60548 . # exenatide
 
-    heals-kb:conclusion-3 rdf:type sio:000262 ;
+    dpo-kb:conclusion-3 rdf:type sio:000262 ;
         rdfs:label "SGLT2 Inhibitor" ;
-        heals:hasTruthValue "false"^^xsd:boolean;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-1 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-2 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-3 ;
-        heals:suggestedDrug rxnorm:1440051; # lixisenatide
-        heals:suggestedDrug rxnorm:1368001; # alogliptin
-        heals:suggestedDrug rxnorm:857974; # saxagliptin
-        heals:suggestedDrug rxnorm:1164670; # linagliptin
-        heals:suggestedDrug rxnorm:593411. # sitagliptin
+        dpo:hasTruthValue "false"^^xsd:boolean;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-1 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-2 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-3 ;
+        dpo:suggestedDrug rxnorm:1440051; # lixisenatide
+        dpo:suggestedDrug rxnorm:1368001; # alogliptin
+        dpo:suggestedDrug rxnorm:857974; # saxagliptin
+        dpo:suggestedDrug rxnorm:1164670; # linagliptin
+        dpo:suggestedDrug rxnorm:593411. # sitagliptin
 
-    heals-kb:conclusion-4 rdf:type heals:ExtraConclusion ;
+    dpo-kb:conclusion-4 rdf:type dpo:ExtraConclusion ;
         rdfs:label "Extra Example 1" ;
-        heals:hasTruthValue "false"^^xsd:boolean;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-5 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-9 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-10 ;
-        heals:suggestedDrug rxnorm:1992672 ; # ertugliflozin
-        heals:suggestedDrug rxnorm:1488564 ; # dapagliflozin
-        heals:suggestedDrug rxnorm:1545653 ; # empagliflozin
-        heals:suggestedDrug rxnorm:1373458 . # canagliflozin
+        dpo:hasTruthValue "false"^^xsd:boolean;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-5 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-9 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-10 ;
+        dpo:suggestedDrug rxnorm:1992672 ; # ertugliflozin
+        dpo:suggestedDrug rxnorm:1488564 ; # dapagliflozin
+        dpo:suggestedDrug rxnorm:1545653 ; # empagliflozin
+        dpo:suggestedDrug rxnorm:1373458 . # canagliflozin
 
-    heals-kb:conclusion-5 rdf:type heals:ExtraConclusion ;
+    dpo-kb:conclusion-5 rdf:type dpo:ExtraConclusion ;
         rdfs:label "Extra Example 2" ;
-        heals:hasTruthValue "false"^^xsd:boolean;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-11 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-3 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-6 ;
-        heals:suggestedDrug rxnorm:1991302; # semaglutide
-        heals:suggestedDrug rxnorm:475968; # liraglutide
-        heals:suggestedDrug rxnorm:1551291; # dulaglutide
-        heals:suggestedDrug rxnorm:60548 . # exenatide
+        dpo:hasTruthValue "false"^^xsd:boolean;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-11 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-3 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-6 ;
+        dpo:suggestedDrug rxnorm:1991302; # semaglutide
+        dpo:suggestedDrug rxnorm:475968; # liraglutide
+        dpo:suggestedDrug rxnorm:1551291; # dulaglutide
+        dpo:suggestedDrug rxnorm:60548 . # exenatide
 
-    heals-kb:conclusion-6 rdf:type heals:ExtraConclusion ;
+    dpo-kb:conclusion-6 rdf:type dpo:ExtraConclusion ;
         rdfs:label "Extra Example 3" ;
-        heals:hasTruthValue "false"^^xsd:boolean;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-4 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-8 ;
-        heals:reasoningLineFactor heals-kb:reasoning-factor-2 ;
-        heals:suggestedDrug rxnorm:1440051; # lixisenatide
-        heals:suggestedDrug rxnorm:1368001; # alogliptin
-        heals:suggestedDrug rxnorm:857974; # saxagliptin
-        heals:suggestedDrug rxnorm:1164670; # linagliptin
-        heals:suggestedDrug rxnorm:593411. # sitagliptin
+        dpo:hasTruthValue "false"^^xsd:boolean;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-4 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-8 ;
+        dpo:reasoningLineFactor dpo-kb:reasoning-factor-2 ;
+        dpo:suggestedDrug rxnorm:1440051; # lixisenatide
+        dpo:suggestedDrug rxnorm:1368001; # alogliptin
+        dpo:suggestedDrug rxnorm:857974; # saxagliptin
+        dpo:suggestedDrug rxnorm:1164670; # linagliptin
+        dpo:suggestedDrug rxnorm:593411. # sitagliptin
 
-    heals-kb:reasoning-line-P000000 rdf:type heals:ReasoningLine ;
-        heals:reasoningConclusion heals-kb:conclusion-1 ;
-        heals:reasoningConclusion heals-kb:conclusion-2 ;
-        heals:reasoningConclusion heals-kb:conclusion-3 ;
-        heals:reasoningConclusion heals-kb:conclusion-4 ;
-        heals:reasoningConclusion heals-kb:conclusion-5 ;
-        heals:reasoningConclusion heals-kb:conclusion-6 .
+    dpo-kb:reasoning-line-P000000 rdf:type dpo:ReasoningLine ;
+        dpo:reasoningConclusion dpo-kb:conclusion-1 ;
+        dpo:reasoningConclusion dpo-kb:conclusion-2 ;
+        dpo:reasoningConclusion dpo-kb:conclusion-3 ;
+        dpo:reasoningConclusion dpo-kb:conclusion-4 ;
+        dpo:reasoningConclusion dpo-kb:conclusion-5 ;
+        dpo:reasoningConclusion dpo-kb:conclusion-6 .
