@@ -45,7 +45,7 @@ dpo:NotComplyingWithTherapyPatient rdf:type owl:Class  ;
      )
     ] ;
     rdfs:subClassOf dpo:Patient ;
-    rdfs:label "not complying with therapy patient" .
+    rdfs:label "patient not complying with therapy" .
 
 
 dpo:TherapyNotPrescribed rdf:type owl:Class ;
@@ -62,7 +62,7 @@ dpo:TherapyNotPrescribedPatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Therapy Not Prescribed Patient" .
+    rdfs:label "patient not prescribed therapy" .
 
 
 dpo:TherapyCausingAdverseEffect rdf:type owl:Class ;
@@ -79,7 +79,7 @@ dpo:TherapyCausingAdverseEffectPatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Therapy Causing Adverse Effect Patient" .
+    rdfs:label "patient with therapy causing adverse effect" .
 
 dpo:TherapyTooExpensive rdf:type owl:Class ;
     rdfs:label "Therapy Too Expensive" .
@@ -95,7 +95,7 @@ dpo:TherapyTooExpensivePatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Therapy Too Expensive Patient" .
+    rdfs:label "patient whose therapy is too expensive" .
 
 dpo:TherapyNotInsured rdf:type owl:Class ;
     rdfs:subClassOf dpo:TherapyTooExpensive ;
@@ -113,7 +113,7 @@ dpo:TherapyNotInsuredPatient rdf:type owl:Class ;
         )
     ];
     rdfs:subClassOf dpo:TherapyTooExpensivePatient ;
-    rdfs:label "Therapy Not Insured Patient" .
+    rdfs:label "patient with therapy not insured" .
 
 dpo:NotAdheringToTherapy rdf:type owl:Class ;
     rdfs:label "Not Adhering To Therapy" .
@@ -129,7 +129,7 @@ dpo:NotAdheringToTherapyPatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Not Adhering To Therapy Patient" .
+    rdfs:label "patient not adhering to therapy" .
 
 dpo:ForgotToTakeTherapy rdf:type owl:Class ;
     rdfs:subClassOf dpo:NotAdheringToTherapy ;
@@ -147,5 +147,5 @@ dpo:ForgotToTakeTherapyPatient rdf:type owl:Class ;
         )
     ];
     rdfs:subClassOf dpo:NotAdheringToTherapyPatient ;
-    rdfs:label "Forgot To Take Therapy Patient" .
+    rdfs:label "patient who forgot to take therapy" .
 

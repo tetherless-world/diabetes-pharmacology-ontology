@@ -45,7 +45,7 @@ dpo:DiabetesHbA1CLevelPatient rdf:type owl:Class  ;
      )
     ] ;
     rdfs:subClassOf fhir:Patient ;
-    rdfs:label "Diabetes HbA1C Level Patient" .
+    rdfs:label "patient with diabetes HbA1C level" .
 
 dpo-kb:diabetesHbA1CLevel rdf:type dpo:DiabetesHbA1CLevel .
 
@@ -63,7 +63,7 @@ dpo:MedicationNotEffectivePatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Medication Not Effective Patient" .
+    rdfs:label "patient whose medication is not effective" .
 
 dpo-kb:medicationNotEffective rdf:type dpo:MedicationNotEffective .
 
@@ -81,7 +81,7 @@ dpo:NotComplyingWithTherapyPatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Not Complying With Therapy Patient" .
+    rdfs:label "patient not complying with therapy" .
 
 dpo-kb:notComplyingWithTherapy rdf:type dpo:NotComplyingWithTherapy .
 
@@ -99,7 +99,7 @@ dpo:InsufficientExercisePatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "Insufficient Exercise Patient" .
+    rdfs:label "patient with insufficient exercise" .
 
 dpo-kb:insufficientExercise rdf:type dpo:InsufficientExercise .
 
@@ -117,7 +117,7 @@ dpo:HighSugarDietPatient rdf:type owl:Class ;
             ] 
         )
     ];
-    rdfs:label "High Sugar Diet Patient" .
+    rdfs:label "patient with high sugar diet" .
 
 dpo-kb:highSugarDiet rdf:type dpo:HighSugarDiet .
 
