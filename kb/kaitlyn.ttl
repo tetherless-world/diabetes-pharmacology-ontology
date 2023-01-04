@@ -239,8 +239,8 @@ dpo-kb:KaitlynVisit4FBGL rdf:type loinc:1558-6 ;
 dpo-kb:Kaitlyn rdf:type sio:Patient ;
   rdfs:label "Kaitlyn" ;
   dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
-  dpo:hasTreatmentPreference [ rdf:type dpo:LowCostDiabetesTherapy ] ;
-  dpo:hasTreatmentNonPreference [ rdf:type dpo:HighCostDiabetesTherapy ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:LowCostDiabetesTherapy ] , [ rdf:type dpo:HighEfficacyDiabetesTherapy] ;
+  dpo:hasTreatmentNonPreference [ rdf:type dpo:HighCostDiabetesTherapy ] , [ rdf:type dpo:LowEfficacyDiabetesTherapy] ;
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
