@@ -136,8 +136,8 @@ dpo-kb:BethanyVisit2PGL rdf:type loinc:1518-0 ;
 # --> after intial visit, referred to a diabetes education program treated for dyslipidemia (based on high LDL and triglycerides, and polyuria and fatigue). 
 dpo-kb:Bethany rdf:type sio:Patient ;
   dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
-  dpo:hasTreatmentPreference [ rdf:type dpo:WeightLossDiabetesTherapy ] , [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
-  dpo:hasTreatmentNonPreference [ rdf:type dpo:WeightGainDiabetesTherapy ] , [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentNonPreference [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] ;
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
