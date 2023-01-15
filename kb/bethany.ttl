@@ -193,6 +193,7 @@ dpo-kb:Bethany rdf:type sio:Patient ;
         [ rdf:type dpo:Polyuria ] ,
         [ rdf:type dpo:FrequentUrination ] ,
         [ rdf:type dpo:FamilyHistoryOfDiabetes ] ,
+        [ rdf:type dpo:FamilyHistoryOfDKD ] ,
         [ rdf:type dpo:SedentaryLifestyle ] ,
         [ rdf:type sio:Age ;
           rdfs:label "Age"^^xsd:string ;

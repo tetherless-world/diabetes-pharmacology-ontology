@@ -155,8 +155,6 @@ dpo-kb:HannahVisit2PGL  rdf:type loinc:1518-0 ;
 
 dpo-kb:Hannah rdf:type sio:Patient ;
   dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
-  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] ;
-  dpo:hasTreatmentNonPreference [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] ;
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
