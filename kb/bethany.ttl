@@ -42,7 +42,7 @@
 
 dpo-kb:BethanyVisit1BMI rdf:type ncit:C138901 ;
           rdfs:label "BMI"^^xsd:string ;
-          sio:hasValue "32.2"^^xsd:decimal ; # obese
+          sio:hasValue "29.2"^^xsd:decimal ; # obese
           sio:hasUnit [ rdf:type uo:0000086 ; rdfs:label "kilogram per square meter"^^xsd:string ] ;
           sio:existsAt [
                 rdf:type sio:Visit ;

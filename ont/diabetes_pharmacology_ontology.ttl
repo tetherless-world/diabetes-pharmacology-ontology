@@ -1811,3 +1811,19 @@ loinc:12228-3 rdf:type owl:Class ;
 
 sio:hasAttribute rdf:type owl:ObjectProperty ;
     rdfs:label "has attribute"^^xsd:string .
+
+dpo-kb:HighEfficacyDiabetesTherapy rdf:type dpo:HighEfficacyDiabetesTherapy .
+dpo-kb:LowEfficacyDiabetesTherapy rdf:type dpo:LowEfficacyDiabetesTherapy .
+
+dpo-kb:PotentialASCVDBenefitDiabetesTherapy rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy .
+dpo-kb:IncreasedASCVDRiskDiabetesTherapy rdf:type dpo-kb:IncreasedASCVDRiskDiabetesTherapy .
+
+dpo-kb:LowCostDiabetesTherapy rdf:type dpo:LowCostDiabetesTherapy .
+dpo-kb:HighCostDiabetesTherapy rdf:type dpo:HighCostDiabetesTherapy .
+
+dpo-kb:PotentialDKDBenefitDiabetesTherapy rdf:type dpo:PotentialDKDBenefitDiabetesTherapy .
+dpo-kb:IncreasedDKDRiskDiabetesTherapy rdf:type dpo:IncreasedDKDRiskDiabetesTherapy .
+
+dpo-kb:WeightLossDiabetesTherapy rdf:type dpo:WeightLossDiabetesTherapy .
+dpo-kb:WeightGainDiabetesTherapy rdf:type dpo:WeightGainDiabetesTherapy .
+
