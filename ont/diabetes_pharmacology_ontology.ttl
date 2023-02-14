@@ -71,26 +71,23 @@ dpo:Symptom rdf:type owl:Class ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease. [ url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5 url:https://www.nature.com/subjects/signs-and-symptoms url:https://www.merriam-webster.com/dictionary/symptom ][Definition Source: SYMP:0000462]"^^xsd:string .
 
-dpo:therapyFactorPreference rdf:type owl:ObjectProperty ;
-    rdfs:label "therapy factor preference"^^xsd:string ;
-    rdfs:range dpo:PharmacotherapyFactor .
+dpo:hasTreatmentPreference rdf:type owl:ObjectProperty ;
+    rdfs:label "has therapy preference"^^xsd:string ;
+    rdfs:range dpo:Therapy .
 
-dpo:therapyFactorAversion rdf:type owl:ObjectProperty ;
-    rdfs:label "therapy factor aversion"^^xsd:string ;
-    rdfs:range dpo:PharmacotherapyFactor .
-
-dpo:therapyFactorIndifference rdf:type owl:ObjectProperty ;
-    rdfs:label "therapy factor indifference"^^xsd:string ;
-    rdfs:range dpo:PharmacotherapyFactor .
-
-dpo:pharmacotherapyFactor rdf:type owl:ObjectProperty ;
-    rdfs:label "risk factor"^^xsd:string ;
-    rdfs:range dpo:PharmacotherapyFactor .
+dpo:hasTreatmentAversion rdf:type owl:ObjectProperty ;
+    rdfs:label "has therapy aversion"^^xsd:string ;
+    rdfs:range dpo:Therapy .
 
 dpo:hasDiagnosis rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf sio:hasAttribute ;
     rdfs:label "has diagnosis"^^xsd:string ;
     rdfs:range dpo:Disease .
+
+dpo:hasTherapy rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf sio:hasAttribute ;
+    rdfs:label "has therapy"^^xsd:string ;
+    rdfs:range dpo:Therapy .
 
 dpo:NutritionMetabolismAndDevelopmentSymptom rdf:type owl:Class ;
     rdfs:subClassOf dpo:Symptom ;
@@ -700,6 +697,14 @@ dpo:SedentaryLifestyle rdf:type owl:Class ;
     rdfs:label "Sedentary Lifestyle"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
     skos:definition "A type of lifestyle that lacks physical exercise, characterized by sitting, reading, watching television or using a computer for much of the day without vigorous physical exertion. [Definition Source: NCI]"^^xsd:string .
+
+dpo:InsufficientExercise rdf:type owl:Class ;
+    rdfs:subClassOf dpo:SedentaryLifestyle ;
+    rdfs:label "Insufficient Exercise" .
+
+dpo:HighSugarDiet rdf:type owl:Class ;
+    rdfs:subClassOf dpo:SedentaryLifestyle ;
+    rdfs:label "High Sugar Diet" .
 
 dpo:AlcoholUse rdf:type owl:Class ;
     rdfs:subClassOf dpo:Behavior ;
