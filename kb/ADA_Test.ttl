@@ -1,0 +1,173 @@
+@prefix dpo: <http://purl.org/twc/dpo/ont/> .
+@prefix dpo-kb: <http://purl.org/twc/dpo/kb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+dpo-kb:E rdf:type sio:Patient ;
+  rdfs:label "E" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] .
+
+dpo-kb:H rdf:type sio:Patient ;
+  rdfs:label "H" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] .
+
+dpo-kb:W rdf:type sio:Patient ;
+  rdfs:label "W" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:WeightLossDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:WeightGainDiabetesTherapy ] .
+
+dpo-kb:A rdf:type sio:Patient ;
+  rdfs:label "A" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] .
+
+dpo-kb:F rdf:type sio:Patient ;
+  rdfs:label "F" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] .
+
+dpo-kb:C rdf:type sio:Patient ;
+  rdfs:label "C" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:LowCostDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:HighCostDiabetesTherapy ] .
+
+dpo-kb:D rdf:type sio:Patient ;
+  rdfs:label "D" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
+
+dpo-kb:EH rdf:type sio:Patient ;
+  rdfs:label "EH" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] .
+
+dpo-kb:EW rdf:type sio:Patient ;
+  rdfs:label "EW" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:WeightLossDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:WeightGainDiabetesTherapy ] .
+
+dpo-kb:EA rdf:type sio:Patient ;
+  rdfs:label "EA" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] .
+
+dpo-kb:EF rdf:type sio:Patient ;
+  rdfs:label "EF" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] .
+
+dpo-kb:EC rdf:type sio:Patient ;
+  rdfs:label "EC" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:LowCostDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:HighCostDiabetesTherapy ] .
+
+dpo-kb:ED rdf:type sio:Patient ;
+  rdfs:label "ED" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:HighEfficacyDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:LowEfficacyDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
+
+dpo-kb:HW rdf:type sio:Patient ;
+  rdfs:label "HW" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:WeightLossDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:WeightGainDiabetesTherapy ] .
+
+dpo-kb:HA rdf:type sio:Patient ;
+  rdfs:label "HA" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] .
+
+dpo-kb:HF rdf:type sio:Patient ;
+  rdfs:label "HF" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] .
+
+dpo-kb:HC rdf:type sio:Patient ;
+  rdfs:label "HC" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:LowCostDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:HighCostDiabetesTherapy ] .
+
+dpo-kb:HD rdf:type sio:Patient ;
+  rdfs:label "HD" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:NoKnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:KnownHypoglycemiaRiskDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
+
+dpo-kb:WA rdf:type sio:Patient ;
+  rdfs:label "WA" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:WeightLossDiabetesTherapy ] , [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:WeightGainDiabetesTherapy ] , [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] .
+
+dpo-kb:WF rdf:type sio:Patient ;
+  rdfs:label "WF" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:WeightLossDiabetesTherapy ] , [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:WeightGainDiabetesTherapy ] , [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] .
+
+dpo-kb:WC rdf:type sio:Patient ;
+  rdfs:label "WC" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:WeightLossDiabetesTherapy ] , [ rdf:type dpo:LowCostDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:WeightGainDiabetesTherapy ] , [ rdf:type dpo:HighCostDiabetesTherapy ]  .
+
+dpo-kb:WD rdf:type sio:Patient ;
+  rdfs:label "WD" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:WeightLossDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:WeightGainDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
+
+dpo-kb:AF rdf:type sio:Patient ;
+  rdfs:label "AF" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] , [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] , [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] .
+
+dpo-kb:AC rdf:type sio:Patient ;
+  rdfs:label "AC" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] , [ rdf:type dpo:LowCostDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] , [ rdf:type dpo:HighCostDiabetesTherapy ] .
+
+dpo-kb:AD rdf:type sio:Patient ;
+  rdfs:label "AD" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialASCVDBenefitDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedASCVDRiskDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
+
+dpo-kb:FC rdf:type sio:Patient ;
+  rdfs:label "FC" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] , [ rdf:type dpo:LowCostDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] , [ rdf:type dpo:HighCostDiabetesTherapy ] .
+
+dpo-kb:FD rdf:type sio:Patient ;
+  rdfs:label "FD" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:PotentialHeartFailureBenefitDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:IncreasedHeartFailureRiskDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
+
+dpo-kb:CD rdf:type sio:Patient ;
+  rdfs:label "CD" ;
+  dpo:hasDiagnosis [ rdf:type dpo:Diabetes ] ;
+  dpo:hasTreatmentPreference [ rdf:type dpo:LowCostDiabetesTherapy ] , [ rdf:type dpo:PotentialDKDBenefitDiabetesTherapy ] ;
+  dpo:hasTreatmentAversion [ rdf:type dpo:HighCostDiabetesTherapy ] , [ rdf:type dpo:IncreasedDKDRiskDiabetesTherapy ] .
