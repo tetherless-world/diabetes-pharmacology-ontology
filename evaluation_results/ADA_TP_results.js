@@ -276,6 +276,18 @@
 		},
 		'Therapy Rankings': [('Biguanide', 3), ('GLP-1 RA', 2), ('Thiazolidinedione', 2), ('SGLT2 Inhibitor', 1), ('Sulfonylurea', 1), ('DPP-4 Inhibitor', 0)],
 		'ADA Rankings': [('Biguanide', 4), ('GLP-1 RA', 3), ('SGLT2 Inhibitor', 2), ('Thiazolidinedione', 1), ('Sulfonylurea', 0), ('DPP-4 Inhibitor', 0)],
+		
+		
+		
+		
+		'ADA Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('Thiazolidinedione', 1), ('DPP-4 Inhibitor', 0), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 2), ('GLP-1 RA', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0), ('SGLT2 Inhibitor', 0), ('DPP-4 Inhibitor', 0)],
+		
+		
+		          | -- S -- |         | -- D -- |
+		| -- B -- |         | -- T -- |
+		          | -- G -- |         | -- U -- |
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/PotentialASCVDBenefitDiabetesTherapy': {
 				'GLP-1 RA': '+1',
@@ -300,7 +312,13 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('Sulfonylurea', 2), ('Thiazolidinedione', 1), ('DPP-4 Inhibitor', 0)],
-		'ADA Rankings': [('Biguanide', 3), ('GLP-1 RA', 2), ('SGLT2 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0), ('DPP-4 Inhibitor', 0)],
+		'ADA Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 1), ('Sulfonylurea', 0), ('DPP-4 Inhibitor', 0), ('Thiazolidinedione', 0)],
+		
+		                              | -- U -- |
+		| -- B -- | -- S -- | -- G -- | -- D -- |
+		                              | -- T -- |
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/HighEfficacyDiabetesTherapy': {
 				'Biguanide': '+1',
@@ -353,7 +371,16 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 2), ('GLP-1 RA', 2), ('SGLT2 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 1), ('DPP-4 Inhibitor', 0)],
-		'ADA Rankings': [('Biguanide', 3), ('GLP-1 RA', 2), ('SGLT2 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0), ('DPP-4 Inhibitor', 0)],
+		'ADA Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 1), ('DPP-4 Inhibitor', 0), ('Thiazolidinedione', 0), ('Sulfonylurea', 0)],
+		
+		                              | -- D -- |
+		| -- B -- | -- S -- | -- G -- | -- T -- |
+		                              | -- U -- |
+		
+		
+		
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/PotentialDKDBenefitDiabetesTherapy': {
 				'GLP-1 RA': '+1',
@@ -405,7 +432,14 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('Thiazolidinedione', 2), ('DPP-4 Inhibitor', 1), ('Sulfonylurea', 0)],
-		'ADA Rankings': [('Biguanide', 2), ('SGLT2 Inhibitor', 1), ('Thiazolidinedione', 1), ('GLP-1 RA', 1), ('DPP-4 Inhibitor', 1), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 4), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 3), ('Thiazolidinedione', 2), ('DPP-4 Inhibitor', 1), ('Sulfonylurea', 0)],
+		
+		
+		
+		          | -- S -- |         | -- D -- |
+		| -- B -- |         | -- T -- |
+		          | -- G -- |         | -- U -- |
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/NoKnownHypoglycemiaRiskDiabetesTherapy': {
 				'DPP-4 Inhibitor': '+1',
@@ -433,7 +467,18 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
-		'ADA Rankings': [('Biguanide', 2), ('SGLT2 Inhibitor', 1), ('GLP-1 RA', 1), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('DPP-4 Inhibitor', 1), ('GLP-1 RA', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
+		
+		                    | -- G -- |
+		                    | -- U -- |
+		| -- B -- | -- S -- |
+		                    | -- D -- |
+		                    | -- T -- |
+		
+		
+		
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/NoKnownHypoglycemiaRiskDiabetesTherapy': {
 				'DPP-4 Inhibitor': '+1',
@@ -492,7 +537,17 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 2), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
-		'ADA Rankings': [('Biguanide', 2), ('SGLT2 Inhibitor', 1), ('GLP-1 RA', 1), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 4), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
+		
+		                              | -- D -- |
+		| -- B -- | -- S -- | -- G -- | -- T -- |
+		                              | -- U -- |
+		
+		
+		
+		
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/NoKnownHypoglycemiaRiskDiabetesTherapy': {
 				'DPP-4 Inhibitor': '+1',
@@ -518,7 +573,13 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 2), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
-		'ADA Rankings': [('Biguanide', 4), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 3), ('DPP-4 Inhibitor', 2), ('Thiazolidinedione', 1), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 4), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 3), ('Thiazolidinedione', 2), ('DPP-4 Inhibitor', 1), ('Sulfonylurea', 0)],
+		
+		
+		          | -- S -- |         | -- D -- |
+		| -- B -- |         | -- T -- |
+		          | -- G -- |         | -- U -- |
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/WeightLossDiabetesTherapy': {
 				'GLP-1 RA': '+1',
@@ -544,7 +605,16 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('SGLT2 Inhibitor', 3), ('Biguanide', 2), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Sulfonylurea', 1), ('Thiazolidinedione', 0)],
-		'ADA Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 4), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0)],
+		
+		                    | -- G -- |
+		                    | -- U -- |
+		| -- B -- | -- S -- |
+		                    | -- D -- |
+		                    | -- T -- |
+		
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/WeightLossDiabetesTherapy': {
 				'GLP-1 RA': '+1',
@@ -599,7 +669,14 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('SGLT2 Inhibitor', 3), ('GLP-1 RA', 3), ('Biguanide', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0)],
-		'ADA Rankings': [('Biguanide', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0)],
+		'ADA Rankings': [('Biguanide', 4), ('SGLT2 Inhibitor', 3), ('GLP-1 RA', 2), ('DPP-4 Inhibitor', 1), ('Thiazolidinedione', 0), ('Sulfonylurea', 0)],
+		
+		                              | -- D -- |
+		| -- B -- | -- S -- | -- G -- | -- T -- |
+		                              | -- U -- |
+		
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/WeightLossDiabetesTherapy': {
 				'GLP-1 RA': '+1',
@@ -750,7 +827,15 @@
 			'Biguanide': '+1'
 		},
 		'Therapy Rankings': [('Biguanide', 3), ('Thiazolidinedione', 2), ('Sulfonylurea', 2), ('SGLT2 Inhibitor', 1), ('GLP-1 RA', 1), ('DPP-4 Inhibitor', 0)],
-		'ADA Rankings': [('Biguanide', 5), ('Sulfonylurea', 4), ('Thiazolidinedione', 3), ('SGLT2 Inhibitor', 2), ('GLP-1 RA', 1), ('DPP-4 Inhibitor', 0)],
+		'ADA Rankings': [('Biguanide', 5), ('SGLT2 Inhibitor', 4), ('GLP-1 RA', 3), ('Sulfonylurea', 2), ('Thiazolidinedione', 1), ('DPP-4 Inhibitor', 0)],
+		
+		                              | -- D -- |
+		| -- B -- | -- S -- | -- G -- | -- T -- |
+		                              | -- U -- |
+		
+		
+		
+		
 		'Preferences': {
 			'http://purl.org/twc/dpo/ont/PotentialDKDBenefitDiabetesTherapy': {
 				'GLP-1 RA': '+1',
