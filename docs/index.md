@@ -12,7 +12,7 @@ The Diabetes Pharmacology Ontology was designed by leveraging the American Diabe
 - [Table of Contents](#table-of-contents)
 - [Namespaces](#namespaces)
 - [Diabetes Pharmacology Ontology](#diabetes-pharmacology-ontology)
-  * [Factor](#factor)
+  * [Therapy Planning Component](#therapy-planning-component)
   * [Pharmacotherapy Factor](#pharmacotherapy-factor)
     + [Efficacy](#efficacy)
       - [High Efficacy](#high-efficacy)
@@ -187,22 +187,21 @@ The Diabetes Pharmacology Ontology is an ontology designed to aid in clinical de
 
 The diagram above shows the concepts in the ontology that extend from the root concept, **dpo:Factor**, up to 3 hops from the root. While all the classes in the ontology are not included in this diagram, the complete set of concepts are described in this document below.
 
-## Thing
-> Anything that contributes causally to a result. [Definition Source: NCI]
+## Therapy Planning Component
+> 
 
-The root branch of the Diabetes Pharmacology Ontology is **dpo:Thing**.
+The root branch of the Diabetes Pharmacology Ontology is **dpo:TherapyPlanningComponent**.
 
 ```
-dpo:Thing rdf:type owl:Class ;
-    rdfs:label "Thing" ;
-    owl:equivalentClass ncit:C25506 ;
-    rdfs:comment "A factor is a circumstance influencing the treatment or diagnosis of a disease, therapeutic agents that may be administered to produce an effect, or findings resulting from recorded measurements."^^xsd:string ;
-    skos:definition "Anything that contributes causally to a result. [Definition Source: NCI]"^^xsd:string .
+dpo:TherapyPlanningComponent rdf:type owl:Class ;
+    rdfs:label "Therapy Planning Component" ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition ""^^xsd:string .
 ```
 
-Four top level branches extend from **dpo:Thing**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, and **dpo:Therapy**. **dpo:DiagnosticFactor** is made up of the **dpo:PatientCharacteristic** and **dpo:TestFinding** branches.
+Four top level branches extend from **dpo:TherapyPlanningComponent**. These are **dpo:PharmacotherapyFactor**, **dpo:DiagnosticFactor**, and **dpo:Therapy**. **dpo:DiagnosticFactor** is made up of the **dpo:PatientCharacteristic** and **dpo:TestFinding** branches.
 
-![pto:Thing](./assets/images/Thing.png)
+![dpo:TherapyPlanningComponent](./assets/images/TherapyPlanningComponent.png)
 
 All other branches of the ontology extend from these top level concepts.
 
