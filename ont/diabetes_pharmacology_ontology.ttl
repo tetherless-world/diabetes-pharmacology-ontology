@@ -25,11 +25,11 @@
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionIRI <http://purl.org/twc/dpo/ont/1.0> .
 
-dpo:Thing rdf:type owl:Class ;
-    rdfs:label "Thing" .
+dpo:TherapyPlanningComponent rdf:type owl:Class ;
+    rdfs:label "Therapy Planning Component" .
     
 dpo:PharmacotherapyFactor rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Thing ;
+    rdfs:subClassOf dpo:TherapyPlanningComponent ;
     owl:equivalentClass ncit:C18228 ;
     rdfs:label "Pharmacotherapy Factor" ;
     rdfs:comment "A circumstance influencing the treatment of a disease through the use or recommendation of one or more drugs."^^xsd:string ;
@@ -37,7 +37,7 @@ dpo:PharmacotherapyFactor rdf:type owl:Class ;
 
     
 dpo:DiagnosticFactor rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Thing ;
+    rdfs:subClassOf dpo:TherapyPlanningComponent ;
     owl:equivalentClass ncit:C19591 ;
     rdfs:label "Diagnostic Factor" ;
     rdfs:comment "A circumstance influencing the dianosis of a disease."^^xsd:string ;
@@ -51,7 +51,7 @@ dpo:PatientCharacteristic rdf:type owl:Class ;
     skos:definition "The distinguishing qualities or prominent aspect of a person. [Definition Source: NCI]"^^xsd:string .
 
 dpo:Therapy rdf:type owl:Class ;
-    rdfs:subClassOf dpo:Thing ;
+    rdfs:subClassOf dpo:TherapyPlanningComponent ;
     owl:equivalentClass ncit:C49236 ;
     rdfs:label "Therapy"^^xsd:string ;
     rdfs:comment ""^^xsd:string ;
