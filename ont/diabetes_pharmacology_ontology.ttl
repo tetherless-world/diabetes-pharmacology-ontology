@@ -303,9 +303,25 @@ dpo:DiabetesHbA1CLevel rdf:type owl:Class ;
     skos:definition "A1C ≥6.5% (48 mmol/mol). [Definition Source: url:https://doi.org/10.2337/dc22-S002 ]"^^xsd:string .
 
 dpo:DiabetesHbA1CRange rdf:type owl:DataRange ;
-    rdfs:label "Prediabetes HbA1C Range" ;
+    rdfs:label "Diabetes HbA1C Range" ;
     owl:onDataRange xsd:decimal ;
     owl:minInclusive "141.25"^^xsd:decimal .
+
+dpo:VeryHighHbA1CLevel rdf:type owl:Class ;
+    rdfs:subClassOf dpo:BloodGlucoseMeasurement ;
+    owl:intersectionOf
+            ( loinc:59261-8
+              [ rdf:type owl:Restriction ;
+                owl:onProperty sio:hasValue ;
+                owl:allValuesFrom dpo:VeryHighHbA1CRange ] ) ;
+    rdfs:label "Very High HbA1C Level"^^xsd:string ;
+    rdfs:comment ""^^xsd:string ;
+    skos:definition "A1C ≥ 9%"^^xsd:string .
+
+dpo:VeryHighHbA1CRange rdf:type owl:DataRange ;
+    rdfs:label "Very High HbA1C Range" ;
+    owl:onDataRange xsd:decimal ;
+    owl:minInclusive "215"^^xsd:decimal .
 
 dpo:OptimalLDLLevel rdf:type owl:Class ;
     rdfs:subClassOf dpo:CholesterolMeasurement ;
